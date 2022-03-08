@@ -1,13 +1,14 @@
-\babel@toc {nil}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {section}{\numberline {1}Formulario}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Unità di misura}{3}{subsection.1.1}%
-\contentsline {section}{\numberline {2}Introduzione}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Il metodo sperimentale}{4}{subsection.2.1}%
-\contentsline {section}{\numberline {3}Cinetica dei punti}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Sistema di riferimento}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Diagramma dello spazio}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Caso semplice}{5}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Moto rettilineo uniforme}{6}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Velocità}{6}{subsection.3.5}%
+\contentsline {section}{\numberline {2}Introduzione}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Il metodo sperimentale}{3}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Cinetica dei punti}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Sistema di riferimento}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Diagramma dello spazio}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Caso semplice}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Moto rettilineo uniforme}{5}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Velocità}{5}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}Velocità istantanea}{6}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Accelerazione}{7}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2}Accelerazione}{6}{subsubsection.3.5.2}%
