@@ -12,3 +12,5 @@
 \contentsline {subsection}{\numberline {3.5}Velocità}{5}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}Velocità istantanea}{6}{subsubsection.3.5.1}%
 \contentsline {subsubsection}{\numberline {3.5.2}Accelerazione}{6}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Esercizi vari sui moti con formule}{6}{subsubsection.3.5.3}%
+\contentsline {paragraph}{\numberline {3.5.3.1}Esempio 1}{7}{paragraph.3.5.3.1}%

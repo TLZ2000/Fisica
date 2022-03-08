@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1646743605 "main.tex" "main.pdf" "main" 1646743606
+["pdflatex"] 1646744631 "main.tex" "main.pdf" "main" 1646744632
   "/etc/texmf/web2c/texmf.cnf" 1646733841 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbi1200.tfm" 1136768653 3072 ccae1a240ab272417e4399fe942df546 ""
@@ -141,15 +141,15 @@
   "Img//L01-img004.jpg" 1646133835 311757 71cce792ad996a9de9336c69dbccedef ""
   "Img//L01-img005.jpg" 1646141496 192414 2bebef4923e5266da97b68d725e97f85 ""
   "Img//LOGO.png" 1632386495 22405 c7c97e1f457426285d5c605efb1440b1 ""
-  "Sezioni/Lezione01.tex" 1646743501 6051 b8f7987a10e2f3a6984687c73b43e677 ""
+  "Sezioni/Lezione01.tex" 1646744629 6738 514ff2e9b2644ccae24a070532eb2f9c ""
   "Sezioni/Roba.tex" 1646132039 301 c75da0db7d53bcd2c9ab30721cd9c797 ""
-  "main.aux" 1646743606 2523 af4c564219587d1cb8e6c8903ddf3daf "pdflatex"
-  "main.out" 1646743606 776 3861ecfa72f855d876b4cf54b10c8942 "pdflatex"
-  "main.tex" 1646743601 1751 a203b97ce3de23b95b8badb52af6c978 ""
-  "main.toc" 1646743606 1029 91b7f958fc1580e2bc371050152e8696 "pdflatex"
+  "main.aux" 1646744631 2796 e7d3d2fd0db44cf268e78f045f8f0ee4 "pdflatex"
+  "main.out" 1646744631 942 d6e365622cec28ad47c52ef38945cf2f "pdflatex"
+  "main.tex" 1646743669 1751 a203b97ce3de23b95b8badb52af6c978 ""
+  "main.toc" 1646744631 1220 8d7a449c2d2eb159dde536720375eaf5 "pdflatex"
   (generated)
-  "main.log"
-  "main.out"
-  "main.aux"
-  "main.toc"
   "main.pdf"
+  "main.toc"
+  "main.out"
+  "main.log"
+  "main.aux"
