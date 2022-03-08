@@ -65,7 +65,7 @@
 
 		\subsubsection{Esercizi vari sui moti con formule}
 			Vediamo alcuni esempi:
-			\paragraph{Esempio 1}
+			\paragraph{Esempio 1 (moto rettilineo uniforme)}
 				Supponiamo di avere un oggetto che si sposta da un punto A ($t_0, S_0$) ad un punto B ($t_1, S_1$) tramite un \textbf{moto rettilineo uniforme}, abbiamo i seguenti dati:
 				\begin{align*}
 					&t_0 = ?&&S_0=1,5Km&&v=36m/s\\
@@ -76,3 +76,42 @@
 					v=\frac{\Delta S}{\Delta t}=\frac{S_1-S_0}{t_1-t_0}=> ... => t_0 = t_1 -\frac{S_1-S_0}{v}
 				\end{align*}
 				Sostituendo i valori forniti, otteniamo che $t_0 \approx 802,22s$
+
+			\paragraph{Esempio 2 (moto rettilineo uniformemente accellerato)}
+				Prima di vedere l'esempio vero e proprio, introduciamo delle formule necessarie:
+				\subparagraph{Moto rettilineo uniformemente accellerato}
+					Cominciamo col dire che:
+					\begin{align*}
+						a=\frac{dv}{dt}
+					\end{align*}
+					Ricorda che con $dv$ e $dt$ intendiamo le \textbf{derivate}. Da questa ricaviamo $dv$, ovvero:
+					\begin{align*}
+						dv = a*dt\ => \int_A^B dv = \int_A^B (a*dt)\ => v_B-v_A = a(t_B-t_A)
+					\end{align*}
+					Da questo otteniamo quindi che la velocità in funzione del tempo corrisponde a:
+					\begin{align*}
+						\underline{v(t)=v_0+a(t-t_0)}
+					\end{align*}
+					Ottenuta questa formula, possiamo passare a calcolare lo \textbf{spazio in funzione del tempo}, ovvero:
+					\begin{align*}
+						&v(t) = \frac{dS}{dt}\ =>\ dS = v*dt\ =>\ \int_A^B dS = \int_A^B v*dt\ =>\ S_B-S_A = \int_A^B [v_0+a(t-t_0)] dt\ =>\ \\
+						&=>\ S_B-S_A = \bigg[v_0*t+a\frac{(t-t_0)^2}{2}\bigg]_A^B\ =>\ S_B-S_A = v_0*t_B+a\frac{(t_B-t_0)^2}{2} - v_0*t_A+a\frac{(t_A-t_0)^2}{2}
+					\end{align*}
+					Da questo otteniamo quindi che la velocità in funzione del tempo corrisponde a:
+					\begin{align*}
+						\underline{S(t)=S_0+v_0(t-t_0)+\frac{1}{2}a(t-t_0)^2}
+					\end{align*}
+					Terminiamo dicendo che in questo moto \textbf{l'accelerazione è costante}, quindi:
+					\begin{align*}
+						\underline{a(t)= a}
+					\end{align*}
+
+
+				Supponiamo di avere un oggetto all'altezza $h_0$ e di lanciarlo verso l'alto con una velocità $v_0$ nell'istante $t_0$ con un'accelerazione $a$. Dobbiamo trovare l'altezza ($h_c$) ed il tempo ($t_c$) di culmine e, supponendo che alla fine l'oggetto raggiunga l'altezza finale "$h_f$", trovare il tempo finale "$t_f$". Supponiamo di avere i seguenti dati:
+				\begin{align*}
+					&h_0 = 100m&&t_0=0s&&v_0=5m/s&&a=-9,8m/s^2\\
+					&t_c = ? && h_c=? && t_f = ? && h_f = 0m
+				\end{align*}
+				Includiamo delle immagini complementari:
+				\framedImg{20}{L02-img001}
+				\framedImg{50}{L02-img002}
