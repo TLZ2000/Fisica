@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage[it]{babel}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{sectsty}
+\usepackage{pdfpages}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{geometry}
+\usepackage{bigints}
+\paragraphfont{\color{red}}
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\graphicspath{{./Img/}}
+\newgeometry{vmargin={15mm}, hmargin={12mm}}   % set the margins
+
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
+\newcommand{\framedImg}[2]
+{
+	\begin{figure}[H]
+		\centering
+		\begin{tabular}{c}
+			\framebox{\includegraphics[width=.#1\textwidth]{#2}}
+		\end{tabular}
+	\end{figure}
+}
+
+\newcommand{\nFramedImg}[2]
+{
+	\begin{figure}[H]
+		\centering
+		\begin{tabular}{c}
+			\includegraphics[width=.#1\textwidth]{#2}
+		\end{tabular}
+	\end{figure}
+}
+
+
+\newcommand{\definizione}[2]{\textbf{\textit{\textcolor{OliveGreen}{def. #1}}}\label{#2}}
+
+\newcommand{\importante}[1]{\textbf{\textit{\textcolor{Red}{#1}}}}
+
+\title{
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=.5\textwidth]{LOGO}
+        \label{fig:logo unitn}
+    \end{figure}
+    \bigskip
+    Linguaggi formali e compilatori
+}
+\author{UNITN - Lazzerini Thomas}
+\date{Marzo 2021}
+
+\begin{document}
+%    \sffamily
+    \maketitle
+    \vfill
+
+    \begin{center}
+        Nel presente documento sono presenti gli appunti relativi alla teoria del corso "\textbf{Fisica}" dell'anno \textbf{2021-2022} tenuto dal \textbf{professor Iuppa}).\\
+    \end{center}
+    
+    \newpage
+    
+    \tableofcontents
+    
+    \newpage
+	
+	\include{Sezioni/Roba}
+	\include{Sezioni/Lezione01}
+	
+\end{document}
+
+
+
