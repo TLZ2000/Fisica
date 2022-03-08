@@ -63,6 +63,33 @@
 		\subsubsection{Accelerazione}
 			Nel paragrafo precedente abbiamo visto che la \textbf{velocità in un punto corrisponde al valore della derivata prima} (della funzione che rappresenta il moto del nostro corpo) \textbf{in quel punto}, per quanto riguarda l'accelerazione abbiamo che \textbf{l'accelerazione corrisponde al rapporto tra la derivata della velocità e la derivata del tempo}, ottenendo quindi la formula $\frac{dv}{dt}$, operativamente dobbiamo fare la \textbf{derivata seconda della funzione che rappresenta il moto del nostro punto}.
 
+		\subsubsection{Moto rettilineo uniformemente accellerato}
+			Cominciamo col dire che:
+			\begin{align*}
+				a=\frac{dv}{dt}
+			\end{align*}
+			Ricorda che con $dv$ e $dt$ intendiamo le \textbf{derivate}. Da questa ricaviamo $dv$, ovvero:
+			\begin{align*}
+				dv = a*dt\ => \int_A^B dv = \int_A^B (a*dt)\ => v_B-v_A = a(t_B-t_A)
+			\end{align*}
+			Da questo otteniamo quindi che la velocità in funzione del tempo corrisponde a:
+			\begin{align*}
+				\underline{v(t)=v_0+a(t-t_0)}
+			\end{align*}
+			Ottenuta questa formula, possiamo passare a calcolare lo \textbf{spazio in funzione del tempo}, ovvero:
+			\begin{align*}
+				&v(t) = \frac{dS}{dt}\ =>\ dS = v*dt\ =>\ \int_A^B dS = \int_A^B v*dt\ =>\ S_B-S_A = \int_A^B [v_0+a(t-t_0)] dt\ =>\ \\
+				&=>\ S_B-S_A = \bigg[v_0*t+a\frac{(t-t_0)^2}{2}\bigg]_A^B\ =>\ S_B-S_A = v_0*t_B+a\frac{(t_B-t_0)^2}{2} - v_0*t_A+a\frac{(t_A-t_0)^2}{2}
+			\end{align*}
+			Da questo otteniamo quindi che la velocità in funzione del tempo corrisponde a:
+			\begin{align*}
+				\underline{S(t)=S_0+v_0(t-t_0)+\frac{1}{2}a(t-t_0)^2}
+			\end{align*}
+			Terminiamo dicendo che in questo moto \textbf{l'accelerazione è costante}, quindi:
+			\begin{align*}
+				\underline{a(t)= a}
+			\end{align*}
+
 		\subsubsection{Esercizi vari sui moti con formule}
 			Vediamo alcuni esempi:
 			\paragraph{Esempio 1 (moto rettilineo uniforme)}
@@ -78,35 +105,6 @@
 				Sostituendo i valori forniti, otteniamo che $t_0 \approx 802,22s$
 
 			\paragraph{Esempio 2 (moto rettilineo uniformemente accellerato)}
-				Prima di vedere l'esempio vero e proprio, introduciamo delle formule necessarie:
-				\subparagraph{Moto rettilineo uniformemente accellerato}
-					Cominciamo col dire che:
-					\begin{align*}
-						a=\frac{dv}{dt}
-					\end{align*}
-					Ricorda che con $dv$ e $dt$ intendiamo le \textbf{derivate}. Da questa ricaviamo $dv$, ovvero:
-					\begin{align*}
-						dv = a*dt\ => \int_A^B dv = \int_A^B (a*dt)\ => v_B-v_A = a(t_B-t_A)
-					\end{align*}
-					Da questo otteniamo quindi che la velocità in funzione del tempo corrisponde a:
-					\begin{align*}
-						\underline{v(t)=v_0+a(t-t_0)}
-					\end{align*}
-					Ottenuta questa formula, possiamo passare a calcolare lo \textbf{spazio in funzione del tempo}, ovvero:
-					\begin{align*}
-						&v(t) = \frac{dS}{dt}\ =>\ dS = v*dt\ =>\ \int_A^B dS = \int_A^B v*dt\ =>\ S_B-S_A = \int_A^B [v_0+a(t-t_0)] dt\ =>\ \\
-						&=>\ S_B-S_A = \bigg[v_0*t+a\frac{(t-t_0)^2}{2}\bigg]_A^B\ =>\ S_B-S_A = v_0*t_B+a\frac{(t_B-t_0)^2}{2} - v_0*t_A+a\frac{(t_A-t_0)^2}{2}
-					\end{align*}
-					Da questo otteniamo quindi che la velocità in funzione del tempo corrisponde a:
-					\begin{align*}
-						\underline{S(t)=S_0+v_0(t-t_0)+\frac{1}{2}a(t-t_0)^2}
-					\end{align*}
-					Terminiamo dicendo che in questo moto \textbf{l'accelerazione è costante}, quindi:
-					\begin{align*}
-						\underline{a(t)= a}
-					\end{align*}
-
-
 				Supponiamo di avere un oggetto all'altezza $h_0$ e di lanciarlo verso l'alto con una velocità $v_0$ nell'istante $t_0$ con un'accelerazione $a$. Dobbiamo trovare l'altezza ($h_c$) ed il tempo ($t_c$) di culmine e, supponendo che alla fine l'oggetto raggiunga l'altezza finale "$h_f$", trovare il tempo finale "$t_f$". Supponiamo di avere i seguenti dati:
 				\begin{align*}
 					&h_0 = 100m&&t_0=0s&&v_0=5m/s&&a=-9,8m/s^2\\
@@ -115,3 +113,27 @@
 				Includiamo delle immagini complementari:
 				\framedImg{20}{L02-img001}
 				\framedImg{50}{L02-img002}
+
+				Procediamo per punti:
+				\begin{enumerate}
+					\item Vogliamo trovare il tempo di culmine ($t_c$), quindi poniamo $v(t)=0$ e troviamo la $t$ che rende vera l'equazione:
+					\begin{align*}
+						v(t)=0\ =>\ v_0+a(t-0)\ =>\ t_c=-\frac{v_0}{a} = -\frac{5m/s}{-9,8m/s^2}\approx0,51s
+					\end{align*}
+					\item Vogliamo calcolare l'altezza di culmine ($h_c$), per farlo usiamo la formula dello spazio:
+					\begin{align*}
+						&h_c = S(t_c)=S_0+v_0(t_c-0)+\frac{1}{2}a(t_c-0)^2=\\
+						&=100m + 5m/s * (0,51s)+1/2(-9,8m/s^2)*(0,51s)^2\approx 101,28m
+					\end{align*}
+					\item Vogliamo calcolare il tempo "finale" ($t_f$), per farlo usiamo sempre la formula dello spazio:
+					\begin{align*}
+						&S(t_f)= h_f = 0\ =>\ \\
+						&=>\ S_0+v_0(t_f-0)+\frac{1}{2}a(t_f-0)^2=0
+					\end{align*}
+					A questo punto abbiamo una funzione di secondo grado con $x = t_f$, quindi usiamo la formula solita:
+					\begin{align*}
+						&t_{f\ 1/2}=-\frac{v_0}{a}\pm\sqrt{(-\frac{v_0}{a})^2-2\frac{S_0}{a}}\\
+						&t_f = 0,51s + \sqrt{(0,51 s)^2-2*\frac{100m}{-9,8m/s^2}} \approx 5,06s
+					\end{align*}
+					Nota che possiamo subito sostituire il "$\pm$" con un "$+$" dato che la radice sarà sicuramente più grande di quel $0,51$ che la precede, quindi non avrebbe fisicamente senso fare altrimenti (tempo negativo).
+				\end{enumerate}
