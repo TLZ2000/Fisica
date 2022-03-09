@@ -24,12 +24,12 @@
 	\subsection{Diagramma dello spazio}
 		Rappresentiamo lo spostamento nel tempo tramite un "\textit{\textbf{diagramma dello spazio}}":
 		\framedImg{40}{L01-img002}
-		In particolare, in questo diagramma rappresentiamo sull'asse Y lo \textbf{spostamento} (S) (rappresentato come \textbf{valore uni-dimensionale}) e sull'asse X il \textbf{tempo} (t) (anche rappresentato come \textbf{valore uni-dimensionale}). \importante{Nota che il diagrmma NON RAPPRESENTA una posizione, ma lo spostamento in relazione al tempo}.
+		In particolare, in questo diagramma rappresentiamo sull'asse Y lo \textbf{spostamento} (s) (rappresentato come \textbf{valore uni-dimensionale}) e sull'asse X il \textbf{tempo} (t) (anche rappresentato come \textbf{valore uni-dimensionale}). \importante{Nota che il diagrmma NON RAPPRESENTA una posizione, ma lo spostamento in relazione al tempo}.
 
 	\subsection{Caso semplice}
 		Vediamo un semplice caso di utilizzo per capire come usare i diagrammi dello spazio:
 		\framedImg{40}{L01-img003}
-		Possiamo immaginare di avere un oggetto in movimento su una retta tra i punti A e B, come possiamo rappresentare questo movimento nel diagramma? Come prima cosa posizioniamo i "fenomeni" (\definizione{qualcosa che appare evidente all'osservazione}{fenomeno}), ovvero i \textbf{punti A e B}, nota che non è detto che questi punti coincidano con dei "punti particolari" (ad esempio l'origine) nel nostro diagramma. In particolare, a questi punti associamo \textbf{un valore sull'asse del tempo ($t_i$, $t_f$)} ed \textbf{un valore sull'asse dello spazio ($S_i$, $S_f$)}.
+		Possiamo immaginare di avere un oggetto in movimento su una retta tra i punti A e B, come possiamo rappresentare questo movimento nel diagramma? Come prima cosa posizioniamo i "fenomeni" (\definizione{qualcosa che appare evidente all'osservazione}{fenomeno}), ovvero i \textbf{punti A e B}, nota che non è detto che questi punti coincidano con dei "punti particolari" (ad esempio l'origine) nel nostro diagramma. In particolare, a questi punti associamo \textbf{un valore sull'asse del tempo ($t_i$, $t_f$)} ed \textbf{un valore sull'asse dello spazio ($s_i$, $s_f$)}.
 		A questo punto esistono \textbf{infiniti possibili percorsi} tra il punto A ed il punto B, ad esempio:
 		\framedImg{40}{L01-img004}
 		Importante notare che \importante{non tutti questi percorsi, pur avendo senso matematico, hanno senso fisico}! Ad esempio, il percorso in rosso "torna indietro nel tempo"!
@@ -40,11 +40,11 @@
 	\subsection{Velocità}
 		Possiamo immaginare la velocità (\textit{v}) come la "\definizione{variazione dello spazio rapportato al tempo impiegato per percorrerlo}{velocità}", in particolare la velocità è data dalla formula:
 		\begin{align*}
-			v=\frac{S_f - S_i}{t_f - t_i} = \frac{\Delta S}{\Delta t}
+			v=\frac{s_f - s_i}{t_f - t_i} = \frac{\Delta s}{\Delta t}
 		\end{align*}
 		Vediamo un semplice esempio:
 		\begin{align*}
-			S_i = 400m,\ S_f = 700m,\ t_i = 7:30 = 450 min,\ t_f = 7:40 = 460 min
+			s_i = 400m,\ s_f = 700m,\ t_i = 7:30 = 450 min,\ t_f = 7:40 = 460 min
 		\end{align*}
 		\begin{align*}
 			v=\frac{700m - 400m}{460min - 450min}=\frac{300m}{600s}=0,5m/s
@@ -54,11 +54,11 @@
 		\subsubsection{Velocità istantanea}
 			Quella che abbiamo calcolato prima possiamo vederla come "velocità media" di tutto il percorso, la \textbf{velocità istantanea} invece possiamo vederla come la \definizione{velocità in un punto specifico del percorso}{velocità istantanea}. Immagina quindi di fare la formula:
 			\begin{align*}
-				v_{ist}=lim_{\Delta t\rightarrow 0} \frac{\Delta S}{\Delta t} = \frac{\delta S}{\delta t}
+				v_{ist}=lim_{\Delta t\rightarrow 0} \frac{\Delta s}{\Delta t} = \frac{\delta s}{\delta t}
 			\end{align*}
-			Nota che quando si usa la lettera "$\delta$" stiamo ad indicare una \textbf{piccola} (infinitesima) \textbf{variazione}. Ora, se il valore di S viene espresso \textbf{in funzione di t}, quindi abbiamo $S(t)$, e la funzione "$S(t)$" è \textbf{derivabile}, allora la \textbf{velocità istantanea corrisponde alla derivata prima della funzione $S(t)$}, che a sua volta corrisponde a $\frac{dS}{dt}$.
+			Nota che quando si usa la lettera "$\delta$" stiamo ad indicare una \textbf{piccola} (infinitesima) \textbf{variazione}. Ora, se il valore di $s$ viene espresso \textbf{in funzione di t}, quindi abbiamo $s(t)$, e la funzione "$s(t)$" è \textbf{derivabile}, allora la \textbf{velocità istantanea corrisponde alla derivata prima della funzione $s(t)$}, che a sua volta corrisponde a $\frac{ds}{dt}$.
 			\framedImg{40}{L01-img005}
-			Supponendo che il \textbf{moto del nostro punto} venga identificato dalla curva in verde, il rapporto tra la lunghezza dei 2 cateti $C_1C_2$ ($\Delta t$) e $C_2C_3$ ($\Delta S$) rappresenta la \textbf{tangente $\alpha$}, che in questo caso rappresenta la \textbf{velocità media}. Ora, se restringiamo l'intervallo di $t$ in modo che tenda a 0 e calcoliamo il valore della derivata in quel punto otterremo la velocità istantanea.
+			Supponendo che il \textbf{moto del nostro punto} venga identificato dalla curva in verde, il rapporto tra la lunghezza dei 2 cateti $C_1C_2$ ($\Delta t$) e $C_2C_3$ ($\Delta s$) rappresenta la \textbf{tangente $\alpha$}, che in questo caso rappresenta la \textbf{velocità media}. Ora, se restringiamo l'intervallo di $t$ in modo che tenda a 0 e calcoliamo il valore della derivata in quel punto otterremo la velocità istantanea.
 
 		\subsubsection{Accelerazione}
 			Nel paragrafo precedente abbiamo visto che la \textbf{velocità in un punto corrisponde al valore della derivata prima} (della funzione che rappresenta il moto del nostro corpo) \textbf{in quel punto}, per quanto riguarda l'accelerazione abbiamo che \textbf{l'accelerazione corrisponde al rapporto tra la derivata della velocità e la derivata del tempo}, ottenendo quindi la formula $\frac{dv}{dt}$, operativamente dobbiamo fare la \textbf{derivata seconda della funzione che rappresenta il moto del nostro punto}.
@@ -78,12 +78,12 @@
 			\end{align*}
 			Ottenuta questa formula, possiamo passare a calcolare lo \textbf{spazio in funzione del tempo}, ovvero:
 			\begin{align*}
-				&v(t) = \frac{dS}{dt}\ =>\ dS = v*dt\ =>\ \int_A^B dS = \int_A^B v*dt\ =>\ S_B-S_A = \int_A^B [v_0+a(t-t_0)] dt\ =>\ \\
-				&=>\ S_B-S_A = \bigg[v_0*t+a\frac{(t-t_0)^2}{2}\bigg]_A^B\ =>\ S_B-S_A = v_0*t_B+a\frac{(t_B-t_0)^2}{2} - v_0*t_A+a\frac{(t_A-t_0)^2}{2}
+				&v(t) = \frac{ds}{dt}\ =>\ ds = v*dt\ =>\ \int_A^B ds = \int_A^B v*dt\ =>\ s_B-s_A = \int_A^B [v_0+a(t-t_0)] dt\ =>\ \\
+				&=>\ s_B-s_A = \bigg[v_0*t+a\frac{(t-t_0)^2}{2}\bigg]_A^B\ =>\ s_B-s_A = v_0*t_B+a\frac{(t_B-t_0)^2}{2} - v_0*t_A+a\frac{(t_A-t_0)^2}{2}
 			\end{align*}
 			Da questo otteniamo quindi che la velocità in funzione del tempo corrisponde a:
 			\begin{align*}
-				\underline{S(t)=S_0+v_0(t-t_0)+\frac{1}{2}a(t-t_0)^2}
+				\underline{s(t)=s_0+v_0(t-t_0)+\frac{1}{2}a(t-t_0)^2}
 			\end{align*}
 			Terminiamo dicendo che in questo moto \textbf{l'accelerazione è costante}, quindi:
 			\begin{align*}
@@ -93,14 +93,14 @@
 		\subsubsection{Esercizi vari sui moti con formule}
 			Vediamo alcuni esempi:
 			\paragraph{Esempio 1 (moto rettilineo uniforme)}
-				Supponiamo di avere un oggetto che si sposta da un punto A ($t_0, S_0$) ad un punto B ($t_1, S_1$) tramite un \textbf{moto rettilineo uniforme}, abbiamo i seguenti dati:
+				Supponiamo di avere un oggetto che si sposta da un punto A ($t_0, s_0$) ad un punto B ($t_1, s_1$) tramite un \textbf{moto rettilineo uniforme}, abbiamo i seguenti dati:
 				\begin{align*}
-					&t_0 = ?&&S_0=1,5Km&&v=36m/s\\
-					&S_1 = 11,5Km&&t_1=0,3h
+					&t_0 = ?&&s_0=1,5Km&&v=36m/s\\
+					&s_1 = 11,5Km&&t_1=0,3h
 				\end{align*}
 				L'obiettivo è trovare i dati mancanti (ovvero $t_0$). Noi sappiamo che la velocità "v" corrisponde a:
 				\begin{align*}
-					v=\frac{\Delta S}{\Delta t}=\frac{S_1-S_0}{t_1-t_0}=> ... => t_0 = t_1 -\frac{S_1-S_0}{v}
+					v=\frac{\Delta s}{\Delta t}=\frac{s_1-s_0}{t_1-t_0}=> ... => t_0 = t_1 -\frac{s_1-s_0}{v}
 				\end{align*}
 				Sostituendo i valori forniti, otteniamo che $t_0 \approx 802,22s$
 
@@ -122,17 +122,17 @@
 					\end{align*}
 					\item Vogliamo calcolare l'altezza di culmine ($h_c$), per farlo usiamo la formula dello spazio:
 					\begin{align*}
-						&h_c = S(t_c)=S_0+v_0(t_c-0)+\frac{1}{2}a(t_c-0)^2=\\
+						&h_c = s(t_c)=s_0+v_0(t_c-0)+\frac{1}{2}a(t_c-0)^2=\\
 						&=100m + 5m/s * (0,51s)+1/2(-9,8m/s^2)*(0,51s)^2\approx 101,28m
 					\end{align*}
 					\item Vogliamo calcolare il tempo "finale" ($t_f$), per farlo usiamo sempre la formula dello spazio:
 					\begin{align*}
-						&S(t_f)= h_f = 0\ =>\ \\
-						&=>\ S_0+v_0(t_f-0)+\frac{1}{2}a(t_f-0)^2=0
+						&s(t_f)= h_f = 0\ =>\ \\
+						&=>\ s_0+v_0(t_f-0)+\frac{1}{2}a(t_f-0)^2=0
 					\end{align*}
 					A questo punto abbiamo una funzione di secondo grado con $x = t_f$, quindi usiamo la formula solita:
 					\begin{align*}
-						&t_{f\ 1/2}=-\frac{v_0}{a}\pm\sqrt{(-\frac{v_0}{a})^2-2\frac{S_0}{a}}\\
+						&t_{f\ 1/2}=-\frac{v_0}{a}\pm\sqrt{(-\frac{v_0}{a})^2-2\frac{s_0}{a}}\\
 						&t_f = 0,51s + \sqrt{(0,51 s)^2-2*\frac{100m}{-9,8m/s^2}} \approx 5,06s
 					\end{align*}
 					Nota che possiamo subito sostituire il "$\pm$" con un "$+$" dato che la radice sarà sicuramente più grande di quel $0,51$ che la precede, quindi non avrebbe fisicamente senso fare altrimenti (tempo negativo).
@@ -143,4 +143,23 @@
 			\begin{align*}
 				&a(t) = a_0 * sin(\omega t + \varphi)
 			\end{align*}
-			dove "$\omega$" rappresenta la \textbf{pulsazione} e "$\varphi$" la \textbf{fase}.
+			dove "$\omega$" rappresenta la \textbf{pulsazione} e "$\varphi$" la \textbf{fase}. Nota che \textbf{abbiamo già l'accelerazione}, ovvero $a_0*sin(t)$, quindi per calcolare velocità e spazio procediamo per \textbf{integrazioni successive}, con gli estremi di integrazione che corrispondono al \textbf{punto di inizio e di fine} della nostra misurazione.
+			\begin{align*}
+				&v(t)= v_0 +\int_{t_0}^ta(\tau) d\tau = v_0 + \frac{1}{\omega} \int_{t_0}^t \omega a_0 sin(\omega t+\varphi)d\tau=\\
+				&=v_0 + \frac{1}{\omega} \bigg[-cos(\omega t+\varphi)\bigg]_{t_0}^t=\textcolor{Red}{v_0} - \frac{a_0}{\omega} cos(\omega t+\varphi) + \textcolor{Red}{\frac{a_0}{\omega} cos(\omega t_0+\varphi)}=\\
+				&=\textcolor{Red}{V}-\frac{a_0}{\omega} cos(\omega t+\varphi)
+			\end{align*}
+			Nota che il \textcolor{Red}{testo in rosso sopra}, in quanto costante, viene raccolto in \textit{\textcolor{Red}{V}}, passiamo ora a calcolare lo spazio (che corrisponde all'integrazione della velocità):
+			\begin{align*}
+				&s(t)= s_0 +\int_{t_0}^tv(\tau) d\tau =\\
+				&=\textcolor{Red}{s_0} + V(t-t_0) - \frac{a_0}{\omega^2} sin(\omega t+\varphi) + \textcolor{Red}{\frac{a_0}{\omega^2} sin(\omega t_0+\varphi)}=\\
+				&=\textcolor{Red}{S} + V(t-t_0) -\frac{a_0}{\omega^2} sin(\omega t+\varphi)
+			\end{align*}
+
+			In definitiva, le formule che interessano a noi sono:
+			\begin{align*}
+				&a(t)=a\\
+				&v(t)=\textcolor{Red}{V}-\frac{a_0}{\omega} cos(\omega t+\varphi)\\
+				&s(t)=\textcolor{Red}{S} + V(t-t_0) -\frac{a_0}{\omega^2} sin(\omega t+\varphi)\\
+			\end{align*}
+			Ricorda che \textcolor{Red}{le parti in rosso} sono costanti (di solito per noi varranno 0), mentre l'accelerazione ci è stata fornita all'intizio, quindi teniamo quella.
