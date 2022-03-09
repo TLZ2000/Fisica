@@ -158,10 +158,24 @@
 
 			In definitiva, le formule che interessano a noi sono:
 			\begin{align*}
-				&a(t)=a\\
+				&a(t)=a_0 * sin(\omega t + \varphi)\\
 				&v(t)=\textcolor{Red}{V}-\frac{a_0}{\omega} cos(\omega t+\varphi)\\
 				&s(t)=\textcolor{Red}{S} + V(t-t_0) -\frac{a_0}{\omega^2} sin(\omega t+\varphi)\\
 			\end{align*}
-			Ricorda che \textcolor{Red}{le parti in rosso} sono costanti (di solito per noi varranno 0), mentre l'accelerazione ci è stata fornita all'intizio, quindi teniamo quella.
+			Ricorda che \textcolor{Red}{le parti in rosso} sono costanti (di solito per noi varranno 0), mentre l'accelerazione ci è stata fornita all'intizio, quindi teniamo quella. Vediamo un "esempio":
 
-			Ciao master come va
+			\subsubsection{Esempio di moto armonico}
+				Ipotiziamo di avere una situazione del genere: vogliamo misuare l'andamento dell'ombra di un'altalena (che va solo avanti e indietro) sulla superficie.
+				\framedImg{25}{L02-img003}
+				Noi \importante{assumiamo sempre che $\varphi$ (ovvero la fase)$ = 0$} e che \importante{cominciamo da $t_0 = 0$}, quindi le nostre formule diventano:
+				\begin{align*}
+					&a(t)=a_0 * sin(\omega t)\\
+					&v(t)=-\frac{a_0}{\omega} cos(\omega t)\\
+					&s(t)=-\frac{a_0}{\omega^2} sin(\omega t)\\
+				\end{align*}
+				Prima di passare al grafico dobbiamo calcolare il valore della nostra variabile $t$, ora noi sappiamo che $\omega t$, dato che $\varphi = 0$, deve rappresentare una rotazione completa ($2\pi$):
+				\begin{align*}
+					&\omega t = 2\pi\ =>\ t = \frac{2\pi}{\omega} = T
+				\end{align*}
+				Nota che il nostro $T$ rappresenta il \textbf{periodo}. Con queste funzioni/variabili, possiamo passare al calcolo dei grafici temporali:
+				\framedImg{45}{L02-img002}
