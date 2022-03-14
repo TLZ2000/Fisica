@@ -18,3 +18,5 @@
 \contentsline {paragraph}{\numberline {3.5.4.2}Esempio 2 (moto rettilineo uniformemente accellerato)}{7}{paragraph.3.5.4.2}%
 \contentsline {subsection}{\numberline {3.6}Moto armonico}{9}{subsection.3.6}%
 \contentsline {subsubsection}{\numberline {3.6.1}Esempio di moto armonico}{10}{subsubsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.7}I moti piani}{11}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}I vettori}{11}{subsubsection.3.7.1}%
