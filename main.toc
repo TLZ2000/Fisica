@@ -27,4 +27,3 @@
 \contentsline {subsubsection}{\numberline {3.8.1}Sistema di riferimento}{15}{subsubsection.3.8.1}%
 \contentsline {subsubsection}{\numberline {3.8.2}Rappresentare spazio, gittata $\gamma $, altezza massima $h_{max}$ e velocità}{16}{subsubsection.3.8.2}%
 \contentsline {paragraph}{\numberline {3.8.2.1}Riassunto}{17}{paragraph.3.8.2.1}%
-\contentsline {subsubsection}{\numberline {3.8.3}Esempio}{17}{subsubsection.3.8.3}%
