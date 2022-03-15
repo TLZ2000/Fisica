@@ -210,3 +210,116 @@
 				\end{align*}
 				\framedImg{45}{L03-img002}
 				Allo stesso modo possiamo rappresentare velocità ed accelerazione!
+				\begin{align*}
+					\vec{v} = \vec{v}_x + \vec{v}_y = v_x * \hat{x} + v_y * \hat{y} =
+					\vec{a} = \vec{a}_x + \vec{a}_y = a_x * \hat{x} + a_y * \hat{y}
+				\end{align*}
+				Ora, possiamo anche rappresentare un vettore sottoforma di "matrice", in questo modo:
+				\begin{align*}
+					\vec{S} =
+					\begin{bmatrix}
+						S_x\\
+						S_y
+					\end{bmatrix}\\
+				\end{align*}
+				Ovvero lo spostamento, ad esempio, è composto dalla somma dello spostamento sull'asse x $S_x$ e di quello sull'asse y $S_y$
+
+			\subsubsection{Rappresentare velocità ed accelerazione}
+				Partiamo con la velocità: sappiamo che la velocità per il moto unidimensionale è data dalla \textbf{derivata dello spostamento}, per quanto riguarda il moto piano non cambia molto: dobbiamo soltanto \textbf{derivare una somma di 2 componenti!} Ovvero:
+				\begin{align*}
+					\vec{v} = \frac{d\vec{S}}{dt} = \frac{d[S_x*\hat{x} + S_y*\hat{y}]}{dt} = \frac{d S_x}{dt}*\hat{x}+\textcolor{Red}{S_x*\frac{d \hat{x}}{dt}}+\frac{d S_y}{dt}*\hat{y}+\textcolor{Red}{S_y*\frac{d \hat{y}}{dt}}
+				\end{align*}
+				Quelle 2 parti evidenziate in \textcolor{Red}{rosso} sono speciali: rappresentano il possibile movimento degli assi. Per il momento, le considereremo \textbf{sempre nulle} in quanto i \textbf{nostri assi non si muoveranno}! Quindi, in soldoni, otteremmo che la nostra velocità equivale a:
+				\begin{align*}
+					\vec{v} =
+					\begin{bmatrix}
+						v_x\\
+						v_y
+					\end{bmatrix}=
+					\begin{bmatrix}
+						dS_x/dt\\
+						dS_y/dt
+					\end{bmatrix}
+				\end{align*}
+				Nota però che questo ragionamento possiamo farlo \textbf{solo se gli assi restano fermi}, altrimenti dovremmo fare delle considerazioni in più. Allo stesso modo, possiamo fare la stessa cosa per l'accelerazione, ottenendo anche qui:
+				\begin{align*}
+					\vec{a} =
+					\begin{bmatrix}
+						a_x\\
+						a_y
+					\end{bmatrix}=
+					\begin{bmatrix}
+						dv_x/dt\\
+						dv_y/dt
+					\end{bmatrix}
+				\end{align*}
+
+			\subsubsection{Esempio}
+				Vediamo un esempio, dobbiamo calcolare velocità e accelerazione sapendo che:
+				\begin{align*}
+					\vec{S}(t) =
+					\begin{bmatrix}
+						2t\hat{x}\\
+						sin(\pi/4\ t)\hat{y}
+					\end{bmatrix}=
+					\begin{bmatrix}
+						2m/s\\
+						1m * sin(\pi/4\ Hz)
+					\end{bmatrix}
+				\end{align*}
+				Nota che $Hz = s^{-1}$, la prima cosa da fare ora è \textbf{rappresentare qalche punto}, possiamo farlo in una tabella:
+
+				\begin{center}
+					\begin{tabularx}{0.5\textwidth}{
+						| >{\centering\arraybackslash}X
+						| >{\centering\arraybackslash}X
+						| >{\centering\arraybackslash}X | }
+						\hline
+						$t$ & $S_x$ & $S_y$\\
+						\hline
+						\hline
+						$0$ & $0$ & $0$ \\
+						$1$ & $2$ & $\sqrt{2}/2$ \\
+						$2$ & $4$ & $1$ \\
+						$5$ & $10$ & $-\sqrt{2}/2$ \\
+						\hline
+					\end{tabularx}
+				\end{center}
+				Rappresentiamo ora questi punti sul piano cartesiano (aggiungendo anche i vettori che rappresentano i punti), ricorda inoltre che il piano ora \textbf{rappresenta la traiettoria e \underline{NON} più lo spazio/tempo}:
+				\framedImg{85}{L03-img003}
+				Ora \textbf{calcoliamo la velocità}, per farlo ci basta \textbf{derivare per t}:
+				\begin{align*}
+					\vec{v}(t) =
+					\begin{bmatrix}
+						2\hat{x}\\
+						\frac{\pi}{4}cos(\pi/4\ t)\hat{y}
+					\end{bmatrix}
+				\end{align*}
+				Rifacciamo la tabella e rappresentiamo il tutto sul grafico:
+				\framedImg{85}{L03-img004}
+				Terminiamo con l'accelerazione, che corrisponde semplicemente alla \textbf{derivata della velocità}, otterremo quindi:
+				\begin{align*}
+					\vec{a}(t) =
+					\begin{bmatrix}
+						0\\
+						-\big(\frac{\pi}{4}\big)^2sin(\pi/4\ t)\hat{y}
+					\end{bmatrix}
+				\end{align*}
+				Ricapitolando i risultati ottenuti, abbiamo che:
+				\begin{align*}
+					&\vec{S}(t) =
+					\begin{bmatrix}
+						2t\hat{x}\\
+						sin(\pi/4\ t)\hat{y}
+					\end{bmatrix}\\
+					&\vec{v}(t) =
+					\begin{bmatrix}
+						2\hat{x}\\
+						\frac{\pi}{4}cos(\pi/4\ t)\hat{y}
+					\end{bmatrix}\\
+					&\vec{a}(t) =
+					\begin{bmatrix}
+						0\\
+						-\big(\frac{\pi}{4}\big)^2sin(\pi/4\ t)\hat{y}
+					\end{bmatrix}
+				\end{align*}
