@@ -210,3 +210,199 @@
 				\end{align*}
 				\framedImg{45}{L03-img002}
 				Allo stesso modo possiamo rappresentare velocità ed accelerazione!
+				\begin{align*}
+					\vec{v} = \vec{v}_x + \vec{v}_y = v_x * \hat{x} + v_y * \hat{y} =
+					\vec{a} = \vec{a}_x + \vec{a}_y = a_x * \hat{x} + a_y * \hat{y}
+				\end{align*}
+				Ora, possiamo anche rappresentare un vettore sottoforma di "matrice", in questo modo:
+				\begin{align*}
+					\vec{S} =
+					\begin{bmatrix}
+						S_x\\
+						S_y
+					\end{bmatrix}\\
+				\end{align*}
+				Ovvero lo spostamento, ad esempio, è composto dalla somma dello spostamento sull'asse x $S_x$ e di quello sull'asse y $S_y$
+
+			\subsubsection{Rappresentare velocità ed accelerazione}
+				Partiamo con la velocità: sappiamo che la velocità per il moto unidimensionale è data dalla \textbf{derivata dello spostamento}, per quanto riguarda il moto piano non cambia molto: dobbiamo soltanto \textbf{derivare una somma di 2 componenti!} Ovvero:
+				\begin{align*}
+					\vec{v} = \frac{d\vec{S}}{dt} = \frac{d[S_x*\hat{x} + S_y*\hat{y}]}{dt} = \frac{d S_x}{dt}*\hat{x}+\textcolor{Red}{S_x*\frac{d \hat{x}}{dt}}+\frac{d S_y}{dt}*\hat{y}+\textcolor{Red}{S_y*\frac{d \hat{y}}{dt}}
+				\end{align*}
+				Quelle 2 parti evidenziate in \textcolor{Red}{rosso} sono speciali: rappresentano il possibile movimento degli assi. Per il momento, le considereremo \textbf{sempre nulle} in quanto i \textbf{nostri assi non si muoveranno}! Quindi, in soldoni, otteremmo che la nostra velocità equivale a:
+				\begin{align*}
+					\vec{v} =
+					\begin{bmatrix}
+						v_x\\
+						v_y
+					\end{bmatrix}=
+					\begin{bmatrix}
+						dS_x/dt\\
+						dS_y/dt
+					\end{bmatrix}
+				\end{align*}
+				Nota però che questo ragionamento possiamo farlo \textbf{solo se gli assi restano fermi}, altrimenti dovremmo fare delle considerazioni in più. Allo stesso modo, possiamo fare la stessa cosa per l'accelerazione, ottenendo anche qui:
+				\begin{align*}
+					\vec{a} =
+					\begin{bmatrix}
+						a_x\\
+						a_y
+					\end{bmatrix}=
+					\begin{bmatrix}
+						dv_x/dt\\
+						dv_y/dt
+					\end{bmatrix}
+				\end{align*}
+
+			\subsubsection{Esempio}
+				Vediamo un esempio, dobbiamo calcolare velocità e accelerazione sapendo che:
+				\begin{align*}
+					\vec{S}(t) =
+					\begin{bmatrix}
+						2t\hat{x}\\
+						sin(\pi/4\ t)\hat{y}
+					\end{bmatrix}=
+					\begin{bmatrix}
+						2m/s\\
+						1m * sin(\pi/4\ Hz)
+					\end{bmatrix}
+				\end{align*}
+				Nota che $Hz = s^{-1}$, la prima cosa da fare ora è \textbf{rappresentare qalche punto}, possiamo farlo in una tabella:
+
+				\begin{center}
+					\begin{tabularx}{0.5\textwidth}{
+						| >{\centering\arraybackslash}X
+						| >{\centering\arraybackslash}X
+						| >{\centering\arraybackslash}X | }
+						\hline
+						$t$ & $S_x$ & $S_y$\\
+						\hline
+						\hline
+						$0$ & $0$ & $0$ \\
+						$1$ & $2$ & $\sqrt{2}/2$ \\
+						$2$ & $4$ & $1$ \\
+						$5$ & $10$ & $-\sqrt{2}/2$ \\
+						\hline
+					\end{tabularx}
+				\end{center}
+				Rappresentiamo ora questi punti sul piano cartesiano (aggiungendo anche i vettori che rappresentano i punti), ricorda inoltre che il piano ora \textbf{rappresenta la traiettoria e \underline{NON} più lo spazio/tempo}:
+				\framedImg{85}{L03-img003}
+				Ora \textbf{calcoliamo la velocità}, per farlo ci basta \textbf{derivare per t}:
+				\begin{align*}
+					\vec{v}(t) =
+					\begin{bmatrix}
+						2\hat{x}\\
+						\frac{\pi}{4}cos(\pi/4\ t)\hat{y}
+					\end{bmatrix}
+				\end{align*}
+				Rifacciamo la tabella e rappresentiamo il tutto sul grafico:
+				\framedImg{85}{L03-img004}
+				Terminiamo con l'accelerazione, che corrisponde semplicemente alla \textbf{derivata della velocità}, otterremo quindi:
+				\begin{align*}
+					\vec{a}(t) =
+					\begin{bmatrix}
+						0\\
+						-\big(\frac{\pi}{4}\big)^2sin(\pi/4\ t)\hat{y}
+					\end{bmatrix}
+				\end{align*}
+				Ricapitolando i risultati ottenuti, abbiamo che:
+				\begin{align*}
+					&\vec{S}(t) =
+					\begin{bmatrix}
+						2t\hat{x}\\
+						sin(\pi/4\ t)\hat{y}
+					\end{bmatrix}\\
+					&\vec{v}(t) =
+					\begin{bmatrix}
+						2\hat{x}\\
+						\frac{\pi}{4}cos(\pi/4\ t)\hat{y}
+					\end{bmatrix}\\
+					&\vec{a}(t) =
+					\begin{bmatrix}
+						0\\
+						-\big(\frac{\pi}{4}\big)^2sin(\pi/4\ t)\hat{y}
+					\end{bmatrix}
+				\end{align*}
+
+		\subsection{Il moto parabolico}
+			Iniziamo introducendo il sistema di riferimento che andremo ad utilizzare.
+			\subsubsection{Sistema di riferimento}
+				Vediamo subito un grafico:
+				\framedImg{85}{L03-img005}
+				Avremmo quindi un oggetto che parte da \textbf{un punto iniziale}, che per convenzione supponiamo \textbf{(0, 0)}, con una \textbf{certa velocità iniziale $\bm{\vec{v}_0}$} ed un certo \textbf{angolo di rialzo $\bm{\alpha}$}. Inoltre sarà presente una \textbf{certa accelerazione "$\bm{\vec{a} = -g}$" che punterà verso il basso} (suppungo che $-g$ indichi l'accelerazione gravitazionale terrestre). In questa sezione assumiam questa convenzione:
+				\begin{align*}
+					|\vec{v}_0|=v_0
+				\end{align*}
+				Quindi possiamo riscrivere il vettore della velocità  in questo modo:
+				\begin{align*}
+					\vec{v}=
+					\begin{bmatrix}
+						\vec{v}_x\\
+						\vec{v}_z
+					\end{bmatrix}=
+					\begin{bmatrix}
+						v_0*cos(\alpha)\\
+						v_0*sin(\alpha)
+					\end{bmatrix}\\
+				\end{align*}
+
+			\subsubsection{Rappresentare spazio, gittata $\gamma$, altezza massima $h_{max}$ e velocità}
+				Ora, come facciamo a rappresentare i grafici di spazio e velocità? Nota che l'accelerazione non serve, in quanto ci viene fornita in questo caso. Per quanto riguarda lo spazio, possiamo "spezzare" il problema in 2:
+				\begin{itemize}
+					\item spazio percorso in "larghezza" (x): lo trattiamo come un semprece problema di \textbf{moto rettilineo uniforme}, infatti l'accelerazione va solo verso il basso, non avanti o indietro;
+					\item spazio percorso in "altezza" (z): in questo caso lo consideriamo un problema di \textbf{moto uniformemente accelerato}, infatti abbiamo un'accelerazione costante che preme verso il basso.
+				\end{itemize}
+				Quindi otterremo le formule:
+				\begin{align*}
+					x(t) = x_0 + v_{0x}t = x_0 + v_0 cos(\alpha) t = \underline{v_0* cos(\alpha) t}\\
+					z(t) = z_0 +v_{0z}t +\frac{a_z}{2}t^2 = \underline{v_0*sin(\alpha) t - \frac{g}{2} t^2}
+				\end{align*}
+				In definitiva, abbiamo che lo spazio corrisponde al vettore:
+				\begin{align*}
+					\vec{S}=
+					\begin{bmatrix}
+						v_0*cos(\alpha)t\\
+						v_0*sin(\alpha)t-\frac{g}{2}t^2
+					\end{bmatrix}
+				\end{align*}
+				Ora proviamo a mettere insieme le 2 formule in modo da ottenere una funzione da poter rappresentare facilmente sul grafico:
+				\begin{align*}
+					&t = \frac{x}{v_{0x}}\\
+					&z = v_{0z}*t - \frac{g}{2}*t^2 => \textcolor{Red}{\frac{v_{0z}}{v_{0x}}} * x - \textcolor{Orange}{\bigg(\frac{g}{2v_{0x}^2}\bigg)}*x^2 => \textcolor{Red}{A}x - \textcolor{Orange}{B}x^2
+				\end{align*}
+				Abbiamo ottenuto l'\textbf{equazione di una parabola!} In particolare, avremmo queste proporzioni:
+				\framedImg{4}{L03-img006}
+
+				Ora che abbiamo un grafico disegnato, ci risulta particolarmente semplice trovare altra 2 componenti importanti:
+				\begin{itemize}
+					\item \textbf{gittata} $\gamma$: ovvero la massima distanza percorsa in orizzontale. Possiamo ottenerla tramite la formula:
+					\begin{align*}
+						\gamma = \frac{A}{B} = \frac{v_0}{v_{0x}}*\frac{2v_{0x}^2}{g} = \frac{2*v_{0z}*v_{0x}}{g}= \frac{v_0^2}{g}*2*sin(\alpha)*cos(\alpha) = \underline{\frac{v_0^2}{g}*sin(2\alpha)}
+					\end{align*}
+					\item \textbf{altezza massima} $h_{max}$: ovvero l'altezza di culmine della nostra parabola. Guardando il grafico possiamo vedere che corrisponde a:
+					\begin{align*}
+						h_{max} = \frac{A^2}{4B} = \frac{A}{4}*\frac{A}{B} = \frac{v_0z}{4v_{0x}}*\frac{2*v_{0z}*v_{0x}^2}{v_{0x}g} = \frac{v_0z}{4}*\frac{2*v_{0z}}{g} = \frac{2v_{0z}^2}{4g} = \frac{1}{2}*\frac{v_{0z}^2}{g} = \underline{\frac{v_0^2 * sin^2(\alpha)}{2g}}
+					\end{align*}
+				\end{itemize}
+				Terminiamo velocemente con la velocità che, ricordiamo, è la \textbf{derivata dello spazio percorso}:
+				\begin{align*}
+					&v_x(t) = \frac{d(v_0*cos(\alpha)t)}{dt} = v_0 cos(\alpha) = v_{0x}\\
+					&v_z(t) = \frac{d S_z}{dt} = v_0*sin(\alpha)-gt = v_{0z}-gt
+				\end{align*}
+
+				\paragraph{Riassunto}
+					Ricapitolando tutte le formule che abbiamo visto:
+					\begin{align*}
+						&\vec{S}=
+						\begin{bmatrix}
+							v_0*cos(\alpha)t\\
+							v_0*sin(\alpha)t-\frac{g}{2}t^2
+						\end{bmatrix}\\
+						&\gamma = \frac{v_0^2}{g}*sin(2\alpha)\\
+						&h_{max} = \frac{v_0^2 * sin^2(\alpha)}{2g}\\
+						&\vec{v}=
+						\begin{bmatrix}
+							v_{0x}\\
+							v_{0z}-gt
+						\end{bmatrix}\\
+					\end{align*}
