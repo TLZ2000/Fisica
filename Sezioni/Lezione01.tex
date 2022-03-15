@@ -323,3 +323,86 @@
 						-\big(\frac{\pi}{4}\big)^2sin(\pi/4\ t)\hat{y}
 					\end{bmatrix}
 				\end{align*}
+
+		\subsection{Il moto parabolico}
+			Iniziamo introducendo il sistema di riferimento che andremo ad utilizzare.
+			\subsubsection{Sistema di riferimento}
+				Vediamo subito un grafico:
+				\framedImg{85}{L03-img005}
+				Avremmo quindi un oggetto che parte da \textbf{un punto iniziale}, che per convenzione supponiamo \textbf{(0, 0)}, con una \textbf{certa velocità iniziale $\bm{\vec{v}_0}$} ed un certo \textbf{angolo di rialzo $\bm{\alpha}$}. Inoltre sarà presente una \textbf{certa accelerazione "$\bm{\vec{a} = -g}$" che punterà verso il basso} (suppungo che $-g$ indichi l'accelerazione gravitazionale terrestre). In questa sezione assumiam questa convenzione:
+				\begin{align*}
+					|\vec{v}_0|=v_0
+				\end{align*}
+				Quindi possiamo riscrivere il vettore della velocità  in questo modo:
+				\begin{align*}
+					\vec{v}=
+					\begin{bmatrix}
+						\vec{v}_x\\
+						\vec{v}_z
+					\end{bmatrix}=
+					\begin{bmatrix}
+						v_0*cos(\alpha)\\
+						v_0*sin(\alpha)
+					\end{bmatrix}\\
+				\end{align*}
+
+			\subsubsection{Rappresentare spazio, gittata $\gamma$, altezza massima $h_{max}$ e velocità}
+				Ora, come facciamo a rappresentare i grafici di spazio e velocità? Nota che l'accelerazione non serve, in quanto ci viene fornita in questo caso. Per quanto riguarda lo spazio, possiamo "spezzare" il problema in 2:
+				\begin{itemize}
+					\item spazio percorso in "larghezza" (x): lo trattiamo come un semprece problema di \textbf{moto rettilineo uniforme}, infatti l'accelerazione va solo verso il basso, non avanti o indietro;
+					\item spazio percorso in "altezza" (z): in questo caso lo consideriamo un problema di \textbf{moto uniformemente accelerato}, infatti abbiamo un'accelerazione costante che preme verso il basso.
+				\end{itemize}
+				Quindi otterremo le formule:
+				\begin{align*}
+					x(t) = x_0 + v_{0x}t = x_0 + v_0 cos(\alpha) t = \underline{v_0* cos(\alpha) t}\\
+					z(t) = z_0 +v_{0z}t +\frac{a_z}{2}t^2 = \underline{v_0*sin(\alpha) t - \frac{g}{2} t^2}
+				\end{align*}
+				In definitiva, abbiamo che lo spazio corrisponde al vettore:
+				\begin{align*}
+					\vec{S}=
+					\begin{bmatrix}
+						v_0*cos(\alpha)t\\
+						v_0*sin(\alpha)t-\frac{g}{2}t^2
+					\end{bmatrix}
+				\end{align*}
+				Ora proviamo a mettere insieme le 2 formule in modo da ottenere una funzione da poter rappresentare facilmente sul grafico:
+				\begin{align*}
+					&t = \frac{x}{v_{0x}}\\
+					&z = v_{0z}*t - \frac{g}{2}*t^2 => \textcolor{Red}{\frac{v_{0z}}{v_{0x}}} * x - \textcolor{Orange}{\bigg(\frac{g}{2v_{0x}^2}\bigg)}*x^2 => \textcolor{Red}{A}x - \textcolor{Orange}{B}x^2
+				\end{align*}
+				Abbiamo ottenuto l'\textbf{equazione di una parabola!} In particolare, avremmo queste proporzioni:
+				\framedImg{4}{L03-img006}
+
+				Ora che abbiamo un grafico disegnato, ci risulta particolarmente semplice trovare altra 2 componenti importanti:
+				\begin{itemize}
+					\item \textbf{gittata} $\gamma$: ovvero la massima distanza percorsa in orizzontale. Possiamo ottenerla tramite la formula:
+					\begin{align*}
+						\gamma = \frac{A}{B} = \frac{v_0}{v_{0x}}*\frac{2v_{0x}^2}{g} = \frac{2*v_{0z}*v_{0x}}{g}= \frac{v_0^2}{g}*2*sin(\alpha)*cos(\alpha) = \underline{\frac{v_0^2}{g}*sin(2\alpha)}
+					\end{align*}
+					\item \textbf{altezza massima} $h_{max}$: ovvero l'altezza di culmine della nostra parabola. Guardando il grafico possiamo vedere che corrisponde a:
+					\begin{align*}
+						h_{max} = \frac{A^2}{4B} = \frac{A}{4}*\frac{A}{B} = \frac{v_0z}{4v_{0x}}*\frac{2*v_{0z}*v_{0x}^2}{v_{0x}g} = \frac{v_0z}{4}*\frac{2*v_{0z}}{g} = \frac{2v_{0z}^2}{4g} = \frac{1}{2}*\frac{v_{0z}^2}{g} = \underline{\frac{v_0^2 * sin^2(\alpha)}{2g}}
+					\end{align*}
+				\end{itemize}
+				Terminiamo velocemente con la velocità che, ricordiamo, è la \textbf{derivata dello spazio percorso}:
+				\begin{align*}
+					&v_x(t) = \frac{d(v_0*cos(\alpha)t)}{dt} = v_0 cos(\alpha) = v_{0x}\\
+					&v_z(t) = \frac{d S_z}{dt} = v_0*sin(\alpha)-gt = v_{0z}-gt
+				\end{align*}
+
+				\paragraph{Riassunto}
+					Ricapitolando tutte le formule che abbiamo visto:
+					\begin{align*}
+						&\vec{S}=
+						\begin{bmatrix}
+							v_0*cos(\alpha)t\\
+							v_0*sin(\alpha)t-\frac{g}{2}t^2
+						\end{bmatrix}\\
+						&\gamma = \frac{v_0^2}{g}*sin(2\alpha)\\
+						&h_{max} = \frac{v_0^2 * sin^2(\alpha)}{2g}\\
+						&\vec{v}=
+						\begin{bmatrix}
+							v_{0x}\\
+							v_{0z}-gt
+						\end{bmatrix}\\
+					\end{align*}
