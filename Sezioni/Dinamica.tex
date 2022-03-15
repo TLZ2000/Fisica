@@ -1,0 +1,85 @@
+\section{Dinamica}
+  \subsection{Leggi della dinamica}
+    La \textbf{dinamica} si occupa dello studio del moto dei corpi a partire dalle sue cause(\textbf{forze}), ovvero delle circostanze che lo determinano e lo modificano nel \textbf{tempo} e nello \textbf{spazio} del suo sistema di riferimento. \href{https://it.wikipedia.org/wiki/Dinamica}{Wikipedia}
+    Le leggi della dinamica sono 3 e sono le seguenti:
+    \begin{enumerate}
+      \item \underline{\textbf{Legge di Inerzia (I legge)}}: un corpo rimane nel suo stato di quiete finchè non intervengono agenti esterni a modificarne questo stato. Questa legge vale sono in sistemi di riferimento inerziali;\\
+      \item \underline{\textbf{Legge di Newton (II legge)}}:
+      Viene definita la \textbf{quantità di moto} come $\vec{p}=m\vec{v}$, ovvero massa per velocità. Successivamente viene definita la forza ($\vec{F}$) come segue:
+      \begin{align*}
+        \vec{F}=\frac{d\vec{p}}{dt}=\frac{d(m\vec{v})}{dt}=\frac{dm}{dt}\vec{v} + m\frac{d\vec{v}}{dt}
+      \end{align*}
+      dove $m$ è la \textbf{massa inerziale}, ovvero la capacità di un corpo di opporsi alle variazioni del suo stato di moto, questa mette in relazione la velocità alla forza.\\
+      Nel caso in cui la massa non varia, allora la forza può essere definita come $\vec{F}=m\cdot\vec{a}$.\\
+      L'unità di misura della \textbf{forza} è il Newton ($N$) definito come $\frac{kg\cdot m}{s^2}$.\\
+      \item \underline{\textbf{Principio di azione e reazione (III legge)}}: Quando il corpo 1 esercita una forza $\vec{F}$ sul corpo 2, quest'ultimo esercita sul corpo 1 una forza $-\vec{F}$, uguale e opposta.
+      \begin{align*}
+        \vec{F}_{1\rightarrow 2}=-\vec{F}_{2\rightarrow 1}
+      \end{align*}
+    \end{enumerate}
+    Osserviamo che la \textbf{prima legge} potrebbe sembrare un caso particolare della \textbf{seconda legge}, con $\vec{F}=\vec{0}$, ma in realtà non è così, infatti la seconda e la terza legge sono valide solo all'interno di sistemi di riferimento inerziali, che sono definiti dalla prima legge.
+
+  \subsection{Forze impulsive}
+    L'\textbf{impulso} $\vec{P}$ è definito come la variazione di quantità di moto $\Delta\vec{p}$ in un $\Delta t$ piccolo, ovvero:
+    \begin{align*}
+      \vec{P}=\Delta\vec{p}=\int_0^t{\vec{F}dt}
+    \end{align*}
+    E la \textbf{forza impulsiva} come:
+    \begin{align*}
+      \vec{F}_{imp}=\frac{\Delta\vec{p}}{\Delta t}
+    \end{align*}
+
+    \subsubsection{Esempio forze impulsive}
+      Supponiamo di avere un pavimento ed una palla che viene lasciata in aria. Questa palla cadrà verso il pavimento fino a raggiungerlo, rimbalzare su esso e tornare in sù (assumiamo che la velocità con cui torna in sù sia la stessa con cui cade, quindi non agiscono fattori esterni come attriti, ecc.).
+
+      \framedImg{35}{L04-img004}
+
+      Se ho un vettore velocità $\vec{v}$, allora ho che:
+      \begin{align*}
+        &\vec{p_i}=m\vec{v_i}=-m\vec{v}\\
+        &\vec{p_f}=m\vec{v_f}=m\vec{v}\\
+        &\Delta\vec{p}=\vec{p_f}-\vec{p_i}=2m\vec{v}
+      \end{align*}
+
+    \subsubsection{Esercizio su forze impulsive}
+      Supponiamo di avere i seguenti dati e di dover calcolare $\vec{F}_{imp}$ (forza impulsiva):
+      \begin{align*}
+        &m=98g&&v=10.2\frac{m}{s}&&\Delta t=100ms\\
+      \end{align*}
+      Procediamo ora quindi con calcolare $\Delta\vec{p}$ usando la formula appena calcolata sopra e una volta ottenuto il valore calcoliamo la $\vec{F}_{imp}$:
+      \begin{align*}
+        &\Delta\vec{p}=2m\vec{v}=2\cdot 10.2\frac{m}{s}\cdot 0.098kg=0.99\frac{kg\cdot m}{s}\\
+        &\vec{F}_{imp}=\frac{\Delta\vec{p}}{\Delta t}=\frac{0.99\frac{kg\cdot m}{s}}{0.1s}=9.99\frac{kg\cdot m}{s^2}=9.99N
+      \end{align*}
+
+  \subsection{Esercizi sulla dinamica}
+    Supponiamo di avere un'oggetto appeso a due fili, che sono appesi al tetto, alla stessa distanza dall'oggetto e vogliamo trovare $\vec{T_1}$ e $\vec{T_2}$ tensioni dei fili, avendo i seguenti dati:
+    \begin{align*}
+      &m=100g&&\theta=60^{\circ}\\
+    \end{align*}
+
+    \framedImg{60}{L04-img005}
+
+    Notiamo che l'oggetto resta fermo, quindi oltre a $\vec{p}$ (\textbf{forza peso}), su esso agiscono altre forze la cui somma è uguale e opposta a $\vec{p}$. Abbiamo quindi che la \textbf{risultante delle forze} $\vec{R}=\vec{0}$.\\
+    Ora possiamo notare che $|\vec{T_1}|=|\vec{T_2}|=T$ e abbiamo le seguenti forze:
+    \begin{align*}
+      &\vec{p}=-mg\hat{y}\\
+      &\vec{T_1}=T_x\hat{x}+T_y\hat{x}=Tsin\theta \hat{x}+Tcos\theta \hat{y}\\
+      &\vec{T_2}=-T_x\hat{x}+T_y\hat{y}=-Tsin\theta \hat{x}+Tcos\theta \hat{y}
+    \end{align*}
+    Ora ci ricordiamo che $\vec{R}=\vec{0}$ quindi:
+    \begin{align*}
+      &\vec{R}=\vec{0}=\vec{P}+\vec{T_1}+\vec{T_2}=>
+      \begin{cases}
+        &R_x=0\\
+        &R_y=0
+      \end{cases}=>\\
+      &=>\begin{cases}
+        &R_x=0=Tsin\theta-Tsin\theta\\
+        &R_y=0=-mg+Tcos\theta+Tcos\theta=-mg+2Tcos\theta
+      \end{cases}
+    \end{align*}
+    La prima equazione del sistema vale zero, ora dalla seconda ricaviamo $T$:
+    \begin{align*}
+    mg=2Tcos\theta=>T=\frac{mg}{2Tcos\theta}=\frac{0.1kg\cdot 9.8\frac{m}{s^2}}{2\cdot\frac{1}{2}}=0.98N
+    \end{align*}
