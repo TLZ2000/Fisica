@@ -406,3 +406,52 @@
 							v_{0z}-gt
 						\end{bmatrix}\\
 					\end{align*}
+
+			\subsection{Moto circolare uniforme}
+
+				\framedImg{60}{L04-img001}
+
+				Nel moto circolare uniforme la velocità è \textbf{costante}, infatti in tutti i punti la velocità \textbf{non} cambia lunghezza, cambia solo la sua direzione. La velocità in un punto, inoltre, è \textbf{sempre tangente} alla traiettoria in quel punto.
+				Si hanno le seguenti formule:
+				\begin{align*}
+					&\alpha(t)=\alpha_0 + \omega t
+					&&r(t)=R\\
+				\end{align*}
+				dove $R$ è il raggio della circonferenza e $\omega$ è la velocità angolare, definita come $\omega=\frac{2\pi}{T}$ con $T$ periodo.
+				La \textbf{frequenza} è definita come $f = \frac{1}{T}$ e la \textbf{velocità} come:
+				\begin{align*}
+					&v=\frac{2\pi R}{T}=\omega R
+				\end{align*}
+				Osservando la formula qui sopra, possiamo notare che a meno che il raggio $R$ non cambi, la velocità sarà costante, nel caso in cui cambia, invece, cambierà anche la velocità.
+				Ora, ponendo l'origine del piano cartesiano come il centro della circonferenza, calcoliamo lo \textbf{spazio}, la \textbf{velocità} e l'\textbf{accelerazione} in funzione del tempo come segue:
+				\begin{align*}
+					&\vec{s}(t)=
+					\begin{cases}
+						x(t)=Rcos(\alpha(t))\\\\
+						y(t)=Rsin(\alpha(t))\\
+					\end{cases}\\\\
+					&\vec{v}(t)=
+					\begin{cases}
+						v_x(t)=-R\frac{d\alpha}{dt}sin(\alpha(t))=-\omega Rsin(\alpha(t))\\\\
+						v_y(t)=R\frac{d\alpha}{dt}cos(\alpha(t))=\omega Rcos(\alpha(t))\\
+					\end{cases}\\\\
+					&\vec{a}(t)=
+					\begin{cases}
+						a_x(t)=-\omega^2 Rcos(\alpha(t))\\\\
+						a_y(t)=-\omega^2 Rsin(\alpha(t))\\
+					\end{cases}\\
+				\end{align*}
+
+				\framedImg{45}{L04-img002}
+
+				Ora l'accelerazione si divide in due componenti, $\vec{a_t}$ (\textbf{accelerazione tangente}) e $\vec{a_n}$ (\textbf{accelerazione normale o centripeta}). La prima è parallela alla tangente nel punto e modifica il \textbf{modulo della velocità}, mentre la seconda è ortogonale alla tangente nel punto e modifica la \textbf{traiettoria(direzione)}.
+				Dato un qualsiasi \textbf{moto piano}, se prendo una piccola parte di questo, allora può essere immaginato come un arco di circonferenza. Più il tratto è \textbf{grande} e più l'arco di circonferenza sembrerà \textbf{rettilineo}, più il tratto è \textbf{piccolo} e più l'arco di circonferenza sembrerà \textbf{curvo} e avrò corrispondentemente una circonferenza \textbf{grande} e una \textbf{piccola}.
+
+				\framedImg{75}{L04-img003}
+
+				In questo caso avrò quindi che le due componenti dell'accelerazione varranno:
+				\begin{align*}
+					&|\vec{a_n}|=\frac{v^2}{R}\\\\
+					&|\vec{a_t}|=\vec{a}\frac{\vec{v}}{|\vec{v}|}=\vec{a}\hat{v}
+				\end{align*}
+				dove $\hat{v}$ è il \textbf{versore velocità}.
