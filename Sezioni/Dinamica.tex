@@ -4,7 +4,7 @@
         Le leggi della dinamica sono 3 e sono le seguenti:
         \begin{enumerate}
             \item \underline{\textbf{Legge di Inerzia (I legge)}}: un corpo rimane nel suo stato di quiete finchè non intervengono agenti esterni a modificarne questo stato. Questa legge vale sono in sistemi di riferimento inerziali;\\
-            \item \underline{\textbf{Legge di Newton (II legge)}}:
+            \item \underline{\textbf{Legge di Newton (II legge)\label{II_legge_dinamica}}}:
             Viene definita la \textbf{quantità di moto} come $\vec{p}=m\vec{v}$, ovvero massa per velocità. Successivamente viene definita la forza ($\vec{F}$) come segue:
             \begin{align*}
                 \vec{F}=\frac{d\vec{p}}{dt}=\frac{d(m\vec{v})}{dt}=\frac{dm}{dt}\vec{v} + m\frac{d\vec{v}}{dt}
@@ -104,7 +104,74 @@
     \subsection{Forze}
 
         \subsubsection{Forza peso}
+            La \textbf{forza peso} è descritta come segue, dato $\vec{g} = -g\hat{z}$:
+            \begin{align*}
+                \vec{F_p} = - cost\cdot \vec{g}
+            \end{align*}
+            Ora applico la seconda legge della dinamica [pag.\pageref{II_legge_dinamica}] e ottengo:
+            \begin{align*}
+                \vec{F_p} = - cost\cdot \vec{g} = - m_G\cdot \vec{g}
+            \end{align*}
+            dove $m_G$ è la \textbf{massa gravitazionale}.\\\\
+            Ora calcolo le forze esterne ($\vec{F}_{EXT}$):
+            \begin{align*}
+                \vec{F}_{EXT} = m_i\cdot\vec{a}
+            \end{align*}
+            dove $m_i$ è la \textbf{massa inerziale}, e posso assumere che $\vec{a} = \vec{g}$, e quindi di conseguenza, $m_i = m_G$.\\
+            Osserviamo che $m_i$ e $m_G$ sono uguali dal punto di vista quantitativo, ma non dal punto di vista concettuale. Infatti il primo è la capacità del corpo di opporsi al movimento, mentre il secondo è la carica dell'interazione gravitazionale che il corpo ha.
 
+            \paragraph{Esempio sensazione del peso}
+                Supponiamo di avere un'ascensore che ha 100 piani. La sensazione che si ha è di essere più "pesanti" quando l'ascensore parte per salire e più "leggeri" quando si ferma in alto.\\
+                Ora studiamo in particolare alcuni casi interessanti per vedere le differenze che ci sono:
+                \begin{itemize}
+                    \item \underline{\textbf{CASO INTERMEDIO}} (e.g. da piano 25 a piano 75):\\
+                    Supponiamo che l'ascensore sia ben isolata dall'ambiente, quindi che non ci siano vibrazioni, rumori, indicatore del piano, ecc., allora non si ha la percezione se ci si sta muovendo o se si è fermi.
+                    In questo caso abbiamo:
+                    \begin{align*}
+                        &\vec{v}=cost\\
+                        &\vec{a}=\vec{0}\\
+                        &\vec{R}=\vec{0}\\
+                        &|\vec{F_p}|=|\vec{N}|=N_0
+                    \end{align*}
+
+                    \item \underline{\textbf{CASO PARTENZA IN SALITA}}:\\
+                    Se siamo fermi in un piano inferiore al piano 100 e premiamo un piano più alto di quello in cui siamo, quando l'ascensore parte si ha la sensazione di pesare di più.
+                    In questo caso abbiamo:
+                    \begin{align*}
+                        &\vec{a}=a\hat{z}\\
+                        &\vec{g}=-g\hat{z}\\
+                        &\vec{R}\neq\vec{0}\\
+                        &\vec{F_p}+\vec{N}=m\vec{a} => -mg\hat{z}+N\hat{z}=ma\hat{z} => -mg+N=ma => N=ma+mg = N_0 + ma
+                    \end{align*}
+                    con $ma > 0$.
+
+                    \item \underline{\textbf{CASO PARTENZA IN DISCESA}}:\\
+                    Se siamo fermi in un piano superiore al piano 0 e premiamo un piano più basso di quello in cui siamo, quando l'ascensore parte si ha la sensazione di pesare di meno. Questo caso è uguale a quello della \textbf{partenza in salita} solo che c'è una decelerazione.
+                    In questo caso abbiamo:
+                    \begin{align*}
+                        &\vec{a}<0\\
+                        &\vec{F_p}+\vec{N}=m\vec{a} => -mg\hat{z}+N\hat{z}=ma\hat{z} => -mg+N=ma => N=ma+mg = N_0 + ma
+                    \end{align*}
+                    con $ma < 0$.
+
+                    \item \underline{\textbf{CASO PARTICOLARE}}:\\
+                    Nel caso in cui si tagli in cavo dell'ascensore, sarà in caduta libera. Non si percepisce nessun effetto di reazione vincolare da parte del suolo/pavimento dell'ascensore. In caduta libera non si percepisce il peso.
+                    In questo caso abbiamo:
+                    \begin{align*}
+                        &\vec{a}<0\\
+                        &|\vec{a}|=|\vec{g}|\\
+                        &N = N_0 + ma = mg-mg=0
+                    \end{align*}
+                \end{itemize}
+
+
+
+        \subsubsection{Forza gravitazionale}
+            la \textbf{forza gravitazionale} ci dice che c'è un'attrazione con una certa costante di proporzionalità $G$, e l'intensità dell'attrazione è inversamente proporzionale al quadrato della distanza tra le due masse e direttamente proporzionale al prodotto delle due masse, ovvero come descritto nella seguente formula:
+            \begin{align*}
+                \vec{F_G} = \frac{m_g M}{r^2}\hat{r}
+            \end{align*}
+            Assumendo ora che $M=M_E$ e $r=r_E$, ovvero consideriamo massa e raggio della Terra, allora $\vec{F_G}$ è una costante uguale a $\vec{g}$.
 
 
 
