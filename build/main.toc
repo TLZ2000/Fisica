@@ -1,0 +1,40 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}Formulario}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Unità di misura}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Introduzione}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Il metodo sperimentale}{3}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Cinetica dei punti}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Sistema di riferimento}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Diagramma dello spazio}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Caso semplice}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Moto rettilineo uniforme}{5}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Velocità}{5}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Velocità istantanea}{6}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Accelerazione}{6}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Moto rettilineo uniformemente accellerato}{6}{subsubsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.4}Esercizi vari sui moti con formule}{7}{subsubsection.3.5.4}%
+\contentsline {paragraph}{\numberline {3.5.4.1}Esempio 1 (moto rettilineo uniforme)}{7}{paragraph.3.5.4.1}%
+\contentsline {paragraph}{\numberline {3.5.4.2}Esempio 2 (moto rettilineo uniformemente accellerato)}{7}{paragraph.3.5.4.2}%
+\contentsline {subsection}{\numberline {3.6}Moto armonico}{9}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Esempio di moto armonico}{10}{subsubsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.7}I moti piani}{11}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}I vettori}{11}{subsubsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.7.2}Sistema di riferimento}{11}{subsubsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.3}Rappresentare velocità ed accelerazione}{13}{subsubsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.4}Esempio}{13}{subsubsection.3.7.4}%
+\contentsline {subsection}{\numberline {3.8}Il moto parabolico}{15}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}Sistema di riferimento}{15}{subsubsection.3.8.1}%
+\contentsline {subsubsection}{\numberline {3.8.2}Rappresentare spazio, gittata $\gamma $, altezza massima $h_{max}$ e velocità}{16}{subsubsection.3.8.2}%
+\contentsline {paragraph}{\numberline {3.8.2.1}Riassunto}{17}{paragraph.3.8.2.1}%
+\contentsline {subsection}{\numberline {3.9}Moto circolare uniforme}{17}{subsection.3.9}%
+\contentsline {section}{\numberline {4}Dinamica}{19}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Leggi della dinamica}{19}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Forze impulsive}{20}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Esempio forze impulsive}{20}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Esercizio su forze impulsive}{21}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Esercizi sulla dinamica}{21}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Forze fondamentali}{22}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Forze}{23}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Forza peso}{23}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Forza di attrito (radente)}{23}{subsubsection.4.5.2}%
