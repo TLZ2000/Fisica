@@ -102,3 +102,24 @@
 
 
         \subsubsection{Forza di attrito (radente)}
+            Iniziamo col dire che esistono molti tipi diversi di attrito, noi però ci concentriamo sul'\textbf{attrito radente}, ovvero quello che si ottiene con \textbf{2 superfici a contatto}. In genere, l'attrito si comporta in 2 modi diversi, facciamo un esempio con una sedia sul pavimento:
+            \begin{itemize}
+                \item \textbf{attrito statico}: se applichiamo una certa forza $\vec{F}_{ext}$ alla sedia e quella \textbf{resta ferma} abbiamo una forza di \textbf{attrito statico ($\vec{A}_s$) che bilancia} la forza che applichiamo noi. In particolare:
+                \begin{align*}
+                    \begin{rcases*}
+                        \vec{F}_{ext}=F_{ext}*\hat{x}\\
+                        \vec{A}_{s}= -|\vec{A}_s|*\hat{x}=-|F_{ext}|*\hat{x}
+                    \end{rcases*}
+                    \vec{A}_s=-|\vec{F}_{ext}|*\hat{x} \#\#\#NON SICURO SU HAT!!!
+                \end{align*}
+                Da quest'ultimo pezzo possiamo capire che l'attrito, finché resta statico, è una \textbf{uguale ed opposta} alla forza che applichiamo noi sulla sedia, quindi ques'ultima resta ferma!
+                \framedImg{35}{L06-img001}
+                \item \textbf{attrito dinamico}: ad un certo punto, la forza che applichiamo noi sarà tale da \textbf{muovere} la sedia, a questo punto entriamo un una fase di \textbf{attrito dinamico}. Più formalmente, diciamo che la forza impressa raggiunge una \textbf{soglia $\bf{\vec{A}_{s, max}}$} oltre la quale la forza di attrito \textbf{non riesce più a compensare} la forza esterna e quindi la sedia si muove. Questa $\vec{A}_{s, max}$ dipende da diversi fattori, possiamo quantificarla con la formula:
+                \begin{align*}
+                    &\vec{A}_{s, max} = -\mu_s*|\vec{N}|*\hat{F}_{ext}
+                \end{align*}
+                In particolare $\mu_s$ rappresenta il \textbf{coefficiente di attrito statico} (dipende dalle 2 superfici a contatto), $\vec{N}$ è la \textbf{forza vincolate} mentre il segno - è dato dal fatto che \textbf{l'attrito è sempre opposto al moto dell'oggetto} (in questo caso il "moto" è rappresentato dalla forza esterna che applichiamo noi alla sedia).
+            \end{itemize}
+
+            \paragraph{Esempio di calcolo del coefficiente di attrito statico}
+                Vediamo un esempio per il calcolo del coefficiente di attrito statico, supponiamo di avere una sedia con \textbf{massa} $m_s$ e un'\textbf{attrito statico massimo} $A_{s,max}$ calcolato usando una molla con \textbf{allungamento} $\Delta x$ e \textbf{coefficiente elastico} $K$, quanto vale il \textbf{coefficiente di attrito statico}?
