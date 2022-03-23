@@ -4,7 +4,7 @@
         Le leggi della dinamica sono 3 e sono le seguenti:
         \begin{enumerate}
             \item \underline{\textbf{Legge di Inerzia (I legge)}}: un corpo rimane nel suo stato di quiete finchè non intervengono agenti esterni a modificarne questo stato. Questa legge vale sono in sistemi di riferimento inerziali;\\
-            \item \underline{\textbf{Legge di Newton (II legge)}}:
+            \item \underline{\textbf{Legge di Newton (II legge)}}: \label{II_legge_dinamica}
             Viene definita la \textbf{quantità di moto} come $\vec{p}=m\vec{v}$, ovvero massa per velocità. Successivamente viene definita la forza ($\vec{F}$) come segue:
             \begin{align*}
                 \vec{F}=\frac{d\vec{p}}{dt}=\frac{d(m\vec{v})}{dt}=\frac{dm}{dt}\vec{v} + m\frac{d\vec{v}}{dt}
@@ -30,7 +30,7 @@
         \end{align*}
 
         \subsubsection{Esempio forze impulsive}
-            Supponiamo di avere un pavimento ed una palla che viene lasciata in aria. Questa palla cadrà verso il pavimento fino a raggiungerlo, rimbalzare su esso e tornare in sù (assumiamo che la velocità con cui torna in sù sia la stessa con cui cade, quindi non agiscono fattori esterni come attriti, ecc.).
+            Supponiamo di avere un pavimento ed una palla che viene lasciata in aria. Questa palla cadrà verso il pavimento fino a raggiungerlo, rimbalzare su esso e tornare in su (assumiamo che la velocità con cui torna in su sia la stessa con cui cade, quindi non agiscono fattori esterni come attriti, ecc.).
 
             \framedImg{35}{L04-img004}
 
@@ -53,7 +53,7 @@
             \end{align*}
 
     \subsection{Esercizi sulla dinamica}
-        Supponiamo di avere un'oggetto appeso a due fili, che sono appesi al tetto, alla stessa distanza dall'oggetto e vogliamo trovare $\vec{T_1}$ e $\vec{T_2}$ tensioni dei fili, avendo i seguenti dati:
+        Supponiamo di avere un oggetto appeso a due fili, che sono appesi al tetto, alla stessa distanza dall'oggetto e vogliamo trovare $\vec{T_1}$ e $\vec{T_2}$ tensioni dei fili, avendo i seguenti dati:
         \begin{align*}
             &m=100g&&\theta=60^{\circ}\\
         \end{align*}
@@ -64,8 +64,8 @@
         Ora possiamo notare che $|\vec{T_1}|=|\vec{T_2}|=T$ e abbiamo le seguenti forze:
         \begin{align*}
             &\vec{p}=-mg\hat{y}\\
-            &\vec{T_1}=T_x\hat{x}+T_y\hat{x}=Tsin\theta \hat{x}+Tcos\theta \hat{y}\\
-            &\vec{T_2}=-T_x\hat{x}+T_y\hat{y}=-Tsin\theta \hat{x}+Tcos\theta \hat{y}
+            &\vec{T_1}=T_x\hat{x}+T_y\hat{x}=T sin\theta \hat{x}+T cos\theta \hat{y}\\
+            &\vec{T_2}=-T_x\hat{x}+T_y\hat{y}=-T sin\theta \hat{x}+T cos\theta \hat{y}
         \end{align*}
         Ora ci ricordiamo che $\vec{R}=\vec{0}$ quindi:
         \begin{align*}
@@ -76,8 +76,8 @@
             \end{cases}=>\\
             &=>
             \begin{cases}
-                &R_x=0=Tsin\theta-Tsin\theta\\
-                &R_y=0=-mg+Tcos\theta+Tcos\theta=-mg+2Tcos\theta
+                &R_x=0=T sin\theta-T sin\theta\\
+                &R_y=0=-mg+T cos\theta+T cos\theta=-mg+2Tcos\theta
             \end{cases}
             \end{align*}
                 La prima equazione del sistema vale zero, ora dalla seconda ricaviamo $T$:
@@ -112,7 +112,7 @@
                     \end{rcases*}
                     \vec{A}_s=-|\vec{F}_{ext}|*\hat{x} \#\#\#NON SICURO SU HAT!!!
                 \end{align*}
-                Da quest'ultimo pezzo possiamo capire che l'attrito, finché resta statico, è una \textbf{uguale ed opposta} alla forza che applichiamo noi sulla sedia, quindi ques'ultima resta ferma!
+                Da quest'ultimo pezzo possiamo capire che l'attrito, finché resta statico, è una \textbf{uguale ed opposta} alla forza che applichiamo noi sulla sedia, quindi quest'ultima resta ferma!
                 \framedImg{35}{L06-img001}
                 L'attrito statico esiste fino ad un certo punto, identificato con la \textbf{soglia} "$\vec{A}_{s, max}$", che possiamo calcolare con la formula:
                 \begin{align*}
@@ -156,13 +156,73 @@
             Ora posizioniamo sul piano inclinato un qualche oggetto: questo avrà una \textbf{forza peso} con verso che giace sulla retta parallela alla verticale. Possiamo scomporre questa forza come proiezione sugli assi che abbiamo stabilito prima, in particolare $\vec{P}_\parallel$ per l'asse x e $\vec{P}_\bot$ per l'asse y. A questo punto, ora che abbiamo comoda la forza $\vec{P}_\bot$ possiamo anche stabilire la \textbf{forza vincolante} $\vec{N}$ che il piano oppone a questo oggetto (ricorda che la forza vincolante \textbf{può solo essere ortogonale al piano}). Vediamo un grafico:
             \framedImg{80}{L06-img004}
             L'obiettivo ora è calcolare le \textbf{risultanti delle forze} per gli assi x e y (con risultanti intendiamo la somma di tutte le forze "parallele" ad un certo asse), in particolare:
+            \label{Risultanti_piano_inclinato}
             \begin{align*}
-                &\vec{F}_{ext} =
+                &\textcolor{Red}{\vec{F}_{ext} =
                 \begin{cases}
                     \vec{R}_x = \vec{P}_\parallel = m*g*sin(\Theta)\\
                     \vec{R}_y = \vec{P}_\bot + \vec{N} = m*g*cos(\Theta) - N = 0\\
-                \end{cases}
+                \end{cases}}
             \end{align*}
 
         \subsubsection{Esempio}
-            Vediamo ora un esempio: abbiamo un bambino di \textbf{massa} $m$ e uno scivolo di \textbf{lunghezza} $L$ e con \textbf{inclinazione} $\Theta$. Quanto \textbf{tempo} impiega il bambino a scivolare sullo scivolo? Faremo 2 versioni di questo problema, la prima utilizzando un normale \textbf{moto uniformemente accellerato} e la seconda \textbf{introducendo anche l'attrito}
+            Vediamo ora un esempio: abbiamo un bambino di \textbf{massa} $m$ e uno scivolo di \textbf{lunghezza} $L$ e con \textbf{inclinazione} $\Theta$. Quanto \textbf{tempo} impiega il bambino a scivolare sullo scivolo? Faremo 2 versioni di questo problema, la prima utilizzando un normale \textbf{moto uniformemente accelerato} e la seconda \textbf{introducendo anche l'attrito}. Vediamo una rappresentazione grafica del problema:
+            \framedImg{5}{L06-img005}
+
+            \paragraph{Versione senza attrito}
+                Se proviamo a risolvere il problema senza considerare l'attrito, ci troviamo in presenza di un "semplice" \textbf{moto uniformemente accelerato}. Come prima cosa, \textbf{analizziamo le forze in campo} e calcoliamo le forze risultanti parallele agli assi. Iniziamo col dire che quella sull'asse y (che ricordo essere inclinato!) non ci interessa, infatti abbiamo la forza vincolante che bilancia, concentriamoci quindi solo sulla forza sull'asse x. Ricordiamo, per la \textit{seconda legge della dinamica} [pag. \pageref{II_legge_dinamica}]che:
+                \begin{align*}
+                    &\vec{F}_x = m*a_x
+                \end{align*}
+                A questo punto a noi interessa trovare l'accelerazione $a_x$, quindi rigiriamo un po' questa formula ed "\textbf{espandiamo}" la nostra $\vec{F}_x$ utilizzando le formule viste prima [pag. \pageref{Risultanti_piano_inclinato}]:
+                \begin{align*}
+                    &\vec{F}_x = m*a_x => a_x = \frac{\vec{F}_x}{m} = \frac{m * g * sin(\Theta)}{m} = g * sin(\Theta)
+                \end{align*}
+                Ora che abbiamo l'accelerazione, possiamo recuperare le formule viste per il moto uniformemente accelerato [pag. \pageref{Formule_moto_unif_acc}]. In questo caso ci interessa la formula dello \textbf{spazio percorso} (dato che sappiamo che il nostro scivolo è lungo $L$), ovvero:
+                \begin{align*}
+                    &L = s_0+v_0(t-t_0)+\frac{1}{2}*a*(t-t_0)^2
+                \end{align*}
+                A questa formula possiamo fare delle semplificazioni, in particolare togliere il I ($s_0 = 0$) e il II ($v_0 = 0$) termine, ottenendo:
+                \begin{align*}
+                    &L = \frac{1}{2}*a*(t-t_0)^2
+                \end{align*}
+                Che sostituendo l'accelerazione e, per comodità, il tempo diventa:
+                \begin{align*}
+                    &L = \frac{1}{2}*a*(\Delta t)^2
+                \end{align*}
+                A noi interessa calcolare $\Delta t$, quindi ci rigiriamo la formula in questo modo:
+                \begin{align*}
+                    &\Delta t = \sqrt{\frac{2L}{g*sin(\Theta)}}
+                \end{align*}
+                Introduciamo ora un po' di numeri, supponendo:
+                \begin{align*}
+                    &m = 20Kg && \Theta = 30^\circ && L = 4 m && \Delta t = ?
+                \end{align*}
+                Otteniamo il tempo
+                \begin{align*}
+                    &\Delta t = \sqrt{\frac{2L}{g*sin(\Theta)}} = \sqrt{\frac{2*4m}{9,8m/s^2*sin(30^\circ)}}=\sqrt{\frac{8 s^2}{9,8*1/2}} \approx 1,27 s
+                \end{align*}
+
+            \paragraph{Versione con attrito}
+                Se aggiungiamo l'attrito, dobbiamo modificare un po' le nostre formule in modo da considerare l'attrito statico e dinamico:
+                \begin{itemize}
+                    \item \textbf{attrito statico}:
+                    \begin{align*}
+                        \begin{cases}
+                            R_x = m*g*sin(\Theta_{max})-A_{s, max} &=> m*g*sin(\Theta_{max})-\mu_s * N= 0 \\
+                            R_y = m*g*cos(\Theta_{max})-N &=> N = m*g*cos(\Theta_{max}) = 0
+                        \end{cases}
+                    \end{align*}
+                    Da qui otteniamo che
+                    \begin{align*}
+                        &m*g*sin(\Theta_{max})-\mu_s * N= 0 &&=> m*g*sin(\Theta_{max})-\mu_s * m*g*cos(\Theta_{max})= 0\\
+                        & &&=> m*g*[sin(\Theta_{max}) - \mu_s *cos(\Theta_{max})] = 0
+                    \end{align*}
+                    Ora, dato che sappiamo che $m*g$ non è nullo, possiamo dedurre che sia la seconda parte ad annullarsi, quindi:
+                    \begin{align*}
+                        & sin(\Theta_{max}) - \mu_s *cos(\Theta_{max}) = 0 && => \mu_s *cos(\Theta_{max}) = sin(\Theta_{max})\\
+                        & && => \mu_s = \frac{sin(\Theta_{max})}{cos(\Theta_{max})}\\
+                        & && => \textcolor{Red}{\mu_s = tan(\Theta_{max})}
+                    \end{align*}
+                    \item \textbf{attrito dinamico}:
+                \end{itemize}
