@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.9.8)  22 MAR 2022 15:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.9.8)  23 MAR 2022 15:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -518,7 +518,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./Img//LOGO.png, id=164, 401.5pt x 401.5pt>
+<./Img//LOGO.png, id=168, 401.5pt x 401.5pt>
 File: ./Img//LOGO.png Graphic file (type png)
 <use ./Img//LOGO.png>
 Package pdftex.def Info: ./Img//LOGO.png  used on input line 69.
@@ -542,7 +542,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
-<./Img//L01-img001.jpg, id=224, 1793.70125pt x 685.56125pt>
+<./Img//L01-img001.jpg, id=229, 1793.70125pt x 685.56125pt>
 File: ./Img//L01-img001.jpg Graphic file (type jpg)
 <use ./Img//L01-img001.jpg>
 Package pdftex.def Info: ./Img//L01-img001.jpg  used on input line 21.
@@ -552,82 +552,82 @@ Overfull \hbox (12.28452pt too wide) in paragraph at lines 22--23
 []\T1/cmr/m/n/12 Una co-sa im-por-tan-te da no-ta-re è che un nu-me-ro sin-go-lo può rap-pre-sen-ta-re so-lo co-se "\T1/cmr/bx/n/12 mono-dimensionali\T1/cmr/m/n/12 "
  []
 
-<./Img//L01-img002.jpg, id=237, 854.19125pt x 704.6325pt>
+<./Img//L01-img002.jpg, id=242, 854.19125pt x 704.6325pt>
 File: ./Img//L01-img002.jpg Graphic file (type jpg)
 <use ./Img//L01-img002.jpg>
 Package pdftex.def Info: ./Img//L01-img002.jpg  used on input line 26.
 (pdftex.def)             Requested size: 218.40002pt x 180.15736pt.
-<./Img//L01-img003.jpg, id=238, 1017.8025pt x 619.31375pt>
+<./Img//L01-img003.jpg, id=243, 1017.8025pt x 619.31375pt>
 File: ./Img//L01-img003.jpg Graphic file (type jpg)
 <use ./Img//L01-img003.jpg>
 Package pdftex.def Info: ./Img//L01-img003.jpg  used on input line 31.
 (pdftex.def)             Requested size: 218.40002pt x 132.88525pt.
 [4 <./Img//L01-img001.jpg> <./Img//L01-img002.jpg>]
-<./Img//L01-img004.jpg, id=244, 1286.8075pt x 984.67876pt>
+<./Img//L01-img004.jpg, id=249, 1286.8075pt x 984.67876pt>
 File: ./Img//L01-img004.jpg Graphic file (type jpg)
 <use ./Img//L01-img004.jpg>
 Package pdftex.def Info: ./Img//L01-img004.jpg  used on input line 34.
 (pdftex.def)             Requested size: 218.40002pt x 167.12271pt.
  [5 <./Img//L01-img003.jpg> <./Img//L01-img004.jpg>]
-<./Img//L01-img005.jpg, id=251, 987.69pt x 858.20625pt>
+<./Img//L01-img005.jpg, id=256, 987.69pt x 858.20625pt>
 File: ./Img//L01-img005.jpg Graphic file (type jpg)
 <use ./Img//L01-img005.jpg>
 Package pdftex.def Info: ./Img//L01-img005.jpg  used on input line 60.
 (pdftex.def)             Requested size: 218.40002pt x 189.7619pt.
  [6 <./Img//L01-img005.jpg>]
-<./Img//L02-img001.jpg, id=256, 445.665pt x 720.6925pt>
+<./Img//L02-img001.jpg, id=261, 445.665pt x 720.6925pt>
 File: ./Img//L02-img001.jpg Graphic file (type jpg)
 <use ./Img//L02-img001.jpg>
 Package pdftex.def Info: ./Img//L02-img001.jpg  used on input line 114.
 (pdftex.def)             Requested size: 109.20001pt x 176.5877pt.
-<./Img//L02-img002.jpg, id=257, 1011.78pt x 964.60374pt>
+<./Img//L02-img002.jpg, id=262, 1011.78pt x 964.60374pt>
 File: ./Img//L02-img002.jpg Graphic file (type jpg)
 <use ./Img//L02-img002.jpg>
 Package pdftex.def Info: ./Img//L02-img002.jpg  used on input line 115.
 (pdftex.def)             Requested size: 273.0042pt x 260.26987pt.
  [7] [8 <./Img//L02-img001.jpg> <./Img//L02-img002.jpg>]
-<./Img//L02-img003.jpg, id=271, 946.53625pt x 815.045pt>
+<./Img//L02-img003.jpg, id=276, 946.53625pt x 815.045pt>
 File: ./Img//L02-img003.jpg Graphic file (type jpg)
 <use ./Img//L02-img003.jpg>
 Package pdftex.def Info: ./Img//L02-img003.jpg  used on input line 169.
 (pdftex.def)             Requested size: 136.50209pt x 117.53801pt.
  [9]
-<./Img//L02-img004.jpg, id=277, 1121.18875pt x 1004.75375pt>
+<./Img//L02-img004.jpg, id=282, 1121.18875pt x 1004.75375pt>
 File: ./Img//L02-img004.jpg Graphic file (type jpg)
 <use ./Img//L02-img004.jpg>
 Package pdftex.def Info: ./Img//L02-img004.jpg  used on input line 181.
 (pdftex.def)             Requested size: 245.7021pt x 220.18796pt.
  [10 <./Img//L02-img003.jpg> <./Img//L02-img004.jpg>]
-<./Img//L02-img005.jpg, id=282, 1759.57375pt x 969.6225pt>
+<./Img//L02-img005.jpg, id=287, 1759.57375pt x 969.6225pt>
 File: ./Img//L02-img005.jpg Graphic file (type jpg)
 <use ./Img//L02-img005.jpg>
 Package pdftex.def Info: ./Img//L02-img005.jpg  used on input line 198.
 (pdftex.def)             Requested size: 382.20421pt x 210.61008pt.
-<./Img//L03-img001.jpg, id=283, 789.95125pt x 732.7375pt>
+<./Img//L03-img001.jpg, id=288, 789.95125pt x 732.7375pt>
 File: ./Img//L03-img001.jpg Graphic file (type jpg)
 <use ./Img//L03-img001.jpg>
 Package pdftex.def Info: ./Img//L03-img001.jpg  used on input line 204.
 (pdftex.def)             Requested size: 245.7021pt x 227.90656pt.
  [11 <./Img//L02-img005.jpg>]
-<./Img//L03-img002.jpg, id=288, 911.405pt x 714.67pt>
+<./Img//L03-img002.jpg, id=293, 911.405pt x 714.67pt>
 File: ./Img//L03-img002.jpg Graphic file (type jpg)
 <use ./Img//L03-img002.jpg>
 Package pdftex.def Info: ./Img//L03-img002.jpg  used on input line 211.
 (pdftex.def)             Requested size: 245.7021pt x 192.65813pt.
  [12 <./Img//L03-img001.jpg> <./Img//L03-img002.jpg>]
-<./Img//L03-img003.jpg, id=293, 1482.53876pt x 996.72375pt>
+<./Img//L03-img003.jpg, id=298, 1482.53876pt x 996.72375pt>
 File: ./Img//L03-img003.jpg Graphic file (type jpg)
 <use ./Img//L03-img003.jpg>
 Package pdftex.def Info: ./Img//L03-img003.jpg  used on input line 289.
 (pdftex.def)             Requested size: 464.11047pt x 312.02292pt.
  [13]
-<./Img//L03-img004.jpg, id=299, 1680.2775pt x 520.94624pt>
+<./Img//L03-img004.jpg, id=304, 1680.2775pt x 520.94624pt>
 File: ./Img//L03-img004.jpg Graphic file (type jpg)
 <use ./Img//L03-img004.jpg>
 Package pdftex.def Info: ./Img//L03-img004.jpg  used on input line 299.
 (pdftex.def)             Requested size: 464.11047pt x 143.8926pt.
  [14 <./Img//L03-img003.jpg> <./Img//L03-img004.jpg>]
-<./Img//L03-img005.jpg, id=304, 1249.66875pt x 677.53125pt>
+<./Img//L03-img005.jpg, id=309, 1249.66875pt x 677.53125pt>
 File: ./Img//L03-img005.jpg Graphic file (type jpg)
 <use ./Img//L03-img005.jpg>
 Package pdftex.def Info: ./Img//L03-img005.jpg  used on input line 331.
@@ -658,24 +658,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 349.
 
 [15 <./Img//L03-img005.jpg>]
-<./Img//L03-img006.jpg, id=313, 1112.155pt x 704.6325pt>
+<./Img//L03-img006.jpg, id=319, 1112.155pt x 704.6325pt>
 File: ./Img//L03-img006.jpg Graphic file (type jpg)
 <use ./Img//L03-img006.jpg>
 Package pdftex.def Info: ./Img//L03-img006.jpg  used on input line 374.
 (pdftex.def)             Requested size: 218.40002pt x 138.36507pt.
  [16 <./Img//L03-img006.jpg>]
-<./Img//L04-img001.jpg, id=319, 1037.8775pt x 646.415pt>
+<./Img//L04-img001.jpg, id=324, 1037.8775pt x 646.415pt>
 File: ./Img//L04-img001.jpg Graphic file (type jpg)
 <use ./Img//L04-img001.jpg>
 Package pdftex.def Info: ./Img//L04-img001.jpg  used on input line 412.
 (pdftex.def)             Requested size: 327.60837pt x 204.04593pt.
  [17 <./Img//L04-img001.jpg>]
-<./Img//L04-img002.jpg, id=324, 1093.08376pt x 888.31876pt>
+<./Img//L04-img002.jpg, id=329, 1093.08376pt x 888.31876pt>
 File: ./Img//L04-img002.jpg Graphic file (type jpg)
 <use ./Img//L04-img002.jpg>
 Package pdftex.def Info: ./Img//L04-img002.jpg  used on input line 445.
 (pdftex.def)             Requested size: 245.7021pt x 199.67332pt.
-<./Img//L04-img003.jpg, id=325, 1684.2925pt x 905.3825pt>
+<./Img//L04-img003.jpg, id=330, 1684.2925pt x 905.3825pt>
 File: ./Img//L04-img003.jpg Graphic file (type jpg)
 <use ./Img//L04-img003.jpg>
 Package pdftex.def Info: ./Img//L04-img003.jpg  used on input line 450.
@@ -691,13 +691,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--15
  []
 
 [19 <./Img//L04-img003.jpg>]
-<./Img//L04-img004.jpg, id=338, 713.66624pt x 640.3925pt>
+<./Img//L04-img004.jpg, id=343, 713.66624pt x 640.3925pt>
 File: ./Img//L04-img004.jpg Graphic file (type jpg)
 <use ./Img//L04-img004.jpg>
 Package pdftex.def Info: ./Img//L04-img004.jpg  used on input line 35.
 (pdftex.def)             Requested size: 191.10626pt x 171.48163pt.
  [20 <./Img//L04-img004.jpg>]
-<./Img//L04-img005.jpg, id=344, 1055.945pt x 1031.855pt>
+<./Img//L04-img005.jpg, id=349, 1055.945pt x 1031.855pt>
 File: ./Img//L04-img005.jpg Graphic file (type jpg)
 <use ./Img//L04-img005.jpg>
 Package pdftex.def Info: ./Img//L04-img005.jpg  used on input line 61.
@@ -722,24 +722,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--117
 
  []
 
-[23]) [24] (build/main.aux)
+[23] [24]) [25] (build/main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 42D54A8F08FB4DA4F495CCDE44AABAE4;6958.
+(rerunfilecheck)             Checksum: 4AEEE081CA6F65581918A1F79C883290;7099.
  ) 
 Here is how much of TeX's memory you used:
- 13872 strings out of 478599
- 204006 string characters out of 5854087
+ 13875 strings out of 478599
+ 204053 string characters out of 5854087
  549505 words of memory out of 5000000
- 31432 multiletter control sequences out of 15000+600000
+ 31433 multiletter control sequences out of 15000+600000
  423324 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,18n,66p,702b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on build/main.pdf (24 pages, 4913729 bytes).
+Output written on build/main.pdf (25 pages, 4919247 bytes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
- 375 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 500000)
- 431 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 480 PDF objects out of 1000 (max. 8388607)
+ 385 compressed objects within 4 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 439 words of extra memory for PDF output out of 10000 (max. 10000000)
 

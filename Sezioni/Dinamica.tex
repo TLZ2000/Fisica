@@ -173,9 +173,63 @@
             \end{align*}
             Assumendo ora che $M=M_E$ e $r=r_E$, ovvero consideriamo massa e raggio della Terra, allora $\vec{F_G}$ è una costante uguale a $\vec{g}$.
 
-
-
-
+        \subsubsection{Forza elastica}
+            Supponiamo di avere una molla vincolata ad un supporto non movibile e fermo e all'altra estremità della molla attaccata una massa $m$. Assumiamo che non ci siano attriti.\\
+            Quando ci allontaniamo dalla \textbf{lunghezza di riposo}, $l_0$, della molla, quest'ultima si allunga o accorcia tramite una \textbf{sollecitazione esterna}.\\
+            Supponendo ora di avere una forza $\vec{F_{ext}}$ che agisce sulla massa, per far si che la massa rimanga ferma, vorrà dire che sulla massa agisce un'altra forza uguale e opposta esercitata dalla molla chiamata \textbf{forza elastica} $\vec{F_{el}}$.\\
+            Osserviamo che se la molla si allunga, allora $\vec{F_{ext}}$ e $\vec{F_{el}}$ avranno un verso, se invece la molla si accorcia, avranno verso opposto.\\
+            Osserviamo che la forza elastica è sempre opposta a $\Delta\vec{l}=\vec{l}-\vec{l_0}$, quindi se il verso di $\Delta\vec{l}$ è positivo, allora il verso di $\vec{F_{el}}$ è negativo, e viceversa.\\
+            La $\vec{F_{el}}$ e $\Delta\vec{l}$ sono proporzionali, infatti la formula della $\vec{F_{el}}$ è la seguente:
+            \begin{align*}
+                \vec{F_{el}}=-K(\vec{l}-\vec{l_0})=-K\Delta\vec{l}
+            \end{align*}
+            Dove $K$ è detta \textbf{costante elastica} e la sua unità di misura è quindi $\frac{N}{m}$ (Newton/metro).\\
+            Osservando la formula precedente si può facilmente notare che la costante elastica è indipendente dalla massa del corpo, infatti indica solo la durezza della molla.\\
+            Le \textbf{forze di richiamo}, non solo la forza elastica, sono proporzionali allo spostamento, ovvero quando il corpo si allontana dal suo equilibrio viene richiamato verso di esso tramite una forza di richiamo che è sempre direttamente proporzionale allo spostamento, cioè a quanto il corpo si allontana dall'equilibrio.\\
+            Ora consideriamo la massa $m$ e abbiamo:
+            \begin{align*}
+                F=-K\cdot x
+            \end{align*}
+            ovvero la forza è inversamente proporzionale allo spostamento.\\
+            Ora considerando la seconda legge della dinamica [pag.\pageref{II_legge_dinamica}], sostituiamo la definizione di forza e otteniamo:
+            \begin{align*}
+                -Kx=m\frac{d^2x}{{dt}^2}=>\frac{d^2x}{{dt}^2}+\frac{K}{m}x=0
+            \end{align*}
+            Ora definiamo $\omega^2=\frac{K}{m}$ e otteniamo:
+            \begin{align*}
+                \frac{d^2x}{{dt}^2}+\omega^2x=0
+            \end{align*}
+            da cui ci ricaviamo $x(t)$, $v(t)$ e $a(t)$ come segue:
+            \begin{align*}
+                &x(t)=Asin(\omega t + \varphi)\\
+                &v(t)=A\omega cos(\omega t + \varphi)\\
+                &a(t)=-A\omega^2sin(\omega t + \varphi)
+            \end{align*}
+            Per dimostrare come abbiamo ricavato $x(t)$, osserviamo la sua derivata seconda, ovvero $a(t)$, e notiamo che togliendo $-\omega^2$ abbiamo esattamente $x(t)$ quindi sostituendo quella con $x$, otteniamo:
+            \begin{align*}
+                \frac{d^2x}{{dt}^2}=-\omega^2x=>\frac{d^2x}{{dt}^2}+\omega^2x=0
+            \end{align*}
+            Ovvero l'ipotesi iniziale.\\
+            Osserviamo ora quindi che se applico una forza esterna sulla molla e poi la lascio andare, essa si muove in moto armonico intorno al punto di riposo. Questo moto dato che compare $sin$ nella formula sarà periodico, e il periodo è il seguente:
+            \begin{align*}
+                &\omega t+\varphi=\omega (t+T)+\varphi + 2k\pi=>\omega t=\omega t+\omega T+2k\pi\\
+                &=>\omega T=2k\pi=>T=\frac{2k\pi}{\omega}
+            \end{align*}
+            Osserviamo ora che se fisso i valori di $x(t)$ e $v(t)$, riesco a ricavare $\varphi$ e $A$. Quindi se per esempio fisso:
+            \begin{align*}
+                &v(0)=v_M\\
+                &x(0)=0
+            \end{align*}
+            dove $v_M$ è la velocità massima, mi ricavo:
+            \begin{align*}
+                &A\omega cos(\varphi)=v_M\\
+                &Asin(\varphi)=0
+            \end{align*}
+            e da qui mi ricavo:
+            \begin{align*}
+                &A\omega=v_M=>A=\frac{v_M}{\omega}\\
+                &\varphi=0
+            \end{align*}
 
 
         \subsubsection{Forza di attrito (radente)}
