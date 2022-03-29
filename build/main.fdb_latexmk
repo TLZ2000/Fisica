@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1648046017 "main.tex" "build/main.pdf" "main" 1648046018
+["pdflatex"] 1648545218 "main.tex" "build/main.pdf" "main" 1648545219
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -168,16 +168,16 @@
   "Img//L04-img004.jpg" 1647526934 112778 56f7bd6ffb338801ac81d97255e5d2d1 ""
   "Img//L04-img005.jpg" 1647526934 265471 9ab0ee96e7baa74624cecb8bf495a29d ""
   "Img//LOGO.png" 1646831746 22405 c7c97e1f457426285d5c605efb1440b1 ""
-  "Sezioni/Dinamica.tex" 1648046012 16996 3532785f58e8fd49d4b74ab963bc9e1c ""
-  "Sezioni/Lezione01.tex" 1647944099 27015 719785a2c28eb0f541a43619ecb40974 ""
+  "Sezioni/Dinamica.tex" 1648545214 17173 8c0cc7e8772a0e8592ce4a0154eb3e53 ""
+  "Sezioni/Lezione01.tex" 1648544897 27015 719785a2c28eb0f541a43619ecb40974 ""
   "Sezioni/Roba.tex" 1646831746 301 c75da0db7d53bcd2c9ab30721cd9c797 ""
-  "build/main.aux" 1648046018 6563 171d8bb943ec506079778784c7632ec1 "pdflatex"
-  "build/main.out" 1648046018 7099 4aeee081ca6f65581918a1f79c883290 "pdflatex"
-  "build/main.toc" 1648046018 3823 201a0b89c574eadc344a085523dec706 "pdflatex"
-  "main.tex" 1647944099 1841 5ff6aed96ae294c4bb43cec2ef065f41 ""
+  "build/main.aux" 1648545219 6563 0e7bb5143905072d348190406d7b3d1d "pdflatex"
+  "build/main.out" 1648545219 7099 4aeee081ca6f65581918a1f79c883290 "pdflatex"
+  "build/main.toc" 1648545219 3823 a9621a714f38625d361aba35128f78bd "pdflatex"
+  "main.tex" 1648544909 1841 5ff6aed96ae294c4bb43cec2ef065f41 ""
   (generated)
+  "build/main.out"
+  "build/main.pdf"
+  "build/main.log"
   "build/main.toc"
   "build/main.aux"
-  "build/main.pdf"
-  "build/main.out"
-  "build/main.log"
