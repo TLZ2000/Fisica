@@ -4,7 +4,7 @@
         Le leggi della dinamica sono 3 e sono le seguenti:
         \begin{enumerate}
             \item \underline{\textbf{Legge di Inerzia (I legge)}}: un corpo rimane nel suo stato di quiete finchè non intervengono agenti esterni a modificarne questo stato. Questa legge vale sono in sistemi di riferimento inerziali;\\
-            \item \underline{\textbf{Legge di Newton (II legge)}}:
+            \item \underline{\textbf{Legge di Newton (II legge)\label{II_legge_dinamica}}}:
             Viene definita la \textbf{quantità di moto} come $\vec{p}=m\vec{v}$, ovvero massa per velocità. Successivamente viene definita la forza ($\vec{F}$) come segue:
             \begin{align*}
                 \vec{F}=\frac{d\vec{p}}{dt}=\frac{d(m\vec{v})}{dt}=\frac{dm}{dt}\vec{v} + m\frac{d\vec{v}}{dt}
@@ -86,19 +86,155 @@
         \end{align*}
 
     \subsection{Forze fondamentali}
+        Le forze fondamentali sono le seguenti (scritte in ordine di intensità, dalla più debole alla più intensa):
+        \begin{itemize}
+            \item \underline{\textbf{Forza gravitazionale}}: descrive l'interazione tra le masse gravitazionali. È una forza onnipresente, non esiste quindi nessuna componente di materia che ha massa, che non la risente;
+            \item \underline{\textbf{Forza debole}}: è la forza responsabile dell'interazione per cui i nuclei cambiano di natura (e.g. decadimento dei nuclei);
+            \item \underline{\textbf{Forza elettromagnetica}}: deriva dall'unificazione di forza elettrica e forza magnetica. È la forza responsabile della trazione della ripulsione di cariche ed è alla base delle forze che aggregano la materia;
+            \item \underline{\textbf{Forza forte/nucleare}}: è la forza responsabile della stabilità dei nuclei. Inizialmente si è definita come \textbf{forza nucleare}, ovvero che descrive un'interazione nucleare, tra protoni e neutroni, tra neutroni e neutroni e tra protoni e protoni. Poi è stato scoperto che i protoni e i neutroni non sono particelle fondamentali ma sono fatti di quark, e l'interazione è sentita dai quark, quindi è stata definita \textbf{forza forte}.
+            \\
+        \end{itemize}
 
-
-
-
+        La forza elettromagnetica e la forza debole unificate formano la \textbf{forza elettrodebole}.
+        Osserviamo che il quadro precedente, ovvero l'ordine di intensità, è \textbf{attuale}, era diverso nel passato e lo sarà anche nel futuro.\\\\
+        Quando due corpi/sistemi fisici interagiscono tra loro per una delle forze fondamentali, lo fanno perchè hanno una sensibilità a quel tipo di forza, che è detta \textbf{carica} ed è rappresentata dalla lettera $q$. Per la forza gravitazionale per esempio, un corpo/sistema fisico subisce una trazione gravitazionale se ha una \textbf{massa} (\textbf{carica gravitazionale}, $q_G$), ovvero la misura dell'inclinazione del corpo ad interagire con questa gravitazione. Per la forza elettromagnetica è uguale, se due oggetti sono neutri, non c'è trazione ne repulsione. E la stessa cosa vale per forza debole e forza forte.\\\\
+        Quella che chiamiamo carica in senso comune, in realtà è la \textbf{carica elettrica} ($q_E$).
 
 
     \subsection{Forze}
 
+        \subsubsection{Forza peso}
+            La \textbf{forza peso} è descritta come segue, dato $\vec{g} = -g\hat{z}$:
+            \begin{align*}
+                \vec{F_p} = - cost\cdot \vec{g}
+            \end{align*}
+            Ora applico la seconda legge della dinamica [pag.\pageref{II_legge_dinamica}] e ottengo:
+            \begin{align*}
+                \vec{F_p} = - cost\cdot \vec{g} = - m_G\cdot \vec{g}
+            \end{align*}
+            dove $m_G$ è la \textbf{massa gravitazionale}.\\\\
+            Ora calcolo le forze esterne ($\vec{F}_{EXT}$):
+            \begin{align*}
+                \vec{F}_{EXT} = m_i\cdot\vec{a}
+            \end{align*}
+            dove $m_i$ è la \textbf{massa inerziale}, e posso assumere che $\vec{a} = \vec{g}$, e quindi di conseguenza, $m_i = m_G$.\\
+            Osserviamo che $m_i$ e $m_G$ sono uguali dal punto di vista quantitativo, ma non dal punto di vista concettuale. Infatti il primo è la capacità del corpo di opporsi al movimento, mentre il secondo è la carica dell'interazione gravitazionale che il corpo ha.
+
+            \paragraph{Esempio sensazione del peso}
+                Supponiamo di avere un'ascensore che ha 100 piani. La sensazione che si ha è di essere più "pesanti" quando l'ascensore parte per salire e più "leggeri" quando si ferma in alto.\\
+                Ora studiamo in particolare alcuni casi interessanti per vedere le differenze che ci sono:
+                \begin{itemize}
+                    \item \underline{\textbf{CASO INTERMEDIO}} (e.g. da piano 25 a piano 75):\\
+                    Supponiamo che l'ascensore sia ben isolata dall'ambiente, quindi che non ci siano vibrazioni, rumori, indicatore del piano, ecc., allora non si ha la percezione se ci si sta muovendo o se si è fermi.
+                    In questo caso abbiamo:
+                    \begin{align*}
+                        &\vec{v}=cost\\
+                        &\vec{a}=\vec{0}\\
+                        &\vec{R}=\vec{0}\\
+                        &|\vec{F_p}|=|\vec{N}|=N_0
+                    \end{align*}
+
+                    \item \underline{\textbf{CASO PARTENZA IN SALITA}}:\\
+                    Se siamo fermi in un piano inferiore al piano 100 e premiamo un piano più alto di quello in cui siamo, quando l'ascensore parte si ha la sensazione di pesare di più.
+                    In questo caso abbiamo:
+                    \begin{align*}
+                        &\vec{a}=a\hat{z}\\
+                        &\vec{g}=-g\hat{z}\\
+                        &\vec{R}\neq\vec{0}\\
+                        &\vec{F_p}+\vec{N}=m\vec{a} => -mg\hat{z}+N\hat{z}=ma\hat{z} => -mg+N=ma => N=ma+mg = N_0 + ma
+                    \end{align*}
+                    con $ma > 0$.
+
+                    \item \underline{\textbf{CASO PARTENZA IN DISCESA}}:\\
+                    Se siamo fermi in un piano superiore al piano 0 e premiamo un piano più basso di quello in cui siamo, quando l'ascensore parte si ha la sensazione di pesare di meno. Questo caso è uguale a quello della \textbf{partenza in salita} solo che c'è una decelerazione.
+                    In questo caso abbiamo:
+                    \begin{align*}
+                        &\vec{a}<0\\
+                        &\vec{F_p}+\vec{N}=m\vec{a} => -mg\hat{z}+N\hat{z}=ma\hat{z} => -mg+N=ma => N=ma+mg = N_0 + ma
+                    \end{align*}
+                    con $ma < 0$.
+
+                    \item \underline{\textbf{CASO PARTICOLARE}}:\\
+                    Nel caso in cui si tagli in cavo dell'ascensore, sarà in caduta libera. Non si percepisce nessun effetto di reazione vincolare da parte del suolo/pavimento dell'ascensore. In caduta libera non si percepisce il peso.
+                    In questo caso abbiamo:
+                    \begin{align*}
+                        &\vec{a}<0\\
+                        &|\vec{a}|=|\vec{g}|\\
+                        &N = N_0 + ma = mg-mg=0
+                    \end{align*}
+                \end{itemize}
 
 
 
+        \subsubsection{Forza gravitazionale}
+            la \textbf{forza gravitazionale} ci dice che c'è un'attrazione con una certa costante di proporzionalità $G$, e l'intensità dell'attrazione è inversamente proporzionale al quadrato della distanza tra le due masse e direttamente proporzionale al prodotto delle due masse, ovvero come descritto nella seguente formula:
+            \begin{align*}
+                \vec{F_G} = \frac{m_g M}{r^2}\hat{r}
+            \end{align*}
+            Assumendo ora che $M=M_E$ e $r=r_E$, ovvero consideriamo massa e raggio della Terra, allora $\vec{F_G}$ è una costante uguale a $\vec{g}$.
 
-
+        \subsubsection{Forza elastica}
+            Supponiamo di avere una molla vincolata ad un supporto non movibile e fermo e all'altra estremità della molla attaccata una massa $m$. Assumiamo che non ci siano attriti.\\
+            Quando ci allontaniamo dalla \textbf{lunghezza di riposo}, $l_0$, della molla, quest'ultima si allunga o accorcia tramite una \textbf{sollecitazione esterna}.\\
+            Supponendo ora di avere una forza $\vec{F_{ext}}$ che agisce sulla massa, per far si che la massa rimanga ferma, vorrà dire che sulla massa agisce un'altra forza uguale e opposta esercitata dalla molla chiamata \textbf{forza elastica} $\vec{F_{el}}$.\\
+            Osserviamo che se la molla si allunga, allora $\vec{F_{ext}}$ e $\vec{F_{el}}$ avranno un verso, se invece la molla si accorcia, avranno verso opposto.\\
+            Osserviamo che la forza elastica è sempre opposta a $\Delta\vec{l}=\vec{l}-\vec{l_0}$, quindi se il verso di $\Delta\vec{l}$ è positivo, allora il verso di $\vec{F_{el}}$ è negativo, e viceversa.\\
+            La $\vec{F_{el}}$ e $\Delta\vec{l}$ sono proporzionali, infatti la formula della $\vec{F_{el}}$ è la seguente:
+            \begin{align*}
+                \vec{F_{el}}=-K(\vec{l}-\vec{l_0})=-K\Delta\vec{l}
+            \end{align*}
+            Dove $K$ è detta \textbf{costante elastica} e la sua unità di misura è quindi $\frac{N}{m}$ (Newton/metro).\\
+            Osservando la formula precedente si può facilmente notare che la costante elastica è indipendente dalla massa del corpo, infatti indica solo la durezza della molla.\\
+            Le \textbf{forze di richiamo}, non solo la forza elastica, sono proporzionali allo spostamento, ovvero quando il corpo si allontana dal suo equilibrio viene richiamato verso di esso tramite una forza di richiamo che è sempre direttamente proporzionale allo spostamento, cioè a quanto il corpo si allontana dall'equilibrio.\\
+            Ora consideriamo la massa $m$ e abbiamo:
+            \begin{align*}
+                F=-K\cdot x
+            \end{align*}
+            ovvero la forza è inversamente proporzionale allo spostamento.\\
+            Ora considerando la seconda legge della dinamica [pag.\pageref{II_legge_dinamica}], sostituiamo la definizione di forza e otteniamo:
+            \begin{align*}
+                -Kx=m\frac{d^2x}{{dt}^2}=>\frac{d^2x}{{dt}^2}+\frac{K}{m}x=0
+            \end{align*}
+            Ora definiamo $\omega^2=\frac{K}{m}$ e otteniamo:
+            \begin{align*}
+                \frac{d^2x}{{dt}^2}+\omega^2x=0
+            \end{align*}
+            da cui ci ricaviamo $x(t)$, $v(t)$ e $a(t)$ come segue:
+            \begin{align*}
+                &x(t)=Asin(\omega t + \varphi)\\
+                &v(t)=A\omega cos(\omega t + \varphi)\\
+                &a(t)=-A\omega^2sin(\omega t + \varphi)
+            \end{align*}
+            Per dimostrare come abbiamo ricavato $x(t)$, osserviamo la sua derivata seconda, ovvero $a(t)$, e notiamo che togliendo $-\omega^2$ abbiamo esattamente $x(t)$ quindi sostituendo quella con $x$, otteniamo:
+            \begin{align*}
+                \frac{d^2x}{{dt}^2}=-\omega^2x=>\frac{d^2x}{{dt}^2}+\omega^2x=0
+            \end{align*}
+            Ovvero l'ipotesi iniziale.\\
+            Osserviamo ora quindi che se applico una forza esterna sulla molla e poi la lascio andare, essa si muove in moto armonico intorno al punto di riposo. Questo moto dato che compare $sin$ nella formula sarà periodico, e il periodo è il seguente:
+            \begin{align*}
+                &\omega t+\varphi=\omega (t+T)+\varphi + 2k\pi=>\omega t=\omega t+\omega T+2k\pi\\
+                &=>\omega T=2k\pi=>T=\frac{2k\pi}{\omega}
+            \end{align*}
+            Osserviamo ora che se fisso i valori di $x(t)$ e $v(t)$, riesco a ricavare $\varphi$ e $A$. Quindi se per esempio fisso:
+            \begin{align*}
+                &v(0)=v_M\\
+                &x(0)=0
+            \end{align*}
+            dove $v_M$ è la velocità massima, mi ricavo:
+            \begin{align*}
+                &A\omega cos(\varphi)=v_M\\
+                &Asin(\varphi)=0
+            \end{align*}
+            e da qui mi ricavo:
+            \begin{align*}
+                &A\omega=v_M=>A=\frac{v_M}{\omega}\\
+                &\varphi=0
+            \end{align*}
+            e quindi ottengo:
+            \begin{align*}
+                &x(t)=\frac{v_M}{\omega}sin(\omega t)\\
+                &v(t)=v_Mcos(\omega t)
+            \end{align*}
 
 
         \subsubsection{Forza di attrito (radente)}
