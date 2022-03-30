@@ -152,7 +152,7 @@
         \subsubsection{Sistema di riferimento}
             Vediamo subito il sistema di riferimento:
             \framedImg{80}{L06-img003}
-            Come asse x usiamo la \textbf{retta su cui giace il piano inclinato} mentre l'asse y è rappresentato dalla \textbf{normale all'asse x}. Nota inoltre che $\frac{H}{B} = tan(\Theta)$.
+            Come asse x usiamo la \textbf{retta su cui giace il piano inclinato} mentre l'asse y è rappresentato dalla \textbf{normale all'asse x}. Nota inoltre che $\frac{H}{B} = tan(\theta)$.
             Ora posizioniamo sul piano inclinato un qualche oggetto: questo avrà una \textbf{forza peso} con verso che giace sulla retta parallela alla verticale. Possiamo scomporre questa forza come proiezione sugli assi che abbiamo stabilito prima, in particolare $\vec{P}_\parallel$ per l'asse x e $\vec{P}_\bot$ per l'asse y. A questo punto, ora che abbiamo comoda la forza $\vec{P}_\bot$ possiamo anche stabilire la \textbf{forza vincolante} $\vec{N}$ che il piano oppone a questo oggetto (ricorda che la forza vincolante \textbf{può solo essere ortogonale al piano}). Vediamo un grafico:
             \framedImg{80}{L06-img004}
             L'obiettivo ora è calcolare le \textbf{risultanti delle forze} per gli assi x e y (con risultanti intendiamo la somma di tutte le forze "parallele" ad un certo asse), in particolare:
@@ -160,13 +160,13 @@
             \begin{align*}
                 &\textcolor{Red}{\vec{F}_{ext} =
                 \begin{cases}
-                    \vec{R}_x = \vec{P}_\parallel = m*g*sin(\Theta)\\
-                    \vec{R}_y = \vec{P}_\bot + \vec{N} = m*g*cos(\Theta) - N = 0\\
+                    \vec{R}_x = \vec{P}_\parallel = m*g*sin(\theta)\\
+                    \vec{R}_y = \vec{P}_\bot + \vec{N} = m*g*cos(\theta) - N = 0\\
                 \end{cases}}
             \end{align*}
 
         \subsubsection{Esempio}
-            Vediamo ora un esempio: abbiamo un bambino di \textbf{massa} $m$ e uno scivolo di \textbf{lunghezza} $L$ e con \textbf{inclinazione} $\Theta$. Quanto \textbf{tempo} impiega il bambino a scivolare sullo scivolo? Faremo 2 versioni di questo problema, la prima utilizzando un normale \textbf{moto uniformemente accelerato} e la seconda \textbf{introducendo anche l'attrito}. Vediamo una rappresentazione grafica del problema:
+            Vediamo ora un esempio: abbiamo un bambino di \textbf{massa} $m$ e uno scivolo di \textbf{lunghezza} $L$ e con \textbf{inclinazione} $\theta$. Quanto \textbf{tempo} impiega il bambino a scivolare sullo scivolo? Faremo 2 versioni di questo problema, la prima utilizzando un normale \textbf{moto uniformemente accelerato} e la seconda \textbf{introducendo anche l'attrito}. Vediamo una rappresentazione grafica del problema:
             \framedImg{5}{L06-img005}
 
             \paragraph{Versione senza attrito}
@@ -176,7 +176,7 @@
                 \end{align*}
                 A questo punto a noi interessa trovare l'accelerazione $a_x$, quindi rigiriamo un po' questa formula ed "\textbf{espandiamo}" la nostra $\vec{F}_x$ utilizzando le formule viste prima [pag. \pageref{Risultanti_piano_inclinato}]:
                 \begin{align*}
-                    &\vec{F}_x = m*a_x => a_x = \frac{\vec{F}_x}{m} = \frac{m * g * sin(\Theta)}{m} = g * sin(\Theta)
+                    &\vec{F}_x = m*a_x => a_x = \frac{\vec{F}_x}{m} = \frac{m * g * sin(\theta)}{m} = g * sin(\theta)
                 \end{align*}
                 Ora che abbiamo l'accelerazione, possiamo recuperare le formule viste per il moto uniformemente accelerato [pag. \pageref{Formule_moto_unif_acc}]. In questo caso ci interessa la formula dello \textbf{spazio percorso} (dato che sappiamo che il nostro scivolo è lungo $L$), ovvero:
                 \begin{align*}
@@ -192,15 +192,16 @@
                 \end{align*}
                 A noi interessa calcolare $\Delta t$, quindi ci rigiriamo la formula in questo modo:
                 \begin{align*}
-                    &\Delta t = \sqrt{\frac{2L}{g*sin(\Theta)}}
+                    &\Delta t = \sqrt{\frac{2L}{g*sin(\theta)}}
                 \end{align*}
                 Introduciamo ora un po' di numeri, supponendo:
+                \label{EsercizioConAttrito}
                 \begin{align*}
-                    &m = 20Kg && \Theta = 30^\circ && L = 4 m && \Delta t = ?
+                    &m = 20Kg && \theta = 30^\circ && L = 4 m && \Delta t = ?
                 \end{align*}
                 Otteniamo il tempo
                 \begin{align*}
-                    &\Delta t = \sqrt{\frac{2L}{g*sin(\Theta)}} = \sqrt{\frac{2*4m}{9,8m/s^2*sin(30^\circ)}}=\sqrt{\frac{8 s^2}{9,8*1/2}} \approx 1,27 s
+                    &\Delta t = \sqrt{\frac{2L}{g*sin(\theta)}} = \sqrt{\frac{2*4m}{9,8m/s^2*sin(30^\circ)}}=\sqrt{\frac{8 s^2}{9,8*1/2}} \approx 1,27 s
                 \end{align*}
 
             \paragraph{Versione con attrito}
@@ -209,20 +210,54 @@
                     \item \textbf{attrito statico}:
                     \begin{align*}
                         \begin{cases}
-                            R_x = m*g*sin(\Theta_{max})-A_{s, max} &=> m*g*sin(\Theta_{max})-\mu_s * N= 0 \\
-                            R_y = m*g*cos(\Theta_{max})-N &=> N = m*g*cos(\Theta_{max}) = 0
+                            R_x = m*g*sin(\theta_{max})-A_{s, max} &=> m*g*sin(\theta_{max})-\mu_s * N= 0 \\
+                            R_y = m*g*cos(\theta_{max})-N &=> N = m*g*cos(\theta_{max}) = 0
                         \end{cases}
                     \end{align*}
                     Da qui otteniamo che
                     \begin{align*}
-                        &m*g*sin(\Theta_{max})-\mu_s * N= 0 &&=> m*g*sin(\Theta_{max})-\mu_s * m*g*cos(\Theta_{max})= 0\\
-                        & &&=> m*g*[sin(\Theta_{max}) - \mu_s *cos(\Theta_{max})] = 0
+                        &m*g*sin(\theta_{max})-\mu_s * N= 0 &&=> m*g*sin(\theta_{max})-\mu_s * m*g*cos(\theta_{max})= 0\\
+                        & &&=> m*g*[sin(\theta_{max}) - \mu_s *cos(\theta_{max})] = 0
                     \end{align*}
                     Ora, dato che sappiamo che $m*g$ non è nullo, possiamo dedurre che sia la seconda parte ad annullarsi, quindi:
                     \begin{align*}
-                        & sin(\Theta_{max}) - \mu_s *cos(\Theta_{max}) = 0 && => \mu_s *cos(\Theta_{max}) = sin(\Theta_{max})\\
-                        & && => \mu_s = \frac{sin(\Theta_{max})}{cos(\Theta_{max})}\\
-                        & && => \textcolor{Red}{\mu_s = tan(\Theta_{max})}
+                        & sin(\theta_{max}) - \mu_s *cos(\theta_{max}) = 0 && => \mu_s *cos(\theta_{max}) = sin(\theta_{max})\\
+                        & && => \mu_s = \frac{sin(\theta_{max})}{cos(\theta_{max})}\\
+                        & && => \textcolor{Red}{\mu_s = tan(\theta_{max})}
                     \end{align*}
-                    \item \textbf{attrito dinamico}:
+                    Nota che con "$\theta_{max}$" indica l'angolo massimo oltre al quale il nostro oggetto sul piano inclinato inizia a muoversi, superando la soglia di attrito statico, senza l'applicazione di forze esterne;
+                    \item \textbf{attrito dinamico}: in questo caso, la componente che ci interessa trovare è l'accelerazione sull'asse x ($a_x$). Partiamo quindi da quello che conosciamo e cerchiamo di rigirarlo un po' per ottenere l'accelerazione:
+                    \begin{align*}
+                        \begin{cases}
+                            R_x = m*g*sin(\theta)-A_{d} &=> m*g*sin(\theta)-\mu_d * N= m*a_x \\
+                            R_y = m*g*cos(\theta)-N = 0 &=> N = m*g*cos(\theta)
+                        \end{cases}
+                    \end{align*}
+                    Da qui otteniamo che:
+                    \begin{align*}
+                        &m*g*sin(\theta)-\mu_d*m*g*cos(\theta) = m*a_x&&=>g*sin(\theta)-\mu_d*g*cos(\theta) = a_x\\
+                        & && => \textcolor{Red}{a_x = g*(sin(\theta)-\mu_d*cos(\theta))}
+                    \end{align*}
                 \end{itemize}
+
+        \subsubsection{Esempio di calcolo del coefficiente di attrito dinamico}
+            Supponiamo di avere lo stesso identico esercizio di prima, però ora \textbf{entra in gioco anche l'attrito}. Supponendo che l'oggetto impieghi $\Delta t_{att}$ secondi a percorrere tutto il piano, a quanto corrisponde il coefficiente di attrito dinamico?\\
+            Iniziamo con \textbf{l'equazione dello spazio per il moto uniformemente accelerato} e la rigiriamo un po':
+            \begin{align*}
+                &s = s_0 + v_0*\Delta t + \frac{1}{2}*a*(\Delta t)^2 &&=> L = 0 + 0*\Delta t + \frac{1}{2}*a*(\Delta t)^2\\
+                & && => L = \frac{1}{2}*a*(\Delta t)^2\\
+                & && => L = \frac{1}{2}*a*(\Delta t)^2
+            \end{align*}
+            Ora, sappiamo che, in un contesto di moto con attrito dinamico, $\vec{R}_x = \vec{P}_\parallel -\vec{A}_D = m * a_x$, utilizzando i calcoli visti prima otteniamo che l'accelerazione vale:
+            \begin{align*}
+                a = g*(sin(\theta) - \mu_d*cos(\theta))
+            \end{align*}
+            Mettiamo tutti insieme e otteniamo:
+            \begin{align*}
+                L = \frac{1}{2}*g*(sin(\theta) - \mu_d*cos(\theta))*(\Delta t)^2
+            \end{align*}
+            La modifichiamo per ottenere il valore di $\mu_d$:
+            \begin{align*}
+                &L = \frac{1}{2}*g*(sin(\theta) - \mu_d*cos(\theta))*(\Delta t)^2 && \mu_d =\frac{sin(\theta)}{cos(\theta)}-\frac{2L}{g*\Delta t^2*cos(\theta)}
+            \end{align*}
+            Ora ci basta semplicemente inserire i valori (li puoi ritrovare all'esercizio prima, [pag. \pageref{EsercizioConAttrito}]) ed otteniamo il nostro risultato $\mu_d \approx 0,28$.

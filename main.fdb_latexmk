@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1648046345 "main.tex" "main.pdf" "main" 1648046346
+["pdflatex"] 1648648310 "main.tex" "main.pdf" "main" 1648648311
   "/etc/texmf/web2c/texmf.cnf" 1646733841 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbi1200.tfm" 1136768653 3072 ccae1a240ab272417e4399fe942df546 ""
@@ -174,16 +174,16 @@
   "Img//L06-img004.jpg" 1648042904 398638 fe807c12ecb775d9731f97b4a2a8a041 ""
   "Img//L06-img005.jpg" 1648043001 291004 374e713504dd8982e97a6ad2eb95843d ""
   "Img//LOGO.png" 1632386495 22405 c7c97e1f457426285d5c605efb1440b1 ""
-  "Sezioni/Dinamica.tex" 1648046343 16224 97cfcc2e5e8a3ce68def62bc66fb4c35 ""
+  "Sezioni/Dinamica.tex" 1648648277 19036 40b4de1d91e6ccc1d4f3d3a210972443 ""
   "Sezioni/Lezione01.tex" 1648044168 27045 14704ecdb3e4e00fc7af68a46a69779d ""
   "Sezioni/Roba.tex" 1646132039 301 c75da0db7d53bcd2c9ab30721cd9c797 ""
-  "main.aux" 1648046346 7059 0417c796173077229db39902fc83b120 "pdflatex"
-  "main.out" 1648046346 3273 fbf049161456982ed193c940776707ca "pdflatex"
+  "main.aux" 1648648311 7323 7eedd136224922a6e35edac5423e731c "pdflatex"
+  "main.out" 1648648311 3388 0cf9e7b513c50dcf39f8ebb229deb1bc "pdflatex"
   "main.tex" 1648043581 1864 ef1e24b4b588312fa1ac7f0672ad7798 ""
-  "main.toc" 1648046346 4014 69bcdcdd9e697092d1f0a2d291d3b200 "pdflatex"
+  "main.toc" 1648648311 4146 d58db6f920bc5824b97b5126cd05e00c "pdflatex"
   (generated)
   "main.out"
+  "main.toc"
   "main.log"
   "main.aux"
   "main.pdf"
-  "main.toc"
