@@ -401,3 +401,58 @@
             Ora ci basta semplicemente inserire i valori (li puoi ritrovare all'esercizio prima, [pag. \pageref{EsercizioConAttrito}]) ed otteniamo il nostro risultato $\mu_d \approx 0,28$.
 
     \subsection{Pendolo semplice}
+        Introduciamo il pendolo, cominciamo dal sistema di riferimento adottato.
+
+        \subsubsection{Sistema di riferimento sul peso}
+            \framedImg{50}{L07-img001}
+            Nota che questo sistema di riferiemento \textbf{si muove assieme al peso}, in particolare abbiamo che l'asse y che è \textbf{normale alla traiettoria} e l'asse x che è \textbf{tangente alla traiettoria}. Iniziamo analizzando le forze in gioco. In questo caso abbiamo solo la \textbf{forza peso} che può essere scomposta in questo modo:
+            \begin{align*}
+                &\vec{P}=
+                \begin{cases}
+                    \vec{P}_\parallel &= -m*g*sin(\theta)\\
+                    \vec{P}_\bot &= m*g*cos(\theta)
+                \end{cases}
+            \end{align*}
+            Inoltre, dato che consideriamo \textbf{il cavo inestensibile}, abbiamo una \textbf{forza di tensione} ($\vec{T}$) uguale e opposta a $\vec{P}_bot$ che la bilancia. A questo punto possiamo analizzare \textbf{le risultanti}:
+            \begin{align*}
+                &\vec{R}_x =\vec{P}_\parallel= -m*g*sin(\theta)\\
+                &\vec{R}_y =\vec{P}_\bot + \vec{T}= m*g*cos(\theta) - T = 0
+            \end{align*}
+
+        \subsubsection{Sistema di riferimento nella posizione di equilibrio}
+            Ora, cambiamo sistema di riferimento e utilizziamo quello "cartesiano" con centro nella posizione di equilibri del nostro pendolo:
+            \framedImg{50}{L07-img002}
+            Con questo nuovo riferimento, possiamo trovare facilmente la poszione (x, y) del nostro peso:
+            \begin{align*}
+                &x(t) = R * sin(\theta(t))\\
+                &y(t) = R - R*cos(\theta(t))
+            \end{align*}
+            Supponendo che $R$ sia la lunghezza del nostro cavo. Nota anche che le coordinate dipendono dal tempo, infatti \textbf{sarà l'angolo $\theta$ a variare col tempo}. Il problema è \textbf{in che modo}? Ci torneremo in seguito. Questo sistema di riferimento ci permette inoltre di scomporre le nostre 2 forze (peso e tensione) in questo modo:
+            \begin{align*}
+                &\vec{P} =
+                \begin{cases}
+                    \vec{P}_x = 0\\
+                    \vec{P}_y = -m*g
+                \end{cases}
+                &&\vec{T} =
+                \begin{cases}
+                    \vec{T}_x = -\textcolor{Red}{T}sin(\theta) = -\textcolor{Red}{m*g*cos(\theta)}sin(\theta)\\
+                    \vec{T}_y = \textcolor{Red}{T}cos(\theta) =  \textcolor{Red}{m*g*cos(\theta)}*cos(\theta)
+                \end{cases}
+            \end{align*}
+            Nella scomposizione della tensione possiamo usare la formula che abbiamo trovato prima, ovvero "$m*g*cos(\theta) - T = 0$" (prima dobbiamo rigirarla un po'). Con queste "nuove" scomposizioni, possiamo calcolare le forze risultanti sugli assi:
+            \begin{align*}
+                \vec{R}=
+                \begin{cases}
+                    \vec{R}_x = \vec{T}_x = -m*g*sin(\theta)*cos(\theta)\\
+                    \vec{R}_y = \vec{P} + \vec{T}_y = -m*g + m*g*cos^2(\theta) = -m*g*(1-cos^2(\theta)) = -m*g*sin^2(\theta)
+                \end{cases}
+            \end{align*}
+            A questo punto, per la \textbf{II legge della dinamica}, sappiamo per definizione che $R = m*a$, quindi:
+            \begin{align*}
+                \vec{R}=
+                \begin{cases}
+                    \vec{R}_x = m*a_x = -m*g*sin(\theta)*cos(\theta) & => a_x = -g*sin(\theta)*cos(\theta)\\
+                    \vec{R}_y = m*a_y = -m*g*sin^2(\theta) & => a_y = -g*sin^2(\theta)
+                \end{cases}
+            \end{align*}
