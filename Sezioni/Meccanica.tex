@@ -1,2 +1,123 @@
 \section{Meccanica}
     \subsection{Lavoro}
+        Supponiamo che ci sia un corpo che si muove lungo una traiettoria. Ora prendiamo un punto d'origine del sistema di riferimento e descriviamo il movimento del corpo con dei raggi vettore dall'origine. Ora consideriamo un punto iniziale $p_i$ ed uno finale $p_f$ molto vicini tra loro e quindi otteniamo uno spostamento infinitesimale, $d\vec{s}=\vec{r_f} - \vec{r_i}$.\\
+        Sul corpo inoltre agisce una forza $\vec{F}$ che è quella che lo fa spostare. Osserviamo ora che a seconda del valore di questa forza, potrebbe variare la velocità dell'oggetto. Se $d\vec{s}\perp\vec{F}$, allora il corpo non rallenta, quindi se l'angolo è $90_{\circ}$, l'effetto sarà minimo, mentre se l'angolo è $0_{\circ}$ l'effetto sarà massimo e infine se l'angolo è $180_{\circ}$ l'effetto sarà massimo ma in senso opposto.\\
+        In conclusione quindi l'effetto che la forza ha sul corpo è descritta dal coseno ed è definito come \textbf{lavoro infinitesimo}, in formula:
+        \begin{align*}
+            dW=|\vec{F}||d\vec{s}|cos\alpha_{F,ds}
+        \end{align*}
+        Se il lavoro infinitesimo è positivo, allora il corpo accellera, se è negativo invece, il corpo rallenta. L'iterazione quindi tra il corpo e l'agente esterno, ovvero quello che applica la forza, è definita come energia. In questo caso,l'agente esterno perde energia.\\
+        \begin{mdframed}
+            Osserviamo ora che:
+            \begin{align*}
+                |\vec{v}||\vec{w}|cos(\alpha_{v,w})=\vec{v}\cdot\vec{w}
+            \end{align*}
+            dove "$\cdot$" rappresenta il prodotto scalare tra due vettori.
+            Spesso questo viene detto $v_T w$, ovvero la componente di $v$ tangente a $w$, quindi:
+            \begin{align*}
+                |\vec{v}|cos(\alpha_{v,w})=v_T\\
+                |\vec{w}|cos(\alpha_{v,w})=w_T
+            \end{align*}
+        \end{mdframed}
+        Ora usiamo quindi questa osservazione e otteniamo:
+        \begin{align*}
+            dW=\vec{F}\cdot d\vec{s}
+        \end{align*}
+        Osserviamo che l'unità di misura del lavoro è il Joule, $J = 1 Nm$. Una caloria sono, $1cal=4.18J$\\.
+        Ora calcoliamo il \textbf{lavoro medio} come segue:
+        \begin{align*}
+            \overline{W}=\vec{F}\cdot\Delta\vec{s}
+        \end{align*}
+        Osserviamo che il lavoro è una quantità scalare, dato che il prodotto scalare prende due vettori e li trasforma in uno scalare.
+        \begin{mdframed}
+            Facciamo ora un'esempio molto semplice:
+            \begin{align*}
+                |\vec{F}| = 10N
+                |\Delta\vec{s}| = 100m
+            \end{align*}
+            Ora in base all'angolo $\alpha_{F,ds}$ abbiamo dei diversi valori di lavoro:
+            \begin{center}
+                \begin{tabular}{ |c|c| }
+                    \hline
+                    $\alpha_{F,ds}$ & $W$ \\
+                    \hline
+                    $0$ & $1000J$ \\
+                    \hline
+                    $\pi$ & $-1000J$ \\
+                    \hline
+                    $\pi/2$ & $0J$ \\
+                    \hline
+                    $\pi/4$ & $707J$ \\
+                    \hline
+                \end{tabular}
+            \end{center}
+        \end{mdframed}
+        Ora consideriamo tutti gli spostamenti infinitesimi e supponiamo che ogni spostamento infinitesimo abbia un valore di forza diversa (ovviamente la forza è esercitata sempre dallo stesso agente esterno, ma in istanti diversi). Abbiamo quindi per ogni spostamento infinitesimale un lavoro infinitesimale diverso. Rappresentiamo questa cosa come segue:
+        \begin{align*}
+            &d\vec{s_1},d\vec{s_2},d\vec{s_3},...,d\vec{s_n}\\
+            &\vec{F_1},\vec{F_2},\vec{F_3},...,\vec{F_n}\\
+            &dW_1,dW_2,dW_3,...,dW_n
+        \end{align*}
+        Il \textbf{lavoro} quindi sarà la somma di tutti questi lavori infinitesimi:
+        \begin{align*}
+            W_{TOT}=\sum_{i=1}^n dW_i
+        \end{align*}
+        però considerando che la n tende a infinito, $n\rightarrow\infty$, otteniamo:
+        \begin{align*}
+            W_{i\rightarrow f}=\int_i^n dW_i=\int_i^n \vec{F}\cdot d\vec{s}
+        \end{align*}
+        Osserviamo che la $\vec{F}$ si può tirare fuori dall'integrale solo se non varia per nessun spostamento infinitesimale.\\\\
+        Ora consideriamo il lavoro $W>0$, ovvero per un angolo compreso tra $[0,\pi/2]$, ovvero in cui la forza sta aiutando il moto/movimento, in questo caso il lavoro si chiama \textbf{lavoro motore}.\\
+        Se invece il lavoro $W<0$, ovvero per un angolo compreso tra $[\pi/2,\pi]$, ovvero in cui la forza non sta aiutando il moto/movimento, in questo caso il lavoro si chiama \textbf{lavoro resistente}.\\\\
+
+    \subsection{Esempi di lavoro}
+        \subsubsection{Lavoro forza peso}
+            Data l'equazione della forza peso:
+            \begin{align*}
+                \vec{F_p}=-mh\hat{h}
+            \end{align*}
+            abbiamo lavoro infinitesimo:
+            \begin{align*}
+                dW=\vec{F_p}\cdot d\vec{h}=-mh\hat{h}\cdot dh\hat{h}=-mgdh
+            \end{align*}
+            Osserviamo che $\hat{h}\cdot\hat{h}=1$.
+            Ora quindi sommando tutti questi lavori infinitesimi otteniamo il lavoro $W_p$:
+            \begin{align*}
+                W_p=\int_i^f dW=\int_i^f -mgdh=-mg(h_f-h_i)=-mg\Delta h
+            \end{align*}
+            Osserviamo ora che se $\Delta h>0$, ovvero $h_f>h_i$, avremo $W_p<0$, quindi lavoro resistente, mentre se $\Delta h<0$, ovvero $h_f<h_i$, avremo $W_p>0$, quindi lavoro motore.\\
+            Questo era il caso di spostamento verticale, se invece lo spostamento non è verticale il lavoro è comunque lo stesso.\\
+            Osserviamo ora che $\vec{F}$ e $d\vec{s}$ non dipendono dal sistema di riferimento, se però consideriamo la forma $\vec{F_p}=-mg\hat{h}$, questa dipende dal sistema di riferimento dato che c'è $\hat{h}$.\\
+            Osserviamo inoltre che il lavoro della forza peso dipende solo dal punto iniziale e dal punto finale e non dal percorso.
+            \begin{mdframed}
+                Facciamo ora un'esercizio molto semplice:
+                \begin{align*}
+                    &m = 100kg\\
+                    &\Delta h = 1000m\\
+                    &W_p=-9.8\frac{m}{s^2}\cdot 100kg \cdot 1000m =-9.8\cdot 10^5kg\frac{m^2}{s^2}=-9.8\cdot 10^5J=-9.8\cdot 10^2KJ
+                \end{align*}
+            \end{mdframed}
+
+        \subsubsection{Lavoro forza elastica}
+            Data l'equazione della forza elastica:
+            \begin{align*}
+                \vec{F_{el}}=-K\vec{x}
+            \end{align*}
+            abbiamo lavoro:
+            \begin{align*}
+                W_{el}=\int_i^f F_{el}dx=\int_i^f -Kxdx=-\frac{K}{2}({x_f}^2 - {x_i}^2)
+            \end{align*}
+            Osserviamo ora che se ${x_f}^2>{x_i}^2$, avremo $W_{el}<0$, infatti allungo la molla che si oppone, mentre se ${x_f}^2<{x_i}^2$, avremo $W_{el}>0$, infatti accorcio la molla che aiuta.\\
+            Osserviamo inoltre che il lavoro della forza elastica dipende solo dal punto iniziale e dal punto finale e non dal percorso.
+
+        \subsubsection{Lavoro forza attrito}
+            Data l'equazione della forza d'attrito:
+            \begin{align*}
+                \vec{F_{att}}=-\mu_dN=-\mu_dmg
+            \end{align*}
+            abbiamo lavoro:
+            \begin{align*}
+                W_{att}=\int_i^f F_{att}dx=F_{att}\int_i^f dx=-\mu_dmg\int_i^f dx=-\mu_dmgL
+            \end{align*}
+            dove $L$ è la lunghezza dello spostamento ($x_f - x_i$).\\
+            Osserviamo che l'attrito si oppone sempre al movimento, quindi non vale quello che valeva per il lavoro della forza peso e della forza elastica, ovvero che a seconda del punto finale e del punto iniziale il lavoro poteva essere positivo o negativo.
