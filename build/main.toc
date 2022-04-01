@@ -55,3 +55,5 @@
 \contentsline {subsubsection}{\numberline {5.2.1}Lavoro forza peso}{35}{subsubsection.5.2.1}%
 \contentsline {subsubsection}{\numberline {5.2.2}Lavoro forza elastica}{35}{subsubsection.5.2.2}%
 \contentsline {subsubsection}{\numberline {5.2.3}Lavoro forza attrito}{36}{subsubsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.3}Energia cinetica}{36}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Teorema delle forze vive}{36}{subsubsection.5.3.1}%
