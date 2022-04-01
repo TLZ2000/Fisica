@@ -57,3 +57,4 @@
 \contentsline {subsubsection}{\numberline {5.2.3}Lavoro forza attrito}{36}{subsubsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.3}Energia cinetica}{36}{subsection.5.3}%
 \contentsline {subsubsection}{\numberline {5.3.1}Teorema delle forze vive}{36}{subsubsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.4}Potenza}{36}{subsection.5.4}%

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1648819238 "main.tex" "build/main.pdf" "main" 1648819240
+["pdflatex"] 1648819502 "main.tex" "build/main.pdf" "main" 1648819504
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -187,15 +187,15 @@
   "Img//LOGO.png" 1646831746 22405 c7c97e1f457426285d5c605efb1440b1 ""
   "Sezioni/Dinamica.tex" 1648650263 30540 886cec8503be8b9e5cae24aaa722c87c ""
   "Sezioni/Lezione01.tex" 1648648787 27045 14704ecdb3e4e00fc7af68a46a69779d ""
-  "Sezioni/Meccanica.tex" 1648819217 9105 ad48d277e4a536bbf67d624cf9221845 ""
+  "Sezioni/Meccanica.tex" 1648819469 9373 23d19502087bae82e43eb5f60e3b1574 ""
   "Sezioni/Roba.tex" 1646831746 301 c75da0db7d53bcd2c9ab30721cd9c797 ""
-  "build/main.aux" 1648819239 9045 ce2b6cb88d73be876240885e571c80e2 "pdflatex"
-  "build/main.out" 1648819239 9924 0b995bb65aa160d45da2dac7da214ce7 "pdflatex"
-  "build/main.toc" 1648819239 5314 c7eeccdf2b0ab111c0be65bd0ba47ec0 "pdflatex"
+  "build/main.aux" 1648819504 9160 4d7824a6bd518a29e138fbd80a766eb1 "pdflatex"
+  "build/main.out" 1648819504 10017 55d40c37e5bb900d9b3573638cd34ab4 "pdflatex"
+  "build/main.toc" 1648819504 5388 dfac31be19c0c96428bf8b7a0384e520 "pdflatex"
   "main.tex" 1648727879 1908 a2c46500654b62e173a5dfa8db817c12 ""
   (generated)
-  "build/main.aux"
   "build/main.toc"
-  "build/main.log"
+  "build/main.aux"
   "build/main.out"
   "build/main.pdf"
+  "build/main.log"
