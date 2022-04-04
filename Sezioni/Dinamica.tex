@@ -401,7 +401,7 @@
             Ora ci basta semplicemente inserire i valori (li puoi ritrovare all'esercizio prima, [pag. \pageref{EsercizioConAttrito}]) ed otteniamo il nostro risultato $\mu_d \approx 0,28$.
 
     \subsection{Pendolo semplice}
-        Introduciamo il pendolo, cominciamo dal sistema di riferimento adottato.
+        Introduciamo il pendolo, ovvero una \textbf{massa} agganciata ad un punto di ancoraggio tramite una \textbf{fune inestensibile}. Supponiamo che \textbf{non ci sia alcun attrito}, quindi il nostro pendolo continuerà ad oscillare tramite un \textbf{moto perpetuo}. Cominciamo introducendo i 2 sistemi di riferimento: il primo ci serivirà per specificare delle cose nel secondo.
 
         \subsubsection{Sistema di riferimento sul peso}
             \framedImg{50}{L07-img001}
@@ -424,8 +424,8 @@
             \framedImg{50}{L07-img002}
             Con questo nuovo riferimento, possiamo trovare facilmente la poszione (x, y) del nostro peso:
             \begin{align*}
-                &x(t) = R * sin(\theta(t))\\
-                &y(t) = R - R*cos(\theta(t))
+                &x(t) = R * sin[\theta(t)]\\
+                &y(t) = R - R*cos[\theta(t)]
             \end{align*}
             Supponendo che $R$ sia la lunghezza del nostro cavo. Nota anche che le coordinate dipendono dal tempo, infatti \textbf{sarà l'angolo $\theta$ a variare col tempo}. Il problema è \textbf{in che modo}? Ci torneremo in seguito. Questo sistema di riferimento ci permette inoltre di scomporre le nostre 2 forze (peso e tensione) in questo modo:
             \begin{align*}
@@ -455,4 +455,135 @@
                     \vec{R}_x = m*a_x = -m*g*sin(\theta)*cos(\theta) & => a_x = -g*sin(\theta)*cos(\theta)\\
                     \vec{R}_y = m*a_y = -m*g*sin^2(\theta) & => a_y = -g*sin^2(\theta)
                 \end{cases}
+            \end{align*}
+
+            \paragraph{Calcolare spazio, velocità e accelerazione}
+                Con le operazioni precedenti abbiamo scoperto che;
+                \begin{align*}
+                    &\begin{cases}
+                        a_x = -g*sin(\theta)*cos(\theta) = \frac{d^2x}{dt^2}\\
+                        a_y = -g*sin^2(\theta) = \frac{d^2y}{dt^2}
+                    \end{cases}&&
+                    \begin{cases}
+                        x(t) = R*sin[\textcolor{Red}{\theta(t)}]\\
+                        y(t) = R-R*cos[\textcolor{Red}{\theta(t)}]
+                    \end{cases}
+                \end{align*}
+                Il nostro problema è "$\textcolor{Red}{\theta(t)}$", \textbf{come varia $\theta$ in funzione del tempo?} Noi però abbiamo il valore dell'accelerazione e sappiamo che \textbf{la derivata seconda ($\frac{d^2x}{dt^2}$/$\frac{d^2y}{dt^2}$) dello spostamento corrisponde all'accelerazione!} Quindi deriviamo la funzione dello spostamento, ricordando però che noi \textbf{non conosciamo la derivata di $\theta(t)$}:
+                \begin{align*}
+                    &
+                    \begin{cases}
+                        x(t)=R*sin[\theta(t)]\\
+                        y(t)=R-R*cos[\theta(t)]
+                    \end{cases}
+                    && =>
+                    \begin{cases}
+                        x^{(1)}(t)=R*cos(\theta)*\theta^{(1)}\\
+                        y^{(1)}(t)=R*sin(\theta)*\theta^{(1)}
+                    \end{cases}\\
+                    & && =>
+                    \begin{cases}
+                        x^{(2)}(t)=R*[-sin(\theta)*\theta^{(1)}*\theta^{(1)}+cos(\theta)*\theta^{(2)}] \\
+                        y^{(2)}(t)=R*[cos(\theta)*\theta^{(1)}*\theta^{(1)}+sin(\theta)*\theta^{(2)}]
+                    \end{cases}\\
+                    & && =>
+                    \begin{cases}
+                        x\rightarrow -g*sin(\theta)*cos(\theta) = R*[cos(\theta)*\theta^{(2)}-sin(\theta)*\theta^{(1)2}] \\
+                        y\rightarrow -g*sin^2(\theta) = R*[sin(\theta)*\theta^{(2)}+cos(\theta)*\theta^{(1)2}]
+                    \end{cases}\\
+                    & && =>
+                    \begin{cases}
+                        x\rightarrow -g*sin(\theta)*cos(\theta) = l*[cos(\theta)*\theta^{(2)}-sin(\theta)*\theta^{(1)2}] \\
+                        y\rightarrow -g*sin^2(\theta) = l*[sin(\theta)*\theta^{(2)}+cos(\theta)*\theta^{(1)2}]
+                    \end{cases}\\
+                    & && =>
+                    \begin{cases}
+                        x\rightarrow -\frac{g}{l}*sin(\theta)*cos(\theta) = [cos(\theta)*\theta^{(2)}-sin(\theta)*\theta^{(1)2}] \\
+                        y\rightarrow -\frac{g}{l}*sin^2(\theta) = [sin(\theta)*\theta^{(2)}+cos(\theta)*\theta^{(1)2}]
+                    \end{cases}
+                \end{align*}
+
+                Adesso, prendiamo il "$\frac{g}{l}$" e lo chiamiamo "$\omega^2$", perche? Perchè SI, lo vuole Iuppa. Di conseguenza le nostre formule diventano:
+                \begin{align*}
+                    \begin{cases}
+                        x\rightarrow -\omega^2*sin(\theta)*cos(\theta) = [cos(\theta)*\theta^{(2)}-sin(\theta)*\theta^{(1)2}] \\
+                        y\rightarrow -\omega^2*sin^2(\theta) = [sin(\theta)*\theta^{(2)}+cos(\theta)*\theta^{(1)2}]
+                    \end{cases}
+                \end{align*}
+
+            \paragraph{Le piccole oscillazioni}
+                Il problema con questa formula è che \textbf{è un casino calcolarsi seni e coseni}, quindi noi possiamo \textbf{ragionare in termini di piccole oscillazioni}, in modo da approssimare seni e coseni con \textbf{Taylor}!
+
+                \begin{mdframed}
+                    \begin{align*}
+                        & sin(\theta) \approx \theta && cos(\theta)\approx 1-\textcolor{Red}{\frac{\theta^2}{2}}\\
+                        & tg(\theta)\approx\theta && (1+\theta)^\alpha \approx +\alpha\theta\\
+                        & e^{\alpha\theta}\approx1+\alpha\theta&&\sqrt{1+\theta}\approx 1+\frac{\theta}{2}
+                    \end{align*}
+                    \begin{center}
+                        Nota che le \textcolor{Red}{parti in rosso}, dato che consideriamo solo $\theta$ piccoli, le possiamo togliere!
+                    \end{center}
+                \end{mdframed}
+
+                Con "piccole oscillazioni" intendiamo $\theta << 1$, ovvero "$\theta$ molto minore di 1" (inteso come radianti, in gradi possiamo immaginare che $\theta$ non superi i 4 gradi circa). Ora, considerando solo queste piccole oscillazioni, possiamo approssimare le formule in questo modo:
+
+                \begin{align*}
+                    &\begin{cases}
+                        x\rightarrow -\omega^2*sin(\theta)*cos(\theta) = [cos(\theta)*\theta^{(2)}-sin(\theta)*\theta^{(1)2}] \\
+                        y\rightarrow -\omega^2*sin^2(\theta) = [sin(\theta)*\theta^{(2)}+cos(\theta)*\theta^{(1)2}]
+                    \end{cases}
+                    &&=>
+                    \begin{cases}
+                        x\rightarrow -\omega^2*\theta*1 = [1*\theta^{(2)}-\textcolor{Red}{\theta*\theta^{(1)2}}] \\
+                        y\rightarrow -\omega^2*\theta^2 = [\textcolor{Red}{\theta*\theta^{(2)}}+1*\theta^{(1)2}]
+                    \end{cases}\\
+                    & &&=>
+                    \begin{cases}
+                        x\rightarrow -\omega^2*\theta = \theta^{(2)} \\
+                        y\rightarrow -\omega^2*\theta^2 = \theta^{(1)2}
+                    \end{cases}
+                \end{align*}
+                \begin{center}
+                    Nota che le \textcolor{Red}{parti in rosso}, in quanto \textbf{moltiplicate per $\theta<<1$} diventano trascurabili, quindi le togliamo
+                \end{center}
+
+                Prendiamo in considerazione solo la formula per la x, abbiamo quindi che:
+                \begin{align*}
+                    -\omega^2*\theta = \theta^{(2)} = \textcolor{Red}{\frac{d^2\theta}{dt^2}+\omega^2*\theta = 0}
+                \end{align*}
+                Ovvero \textbf{l'equazione del moto armonico}! Da qui possiamo dire quindi che:
+                \begin{align*}
+                    & \omega = \frac{2\pi}{T} && => \frac{2\pi}{T} = \sqrt{\frac{g}{l}}\\
+                4& && => \textcolor{Red}{T = 2\pi*\sqrt{\frac{l}{g}}}\\
+                \end{align*}
+                Ricorda che $T$ in questo caso corrisponde al \textbf{periodo} e non alla forza di tensione.
+
+    \subsection{Esercizio sulla dinamica}
+        Vediamo ora un esercizio riassuntivo sulla dinamica, che cerca di raggruppare tutto quello che abbiamo visto. Supponiamo di essere in questa situazione:
+        \framedImg{40}{L07-img003}
+        Abbiamo un \textbf{peso di massa $\bf{m}$} attaccato ad un \textbf{filo inestensibile di massa trascurabile} che poggia su una \textbf{molla in posizione di riposo con coefficiente elastico $\bf{k}$}. Ad un certo punto, il cavo \textbf{viene tagliato}, quindi il peso verrà \textbf{sostenuto interamente dalla molla}, che \textbf{inizierà a comprimersi ed allungarsi} (come si comporta una molla normale)
+        \framedImg{40}{L07-img004}
+        Supponiamo di avere i seguenti dati e di dover trovare i seguenti valori:
+        \begin{align*}
+            & k = 70 N/m&& m = 0,5 Kg && T = ?\\
+            &\Delta l_{max} = ? && z_{vMax}=? && v_{max}=?
+        \end{align*}
+        Con:
+        \begin{itemize}
+            \item $T$ periodo;
+            \item $\Delta l_{max}$ accorciamento massimo;
+            \item $z_{vMax}$ z dove la velocità è massima;
+            \item $v_{max}$ velocità massima;
+        \end{itemize}
+        Allora, come prima cosa \textbf{visualizziamo quali forze agiscono nel sistema}, in particolare abbiamo:
+        \begin{itemize}
+            \item la \textbf{forza peso} $\vec{P}=-m*g$;
+            \item la \textbf{forza elastica} $\vec{F}_{el}=-k*(\vec{z}-\vec{z}_0)$. La parte tra parentesi viene chiamata "\textbf{forza di richiamo}" e \textbf{dipende dal sistema di riferimento che adottiamo} (in particolare la $z_0$, che indica la \textbf{posizione di riposo} della nostra molla).
+        \end{itemize}
+        \framedImg{40}{L07-img005}
+
+        \subsubsection{Posizione di equilibrio}
+            Iniziamo calcolando la nuova posizione di equilibrio della molla, ovvero la \textbf{z in cui la molla smette di muoversi}. Per definizione, un oggetto resta fermo quando la sommatoria delle forze che agiscono su di lui è 0, dato che le uniche forze che agiscono sono la forza peso e la forza elastica, possiamo dire che:
+            \begin{align*}
+                & P = F_{el} && => m*g = -k*(z_{eq}-0) && =>
             \end{align*}

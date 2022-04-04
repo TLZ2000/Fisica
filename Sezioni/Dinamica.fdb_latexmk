@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1648733946 "Dinamica.tex" "Dinamica.pdf" "Dinamica" 1648733947
+["pdflatex"] 1649076653 "Dinamica.tex" "Dinamica.pdf" "Dinamica" 1649076654
   "/etc/texmf/web2c/texmf.cnf" 1646733841 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -9,7 +9,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1646736541 5160710 ecf427ae8fa19139d8691f526e47bb9b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1646736555 2568632 efca2a62844472f436f60d01cc5bcbbd ""
   "Dinamica.aux" 1648728142 8 a94a2480d3289e625eea47cd1b285758 ""
-  "Dinamica.tex" 1648733945 32720 64be4fccdcb905a8aa291cfddafcfa69 ""
+  "Dinamica.tex" 1649076653 41586 1ac15f14743736f2512fb76eed04b1b0 ""
   (generated)
-  "Dinamica.log"
   "Dinamica.pdf"
+  "Dinamica.log"
