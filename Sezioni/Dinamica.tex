@@ -578,12 +578,79 @@
         Allora, come prima cosa \textbf{visualizziamo quali forze agiscono nel sistema}, in particolare abbiamo:
         \begin{itemize}
             \item la \textbf{forza peso} $\vec{P}=-m*g$;
-            \item la \textbf{forza elastica} $\vec{F}_{el}=-k*(\vec{z}-\vec{z}_0)$. La parte tra parentesi viene chiamata "\textbf{forza di richiamo}" e \textbf{dipende dal sistema di riferimento che adottiamo} (in particolare la $z_0$, che indica la \textbf{posizione di riposo} della nostra molla).
+            \item la \textbf{forza elastica} $\vec{F}_{el}=-k*(\vec{z}-\vec{z}_0)$. La parte tra parentesi viene chiamata "\textbf{forza di richiamo}" e \textbf{dipende dal sistema di riferimento che adottiamo} (in particolare la $z_0$, che indica la \textbf{posizione di riposo} della nostra molla, nel nostro caso [in base al sistema di riferimento che abbiamo adottato] vale 0).
         \end{itemize}
         \framedImg{40}{L07-img005}
+
+
+        \subsubsection{Studio della dinamica del problema}
+            Iniziamo considerando le varie risultanti delle forze che agiscono sul nostro asse z (semplicemente agiscono solo forze verticali, quindi ignoriamo l'asse orizzontale). Iniziamo considerando le 2 forze che abbiamo già visto prima:
+            \begin{align*}
+                \begin{cases}
+                    \vec{P} = -m*g*\hat{z}\\
+                    \vec{F}_{el}=-k*(\vec{z}-\vec{z}_0) = \vec{F}_{el}=-k*(\vec{z}-0) = \vec{F}_{el}=-k*z*\hat{z}
+                \end{cases}
+            \end{align*}
+            Nota che i \textbf{versori} $\hat{z}$ servono solo per descrivere la direzione della forza, poi li possiamo togliere per semplicità. Ora, avremmo che la risultante di queste forze corrisponde alla loro somma:
+            \begin{align*}
+                \vec{R} = \vec{P}+\vec{R}_{el} = -m*g*\hat{z}-k*z*\hat{z} = m*\vec{a}\ (per\ definizione)
+            \end{align*}
+            A questo punto noi sappiamo però che l'accelerazione corrisponde alla \textbf{derivata seconda dello spazio}, quindi possiamo scrivere:
+            \begin{align*}
+                &-m*g*\hat{z}-k*z*\hat{z} = m*\frac{d^2z}{dt^2}*\hat{z} &&=> -g - \frac{k}{m}*z = \frac{d^2z}{dt^2}\\
+                & && => \textcolor{Red}{\frac{d^2z}{dt^2}+\frac{k}{m}*z=-g}
+            \end{align*}
+            La formula \textcolor{Red}{in rosso} sappiamo che è \textbf{l'equazione armonica}! In questo caso ponimao $\omega^2=\frac{k}{m}$, ottenendo:
+            \begin{align*}
+                \frac{d^2z}{dt^2}+\omega^2*z=-g
+            \end{align*}
+            Ci sono un po' di "problemi" però, rispetto all'equazione "classica" non abbiamo $=0$ ma $=-g$, quello viene definito \textbf{membro forzante} e semplicemente \textbf{sfasa la nostra posizione di equilibrio}, in questo caso la sposta verso il basso. Per definizione del moto armonico [pag.\pageref{Moto armonico}] che possiamo indicare lo spostamento nel tempo in questo modo:
+            \begin{align*}
+                z(t) = \textcolor{Orange}{A*sin(\omega t*\varphi)+\textcolor{Red}{w(t)}}
+            \end{align*}
+            In questo caso dobbiamo \textcolor{Red}{aggiungere questa parte in rosso} perché dobbiamo \textbf{compensare in qualche modo quell' "=-g"}. Ora, per calcolare velocità ed accelerazione (quest'ultima è quella che ci interessa) ci basta semplicemente derivare la formula trovata prima:
+            \begin{align*}
+                &z(t) = A*sin(\omega t*\varphi)+\textcolor{Red}{w(t)}&&=>\frac{dz}{dt}=A\omega*cos(\omega t+\varphi)+\frac{dw}{dt}\\
+                & &&=>\textcolor{OliveGreen}{\frac{d^2z}{dt^2}=-A\omega^2*sin(\omega t+\varphi)+\frac{d^2w}{dt^2}}\\
+            \end{align*}
+            \textcolor{OliveGreen}{Questa} è la formula che ci interessa! Infatti ora possiamo sostituirla all'interno dell'equazione iniziale, ovvero:
+            \begin{align*}
+                &\frac{d^2z}{dt^2}+\frac{k}{m}*z=-g&&=> \textcolor{OliveGreen}{-A\omega^2*sin(\omega t+\varphi)+\frac{d^2w}{dt^2}} +\omega^2(\textcolor{Orange}{A*sin(\omega t*\varphi)+w(t)}) = -g
+            \end{align*}
+            Bene, abbiamo la formula matematica che descrive la dinamica del nostro sistema. Ora dobbiamo fissare un po' di valori che non conosciamo al momento, in particolare $\varphi, \omega$ e $ w(t)$, come facciamo? Studiamo la nostra formula, che ricordiamo essere in \textbf{funzione del tempo}, in alcuni punti (possibilmente comodi). Cominciamo considerando $t=0$:
+            \begin{align*}
+                &-A\omega^2*sin(\omega*0+\varphi)+\frac{d^2w}{dt^2} +\omega^2(A*sin(\omega *0*\varphi)+w(0)) = -g &&=> \frac{d^2w}{dt^2} +\omega^2*w(0) = -g
+            \end{align*}
+            Ci siamo semplificati i seni,
+
+
+
+
+
+
+
+
+
 
         \subsubsection{Posizione di equilibrio}
             Iniziamo calcolando la nuova posizione di equilibrio della molla, ovvero la \textbf{z in cui la molla smette di muoversi}. Per definizione, un oggetto resta fermo quando la sommatoria delle forze che agiscono su di lui è 0, dato che le uniche forze che agiscono sono la forza peso e la forza elastica, possiamo dire che:
             \begin{align*}
-                & P = F_{el} && => m*g = -k*(z_{eq}-0) && =>
+                & P = F_{el} && => m*g = -k*(z_{eq}-0) && => \textcolor{Red}{z_{eq} = -\frac{m*g}{k}}
             \end{align*}
+            Una cosa utile da fare quando arriviamo alla fine di queste catene di uguaglianze è quella di \textbf{controllare che le unità di misura siano coerenti}, in particolare in questo caso abbiamo:
+            \begin{itemize}
+                \item $m*g$: forza peso, espressa in $N$, ovvero $\frac{Kg*m}{s^2}$. Possiamo scomporla come:
+                \begin{itemize}
+                    \item $m$: massa, espressa in Kg;
+                    \item $g$: accelerazione (di gravità terrestre), espressa in $\frac{m}{s^2}$
+                \end{itemize}
+                \item $k$: costante elastica, espressa in $\frac{N}{m}$
+            \end{itemize}
+            Se mettiamo insieme tutte queste unità di misura, otteniamo effettivamente qualcosa \textbf{espresso in metri}! Quindi ci va bene!
+
+        \subsubsection{Allungamento massimo della molla}
+            Qui dobbiamo fare un po' di ragionamenti:
+            \begin{enumerate}
+                \item all'istante di tempo 0 \textbf{tagliamo il cavo}: la forza peso inizia a poggiare sulla molla, ma la \textbf{forza elastica vale ancora 0} al momento!
+                \item col passare del tempo, la molla supererà la posizione $z_{eq}$, da questo punto in poi la \textbf{forza elastica smette di essere rivolta verso il basso e inizia a puntare verso l'alto}, ma dato che la \textbf{costante elastica è la stessa} la molla si comporterà allo stesso modo con cui è scesa!
+            \end{enumerate}
