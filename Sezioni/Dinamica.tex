@@ -606,51 +606,84 @@
             \end{align*}
             Ci sono un po' di "problemi" però, rispetto all'equazione "classica" non abbiamo $=0$ ma $=-g$, quello viene definito \textbf{membro forzante} e semplicemente \textbf{sfasa la nostra posizione di equilibrio}, in questo caso la sposta verso il basso. Per definizione del moto armonico [pag.\pageref{Moto armonico}] che possiamo indicare lo spostamento nel tempo in questo modo:
             \begin{align*}
-                z(t) = \textcolor{Orange}{A*sin(\omega t*\varphi)+\textcolor{Red}{w(t)}}
+                z(t) = \textcolor{Orange}{A*sin(\omega t+\varphi)+\textcolor{Red}{w(t)}}
             \end{align*}
             In questo caso dobbiamo \textcolor{Red}{aggiungere questa parte in rosso} perché dobbiamo \textbf{compensare in qualche modo quell' "=-g"}. Ora, per calcolare velocità ed accelerazione (quest'ultima è quella che ci interessa) ci basta semplicemente derivare la formula trovata prima:
             \begin{align*}
-                &z(t) = A*sin(\omega t*\varphi)+\textcolor{Red}{w(t)}&&=>\frac{dz}{dt}=A\omega*cos(\omega t+\varphi)+\frac{dw}{dt}\\
+                &z(t) = A*sin(\omega t+\varphi)+\textcolor{Red}{w(t)}&&=>\frac{dz}{dt}=A\omega*cos(\omega t+\varphi)+\frac{dw}{dt}\\
                 & &&=>\textcolor{OliveGreen}{\frac{d^2z}{dt^2}=-A\omega^2*sin(\omega t+\varphi)+\frac{d^2w}{dt^2}}\\
             \end{align*}
             \textcolor{OliveGreen}{Questa} è la formula che ci interessa! Infatti ora possiamo sostituirla all'interno dell'equazione iniziale, ovvero:
             \begin{align*}
-                &\frac{d^2z}{dt^2}+\frac{k}{m}*z=-g&&=> \textcolor{OliveGreen}{-A\omega^2*sin(\omega t+\varphi)+\frac{d^2w}{dt^2}} +\omega^2(\textcolor{Orange}{A*sin(\omega t*\varphi)+w(t)}) = -g
+                &\frac{d^2z}{dt^2}+\frac{k}{m}*z=-g&&=> \textcolor{OliveGreen}{-A\omega^2*sin(\omega t+\varphi)+\frac{d^2w}{dt^2}} +\omega^2(\textcolor{Orange}{A*sin(\omega t+\varphi)+w(t)}) = -g
             \end{align*}
             Bene, abbiamo la formula matematica che descrive la dinamica del nostro sistema. Ora dobbiamo fissare un po' di valori che non conosciamo al momento, in particolare $\varphi, \omega$ e $ w(t)$, come facciamo? Studiamo la nostra formula, che ricordiamo essere in \textbf{funzione del tempo}, in alcuni punti (possibilmente comodi). Cominciamo considerando $t=0$:
             \begin{align*}
-                &-A\omega^2*sin(\omega*0+\varphi)+\frac{d^2w}{dt^2} +\omega^2(A*sin(\omega *0*\varphi)+w(0)) = -g &&=> \frac{d^2w}{dt^2} +\omega^2*w(0) = -g
+                &-A\omega^2*sin(\omega*0+\varphi)+\frac{d^2w}{dt^2} +\omega^2(A*sin(\omega *0+\varphi)+w(0)) = -g &&=> \frac{d^2w}{dt^2} +\omega^2*w(0) = -g
             \end{align*}
-            Ci siamo semplificati i seni,
-
-
-
-
-
-
-
-
-
-
-        \subsubsection{Posizione di equilibrio}
-            Iniziamo calcolando la nuova posizione di equilibrio della molla, ovvero la \textbf{z in cui la molla smette di muoversi}. Per definizione, un oggetto resta fermo quando la sommatoria delle forze che agiscono su di lui è 0, dato che le uniche forze che agiscono sono la forza peso e la forza elastica, possiamo dire che:
+            Ci siamo semplificati i seni, ora dobbiamo soltanto trovare il valore della nostra $w(0)$: per toglierci la derivata (che è abbastanza scomoda) possiamo supporre che $w$ sia \textbf{costante in funzione del tempo}, quindi otterremo:
             \begin{align*}
-                & P = F_{el} && => m*g = -k*(z_{eq}-0) && => \textcolor{Red}{z_{eq} = -\frac{m*g}{k}}
+                &\frac{d^2w}{dt^2} +\omega^2*w(0) = -g &&=> 0 + \omega^2*w=-g\\
+                & &&=>\textcolor{Red}{w=-\frac{g}{\omega^2}}
             \end{align*}
-            Una cosa utile da fare quando arriviamo alla fine di queste catene di uguaglianze è quella di \textbf{controllare che le unità di misura siano coerenti}, in particolare in questo caso abbiamo:
+            Ecco fatto, ora possiamo tornare un po' di equazioni prima e \textbf{sostituire il valore che abbiamo trovato di w}:
+            \begin{align*}
+                &z(t) = A*sin(\omega t+\varphi)+w(t)&&=> z(t) = A*sin(\omega t+\varphi)-\frac{g}{\omega^2}
+            \end{align*}
+            Ora ci manca solo da trovare il valore di $A$ e di $\varphi$, per trovarli possiamo usare il fatto che \textbf{sia lo spazio che la velocità in t=0 valgono 0}! Vediamo:
+            \begin{align*}
+                &
+                \begin{cases}
+                    z(t) = A*sin(\omega*0+\varphi)+-\frac{g}{\omega^2} = 0\\
+                    \frac{dz}{dt} = v(t)=A\omega*cos(\omega*0+\varphi) = 0
+                \end{cases}
+                &&=>
+                \begin{cases}
+                    z(t) = A*sin(\varphi)+-\frac{g}{\omega^2} = 0\\
+                    \frac{dz}{dt} = v(t)=A\omega*cos(\varphi) = 0
+                \end{cases}\\
+                & &&=>
+                \begin{cases}
+                    A = \frac{g}{\omega^2}\\
+                    \varphi=\frac{\pi}{2}
+                \end{cases}
+            \end{align*}
+            Quindi arriviamo alla fine con questa formula che descrive il nostro moto:
+            \begin{align*}
+                z(t)=\frac{g}{\omega^2}*sin(\omega t + \frac{\pi}{2})-\frac{g}{\omega^2} = \textcolor{Red}{\frac{g}{\omega^2}*cos(\omega t)-\frac{g}{\omega^2}}
+            \end{align*}
+            Come la interpretiamo? Sostanzialmente come un normalissimo \textbf{moto armonico}, con:
             \begin{itemize}
-                \item $m*g$: forza peso, espressa in $N$, ovvero $\frac{Kg*m}{s^2}$. Possiamo scomporla come:
-                \begin{itemize}
-                    \item $m$: massa, espressa in Kg;
-                    \item $g$: accelerazione (di gravità terrestre), espressa in $\frac{m}{s^2}$
-                \end{itemize}
-                \item $k$: costante elastica, espressa in $\frac{N}{m}$
+                \item $a = \frac{g}{\omega^2}\rightarrow$ampiezza, il valore massimo (o minimo) della curva;
+                \item $\omega =\frac{2\pi}{T}=>T=\frac{2\pi}{\omega}\rightarrow$periodo, misurato in secondi;
+                \item $\varphi = \frac{\pi}{2}\rightarrow$fase, indica da che punto parte il grafico, nel caso di questo esercizio l'abbiamo tolta trasformando il $sin$ in $cos$;
             \end{itemize}
-            Se mettiamo insieme tutte queste unità di misura, otteniamo effettivamente qualcosa \textbf{espresso in metri}! Quindi ci va bene!
+            \framedImg{5}{L07-img006}
+            Ora che abbiamo questa formula, abbiamo tutto! Possiamo facilmente calcolare tutti i punti richiesti dal problema, vediamo come.
 
-        \subsubsection{Allungamento massimo della molla}
-            Qui dobbiamo fare un po' di ragionamenti:
-            \begin{enumerate}
-                \item all'istante di tempo 0 \textbf{tagliamo il cavo}: la forza peso inizia a poggiare sulla molla, ma la \textbf{forza elastica vale ancora 0} al momento!
-                \item col passare del tempo, la molla supererà la posizione $z_{eq}$, da questo punto in poi la \textbf{forza elastica smette di essere rivolta verso il basso e inizia a puntare verso l'alto}, ma dato che la \textbf{costante elastica è la stessa} la molla si comporterà allo stesso modo con cui è scesa!
-            \end{enumerate}
+        \subsubsection{Allungamento massimo}
+            Come possiamo vedere dall'immagine precedente, l'ampiezza è la distanza massima dal punto di equilibrio, quindi ci basta prendere \textbf{2 volte l'ampiezza} (nota che il "-" è dovuto al sistema di riferimento adottato):
+            \begin{align*}
+                \Delta l_{max}=-2\frac{g}{\omega^2}=-2*\frac{m*g}{K}\approx-14cm
+            \end{align*}
+
+        \subsubsection{Posizione di velocità massima}
+            All'istante 0, anche la velocità vale 0. Successivamente la velocità inizierà ad aumentare finché non raggiungerà il massimo. Per capire dove si trova il massimo possiamo \textbf{studiare la derivata associata e vedere dove questa vale 0}, quindi:
+            \begin{align*}
+                &\frac{dz}{dt}=v(t)=-\frac{g}{\omega^2}*\omega*sin(\omega t)+ 0 &&=>\frac{dv}{dt}=-\frac{g}{\omega^2}*\omega^2*cos(\omega t)\\
+                & &&=>\textcolor{Red}{\frac{dv}{dt}=-g*cos(\omega t)}
+            \end{align*}
+            Quando \textcolor{Red}{questa} equazione vale 0? Dobbiamo \textbf{annullare il coseno}, quindi porre $\omega t = \frac{\pi}{2}=>t=\frac{\pi}{2\omega}$. In che posizione ci troviamo con $t=\frac{\pi}{2\omega}$? Vediamo:
+            \begin{align*}
+                z(\frac{\pi}{2\omega})=\frac{g}{\omega^2}*cos(\omega * \frac{\pi}{2\omega})-\frac{g}{\omega^2} = \frac{g}{\omega^2}*0-\frac{g}{\omega^2} = \textcolor{Red}{-\frac{g}{\omega^2}}
+            \end{align*}
+            Come si può facilmente notare, abbiamo la velocità nella \textbf{posizione di equilibro della molla}! Potevamo anche arrivarci osservando il disegno, infatti nel punto di equilibrio il peso \textbf{smette di prendere velocità ed inizia a rallentare in seguito alla forza elastica}! Calcoliamo il numero:
+            \begin{align*}
+                z_{vMax}=-\frac{g}{\omega^2} = -\frac{g*m}{k}\approx -7cm
+            \end{align*}
+
+        \subsubsection{Velocità massima}
+            Prima abbiamo scoperto che la velocità massima si ottiene nella $z_{eq}$, che si raggiunge in $t=\frac{\pi}{2*\omega^2}$
+            \begin{align*}
+                v(\frac{\pi}{2*\omega^2})=-\frac{g}{\omega}*sin(\omega \frac{\pi}{2*\omega^2})=-\frac{g}{\omega}*1 = -\frac{g}{\omega} = -g*\sqrt{\frac{m}{k}}\approx-0,84m/s
+            \end{align*}
