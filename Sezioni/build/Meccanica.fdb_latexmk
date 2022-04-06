@@ -1,0 +1,13 @@
+# Fdb version 3
+["pdflatex"] 1648819229 "Meccanica.tex" "build/Meccanica.pdf" "Meccanica" 1648819230
+  "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf" 1621028613 40042 fe981136cbb5f3715ab1b0e46e3d3892 ""
+  "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1631107230 4362028 785fb9f49f0885b9b8917d40f83e83f4 ""
+  "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1631107330 2798040 2e10c2a099101303e07af6ee8b76d76a ""
+  "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
+  "Meccanica.tex" 1648819217 9105 ad48d277e4a536bbf67d624cf9221845 ""
+  "build/Meccanica.aux" 1648650965 32 3985256e7290058c681f74d7a3565a19 ""
+  (generated)
+  "build/Meccanica.log"
+  "build/Meccanica.pdf"

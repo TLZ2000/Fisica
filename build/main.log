@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.9.8)  30 MAR 2022 16:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2021.9.8)  6 APR 2022 14:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -399,6 +399,117 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/bigints/bigints.sty
 Package: bigints 2010/02/15 Writing big integrals
 Package bigints Info: This is Bigints by Merciadri Luca. on input line 5.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-08-27 L3 programming layer (loader) 
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count299
+\l__pdf_internal_box=\box60
+))
+Package: xparse 2021-08-27 L3 Experimental document command parser
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+\c@abspage=\count300
+Package zref Info: New property: abspage on input line 66.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip65
+\c@mdf@globalstyle@cnt=\count301
+\mdf@skipabove@length=\skip66
+\mdf@skipbelow@length=\skip67
+\mdf@leftmargin@length=\skip68
+\mdf@rightmargin@length=\skip69
+\mdf@innerleftmargin@length=\skip70
+\mdf@innerrightmargin@length=\skip71
+\mdf@innertopmargin@length=\skip72
+\mdf@innerbottommargin@length=\skip73
+\mdf@splittopskip@length=\skip74
+\mdf@splitbottomskip@length=\skip75
+\mdf@outermargin@length=\skip76
+\mdf@innermargin@length=\skip77
+\mdf@linewidth@length=\skip78
+\mdf@innerlinewidth@length=\skip79
+\mdf@middlelinewidth@length=\skip80
+\mdf@outerlinewidth@length=\skip81
+\mdf@roundcorner@length=\skip82
+\mdf@footenotedistance@length=\skip83
+\mdf@userdefinedwidth@length=\skip84
+\mdf@needspace@length=\skip85
+\mdf@frametitleaboveskip@length=\skip86
+\mdf@frametitlebelowskip@length=\skip87
+\mdf@frametitlerulewidth@length=\skip88
+\mdf@frametitleleftmargin@length=\skip89
+\mdf@frametitlerightmargin@length=\skip90
+\mdf@shadowsize@length=\skip91
+\mdf@extratopheight@length=\skip92
+\mdf@subtitleabovelinewidth@length=\skip93
+\mdf@subtitlebelowlinewidth@length=\skip94
+\mdf@subtitleaboveskip@length=\skip95
+\mdf@subtitlebelowskip@length=\skip96
+\mdf@subtitleinneraboveskip@length=\skip97
+\mdf@subtitleinnerbelowskip@length=\skip98
+\mdf@subsubtitleabovelinewidth@length=\skip99
+\mdf@subsubtitlebelowlinewidth@length=\skip100
+\mdf@subsubtitleaboveskip@length=\skip101
+\mdf@subsubtitlebelowskip@length=\skip102
+\mdf@subsubtitleinneraboveskip@length=\skip103
+\mdf@subsubtitleinnerbelowskip@length=\skip104
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box61
+\mdf@footnotebox=\box62
+\mdf@splitbox@one=\box63
+\mdf@splitbox@two=\box64
+\mdf@splitbox@save=\box65
+\mdfsplitboxwidth=\skip105
+\mdfsplitboxtotalwidth=\skip106
+\mdfsplitboxheight=\skip107
+\mdfsplitboxdepth=\skip108
+\mdfsplitboxtotalheight=\skip109
+\mdfframetitleboxwidth=\skip110
+\mdfframetitleboxtotalwidth=\skip111
+\mdfframetitleboxheight=\skip112
+\mdfframetitleboxdepth=\skip113
+\mdfframetitleboxtotalheight=\skip114
+\mdffootnoteboxwidth=\skip115
+\mdffootnoteboxtotalwidth=\skip116
+\mdffootnoteboxheight=\skip117
+\mdffootnoteboxdepth=\skip118
+\mdffootnoteboxtotalheight=\skip119
+\mdftotallinewidth=\skip120
+\mdfboundingboxwidth=\skip121
+\mdfboundingboxtotalwidth=\skip122
+\mdfboundingboxheight=\skip123
+\mdfboundingboxdepth=\skip124
+\mdfboundingboxtotalheight=\skip125
+\mdf@freevspace@length=\skip126
+\mdf@horizontalwidthofbox@length=\skip127
+\mdf@verticalmarginwhole@length=\skip128
+\mdf@horizontalspaceofbox=\skip129
+\mdfsubtitleheight=\skip130
+\mdfsubsubtitleheight=\skip131
+\c@mdfcountframes=\count302
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count303
+\c@mdf@env@i=\count304
+\c@mdf@env@ii=\count305
+\c@mdf@zref@counter=\count306
+Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: 
@@ -432,43 +543,39 @@ Package bigints Info: This is Bigints by Merciadri Luca. on input line 5.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count299
-\l__pdf_internal_box=\box60
-) (build/main.aux)
+ (build/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
  (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count300
+\scratchcounter=\count307
 \scratchdimen=\dimen186
-\scratchbox=\box61
-\nofMPsegments=\count301
-\nofMParguments=\count302
+\scratchbox=\box66
+\nofMPsegments=\count308
+\nofMParguments=\count309
 \everyMPshowfont=\toks38
-\MPscratchCnt=\count303
+\MPscratchCnt=\count310
 \MPscratchDim=\dimen187
-\MPnumerator=\count304
-\makeMPintoPDFobject=\count305
+\MPnumerator=\count311
+\makeMPintoPDFobject=\count312
 \everyMPtoPDFconversion=\toks39
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -476,9 +583,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \it@ocap on input line 67.
-LaTeX Info: Redefining \it@ccap on input line 67.
-Package hyperref Info: Link coloring OFF on input line 67.
+LaTeX Info: Redefining \it@ocap on input line 68.
+LaTeX Info: Redefining \it@ccap on input line 68.
+Package hyperref Info: Link coloring OFF on input line 68.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -486,11 +593,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count306
+\c@section@level=\count313
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 68.
  (build/main.out) (build/main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -536,16 +643,16 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./Img//LOGO.png, id=209, 401.5pt x 401.5pt>
+<./Img//LOGO.png, id=237, 401.5pt x 401.5pt>
 File: ./Img//LOGO.png Graphic file (type png)
 <use ./Img//LOGO.png>
-Package pdftex.def Info: ./Img//LOGO.png  used on input line 70.
+Package pdftex.def Info: ./Img//LOGO.png  used on input line 71.
 (pdftex.def)             Requested size: 273.0042pt x 273.0225pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -560,7 +667,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
-<./Img//L01-img001.jpg, id=283, 1793.70125pt x 685.56125pt>
+<./Img//L01-img001.jpg, id=318, 1793.70125pt x 685.56125pt>
 File: ./Img//L01-img001.jpg Graphic file (type jpg)
 <use ./Img//L01-img001.jpg>
 Package pdftex.def Info: ./Img//L01-img001.jpg  used on input line 21.
@@ -570,82 +677,82 @@ Overfull \hbox (12.28452pt too wide) in paragraph at lines 22--23
 []\T1/cmr/m/n/12 Una co-sa im-por-tan-te da no-ta-re è che un nu-me-ro sin-go-lo può rap-pre-sen-ta-re so-lo co-se "\T1/cmr/bx/n/12 mono-dimensionali\T1/cmr/m/n/12 "
  []
 
-<./Img//L01-img002.jpg, id=296, 854.19125pt x 704.6325pt>
+<./Img//L01-img002.jpg, id=331, 854.19125pt x 704.6325pt>
 File: ./Img//L01-img002.jpg Graphic file (type jpg)
 <use ./Img//L01-img002.jpg>
 Package pdftex.def Info: ./Img//L01-img002.jpg  used on input line 26.
 (pdftex.def)             Requested size: 218.40002pt x 180.15736pt.
-<./Img//L01-img003.jpg, id=297, 1017.8025pt x 619.31375pt>
+<./Img//L01-img003.jpg, id=332, 1017.8025pt x 619.31375pt>
 File: ./Img//L01-img003.jpg Graphic file (type jpg)
 <use ./Img//L01-img003.jpg>
 Package pdftex.def Info: ./Img//L01-img003.jpg  used on input line 31.
 (pdftex.def)             Requested size: 218.40002pt x 132.88525pt.
 [5 <./Img//L01-img001.jpg> <./Img//L01-img002.jpg>]
-<./Img//L01-img004.jpg, id=303, 1286.8075pt x 984.67876pt>
+<./Img//L01-img004.jpg, id=339, 1286.8075pt x 984.67876pt>
 File: ./Img//L01-img004.jpg Graphic file (type jpg)
 <use ./Img//L01-img004.jpg>
 Package pdftex.def Info: ./Img//L01-img004.jpg  used on input line 34.
 (pdftex.def)             Requested size: 218.40002pt x 167.12271pt.
  [6 <./Img//L01-img003.jpg> <./Img//L01-img004.jpg>]
-<./Img//L01-img005.jpg, id=310, 987.69pt x 858.20625pt>
+<./Img//L01-img005.jpg, id=346, 987.69pt x 858.20625pt>
 File: ./Img//L01-img005.jpg Graphic file (type jpg)
 <use ./Img//L01-img005.jpg>
 Package pdftex.def Info: ./Img//L01-img005.jpg  used on input line 60.
 (pdftex.def)             Requested size: 218.40002pt x 189.7619pt.
  [7 <./Img//L01-img005.jpg>]
-<./Img//L02-img001.jpg, id=316, 445.665pt x 720.6925pt>
+<./Img//L02-img001.jpg, id=352, 445.665pt x 720.6925pt>
 File: ./Img//L02-img001.jpg Graphic file (type jpg)
 <use ./Img//L02-img001.jpg>
 Package pdftex.def Info: ./Img//L02-img001.jpg  used on input line 114.
 (pdftex.def)             Requested size: 109.20001pt x 176.5877pt.
-<./Img//L02-img002.jpg, id=317, 1011.78pt x 964.60374pt>
+<./Img//L02-img002.jpg, id=353, 1011.78pt x 964.60374pt>
 File: ./Img//L02-img002.jpg Graphic file (type jpg)
 <use ./Img//L02-img002.jpg>
 Package pdftex.def Info: ./Img//L02-img002.jpg  used on input line 115.
 (pdftex.def)             Requested size: 273.0042pt x 260.26987pt.
  [8] [9 <./Img//L02-img001.jpg> <./Img//L02-img002.jpg>]
-<./Img//L02-img003.jpg, id=331, 946.53625pt x 815.045pt>
+<./Img//L02-img003.jpg, id=366, 946.53625pt x 815.045pt>
 File: ./Img//L02-img003.jpg Graphic file (type jpg)
 <use ./Img//L02-img003.jpg>
 Package pdftex.def Info: ./Img//L02-img003.jpg  used on input line 169.
 (pdftex.def)             Requested size: 136.50209pt x 117.53801pt.
  [10]
-<./Img//L02-img004.jpg, id=337, 1121.18875pt x 1004.75375pt>
+<./Img//L02-img004.jpg, id=372, 1121.18875pt x 1004.75375pt>
 File: ./Img//L02-img004.jpg Graphic file (type jpg)
 <use ./Img//L02-img004.jpg>
 Package pdftex.def Info: ./Img//L02-img004.jpg  used on input line 181.
 (pdftex.def)             Requested size: 245.7021pt x 220.18796pt.
  [11 <./Img//L02-img003.jpg> <./Img//L02-img004.jpg>]
-<./Img//L02-img005.jpg, id=342, 1759.57375pt x 969.6225pt>
+<./Img//L02-img005.jpg, id=377, 1759.57375pt x 969.6225pt>
 File: ./Img//L02-img005.jpg Graphic file (type jpg)
 <use ./Img//L02-img005.jpg>
 Package pdftex.def Info: ./Img//L02-img005.jpg  used on input line 198.
 (pdftex.def)             Requested size: 382.20421pt x 210.61008pt.
-<./Img//L03-img001.jpg, id=343, 789.95125pt x 732.7375pt>
+<./Img//L03-img001.jpg, id=378, 789.95125pt x 732.7375pt>
 File: ./Img//L03-img001.jpg Graphic file (type jpg)
 <use ./Img//L03-img001.jpg>
 Package pdftex.def Info: ./Img//L03-img001.jpg  used on input line 204.
 (pdftex.def)             Requested size: 245.7021pt x 227.90656pt.
  [12 <./Img//L02-img005.jpg>]
-<./Img//L03-img002.jpg, id=348, 911.405pt x 714.67pt>
+<./Img//L03-img002.jpg, id=383, 911.405pt x 714.67pt>
 File: ./Img//L03-img002.jpg Graphic file (type jpg)
 <use ./Img//L03-img002.jpg>
 Package pdftex.def Info: ./Img//L03-img002.jpg  used on input line 211.
 (pdftex.def)             Requested size: 245.7021pt x 192.65813pt.
  [13 <./Img//L03-img001.jpg> <./Img//L03-img002.jpg>]
-<./Img//L03-img003.jpg, id=354, 1482.53876pt x 996.72375pt>
+<./Img//L03-img003.jpg, id=389, 1482.53876pt x 996.72375pt>
 File: ./Img//L03-img003.jpg Graphic file (type jpg)
 <use ./Img//L03-img003.jpg>
 Package pdftex.def Info: ./Img//L03-img003.jpg  used on input line 289.
 (pdftex.def)             Requested size: 464.11047pt x 312.02292pt.
  [14]
-<./Img//L03-img004.jpg, id=359, 1680.2775pt x 520.94624pt>
+<./Img//L03-img004.jpg, id=394, 1680.2775pt x 520.94624pt>
 File: ./Img//L03-img004.jpg Graphic file (type jpg)
 <use ./Img//L03-img004.jpg>
 Package pdftex.def Info: ./Img//L03-img004.jpg  used on input line 299.
 (pdftex.def)             Requested size: 464.11047pt x 143.8926pt.
  [15 <./Img//L03-img003.jpg> <./Img//L03-img004.jpg>]
-<./Img//L03-img005.jpg, id=364, 1249.66875pt x 677.53125pt>
+<./Img//L03-img005.jpg, id=399, 1249.66875pt x 677.53125pt>
 File: ./Img//L03-img005.jpg Graphic file (type jpg)
 <use ./Img//L03-img005.jpg>
 Package pdftex.def Info: ./Img//L03-img005.jpg  used on input line 331.
@@ -676,24 +783,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 349.
 
 [16 <./Img//L03-img005.jpg>]
-<./Img//L03-img006.jpg, id=373, 1112.155pt x 704.6325pt>
+<./Img//L03-img006.jpg, id=408, 1112.155pt x 704.6325pt>
 File: ./Img//L03-img006.jpg Graphic file (type jpg)
 <use ./Img//L03-img006.jpg>
 Package pdftex.def Info: ./Img//L03-img006.jpg  used on input line 374.
 (pdftex.def)             Requested size: 218.40002pt x 138.36507pt.
  [17 <./Img//L03-img006.jpg>]
-<./Img//L04-img001.jpg, id=378, 1037.8775pt x 646.415pt>
+<./Img//L04-img001.jpg, id=413, 1037.8775pt x 646.415pt>
 File: ./Img//L04-img001.jpg Graphic file (type jpg)
 <use ./Img//L04-img001.jpg>
 Package pdftex.def Info: ./Img//L04-img001.jpg  used on input line 412.
 (pdftex.def)             Requested size: 327.60837pt x 204.04593pt.
  [18 <./Img//L04-img001.jpg>]
-<./Img//L04-img002.jpg, id=383, 1093.08376pt x 888.31876pt>
+<./Img//L04-img002.jpg, id=418, 1093.08376pt x 888.31876pt>
 File: ./Img//L04-img002.jpg Graphic file (type jpg)
 <use ./Img//L04-img002.jpg>
 Package pdftex.def Info: ./Img//L04-img002.jpg  used on input line 445.
 (pdftex.def)             Requested size: 245.7021pt x 199.67332pt.
-<./Img//L04-img003.jpg, id=384, 1684.2925pt x 905.3825pt>
+<./Img//L04-img003.jpg, id=419, 1684.2925pt x 905.3825pt>
 File: ./Img//L04-img003.jpg Graphic file (type jpg)
 <use ./Img//L04-img003.jpg>
 Package pdftex.def Info: ./Img//L04-img003.jpg  used on input line 450.
@@ -709,13 +816,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--15
  []
 
 [20 <./Img//L04-img003.jpg>]
-<./Img//L04-img004.jpg, id=397, 713.66624pt x 640.3925pt>
+<./Img//L04-img004.jpg, id=432, 713.66624pt x 640.3925pt>
 File: ./Img//L04-img004.jpg Graphic file (type jpg)
 <use ./Img//L04-img004.jpg>
 Package pdftex.def Info: ./Img//L04-img004.jpg  used on input line 35.
 (pdftex.def)             Requested size: 191.10626pt x 171.48163pt.
  [21 <./Img//L04-img004.jpg>]
-<./Img//L04-img005.jpg, id=403, 1055.945pt x 1031.855pt>
+<./Img//L04-img005.jpg, id=438, 1055.945pt x 1031.855pt>
 File: ./Img//L04-img005.jpg Graphic file (type jpg)
 <use ./Img//L04-img005.jpg>
 Package pdftex.def Info: ./Img//L04-img005.jpg  used on input line 61.
@@ -740,7 +847,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--117
 
  []
 
-<./Img//L05-img001.jpg, id=413, 1269.74374pt x 928.46875pt>
+<./Img//L05-img001.jpg, id=448, 1269.74374pt x 928.46875pt>
 File: ./Img//L05-img001.jpg Graphic file (type jpg)
 <use ./Img//L05-img001.jpg>
 Package pdftex.def Info: ./Img//L05-img001.jpg  used on input line 125.
@@ -751,7 +858,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
  []
 
 [24 <./Img//L05-img001.jpg>]
-<./Img//L05-img002.jpg, id=418, 700.6175pt x 1050.92625pt>
+<./Img//L05-img002.jpg, id=453, 700.6175pt x 1050.92625pt>
 File: ./Img//L05-img002.jpg Graphic file (type jpg)
 <use ./Img//L05-img002.jpg>
 Package pdftex.def Info: ./Img//L05-img002.jpg  used on input line 180.
@@ -762,51 +869,89 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--180
  []
 
 [25] [26 <./Img//L05-img002.jpg>] [27]
-<./Img//L06-img001.jpg, id=433, 695.59875pt x 567.11874pt>
+<./Img//L06-img001.jpg, id=469, 695.59875pt x 567.11874pt>
 File: ./Img//L06-img001.jpg Graphic file (type jpg)
 <use ./Img//L06-img001.jpg>
 Package pdftex.def Info: ./Img//L06-img001.jpg  used on input line 254.
 (pdftex.def)             Requested size: 191.10626pt x 155.80669pt.
-<./Img//L06-img002.jpg, id=434, 1623.06375pt x 685.56125pt>
+<./Img//L06-img002.jpg, id=470, 1623.06375pt x 685.56125pt>
 File: ./Img//L06-img002.jpg Graphic file (type jpg)
 <use ./Img//L06-img002.jpg>
 Package pdftex.def Info: ./Img//L06-img002.jpg  used on input line 269.
 (pdftex.def)             Requested size: 436.80838pt x 184.49728pt.
  [28 <./Img//L06-img001.jpg>]
-<./Img//L06-img003.jpg, id=439, 1572.87625pt x 760.8425pt>
+<./Img//L06-img003.jpg, id=475, 1572.87625pt x 760.8425pt>
 File: ./Img//L06-img003.jpg Graphic file (type jpg)
 <use ./Img//L06-img003.jpg>
 Package pdftex.def Info: ./Img//L06-img003.jpg  used on input line 292.
 (pdftex.def)             Requested size: 436.80838pt x 211.29301pt.
  [29 <./Img//L06-img002.jpg>]
-<./Img//L06-img004.jpg, id=444, 1597.97pt x 765.86125pt>
+<./Img//L06-img004.jpg, id=480, 1597.97pt x 765.86125pt>
 File: ./Img//L06-img004.jpg Graphic file (type jpg)
 <use ./Img//L06-img004.jpg>
 Package pdftex.def Info: ./Img//L06-img004.jpg  used on input line 295.
 (pdftex.def)             Requested size: 436.80838pt x 209.34454pt.
-<./Img//L06-img005.jpg, id=445, 974.64125pt x 927.465pt>
+<./Img//L06-img005.jpg, id=481, 974.64125pt x 927.465pt>
 File: ./Img//L06-img005.jpg Graphic file (type jpg)
 <use ./Img//L06-img005.jpg>
 Package pdftex.def Info: ./Img//L06-img005.jpg  used on input line 308.
 (pdftex.def)             Requested size: 273.0042pt x 259.78749pt.
- [30 <./Img//L06-img003.jpg> <./Img//L06-img004.jpg>] [31 <./Img//L06-img005.jpg>] [32]) (./Sezioni/Meccanica.tex) [33] (build/main.aux)
+ [30 <./Img//L06-img003.jpg> <./Img//L06-img004.jpg>] [31 <./Img//L06-img005.jpg>] [32]) (./Sezioni/Meccanica.tex
+<./Img//L08-img001.jpg, id=499, 1451.4225pt x 679.53876pt>
+File: ./Img//L08-img001.jpg Graphic file (type jpg)
+<use ./Img//L08-img001.jpg>
+Package pdftex.def Info: ./Img//L08-img001.jpg  used on input line 3.
+(pdftex.def)             Requested size: 273.0042pt x 127.81758pt.
+ [33 <./Img//L08-img001.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 34.
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 94.
+Package mdframed Info: Not enough space on this page on input line 100.
+[35]
+Package mdframed Info: Not enough space on this page on input line 100.
+ [36]) [37] (build/main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 91D293A7712F41861E34AB59B5D5B5FB;8930.
+(rerunfilecheck)             Checksum: 55D40C37E5BB900D9B3573638CD34AB4;10017.
  ) 
 Here is how much of TeX's memory you used:
- 14495 strings out of 478599
- 215893 string characters out of 5854087
- 563535 words of memory out of 5000000
- 32025 multiletter control sequences out of 15000+600000
+ 15358 strings out of 478599
+ 233317 string characters out of 5854087
+ 592514 words of memory out of 5000000
+ 32852 multiletter control sequences out of 15000+600000
  423324 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,18n,80p,702b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,18n,81p,702b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on build/main.pdf (33 pages, 7162169 bytes).
+Output written on build/main.pdf (37 pages, 7452442 bytes).
 PDF statistics:
- 578 PDF objects out of 1000 (max. 8388607)
- 467 compressed objects within 5 object streams
- 95 named destinations out of 1000 (max. 500000)
- 554 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 636 PDF objects out of 1000 (max. 8388607)
+ 519 compressed objects within 6 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 615 words of extra memory for PDF output out of 10000 (max. 10000000)
 
