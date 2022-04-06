@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1648819502 "main.tex" "build/main.pdf" "main" 1648819504
+["pdflatex"] 1649248526 "main.tex" "build/main.pdf" "main" 1649248528
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -184,18 +184,19 @@
   "Img//L06-img003.jpg" 1648648787 367145 2c680967d345932d84161798b6d5a54e ""
   "Img//L06-img004.jpg" 1648648787 398638 fe807c12ecb775d9731f97b4a2a8a041 ""
   "Img//L06-img005.jpg" 1648648787 291004 374e713504dd8982e97a6ad2eb95843d ""
+  "Img//L08-img001.jpg" 1649248477 275274 0c0ff8ff6b6da33dca29613667fa8495 ""
   "Img//LOGO.png" 1646831746 22405 c7c97e1f457426285d5c605efb1440b1 ""
   "Sezioni/Dinamica.tex" 1648650263 30540 886cec8503be8b9e5cae24aaa722c87c ""
   "Sezioni/Lezione01.tex" 1648648787 27045 14704ecdb3e4e00fc7af68a46a69779d ""
-  "Sezioni/Meccanica.tex" 1648819469 9373 23d19502087bae82e43eb5f60e3b1574 ""
+  "Sezioni/Meccanica.tex" 1649248497 9408 de6b899a8e538462b10d73e4c21bc1e4 ""
   "Sezioni/Roba.tex" 1646831746 301 c75da0db7d53bcd2c9ab30721cd9c797 ""
-  "build/main.aux" 1648819504 9160 4d7824a6bd518a29e138fbd80a766eb1 "pdflatex"
-  "build/main.out" 1648819504 10017 55d40c37e5bb900d9b3573638cd34ab4 "pdflatex"
-  "build/main.toc" 1648819504 5388 dfac31be19c0c96428bf8b7a0384e520 "pdflatex"
+  "build/main.aux" 1649248528 9160 e4b8d377d9e303edec61f47885c9ca96 "pdflatex"
+  "build/main.out" 1649248528 10017 55d40c37e5bb900d9b3573638cd34ab4 "pdflatex"
+  "build/main.toc" 1649248528 5388 43e0e2e0300aeaa3076c9143ba349e0b "pdflatex"
   "main.tex" 1648727879 1908 a2c46500654b62e173a5dfa8db817c12 ""
   (generated)
-  "build/main.toc"
   "build/main.aux"
-  "build/main.out"
-  "build/main.pdf"
   "build/main.log"
+  "build/main.pdf"
+  "build/main.out"
+  "build/main.toc"

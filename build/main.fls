@@ -1111,6 +1111,10 @@ INPUT Sezioni/Meccanica.tex
 INPUT ./Sezioni/Meccanica.tex
 INPUT ./Sezioni/Meccanica.tex
 INPUT Sezioni/Meccanica.tex
+INPUT ./Img//L08-img001.jpg
+INPUT ./Img//L08-img001.jpg
+INPUT ./Img//L08-img001.jpg
+INPUT ./Img//L08-img001.jpg
 INPUT build/main.aux
 INPUT build/main.out
 INPUT build/main.out
