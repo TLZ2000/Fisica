@@ -58,5 +58,8 @@
 \contentsline {subsubsection}{\numberline {4.8.2}Allungamento massimo}{41}{subsubsection.4.8.2}%
 \contentsline {subsubsection}{\numberline {4.8.3}Posizione di velocità massima}{41}{subsubsection.4.8.3}%
 \contentsline {subsubsection}{\numberline {4.8.4}Velocità massima}{41}{subsubsection.4.8.4}%
-\contentsline {section}{\numberline {5}Meccanica}{41}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Lavoro}{41}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {4.8.5}Calcoliamo la T}{41}{subsubsection.4.8.5}%
+\contentsline {paragraph}{\numberline {4.8.5.1}Il periodo}{41}{paragraph.4.8.5.1}%
+\contentsline {paragraph}{\numberline {4.8.5.2}La tensione}{42}{paragraph.4.8.5.2}%
+\contentsline {section}{\numberline {5}Meccanica}{42}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Lavoro}{42}{subsection.5.1}%
