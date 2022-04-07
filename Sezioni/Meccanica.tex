@@ -153,3 +153,95 @@
             P=\frac{dW}{dt}=\frac{\vec{F}\cdot d\vec{s}}{dt}=\vec{F}\cdot\vec{v}
         \end{align*}
         L'unità di misura della potenza è il Watt, $W=1\frac{J}{s}$.
+
+    \subsection{Forze conservative}
+        Una \textbf{forza conservativa} è una forza per cui il lavoro dipende solamente dal punto iniziale, $p_i$, e dal punto finale, $p_f$.\\
+        Se vado quindi da $p_i$ a $p_f$ seguendo due percorsi diversi il lavoro sarà lo stesso.\\
+        Se invece vado da $p_f$ a $p_i$, il lavoro sarà sempre uguale ma avrà segno opposto, indipendentemente dal percorso. Questo è descritto come segue,
+        \begin{align*}
+            \oint \vec{f}\cdot d\vec{s}=0
+        \end{align*}
+        ovvero l'integrale chiuso.
+
+        \subsubsection{Energia potenziale}
+            L'\textbf{energia potenziale} di un corpo è l'energia che esso possiede a causa della sua posizione o del suo orientamento rispetto ad un campo di forze ed è denotata con $U$.
+
+        \subsubsection{Energia meccanica}
+            L'\textbf{energia meccanica} è la somma di energia cinetica ed energia potenziale ovvero,
+            \begin{align*}
+                E=E_k+U
+            \end{align*}
+
+        \subsubsection{Principio di conservazione dell'energia meccanica}
+            Consideriamo il caso 1-DIM,
+            \begin{align*}
+                \int_{p_i}^{p_f} F dx = U(p_f) - U(p_i) = W_{p_i\rightarrow p_f}
+            \end{align*}
+            Ora per il teorema delle forze vive ho che,
+            \begin{align*}
+                W_{p_i\rightarrow p_f}=E_{k,f} - E_{k,i}
+            \end{align*}
+            e quindi, usando una notazione semplificata, ovvero per esempio invece che $U(p_f)$ uso $U_f$, ottengo che,
+            \begin{align*}
+                U_f - U_i=E_{k,f} - E_{k,i} => U_f - E_{k,f}=U_i - E_{k,i} => E_f = E_i
+            \end{align*}
+            ovvero l'energia meccanica iniziale è uguale a quella finale, e quindi
+            \begin{align*}
+                \Delta E = 0
+            \end{align*}
+            ovvero la variazione di energia meccanica è $0$, quindi nel caso in cui si hanno solo forze conservative, l'energia meccanica non varia, si conserva.\\
+            Se ora consideriamo,
+            \begin{align*}
+                -(U(p_f) - U(p_i)) = W_{p_i\rightarrow p_f}
+            \end{align*}
+            ed deriviamo, otteniamo che,
+            \begin{align*}
+                F=- \frac{dU}{ds}
+            \end{align*}
+            Nel caso a più dimensioni invece, per esempio consideriamo 3-DIM, abbiamo che,
+            \begin{align*}
+                F=- \nabla U =-(\frac{\partial U}{\partial x}\frac{\partial U}{\partial y}\frac{\partial U}{\partial z})
+            \end{align*}
+
+        \subsubsection{Esercizio forze conservative}
+            Consideriamo ora l'esercizio fatto in passato [pag.\pageref{esercizioDinamicaMolla}].\\
+            Tutte le forze che agiscono sul sistema sono conservative, quindi possiamo usare il principio di conservazione dell'energia meccanica e risolverlo in modo molto più semplice.\\
+            Ora abbiamo quindi che le forze che agiscono sul sistema sono,
+            \begin{align*}
+                \vec{F}_p=-mg\hat{z}
+                \vec{F}_el=-k(z-z_i)\hat{z}
+            \end{align*}
+            e considerando la conservazione dell'energia meccanica abbiamo che,
+            \begin{align*}
+                E_k+U=cost => E_k+U_p+U_{el}=cost
+            \end{align*}
+            Calcoliamo ora quindi le energie potenziali,
+            \begin{align*}
+                &U_p=-W_p=mg(z-z_0)\\
+                &U_{el}=\frac{k}{2}(z^2-z_0^2)
+            \end{align*}
+            e quindi ora sostituisco nella formula precedente e ottengo,
+            \begin{align*}
+                \frac{1}{2}mv^2+mgz+\frac{k}{2}z^2=cost
+            \end{align*}
+            Ora considerando il sistema di riferimento scelto, nel punto iniziale abbiamo $v_i=0$ e $z=0$ e quindi, la formula precedente è $=0$.\\
+            Considerando il punto $z_{max}$, ho sempre che $v=0$, e ottengo che,
+            \begin{align*}
+                mg z_{max}+\frac{k}{2} {z_{max}}^2=0 => z_{max}(\frac{k}{2}z_{max} + mg)=0
+            \end{align*}
+            Le due soluzioni sono quindi $z_{max}=0$, che non viene considerata, e
+            \begin{align*}
+                z_{max}=-\frac{2mg}{k}=\Delta z_{max}
+            \end{align*}
+            Ora osserviamo che $z_{v_{max}}$ è $z_{eq}$, ovvero la $z$ nel punto di equilibrio, e quindi,
+            \begin{align*}
+                z_{v_{max}}=z_{eq}=\frac{z_{max}}{2}=-\frac{mg}{k}
+            \end{align*}
+            Per calcolare la $v_{max}$ ora, consideriamo sempre il fatto che essa è in $z_{eq}$ e quindi,
+            \begin{align*}
+                &\frac{1}{2}mv_{max}^2+mg z_{eq}+\frac{k}{2}z_{eq}^2=0 &&=> \frac{1}{2}mv_{max}^2-\frac{(mg)^2}{k}+\frac{(mg)^2}{2K}=0\\
+                & &&=>\frac{1}{2}mv_{max}^2-\frac{(mg)^2}{2K}=0\\
+                & &&=>\frac{1}{2}mv_{max}^2=\frac{(mg)^2}{2K}\\
+                & &&=>v_{max}^2=\frac{mg^2}{K}\\
+                & &&=>v_{max}=\sqrt{\frac{mg^2}{K}}
+            \end{align*}
