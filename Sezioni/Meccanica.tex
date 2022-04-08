@@ -245,3 +245,30 @@
                 & &&=>v_{max}^2=\frac{mg^2}{K}\\
                 & &&=>v_{max}=\sqrt{\frac{mg^2}{K}}
             \end{align*}
+
+    \subsection{Forze non conservative e lavoro}
+        Consideriamo ora il fatto in cui sul sistema agiscono anche forze non conservative e ne calcoliamo il lavoro.\\
+        Abbiamo quindi che,
+        \begin{align*}
+            &\vec{R}=\vec{R}_c + \vec{R}_{nc}\\
+            &W_{TOT}=\int_i^f \vec{R}d\vec{s}=\int_i^f \vec{R}_cd\vec{s} + \int_i^f \vec{R}_{nc}d\vec{s}=W_c+W_{nc}
+        \end{align*}
+        Ora però sappiamo che,
+        \begin{align*}
+            &W_{TOT}=\Delta E_k=>W_c+W_{nc}=\Delta E_k=>W_{nc}=\Delta E_k - W_c
+        \end{align*}
+        ma ora ci ricordiamo che $W_c=-\Delta U$ e quindi,
+        \begin{align*}
+            W_{nc}=\Delta E_k+\Delta U=>W_{nc}=\Delta E
+        \end{align*}
+        Quindi se sul sistema agiscono delle forze non conservative, il lavoro di queste sarà uguale alla variazione di energia meccanica.\\
+        Osserviamo ora quindi che se $W_{nc}<0$, vuol dire che $E_f-E_i<0$ e quindi $E_f<E_i$. Allo stesso modo, se $W_{nc}>0$, vuol dire che $E_f-E_i>0$ e quindi $E_f>E_i$, e inoltre $E_f=E_i+W_{nc}$.
+
+        \subsubsection{Esempio lavoro forze non conservative}
+            Supponiamo che un corpo di massa $m$ scali una montagna di altezza $h_{max}$ partendo da $h_0=0$. Ora non considerando gli attriti, abbiamo solo la forza peso che agisce sulla massa. Calcoliamo quindi,
+            \begin{align*}
+                &\Delta U_p=mgh_{max}+mg0=mgh_{max}\\
+                &\Delta E_k=\frac{1}{2}m{v_f}^2-\frac{1}{2}m{v_i}^2=\frac{1}{2}m0^2-\frac{1}{2}m{0}^2=0\\
+                &\Delta E=mgh_{max}=W_{nc}
+            \end{align*}
+            L'energia cinetica è $=0$ dato che sia la velocità iniziale che quella finale sono $=0$ e quindi l'energia meccanica sarà uguale all'energia potenziale, quest'ultima è uguale all'energia potenziale finale dato che, essendo l'altezza iniziale $=0$, anche l'energia potenziale iniziale $=0$.
