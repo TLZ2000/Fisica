@@ -1,65 +1,23 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {section}{\numberline {1}Formulario}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Unità di misura}{4}{subsection.1.1}%
-\contentsline {section}{\numberline {2}Introduzione}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Il metodo sperimentale}{4}{subsection.2.1}%
-\contentsline {section}{\numberline {3}Cinetica dei punti}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Sistema di riferimento}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Diagramma dello spazio}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Caso semplice}{5}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Moto rettilineo uniforme}{6}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Velocità}{6}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Velocità istantanea}{7}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Accelerazione}{7}{subsubsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.3}Moto rettilineo uniformemente accellerato}{7}{subsubsection.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.5.4}Esercizi vari sui moti con formule}{8}{subsubsection.3.5.4}%
-\contentsline {paragraph}{\numberline {3.5.4.1}Esempio 1 (moto rettilineo uniforme)}{8}{paragraph.3.5.4.1}%
-\contentsline {paragraph}{\numberline {3.5.4.2}Esempio 2 (moto rettilineo uniformemente accellerato)}{8}{paragraph.3.5.4.2}%
-\contentsline {subsection}{\numberline {3.6}Moto armonico}{10}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}Esempio di moto armonico}{11}{subsubsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.7}I moti piani}{12}{subsection.3.7}%
-\contentsline {subsubsection}{\numberline {3.7.1}I vettori}{12}{subsubsection.3.7.1}%
-\contentsline {subsubsection}{\numberline {3.7.2}Sistema di riferimento}{12}{subsubsection.3.7.2}%
-\contentsline {subsubsection}{\numberline {3.7.3}Rappresentare velocità ed accelerazione}{14}{subsubsection.3.7.3}%
-\contentsline {subsubsection}{\numberline {3.7.4}Esempio}{14}{subsubsection.3.7.4}%
-\contentsline {subsection}{\numberline {3.8}Il moto parabolico}{16}{subsection.3.8}%
-\contentsline {subsubsection}{\numberline {3.8.1}Sistema di riferimento}{16}{subsubsection.3.8.1}%
-\contentsline {subsubsection}{\numberline {3.8.2}Rappresentare spazio, gittata $\gamma $, altezza massima $h_{max}$ e velocità}{17}{subsubsection.3.8.2}%
-\contentsline {paragraph}{\numberline {3.8.2.1}Riassunto}{18}{paragraph.3.8.2.1}%
-\contentsline {subsection}{\numberline {3.9}Moto circolare uniforme}{18}{subsection.3.9}%
-\contentsline {section}{\numberline {4}Dinamica}{20}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Leggi della dinamica}{20}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Forze impulsive}{21}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Esempio forze impulsive}{21}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Esercizio su forze impulsive}{22}{subsubsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.3}Esercizi sulla dinamica}{22}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Forze fondamentali}{23}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Forze}{24}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Forza peso}{24}{subsubsection.4.5.1}%
-\contentsline {paragraph}{\numberline {4.5.1.1}Esempio sensazione del peso}{24}{paragraph.4.5.1.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}Forza gravitazionale}{25}{subsubsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.3}Forza elastica}{26}{subsubsection.4.5.3}%
-\contentsline {subsubsection}{\numberline {4.5.4}Forza di attrito (radente)}{28}{subsubsection.4.5.4}%
-\contentsline {paragraph}{\numberline {4.5.4.1}Esempio di calcolo del coefficiente di attrito statico}{29}{paragraph.4.5.4.1}%
-\contentsline {subsection}{\numberline {4.6}Piano inclinato}{29}{subsection.4.6}%
-\contentsline {subsubsection}{\numberline {4.6.1}Sistema di riferimento}{29}{subsubsection.4.6.1}%
-\contentsline {subsubsection}{\numberline {4.6.2}Esempio}{30}{subsubsection.4.6.2}%
-\contentsline {paragraph}{\numberline {4.6.2.1}Versione senza attrito}{31}{paragraph.4.6.2.1}%
-\contentsline {paragraph}{\numberline {4.6.2.2}Versione con attrito}{32}{paragraph.4.6.2.2}%
-\contentsline {subsubsection}{\numberline {4.6.3}Esempio di calcolo del coefficiente di attrito dinamico}{33}{subsubsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.7}Pendolo semplice}{33}{subsection.4.7}%
-\contentsline {subsubsection}{\numberline {4.7.1}Sistema di riferimento sul peso}{34}{subsubsection.4.7.1}%
-\contentsline {subsubsection}{\numberline {4.7.2}Sistema di riferimento nella posizione di equilibrio}{34}{subsubsection.4.7.2}%
-\contentsline {paragraph}{\numberline {4.7.2.1}Calcolare spazio, velocità e accelerazione}{35}{paragraph.4.7.2.1}%
-\contentsline {paragraph}{\numberline {4.7.2.2}Le piccole oscillazioni}{36}{paragraph.4.7.2.2}%
-\contentsline {subsection}{\numberline {4.8}Esercizio sulla dinamica}{37}{subsection.4.8}%
-\contentsline {subsubsection}{\numberline {4.8.1}Studio della dinamica del problema}{39}{subsubsection.4.8.1}%
-\contentsline {subsubsection}{\numberline {4.8.2}Allungamento massimo}{41}{subsubsection.4.8.2}%
-\contentsline {subsubsection}{\numberline {4.8.3}Posizione di velocità massima}{41}{subsubsection.4.8.3}%
-\contentsline {subsubsection}{\numberline {4.8.4}Velocità massima}{41}{subsubsection.4.8.4}%
-\contentsline {subsubsection}{\numberline {4.8.5}Calcoliamo la T}{41}{subsubsection.4.8.5}%
-\contentsline {paragraph}{\numberline {4.8.5.1}Il periodo}{41}{paragraph.4.8.5.1}%
-\contentsline {paragraph}{\numberline {4.8.5.2}La tensione}{42}{paragraph.4.8.5.2}%
-\contentsline {section}{\numberline {5}Meccanica}{42}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Lavoro}{42}{subsection.5.1}%
+\contentsline {section}{\numberline {1}Meccanica}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Lavoro}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Esempi di lavoro}{4}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Lavoro forza peso}{4}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Lavoro forza elastica}{5}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Lavoro forza attrito}{5}{subsubsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.3}Energia cinetica}{6}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Teorema delle forze vive}{6}{subsubsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.4}Potenza}{6}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Forze conservative}{6}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}Energia potenziale}{7}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2}Energia meccanica}{7}{subsubsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.3}Principio di conservazione dell'energia meccanica}{7}{subsubsection.1.5.3}%
+\contentsline {subsubsection}{\numberline {1.5.4}Esercizio forze conservative}{7}{subsubsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.6}Forze non conservative e lavoro}{8}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {1.6.1}Esempio lavoro forze non conservative}{9}{subsubsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.7}Gravità universale}{9}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Leggi di Keplero}{11}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Sistemi di riferimento non inerziali}{12}{subsection.1.9}%
+\contentsline {subsubsection}{\numberline {1.9.1}Convertire una rotazione in vettore}{12}{subsubsection.1.9.1}%
+\contentsline {subsubsection}{\numberline {1.9.2}Legge di Poasson}{12}{subsubsection.1.9.2}%

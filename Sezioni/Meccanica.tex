@@ -272,3 +272,75 @@
                 &\Delta E=mgh_{max}=W_{nc}
             \end{align*}
             L'energia cinetica è $=0$ dato che sia la velocità iniziale che quella finale sono $=0$ e quindi l'energia meccanica sarà uguale all'energia potenziale, quest'ultima è uguale all'energia potenziale finale dato che, essendo l'altezza iniziale $=0$, anche l'energia potenziale iniziale $=0$.
+
+    \subsection{Gravità universale}
+        La \textbf{forza gravitazionale} è quella forza che esiste tra 2 corpi. Possiamo rappresentarla con questa formula:
+        \begin{align*}
+            \textcolor{Red}{\vec{F} = -\gamma*\frac{m_1*m_2}{r^2_{1,2}}*\hat{r}_{1,2}}
+        \end{align*}
+        Dove:
+        \begin{itemize}
+            \item $G$ è la \textbf{costante di gravitazione universale}, calcolata scientificamente e vale $\gamma = G =6,67*10^{-11}\frac{N*m^2}{Kg^2}$. Nota che G è $\gamma$ per la Terra;
+            \item $m_1, m_2$ sono le masse dei 2 corpi;
+            \item $r{1,2}$ è la distanza tra i 2 corpi;
+        \end{itemize}
+        Perché ci serve la costante di gravitazione? Se \textbf{controlliamo le unità di misura senza questa costante} otterremo una $\frac{M^2}{L^2}$ (M -> massa, L -> lunghezza), ma noi \textbf{vogliamo una forza}! Per questo motivo introduciamo la costante di gravitazione, espressa proprio come $N*\frac{L^2}{M^2}$, se mettiamo tutto insieme le masse e le lunghezze si semplificano \textbf{lasciando solo una forza} (in Newton)! Se immaginiamo di avere la Terra e la Luna, la forza gravitazionale è proprio \textbf{la forza normale che permette alla luna di restare sulla sua orbita} (che immaginiamo essere perfettamente circolare per semplicità). Questa forza corrisponderebbe proprio a:
+        \begin{align*}
+            \vec{F} = -G*\frac{m_L*m_T}{d^2}
+        \end{align*}
+        Ora, noi sappiamo che, per la II legge di Newton, che $\vec{F}=m*\vec{a}$. Possiamo mettere a confronto i \textbf{moduli di queste 2 forze}:
+        \begin{align*}
+            m_{I,L}*\frac{v^2}{d_{T,L}} = G*\frac{m_{G,L}*m_{GT}}{d^2_{T,L}}
+        \end{align*}
+        Alcune osservazioni:
+        \begin{enumerate}
+            \item il "$-G$" diventa "$G$" perché \textbf{stiamo paragonando i moduli}, quindi il segno non  importa;
+            \item la forza a sinistra dell'= corrisponde alla \textbf{forza normale del moto circolare};
+            \item a sinistra dell'=, la massa $m_{I, L}$ è la \textbf{massa INERZIALE} (\textit{capacità di un corpo di opporsi al moto}) della luna, mentre a destra la massa $m_{G, L}$ è la \textbf{massa GRAVITAZIONALE} (\textit{carica gravitazionale del corpo}) della luna. Sono 2 valori \textbf{concettualmente diversi}, ma \textbf{hanno valori uguali}!
+        \end{enumerate}
+        Detto ciò, soprattutto facendo riferimento al terzo punto, possiamo applicare una serie di semplificazioni:
+        \begin{align*}
+            &m_{I,L}*\frac{v^2}{d} = G*\frac{m_{G,L}*m_{G,T}}{d^2} && => \frac{v^2}{d} = G*\frac{m_{G,T}}{d^2}\\
+            &conversione\ vel.\ moto\ circolare &&=>\frac{(\omega*d)^2}{d}=G*\frac{m_{G, T}}{d^2}\\
+            & &&=>\omega^2*d^2=G*\frac{m_{G, T}}{d}\\
+            & &&=>\omega^2*d^3=G*m_{G, T}\\
+            &definizione\ \omega &&=>(\frac{2\pi}{T})^2*d^3=G*m_{G, T}\\
+            & &&=> \frac{d^3}{T^2} = G*\frac{m_{G, T}}{(2\pi)^2}
+        \end{align*}
+        Ok, con l'ultima equazione siamo arrivati al punto in cui abbiamo \textbf{tutto quello che riguarda il satellite} (la Luna) \textbf{è da una parte} e \textbf{tutto quello che riguarda la Terra è dall'altra}. In particolare, notiamo che la parte che riguarda la Terra \textbf{è costante}! Ciò ci permette di, ad esempio, i scegliere una nuova distanza e, di conseguenza, il periodo T si "aggiusterà" di conseguenza per mantenere la costante "costante".
+        \begin{align*}
+            \frac{d^3}{T^2} = const.
+        \end{align*}
+        Nota come \textbf{la massa del satellite non influisce sulla distanza o sul periodo}, quindi possiamo usare la \textbf{stessa formula} per \textbf{qualsiasi satellite che orbita la terra} (con un moto circolare uniforme). Immaginiamo di considerare l'ISS che orbita la terra ad una distanza di 500Km, la formula diventerebbe:
+        \begin{align*}
+            \frac{d_L^3}{T_L^2} = const. = \frac{d_{ISS}^3}{T_{ISS}^2}
+        \end{align*}
+        \begin{align*}
+            \frac{(300000Km)^3}{(28gg)^2} = const. = \frac{(500Km)^3}{(?)^2}
+        \end{align*}
+        Come detto prima, se variamo il raggio dell'orbita, il periodo varia di conseguenza per mantenere il valore della costante uguale!
+
+        \subsection{Leggi di Keplero}
+            La legge di gravità universale è stata "creata" come \textbf{"unificazione" delle 3 leggi di Keplero}. Nota che queste leggi descrivono il moto, ellittico, dei pianeti attorno al Sole. Citiamole per completezza:
+            \begin{enumerate}
+                \item \textit{L'orbita descritta da un pianeta è un'ellisse, di cui il Sole occupa uno dei due fuochi};
+                \framedImg{5}{L10-img001}
+                \item \textit{Il segmento (raggio vettore) che unisce il centro del Sole con il centro del pianeta descrive aree uguali in tempi uguali};
+                \framedImg{5}{L10-img002}
+                \item \textit{I quadrati dei tempi che i pianeti impiegano a percorrere le loro orbite sono proporzionali al cubo del semiasse maggiore}. Questa legge può essere scritta in forma matematica in questo modo:
+                \begin{align*}
+                    T^2=k*a^3
+                \end{align*}
+                In particolare, $k$ è una costante (detta anche Keplero) che dipende dal corpo attorno al quale si orbita.
+            \end{enumerate}
+
+    \subsection{Sistemi di riferimento non inerziali}
+        Prima di cominciare con i sistemi di riferimento non inerziali, sostanzialmente quei \textbf{sistemi di riferimento soggetti ad una qualche accelerazione rispetto ad un sistema di riferimento inerziale}, dobbiamo introdurre alcuni concetti fondamentali.
+        \subsubsection{Convertire una rotazione in vettore}
+            Come facciamo a rappresentare una rotazione utilizzando un vettore? Vediamo punto per punto:
+            \begin{itemize}
+                \item \textbf{direzione}: corrisponde all'asse su cui viene eseguita la rotazione;
+                \item \textbf{verso}: applichiamo la "regola della vite destrorsa", ovvero immaginiamo di posizionare una vite sull'asse di rotazione ed applichiamo suddetta rotazione: il verso di avanzamento/arretramento della vite ci indica il verso del vettore (ricorda che le viti "entrano" se vengono ruotate in senso orario);
+                \item \textbf{modulo}: come abbiamo già visto, possiamo rappresentare la rotazione con una \textbf{velocità angolare} $\omega$, prendiamo come modulo del vettore il \textbf{valore numerico di }$\omega$; 
+            \end{itemize}
+        \subsubsection{Legge di Poasson}
