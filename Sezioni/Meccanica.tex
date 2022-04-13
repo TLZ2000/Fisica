@@ -272,3 +272,103 @@
                 &\Delta E=mgh_{max}=W_{nc}
             \end{align*}
             L'energia cinetica è $=0$ dato che sia la velocità iniziale che quella finale sono $=0$ e quindi l'energia meccanica sarà uguale all'energia potenziale, quest'ultima è uguale all'energia potenziale finale dato che, essendo l'altezza iniziale $=0$, anche l'energia potenziale iniziale $=0$.
+
+    \subsection{Forze apparenti}
+        Consideriamo ora le forze esterne nel sistema di riferimento $S$,
+        \begin{align*}
+            \vec{F}_{ext}=m\vec{a}
+        \end{align*}
+        e nel sistema di riferimento $S'$,
+        \begin{align*}
+            \vec{F}_{ext}=m(\vec{a'}+\vec{a_T}+\vec{a_C})
+        \end{align*}
+        In $S'$ ottengo quindi che,
+        \begin{align*}
+            \vec{F}_{ext}-m\vec{a_T}-m\vec{a_C}=m\vec{a'} => \vec{a'} = \frac{\vec{F}_{ext}-m\vec{a_T}-m\vec{a_C}}{m}
+        \end{align*}
+        Le forze $-m\vec{a_T}-m\vec{a_C}$ sono dette \textbf{forze apparenti}. Apparenti perchè sono legate al sistema di riferimento, infatti queste forze sono dovute al moto del sistema di riferimento non inerziale.
+
+        \subsubsection{Principio di relatività galileiana}
+            Il \textbf{principio di relatività galileiana} dice che è sempre possibile mantenere la formulazione delle leggi della fisica se ci si sposta da un sistema di riferimento ad un'altro, purchè la differenza di moto tra i due sistemi di riferimento sia esprimibile come una velocità.\\
+            La Terra non è un sistema di riferimento inerziale, dato che ruota intorno a se stessa e attorno al sole. Come sistema di riferimento inerziale di solito si usa quello delle \textbf{stelle fisse}, si prende il sole come origine e si puntano gli assi verso delle costellazioni che si vede che non si muovono.
+
+        \subsubsection{Esempio 1 forze apparenti}
+            %\framedImg{}{}
+            Supponiamo di avere un sistema di riferimento $S$ che sono i binari ed un sistema di riferimento $S'$ che è un vagone. Nel vagone c'è una molla di costante elastica $K$ e una massa $m$ e trascuriamo gli attriti. Consideriamo anche $\vec{\omega}=\vec{0}$, quindi il sistema $S'$ non ruota.\\
+            Quando il vagone parte con una certa accelerazione, la massa si sposterà verso la molla, quindi con accelerazione uguale ed opposta a quella del vagone, finchè non la raggiunge e poi comincia a contrarla. Se il vagone continua ad accelerare ad un certo punto la massa smetterà di contrarre la molla, questo si ha quando la forza elastica è bilanciata dalla forza apparente,
+            \begin{align*}
+                \vec{F}_a=-m\vec{a_T}
+            \end{align*}
+            Ho quindi ora che,
+            \begin{align*}
+                \vec{R}-m\vec{a_T}-m\vec{a_C}=m\vec{a'}
+            \end{align*}
+            Ora se il vagone smette di accelerare quando la massa deve ancora raggiungere la molla, la massa continuerà in moto rettilineo uniforme verso la molla, se invece il vagone smette di accelerare quando la massa ha compresso la molla, la forza elastica della molla spingerà la massa nel senso opposto e quest'ultima continuerà di moto rettilineo uniforme fino a raggiungere la parete del vagone opposta a quella dove è attaccata la molla. Nel caso in cui il vagone smette di accelerare si ha quindi che,
+            \begin{align*}
+                \vec{R}=m\vec{a_T}=>m\vec{a_T}=-k\vec{x}=>\vec{a_T}-\frac{k\vec{x}}{m}
+            \end{align*}
+            Osserviamo che si riesce a capire se ci si trova in un sistema di riferimento inerziale o meno osservando lo stato della molla (allungata, accorciata, a riposo).\\
+            Per il principio di relatività galileiana non riesco a distinguere un sistema di riferimento inerziale da un'altro, ma invece se sono in un sistema di riferimento non inerziale riesco ad accorgermene. Se il vagone è ben schermato e vedo le molle che si muovono, vuol dire che il movimento della molla ha a che vedere con il movimento del sistema di riferimento, che non è quindi inerziale.
+
+        \subsubsection{Esempio 2 forze apparenti}
+            Supponiamo che in un ascensore che è in caduta libera ci sia un omino, nel sistema di riferimento ascensore l'omino è fermo, mentre nel sistema di riferimento esterno all'ascensore l'omino ha un'accelerazione di trascinamento che è,
+            \begin{align*}
+                \vec{R}-m\vec{a_T}-m\vec{a_C}=m\vec{a'} => m\vec{g}-m\vec{a_T}=0 => \vec{a_T}=\vec{g}
+            \end{align*}
+            Osserviamo che l'accelerazione di Coriolis è $=0$ dato che non c'è rotazione e che $\vec{a'}=0$ perchè l'omino per il sistema di riferimento ascensore è fermo.\\
+            Osserviamo quindi che la forza peso non è una forza apparente.
+
+    \subsection{Punto materiale}
+        Un \textbf{punto materiale} è un punto nel quale è concentrata tutta la massa del corpo, quindi rappresento il corpo come un punto materiale. Il punto materiale è un'astrazione/idealizzazione e non ha quindi dimensioni.\\
+        Se il movimento del corpo è molto più grande delle sue dimensioni infatti, si può trascurare il volume del corpo e considerarlo come un punto materiale.\\
+        %\framedImg{}{}
+        Ora se considero un sistema di punti materiali, ogni punto avrà massa $m_i$ per $1\leq i\leq n$. Su ogni $m_i$ agiscono delle \textbf{forze esterne} e delle \textbf{forze interne}. Ora quest'ultime saranno la somma di tutte le forze esercitate dalle altre masse su $m_i$, però considerando la III legge della dinamica [pag.\pageref{IIILeggeDinamica}], abbiamo che la somma delle forze interne è $0$.\\
+        Ora calcoliamo quindi la risultante delle forze per ogni $m_i$,
+        \begin{align*}
+            &\vec{R_i}=m_i\vec{a_i}=\vec{R_i^I} + \vec{R_i^E}\\
+            &\vec{R_i^E}=\sum_{k=1}^M \vec{F_{k,i}^E}\\
+            &\vec{R_i^I}=\sum_{j=1,j\neq i}^N \vec{F_{j\rightarrow i}^I}
+        \end{align*}
+        Ed ora otteniamo la risultante di queste,
+        \begin{align*}
+            &\vec{R^E}=\sum_{i=1}^N \vec{R_i^E}\\
+            &\vec{R^I}=\sum_{i=1}^N \vec{R_i^I}=\vec{0}
+        \end{align*}
+        Ora otteniamo che,
+        \begin{align*}
+            &\vec{R}=\vec{R^E}=\sum_{i=1}^N m_i\vec{a_i}
+        \end{align*}
+        Ora possiamo fare il passaggio seguente,
+        \begin{align*}
+            \vec{R^E}=\sum_i^N m_i \frac{\sum_{i=1}^N m_i\vec{a_i}}{\sum_i^N m_i}=M \sum_{i=1}^N \frac{m_i\vec{a_i}}{M}=M \sum_{i=1}^N \frac{m_i}{M}\frac{d^2\vec{r_i}}{dt^2} = M \frac{d^2}{dt^2}\sum_{i=1}^N\frac{m_i\vec{r_i}}{M}
+        \end{align*}
+        Definiamo ora il \textbf{centro di massa} come la media pesata per la massa, di tutte le posizioni dei costituenti del sistema. Ovvero la media pesata delle posizioni, dando come peso la frazione totale di massa che gli oggetti hanno. Il centro di massa è il seguente,
+        \begin{align*}
+            \vec{r}_{C.M.}=\sum_i^N \frac{m_i\vec{r_i}}{M}
+        \end{align*}
+        Ora ottengo quindi che,
+        \begin{align*}
+            \vec{R}=\vec{R^E}=M\frac{d^2\vec{r}_{C.M.}}{dt^2}=M\frac{d\vec{v}_{C.M.}}{dt}=M\vec{a}_{C.M.}
+        \end{align*}
+
+        \subsubsection{Esercizio centro di massa}
+        %\framedImg{}{}
+        Supponiamo di avere ora tre punti come nell'immagine e di dover calcolare il centro di massa del sistema,
+        \begin{align*}
+            \vec{r}_{C.M.}=
+            \left(\begin{array}{c}x_{C.M.} \\y_{C.M.}\end{array} \right)=
+            \left(\begin{array}{c}\frac{1*2+2*5+3*6}{6} \\\frac{1*3+2*2+3*6}{6}\end{array} \right)= \left(\begin{array}{c}5 \\\frac{25}{6}\end{array} \right)
+        \end{align*}
+
+        \subsubsection{Sistema isolato}
+            Un \textbf{sistema} è \textbf{isolato} se non agiscono forze esterne su di esso, quindi la risultante delle forze esterne è nulla.\\
+            Nei sistemi isolati ho quindi che,
+            \begin{align*}
+                \vec{R^E}=M\vec{a}_{C.M.}=\vec{0} => \vec{a}_{C.M.}=\vec{0} =>\vec{v}_{C.M.}=cost
+            \end{align*}
+
+        \subsubsection{Principio di conservazione della quantità di moto}
+            Il \textbf{principio di conservazione della quantità di moto} dice che in un sistema isolato la quantità di moto totale si conserva nel tempo.
+            \begin{align*}
+                \frac{d\vec{p}}{dt}=\vec{0}
+            \end{align*}
