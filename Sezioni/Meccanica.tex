@@ -341,6 +341,47 @@
             \begin{itemize}
                 \item \textbf{direzione}: corrisponde all'asse su cui viene eseguita la rotazione;
                 \item \textbf{verso}: applichiamo la "regola della vite destrorsa", ovvero immaginiamo di posizionare una vite sull'asse di rotazione ed applichiamo suddetta rotazione: il verso di avanzamento/arretramento della vite ci indica il verso del vettore (ricorda che le viti "entrano" se vengono ruotate in senso orario);
-                \item \textbf{modulo}: come abbiamo già visto, possiamo rappresentare la rotazione con una \textbf{velocità angolare} $\omega$, prendiamo come modulo del vettore il \textbf{valore numerico di }$\omega$; 
+                \item \textbf{modulo}: come abbiamo già visto, possiamo rappresentare la rotazione con una \textbf{velocità angolare} $\omega$, prendiamo come modulo del vettore il \textbf{valore numerico di }$\omega$;
             \end{itemize}
+
+        \subsubsection{Prodotto vettoriale}
+            Dobbiamo ridordare il concetto di \textbf{prodotto vettoriale}, in particolare è un'operazione binaria tra 2 vettori 3-dimensionali che restituisce un vettore 3-dimensionale. Matematicamente potremmo scrivere:
+            \begin{align*}
+                \times: R^3\times R^3\rightarrow R^3
+            \end{align*}
+            Supponiamo di avere:
+            \begin{align*}
+                \vec{v}\times\vec{w}=\vec{k}
+            \end{align*}
+            Ora, il vettore $\vec{k}$ ha 3 componenti principali, come le calcoliamo? Vediamo:
+            \begin{itemize}
+                \item \textbf{modulo}: corrisponde a
+                \begin{align*}
+                    ||\vec{v}||*||\vec{w}||*sin(\theta)
+                \end{align*}
+                dove $||\vec{v}||$ e $||\vec{w}||$ rappresentano la \textbf{norma euclidea} dei rispettivi vettori (sostanzialmente si fa la radice della somma dei quadrati delle componenti del vettore), mentre $\theta\in[0, \pi]$ rappresenta \textbf{l'angolo convesso tra i vettori};
+                \item \textbf{direzione}: la direzione \textbf{ortogonale} al piano che contiene $\vec{v}$ e $\vec{w}$;
+                \item \textbf{verso}: per quanto riguarda il verso, includo la regola generale della mano destra:
+                \framedImg{9}{L10-img003}
+                \framedImg{5}{L10-img004}
+            \end{itemize}
+
         \subsubsection{Legge di Poasson}
+            L'ultimo concetto da introdurre, ci permette di "ridurre" la derivata di un vettore ad un prodotto vettoriale. Supponiamo di avere un cono gelato e di \textbf{disegnare un vettore sul lato di questo cono}. Ora, immaginiamo di applicare una rotazione sull'asse di questo cono, otterremo qualcosa del genere:
+            \framedImg{3}{L10-img005}
+            Ora, se lo spostamento di $\vec{A}$ verso $\vec{A'}$ è \textbf{infinitesimale}, ovvero
+            \framedImg{7}{L10-img006}
+            possiamo "approssimare" $dA$ nell'intervallo di temo $dt$ ($dA/dt$, ovvero la derivata) come il \textbf{prodotto vettoriale tra il vettore rotazione $\vec{\omega}$ ed il vettore $\vec{A}$}:
+            \begin{align*}
+                \textcolor{Red}{\frac{d\vec{A}}{dt}=\vec{\omega}\times\vec{A}}
+            \end{align*}
+
+        \subsubsection{Cambiare il sistema di riferimento}
+            Supponiamo di avere \textbf{2 sistemi di riferimento}:
+            \begin{itemize}
+                \item $S$: sistema di riferimento \textbf{inerziale}, \textbf{FISSO};
+                \item $S'$: sistema di riferimento \textbf{non inerziale}, che \textbf{rispetto ad S NON è FISSO};
+            \end{itemize}
+            Vediamo un disegno:
+            \framedImg{7}{L10-img007}
+            Ora, noi vogliamo sapere qual'è il legame tra spazio, velocià ed accelerazione nel sistema S ed S', nota che S' \textbf{si muove e ruota rispetto ad S} (che è fisso ed immutabile), quindi anche le "coordinale" del punto materiale P variano. Ma come? Noi è questo che vogliamo scoprire.
