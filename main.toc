@@ -1,5 +1,5 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {section}{\numberline {1}Meccanica}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Lavoro}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Esempi di lavoro}{4}{subsection.1.2}%
@@ -21,5 +21,10 @@
 \contentsline {subsection}{\numberline {1.9}Sistemi di riferimento non inerziali}{12}{subsection.1.9}%
 \contentsline {subsubsection}{\numberline {1.9.1}Convertire una rotazione in vettore}{12}{subsubsection.1.9.1}%
 \contentsline {subsubsection}{\numberline {1.9.2}Prodotto vettoriale}{12}{subsubsection.1.9.2}%
-\contentsline {subsubsection}{\numberline {1.9.3}Legge di Poasson}{13}{subsubsection.1.9.3}%
+\contentsline {subsubsection}{\numberline {1.9.3}Legge di Poisson}{13}{subsubsection.1.9.3}%
 \contentsline {subsubsection}{\numberline {1.9.4}Cambiare il sistema di riferimento}{14}{subsubsection.1.9.4}%
+\contentsline {paragraph}{\numberline {1.9.4.1}Spazio in un sistema non inerziale}{14}{paragraph.1.9.4.1}%
+\contentsline {paragraph}{\numberline {1.9.4.2}Velocità in un sistema non inerziale (teorema delle velocità relative)}{14}{paragraph.1.9.4.2}%
+\contentsline {subparagraph}{Un po' di casistica}{15}{section*.2}%
+\contentsline {paragraph}{\numberline {1.9.4.3}Accelerazione in un sistema non inerziale (teorema delle accelerazioni relative)}{16}{paragraph.1.9.4.3}%
+\contentsline {paragraph}{\numberline {1.9.4.4}Riassumendo}{16}{paragraph.1.9.4.4}%

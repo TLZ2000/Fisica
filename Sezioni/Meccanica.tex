@@ -366,7 +366,7 @@
                 \framedImg{5}{L10-img004}
             \end{itemize}
 
-        \subsubsection{Legge di Poasson}
+        \subsubsection{Legge di Poisson} \label{Poisson}
             L'ultimo concetto da introdurre, ci permette di "ridurre" la derivata di un vettore ad un prodotto vettoriale. Supponiamo di avere un cono gelato e di \textbf{disegnare un vettore sul lato di questo cono}. Ora, immaginiamo di applicare una rotazione sull'asse di questo cono, otterremo qualcosa del genere:
             \framedImg{3}{L10-img005}
             Ora, se lo spostamento di $\vec{A}$ verso $\vec{A'}$ è \textbf{infinitesimale}, ovvero
@@ -384,4 +384,96 @@
             \end{itemize}
             Vediamo un disegno:
             \framedImg{7}{L10-img007}
-            Ora, noi vogliamo sapere qual'è il legame tra spazio, velocià ed accelerazione nel sistema S ed S', nota che S' \textbf{si muove e ruota rispetto ad S} (che è fisso ed immutabile), quindi anche le "coordinale" del punto materiale P variano. Ma come? Noi è questo che vogliamo scoprire.
+            Come si vede dall'immagine, abbiamo un \textbf{sistema inerziale fisso} ($S$) ed un \textbf{sistema non inerziale non fisso} ($S'$). Nota che \textbf{conosciamo il vettore $\vec{oo'}$} (che rappresenta lo spostamento dell'origine di S') e \textbf{il vettore $\vec{\omega}$} (che rappresenta una rotazione di S'). Ora, dato \textbf{un punto P} vogliamo sapere la relazione tra spazio, velocità ed accelerazione nei 2 sistemi di riferimento. Vediamo punto per punto.
+
+            \paragraph{Spazio in un sistema non inerziale}
+                Ci basta controllare il disegno, risulta abbastanza ovvio che:
+                \begin{align*}
+                    \textcolor{Red}{\vec{r}=\vec{oo'}+\vec{r'}}
+                \end{align*}
+                Ricorda che $\vec{r'}$ corrisponde allo spazio di P visto da S'.
+
+            \paragraph{Velocità in un sistema non inerziale (teorema delle velocità relative)}
+                Sappiamo per definizione che la velocità è la derivata dello spazio, quindi \textbf{deriviamo lo spazio}! Cominciamo da S:
+                \begin{align*}
+                    & \vec{v}=\frac{d\vec{r}}{dt} &&=\frac{d}{dt}(r_x*\hat{x}+[y]+[z])\\
+                    & &&=\frac{dr_x}{dt}*\hat{x}+  \textcolor{OliveGreen}{r_x *\frac{d\hat{x}}{dt}}+[y]+[z]\\
+                    & &&=v_x*\hat{x}+v_y*\hat{y}+v_z*\hat{z}
+                \end{align*}
+                Per semplicità "omettiamo" la y ([y]) e la z ([z]) dato che sono uguali alla x. Nota che \textcolor{OliveGreen}{la parte in verde} si annulla in quanto il nostro sistema di riferimento resta immutato!
+
+                Proviamo ora a calcolare la velocità per S':
+                \begin{align*}
+                    & \vec{v}=\frac{d\vec{r}}{dt}=\frac{d}{dt}(\vec{oo'}+\vec{r'}) &&=\frac{d\vec{oo'}}{dt}+\frac{d\vec{r'}}{dt}\\
+                \end{align*}
+                Arriviamo a questo punto: per quanto riguarda $\vec{oo'}$, possiamo notare che il punto $o$ (origine di S) è fisso, pertanto è come se calcolassimo semplicemente la velocità di $o'$ (l'unico punto in movimento dei 2). Otteniamo quindi:
+                \begin{align*}
+                    & \frac{d\vec{oo'}}{dt}+\frac{d\vec{r'}}{dt} &&= \vec{v}_{o'} +(\frac{dr_x}{dt}*\hat{x'}+ \textcolor{OliveGreen}{r_x *\frac{d\hat{x'}}{dt}}+[y]+[z]) \\
+                \end{align*}
+                Il problema ora è che \textcolor{OliveGreen}{la parte in verde} \textbf{questa volta non si annulla}! Il sistema $S'$ infatti è in movimento. Come lo gestiamo? \textbf{Usiamo le formule di Poisson} [pag.\pageref{Poisson}]!
+                \begin{align*}
+                    & \vec{v}_{o'} +(\frac{dr_x}{dt}*\hat{x'}+ r_x *\frac{d\hat{x'}}{dt}+[y]+[z]) &&= \vec{v}_{o'} +[ v_{x'}*\hat{x'}+ x'*\vec{\omega}\times\hat{x'}]+[y]+[z]\\
+                    & && =\vec{v}_{o'} +[ v_{x'}*\hat{x'}+ \vec{\omega}\times(x'*\hat{x'})]+[y]+[z]\\
+                    & per\ definizione&& =\vec{v}_{o'} +[ v_{x'}*\hat{x'}+ \vec{\omega}\times(\vec{r}_{x'})]+[y]+[z]\\
+                    & espandi\ [y]\ [z]\ e\ raccogli&& =\vec{v}_{o'} +[ v_{x'}*\hat{x'}+ \vec{\omega}\times(\vec{r}_{y'})]+[ v_{y'}*\hat{y'}+ \vec{\omega}\times(\vec{r}_{y'})]+[ v_{z'}*\hat{z'}+ \vec{\omega}\times(\vec{r}_{z'})]\\
+                    & && =\vec{v}_{o'} + (v_{x'}*\hat{x'} + v_{y'}*\hat{y'} + v_{z'}*\hat{z'}) + \vec{\omega}\times(\vec{r}_{x'}+\vec{r}_{y'}+\vec{r}_{z'})\\
+                    & per\ definizione&&=\vec{v}_{o'} + \vec{v'} + \vec{\omega}\times\vec{r'}
+                \end{align*}
+                Finiamo con l'ottenere quello che viene definito \textbf{teorema delle velocità relative}, ovvero:
+                \begin{align*}
+                    \textcolor{Red}{\vec{v}=\vec{v'} + \vec{v}_{o'} + \vec{\omega}\times\vec{r'}}
+                \end{align*}
+                Dove:
+                \begin{itemize}
+                    \item $\vec{v'}$ rappresenta la velocità del punto P nel sistema di riferimento S';
+                    \item $\vec{v}_{o'} + \vec{\omega}\times\vec{r'}$ è quella che viene detta \textbf{velocità di trascinamento}, ovvero la velocità imposta dal sistema di riferimento che si muove e "trascina" il punto P.
+                \end{itemize}
+
+                \subparagraph{Un po' di casistica}
+                Vediamo un po' di casi particolari:
+                \begin{itemize}
+                    \item $\vec{\omega}=\vec{0}$: il S.R. S' \textbf{non ruota}, per questo la velocità di trascinamento è data soltanto dallo spostamento dell'origine di S' (immagina ad esempio un treno su un tratto rettilino). In particolare abbiamo che:
+                    \begin{align*}
+                        \vec{v}=\vec{v'}+\vec{v}_{o'}
+                    \end{align*}
+                    \item $\vec{v}_{0'}=\vec{0}$: il S.R. S' \textbf{non si sposta} (nota che ciò non garantisce che l'origine di S' coincide con quella di S), per questo la velocità di trascinamento è data soltanto dal prodotto vettoriale di $\vec{omega}$ con $\vec{r'}$ (immagina ad esempio un peso poggiato su un giradischi).
+                    In particolare abbiamo che:
+                    \begin{align*}
+                        \vec{v}=\vec{v'}+\vec{\omega}\times\vec{r'}
+                    \end{align*}
+                    \item $\vec{v}_{0'}=\vec{0}, \vec{\omega}=\vec{0}$: il S.R. S' \textbf{non ruota e non si sposta} (anche qui, ciò non garantisce che l'origine di S' coincide con quella di S), per questo la velocità di trascinamento è \textbf{nulla}.
+                    In particolare abbiamo che:
+                    \begin{align*}
+                        \vec{v}=\vec{v'}
+                    \end{align*}
+                \end{itemize}
+
+            \paragraph{Accelerazione in un sistema non inerziale (teorema delle accelerazioni relative)}
+                Per quanto riguarda l'accelerazione, il procedimento è \textbf{sempre lo stesso}: \textbf{dobbiamo derivare la velocità}! Non è nulla di nuovo, è solo un po' lungo, si deve fare attenzione a fare i giusti raccoglimenti ed utilizzare le formule di Poisson [pag.\pageref{Poisson}]. Sostanzialmente, il risultato finale, detto \textbf{teorema delle accelerazioni relative}, è:
+                \begin{align*}
+                    \textcolor{Red}{\vec{a} = \vec{a'} + \vec{a}_{o'}+\frac{d\vec{\omega}}{dt}\times \vec{r'}+\vec{\omega}\times(\vec{\omega\times\vec{r'}})+2\vec{\omega\times\vec{v'}}}
+                \end{align*}
+                Dove:
+                \begin{itemize}
+                    \item $\vec{a'}$ corrisponde all'accelerazione del corpo in S';
+                    \item $\vec{a}_{o'}+\frac{d\vec{\omega}}{dt}\times \vec{r'}+\vec{\omega}\times(\vec{\omega\times\vec{r'}})$ è l'accelerazione di trascinamento;
+                    \item $2\vec{\omega\times\vec{v'}}$ è la \textbf{forza di Coriolis}, una \textbf{forza apparente} (trattiamo in seguito) che esiste solo se S' ruota rispetto ad S.
+                \end{itemize}
+
+
+            \paragraph{Riassumendo}
+                Riassumendo rapidamente, le formule che interessano a noi sono:
+                \begin{enumerate}
+                    \item \textbf{spazio}:
+                        \begin{align*}
+                            \textcolor{Red}{\vec{r}=\vec{oo'}+\vec{r'}}
+                        \end{align*}
+                    \item \textbf{velocità}:
+                        \begin{align*}
+                            \textcolor{Red}{\vec{v}=\vec{v'} + \vec{v}_{o'} + \vec{\omega}\times\vec{r'}}
+                        \end{align*}
+                    \item \textbf{accelerazione}:
+                        \begin{align*}
+                            \textcolor{Red}{\vec{a} = \vec{a'} + \vec{a}_{o'}+\frac{d\vec{\omega}}{dt}\times \vec{r'}+\vec{\omega}\times(\vec{\omega\times\vec{r'}})+2\vec{\omega\times\vec{v'}}}
+                        \end{align*}
+                \end{enumerate}
