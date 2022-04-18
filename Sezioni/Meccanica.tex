@@ -548,9 +548,9 @@
         \end{align*}
         Ora possiamo fare il passaggio seguente,
         \begin{align*}
-            \vec{R^E}=\sum_i^N m_i \frac{\sum_{i=1}^N m_i\vec{a_i}}{\sum_i^N m_i}=M \sum_{i=1}^N \frac{m_i\vec{a_i}}{M}=M \sum_{i=1}^N \frac{m_i}{M}\frac{d^2\vec{r_i}}{dt^2} = M \frac{d^2}{dt^2}\sum_{i=1}^N\frac{m_i\vec{r_i}}{M}
+            \vec{R^E}=\textcolor{Red}{\sum_i^N m_i} \frac{\sum_{i=1}^N m_i\vec{a_i}}{\textcolor{Red}{\sum_i^N m_i}}=\textcolor{Red}{M} \sum_{i=1}^N \frac{m_i\vec{a_i}}{\textcolor{Red}{M}}=M \sum_{i=1}^N \frac{m_i}{M}\frac{d^2\vec{r_i}}{dt^2} = M \frac{d^2}{dt^2}\sum_{i=1}^N\frac{m_i\vec{r_i}}{M}
         \end{align*}
-        Definiamo ora il \textbf{centro di massa} come la media pesata per la massa, di tutte le posizioni dei costituenti del sistema. Ovvero la media pesata delle posizioni, dando come peso la frazione totale di massa che gli oggetti hanno. Il centro di massa è il seguente,
+        Nota che \textcolor{Red}{la parte in rosso}, ovvero la \textbf{sommatoria di tutte le masse del nostro sistema di punti materiali} (che andiamo poi a chiamare M), la \textbf{moltiplichiamo e dividiamo} (moltiplicando effettivamente per 1). Lo facciamo perché "vogliamo noi", ci servirà per definire il \textbf{centro di massa} come la media pesata per la massa, di tutte le posizioni dei costituenti del sistema. Ovvero la media pesata delle posizioni, dando come peso la frazione totale di massa che gli oggetti hanno. Il centro di massa è il seguente,
         \begin{align*}
             \vec{r}_{C.M.}=\sum_i^N \frac{m_i\vec{r_i}}{M}
         \end{align*}
