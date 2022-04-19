@@ -558,6 +558,7 @@
         \begin{align*}
             \vec{R}=\vec{R^E}=M\frac{d^2\vec{r}_{C.M.}}{dt^2}=M\frac{d\vec{v}_{C.M.}}{dt}=M\vec{a}_{C.M.}
         \end{align*}
+        Da questa formula possiamo capire che la \textbf{risultante delle forze esterne}, qualora non fosse nulla, \textbf{può essere applicata come una forza solo sul centro di massa} del nostro sistema! Possiamo immaginare il sistema come un corpo unico tutto condensato nel centro di massa.
 
         \subsubsection{Esercizio centro di massa}
         %\framedImg{}{}
@@ -579,4 +580,72 @@
             Il \textbf{principio di conservazione della quantità di moto} dice che in un sistema isolato la quantità di moto totale si conserva nel tempo.
             \begin{align*}
                 \frac{d\vec{p}}{dt}=\vec{0}
+            \end{align*}
+
+    \subsection{Gli urti}
+        Quando 2 oggetti si \textbf{scontrano tra di loro} abbiamo quello che viene definito "\textbf{urto}": durante questo urto, i 2 corpi hanno una \textbf{qualche interazione tra di loro}. Prendiamo ad esempio 2 biglie indeformabili (di acciaio) che si scontrano tra di loro: in questo esempio \textbf{cambiano direzione}, questo vuol dire che c'è stata qualche interazione tra i corpi che ha comportato il cambio di direzione! Il concetto di urto è molto importante perché, in esperimenti seri, potrebbe essere l'unico mezzo con cui possiamo accorgerci della presenza di una qualche interazione tra corpi "invisibili" (molto piccoli) non osservabili altrimenti.
+        \medskip\\
+        Introduciamo la situazione generica in cui ci troviamo:
+        \framedImg{5}{L12-img001}
+        Abbiamo 2 corpi distinti con le rispettive masse e velocità, supponendo che le loro traiettorie si incrocino avremmo effettivamente un impatto solo se:
+        \begin{align*}
+            \exists t|r_1(t)=r_2(t)
+        \end{align*}
+        Ovvero se esiste un istante di tempo in cui la posizione dei 2 oggetti è la stessa. Se ciò avviene abbiamo un impatto localizzato in quella che viene chiamata \textbf{regione d'urto (d)}, tornando all'esempio delle biglie possiamo pensare alle zone delle biglie che entrano effettivamente in contatto. Affinché possiamo applicare le nostre solite approssimazioni, questa regione $d$ deve essere \textbf{molto minore di qualsiasi altra distanza che entra in gioco} ($d << r_j$).
+
+        \subsubsection{Conservazione della quantità di moto}
+            Supponendo che il sistema che rappresenta i nostri corpi sia \textbf{un sistema isolato}, abbiamo che l'accelerazione del centro di massa è nulla, quindi la sua velocità \textbf{è costante} (potrebbe essere nulla, ma non è detto). Facciamo ora un po' di passaggi algebrici:
+            \begin{align*}
+                \vec{v}_{CM} = \frac{d\vec{r}_{CM}}{dt} = \frac{d}{dt}(\frac{m_1*v_1+m_2*v_2+...}{m_1+m_2+...})=\frac{d}{dt}(\frac{m_1*v_1+m_2*v_2+...}{M})=\vec{const}
+            \end{align*}
+            Da qui, possiamo fare altri passaggi algebrici che ci portano ad ottenere un risultato interessante:
+            \begin{align*}
+                &\frac{d}{dt}\frac{\sum_jm_j*\vec{r}_j}{M}=\vec{const}&&=>\frac{d}{dt}\sum_jm_j*\vec{r}_j = \vec{const}*M = \vec{const}\\
+                & &&=>\frac{d}{dt}\sum_jm_j*\vec{r}_j = \vec{const}\\
+                & &&=>\textcolor{Red}{\frac{d}{dt}\sum_jP_j = \vec{const}}
+            \end{align*}
+            Ovvero, abbiamo che la somma delle varie quantità di moto \textbf{resta costante}! Questo è il concetto importante:
+            \begin{center}
+                \textcolor{Red}{\textbf{\textit{Negli urti la quantità di moto resta sempre costante!}}}
+            \end{center}
+            Abbiamo quindi che:
+            \begin{align*}
+                \vec{P}_i=\vec{P}_f
+            \end{align*}
+            Ora, possiamo scomporre queste quantità di moto nelle loro componenti base, ovvero (supponendo un caso 3-D):
+            \begin{align*}
+                \vec{P}_i=\vec{P}_f
+                \begin{cases}
+                    P_{x, i} = P_{x, f}\\
+                    P_{y, i} = P_{y, f}\\
+                    P_{z, i} = P_{z, f}\\
+                \end{cases}
+            \end{align*}
+            Tornando ora al sistema isolato che abbiamo visto prima, possiamo introdurre il concetto di conservazione delle quantità di moto in questo modo:
+            \begin{align*}
+                m_1*\vec{v}_{1, i}+m_2*\vec{v}_{2, i}=m_A*\vec{v}_{A, f}+m_B*\vec{v}_{B, f}+...+m_N*\vec{v}_{N, f}
+            \end{align*}
+            Nota come \textbf{cominciamo con 2 corpi} che vanno in urto tra loro (questo succederà sempre, semplicemente perché l'urto contemporaneo tra 3 corpi è un problema estremamente complesso) ma finiamo con \textbf{un numero N di quantità di moto finali}. Perché facciamo così? Durante l'urto può succedere che \textbf{i 2 corpi che si scontrano NON mantengano la loro natura}: potrebbero \textbf{fondersi in un corpo unico}, oppure potrebbero \textbf{esplodere in tanti corpi che vanno in tutte le direzioni}! Ovviamente, può anche succedere che i 2 corpi restino loro stessi e semplicemente cambino traiettoria (come succede con le biglie d'acciaio).
+
+            \paragraph{Esempio neutrini (oggetti che "esplodono")}
+                Al CERN di Ginevra si fanno questi esperimenti, si prendono 2 particelle e si fanno scontrare tra di loro a gran velocità: all'impatto queste "esplodono" sparando numerose componenti in tutte le direzioni:
+                \framedImg{3}{L12-img002}
+                Se ora noi prendiamo e sommiamo tutte le quantità di moto di questi nuovi oggetti dovremmo ottenere ESATTAMENTE la stessa quantità di moto iniziale che, nel caso di 2 particelle uguali sparate alla stessa velocità ma in senso opposto, dovrebbe essere 0. Spesso però questo non accade e ci ritroviamo con un vettore del genere (\textcolor{OliveGreen}{in verde}, nel disegno ho tracciato un vettore casuale):
+                \framedImg{3}{L12-img003}
+                Però, ciò non è possibile, infatti noi sappiamo per definizione che la quantità di moto iniziale deve essere uguale a quella finale, che in questo caso deve essere 0. Allora DEVE esserci una quantità di moto uguale e contraria che però non abbiamo visto: quello (molto probabilmente) è un neutrino che è scappato in direzione del \textcolor{Violet}{vettore viola} e che bilancia il tutto portando la somma delle varie quantità di moto a 0.
+
+                Ecco, tornando alla nostra teoria precedente, questo è il tipico esempio in cui la formula della quantità di moto iniziale/finale corrisponde proprio a:
+                \begin{align*}
+                    m_1*\vec{v}_{1, i}+m_2*\vec{v}_{2, i}=m_A*\vec{v}_{A, f}+m_B*\vec{v}_{B, f}+...+m_N*\vec{v}_{N, f}
+                \end{align*}
+                Però, come detto prima, esistono anche altri casi.
+
+        \subsubsection{Urto (puramente) anelastico}
+            Esistono 2 tipi di urti, il primo che vediamo è quello che viene detto \textbf{urto puramente anelastico},  ovvero quello dove i 2 corpi che si scontrano si \textbf{fondono tra loro creando un corpo unico} che, essendo un appunto un corpo unico, corrisponderà anche al centro di massa del sistema. Ora, in questo caso è molto interessante \textbf{spostarsi in un sistema di riferimento che corrisponde al centro di massa del sistema}, è come se mettessimo l'origine a cavallo del centro di massa. Nota che, non trovandoci più in un sistema inerziale, \textbf{dobbiamo anche "modificare" la composizione delle velocità dei nostri corpi}, in particolare:
+            \begin{align*}
+                m_1*\vec{v}_{1,i}+m_2*\vec{v}_{2,i}=m_A*\vec{v}_{A,f}=m_{A}*\vec{v}_{CM}
+            \end{align*}
+            \begin{align*}
+                \vec{v}_1=\vec{v}_{CM}+\vec{v}'_1\\
+                \vec{v}_2=\vec{v}_{CM}+\vec{v}'_2
             \end{align*}
