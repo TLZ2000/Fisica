@@ -1,4 +1,4 @@
-PWD /home/thomaslazzerini/Documenti/Semestre_6/Fisica
+PWD /mnt/0c000c0a-0f12-4cbe-88bd-e77aa3785b77/Uni/Semestre_06/Mass/Fisica
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -1201,6 +1201,8 @@ INPUT ./Img//L12-img003.jpg
 INPUT ./Img//L12-img003.jpg
 INPUT ./Img//L12-img003.jpg
 INPUT ./Img//L12-img003.jpg
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

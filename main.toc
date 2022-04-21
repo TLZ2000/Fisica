@@ -102,3 +102,5 @@
 \contentsline {subsubsection}{\numberline {5.12.1}Conservazione della quantità di moto}{61}{subsubsection.5.12.1}%
 \contentsline {paragraph}{\numberline {5.12.1.1}Esempio neutrini (oggetti che "esplodono")}{62}{paragraph.5.12.1.1}%
 \contentsline {subsubsection}{\numberline {5.12.2}Urto (puramente) anelastico}{63}{subsubsection.5.12.2}%
+\contentsline {paragraph}{\numberline {5.12.2.1}Energie cinetiche}{64}{paragraph.5.12.2.1}%
+\contentsline {subsubsection}{\numberline {5.12.3}Urto elastico}{64}{subsubsection.5.12.3}%

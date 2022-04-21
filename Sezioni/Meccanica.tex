@@ -641,11 +641,50 @@
                 Però, come detto prima, esistono anche altri casi.
 
         \subsubsection{Urto (puramente) anelastico}
-            Esistono 2 tipi di urti, il primo che vediamo è quello che viene detto \textbf{urto puramente anelastico},  ovvero quello dove i 2 corpi che si scontrano si \textbf{fondono tra loro creando un corpo unico} che, essendo un appunto un corpo unico, corrisponderà anche al centro di massa del sistema. Ora, in questo caso è molto interessante \textbf{spostarsi in un sistema di riferimento che corrisponde al centro di massa del sistema}, è come se mettessimo l'origine a cavallo del centro di massa. Nota che, non trovandoci più in un sistema inerziale, \textbf{dobbiamo anche "modificare" la composizione delle velocità dei nostri corpi}, in particolare:
+            Esistono 2 tipi di urti, il primo che vediamo è quello che viene detto \textbf{urto puramente anelastico},  ovvero quello dove i 2 corpi che si scontrano si \textbf{fondono tra loro creando un corpo unico} che, essendo appunto un corpo unico, corrisponderà anche al centro di massa del sistema. Ora, in questo caso è molto interessante \textbf{spostarsi in un sistema di riferimento che corrisponde al centro di massa}, è come se mettessimo l'origine a cavallo del centro di massa. Nota che, non trovandoci più in un sistema inerziale, \textbf{dobbiamo anche "modificare" la composizione delle velocità dei nostri corpi}, in particolare abbiamo:
             \begin{align*}
                 m_1*\vec{v}_{1,i}+m_2*\vec{v}_{2,i}=m_A*\vec{v}_{A,f}=m_{A}*\vec{v}_{CM}
             \end{align*}
             \begin{align*}
-                \vec{v}_1=\vec{v}_{CM}+\vec{v}'_1\\
-                \vec{v}_2=\vec{v}_{CM}+\vec{v}'_2
+                \vec{v}_1=\vec{v}_{CM}+\vec{v'}_1\\
+                \vec{v}_2=\vec{v}_{CM}+\vec{v'}_2
+            \end{align*}
+            Ora, dato che abbiamo posto che il nostro sistema di riferimento si trova a cavallo del CM, possiamo subito dite che $\vec{v}_{CM} = 0$, da qui otteniamo che:
+            \begin{align*}
+                &m_1*\vec{v}_{1,i}+m_2*\vec{v}_{2,i}=m_A*\vec{v}_{A,f}=m_{A}*\vec{v}_{CM}=m_{A}*0 &&=>\textcolor{Red}{m_1*\vec{v}_{1,i}+m_2*\vec{v}_{2,i} = 0}
+            \end{align*}.
+
+            \paragraph{Energie cinetiche}
+                In questo caso è molto interessante controllare cosa succede a livello di energie cinetiche:
+                \begin{align*}
+                    & E_{k,i}=E_{k,i,1}+E_{k,i,1} &&=\frac{1}{2}*m_1*v_1^2+\frac{1}{2}*m_2*v_2^2\\
+                    & \textrm{Usiamo il sys di ref del CM}
+                    &&=\frac{1}{2}*m_1*(v_{CM}+v'_1)^2+\frac{1}{2}*m_2*(v_{CM}+v'_2)^2\\
+                    & \textrm{Sviluppiamo i quadrati}
+                    &&=\frac{1}{2}*[m_1*(v_{CM}^2+2v_{CM}*v'_1+v'^2_1)+m_2*(v_{CM} ^2+2v_{CM}*v'_2+v'^2_2)]\\
+                    & \textrm{Un po' di passaggi algebrici}
+                    &&=\frac{1}{2}*(m_1+m_2)*v_{CM}^2+\frac{2}{2}*(\textcolor{OliveGreen}{m_1*v'_1+m_2*v'_2})*v_{CM}+\\
+                    & &&+\frac{1}{2}*m_1*v'^2_1+\frac{1}{2}*m_2*v'^2_2\\
+                    & &&=\frac{1}{2}*(m_1+m_2)*v_{CM}^2+\frac{1}{2}*m_1*v'^2_1+\frac{1}{2}*m_2*v'^2_2\\
+                    & && = \textcolor{Red}{E_{k, f} + E'_{k, i}}
+                \end{align*}
+                Ora, nota che la \textcolor{OliveGreen}{parte in verde} \textbf{vale 0 per definizione}, dato che ci troviamo nel sistema di riferimento del CM (lo abbiamo definito prima). Otteniamo quindi che l'energia cietica iniziale corrisponde all'\textbf{energia cinetica finale (quella del CM) + l'energia cinetica iniziale presa però nel sys di ref del CM}. Fin qui niente di particolarmente strano, però se rigiriamo la formula per trovare l'energia cinetica finale:
+                \begin{align*}
+                    E_{k, f}= E_{k, i}-E'_{k, i}
+                \end{align*}
+                Abbiamo che $\mathbf{E_{k, f} < E_{k, i}}$, infatti sappiamo che le \textbf{energie cinetiche sono sempre valori positivi}! Abbiamo quindi che l'energia cinetica finale è \textbf{minore} di quella iniziale, ma dove va quell'energia mancante? Sostanzialmente, l'energia persa viene \textbf{usata per "fondere" i 2 oggetti tra di loro}!
+
+        \subsubsection{Urto elastico}
+            Il secondo tipo di urto che vediamo è quello \textbf{elastico}, ovvero quello dove \textbf{i 2 corpi restano tali e "rimbalzano"}. A differenza dell'urto anelastico, in questo caso \textbf{l'energia cinetica si conserva} ($E_{k, i} = E_{k, f}$). Ovviamente, anche la \textbf{quantità di moto si conserva}. Possiamo quindi scrivere:
+            \begin{align*}
+                \begin{cases}
+                    P_i=P_f\\
+                    E_{k, i}=E_{k, f}
+                \end{cases}=>
+                \begin{cases}
+                    P_{x, i}=P_{x, f}\\
+                    P_{y, i}=P_{y, f}\\
+                    P_{z, i}=P_{z, f}\\
+                    E_{k, i}=E_{k, f}
+                \end{cases}
             \end{align*}
