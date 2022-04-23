@@ -688,3 +688,170 @@
                     E_{k, i}=E_{k, f}
                 \end{cases}
             \end{align*}
+            Questa "scomposizione" della quantità di molto è molto importante, perché ci permette di fare un ragionamento sui \textbf{gradi di libertà}:
+            \begin{center}
+                \begin{tabular}{||c c c c c c||}
+                    \hline
+                    Dim. & Eq. Moto & Eq. Cinetica & Eq. Tot & Incognite & Grad. Libertà\\ [0.5ex]
+                    \hline\hline
+                    3 & 3 & 1 & 4 & 6 & 6-4 = 2\\
+                    \hline
+                    2 & 2 & 1 & 3 & 4 & 4-3 = 1\\
+                    \hline
+                    1 & 1 & 1 & 2 & 2 & 2-2 = 0\\
+                    \hline
+                \end{tabular}
+            \end{center}
+            Prendiamo ad esempio le 3 dimensioni: con tre dimensioni abbiamo \textbf{3 assi}, quindi abbiamo \textbf{3 equazioni per la quantità di moto}, e \textbf{1 equazione per l'energia cinetica}. Espandiamo queste equazioni ("comprimendo" la quantità di moto, solo per risparmiare spazio):
+            \begin{align*}
+                \begin{cases}
+                    P_i=P_f\\
+                    E_{k, i}=E_{k, f}
+                \end{cases}=>
+                \begin{cases}
+                    m_1*\vec{v}_{1, i}+m_2*\vec{v}_{2, i}=m_1*\vec{v}_{1, f}+m_2*\vec{v}_{2, f}\\
+                    \frac{1}{2}m_1*\vec{v}^2_{1, i}+\frac{1}{2}m_2*\vec{v}^2_{2, i}=\frac{1}{2}m_1*\vec{v}^2_{1, f}+\frac{1}{2}m_2*\vec{v}^2_{2, f}
+                \end{cases}
+            \end{align*}
+            Da questa espansione, possiamo notare che \textbf{non conosciamo le velocità finali dei 2 corpi}! Espandando il moto sui 3 assi avrebbo\textbf{6 incognite}: 3 per la velocità finale del primo corpo e 3 per quella del secondo corpo. Il "problema" è che abbiamo \textbf{un sistema di 4 equazioni con 6 incognite}: avessimo soltanto 4 incognite, potremmo risolverlo "matematicamente", in questo caso però dobbiamo \textbf{introdurre 2 gradi di libertà} (che possono essere angoli di entrata, velocità fissate su 2 assi, ...) per poter risolvere matematicamente le altre incognite rimanenti.
+
+            Per quanto riguarda il caso \textbf{unidimensionale} invece è \textbf{tutto fissato}! Se l'evento si sviluppa su un solo asse possiamo calcolare tutto usando soltanto il principio di conservazione della quantità di moto.
+
+            \paragraph{Esempio di esercizio}
+                Vediamo un esempio:
+                \framedImg{3}{L12-img004}
+                In particolare, abbiamo una biglia di massa $m_1$ sostenuta da un cavo inestensibile lungo $l$ con un angolo $\theta_1$ rispetto alla posizione a riposo del pendolo. Ad un certo punto, questa biglia inizierà a cadere scontrandosi con l'altra biglia di massa $m_2$, sempre sostenuta allo stesso modo ma in posizione di equilibrio. Nota che \textbf{le 2 masse non sono uguali}! Vediamo velocemente un po' di casistica al momento dell'urto:
+                \begin{itemize}
+                    \item $m_1>m_2$: la biglia 2 inizia a dondolare, la biglia 1 continua a dondolare "di meno" seguendo il percorso iniziale (è come se trascinasse la biglia 2);
+                    \item $m_1<m_2$: la bilia 2 inizia a dondolare, la biglia 1 continua a dondolare "di meno" però nel verso opposto (è come se rimbalzasse sulla bilia 2);
+                    \item $m_1=m_2$: la biglia 1 trasferisce tutto il suo moto alla biglia 2, la quale compirà lo stesso moto della biglia 1 (è come uno di quei giochini da ufficio con le biglie);
+                \end{itemize}
+                Tornando al nostro esercizio, \textbf{date le 2 masse e l'angolo iniziale della biglia 1, trovare l'angolo massimo della biglia 2}. Nota che, come visto nella casistica, dato che le masse sono diverse la biglia 1 compirà un qualche movimento dopo l'urto, ma a noi non interessa!
+
+                Ora, possiamo vedere questo problema come la \textbf{composizione di 2 diversi problemi}:
+                \begin{enumerate}
+                    \item \textbf{pendolo}: calcolo dell'angolo $\theta$ e della velocità che la biglia 1 acquisisce appena prima di urtare la biglia 2;
+                    \item \textbf{urto}: urto vero e proprio, principalmente ci chiediamo quanta velocità viene passata alla biglia 2 dopo l'impatto;
+                \end{enumerate}
+
+                Continuiamo a piccoli passi:
+
+                \subparagraph{Velocità pre-impatto}
+                    Il primo passo è \textbf{calcolare la velocità della biglia 1 prima dell'impatto con la 2}. Come facciamo? Possiamo avvalerci del \textbf{principio di conservazione dell'energia meccatica}: in questo caso possiamo notare che \textbf{non ci sono forze dissipative} (come sempre supponiamo di fare tutti i nostri esperimenti nel vuoto, evitando l'attrito dell'aria), quindi \textbf{l'energia potenziale della biglia 1 ($U$) verrà completamente convertita in energia cinetica ($E_k$)}! Noi sappiamo che:
+                    \begin{align*}
+                        U = m*a*\Delta h
+                    \end{align*}
+                    In particolare, abbiamo che l'accelerazione corrisponde a quella di gravità terrestre, mentre il $\Delta h$ è questo piccolo segmento qui:
+                    \framedImg{3}{L12-img005}
+                    Per calcolarla possiamo sfruttare un po'di trigonometria, in particolare:
+                    \begin{align*}
+                        \Delta h = l-l*cos(\theta_1)=\textcolor{Red}{l(1-cos(\theta_1))}
+                    \end{align*}
+                    Ora che abbiamo le 2 componenti che ci servono, semplicemente le \textbf{mettiamo in uguaglianza} (data la conservazione delle energie) e ci troviamo la nostra velocità:
+                    \begin{align*}
+                        & U = E_k &&=>m*g*\Delta h = \frac{1}{2}*m*v^2\\
+                        & && => g*\Delta h = \frac{1}{2}*v^2\\
+                        & && => 2*g*\Delta h = v^2\\
+                        & && => \sqrt{2*g*\Delta h} = v\\
+                        & && => \textcolor{Red}{\sqrt{2*g*l(1-cos(\theta_1))} = v_{i, 1}}
+                    \end{align*}
+                    Ricorda però che nella formula "vera" sia l'energia cinetica iniziale (quella che abbiamo in posizione $\theta$) che l'energia potenziale finale (quella che abbiamo in posizione $\theta = 0$) sono importanti! In questo caso possiamo ignorarle dato che sono entrambe nulle (la biglia parte da ferma e finisce nella posizione più bassa possibile).
+
+                \subparagraph{Trasferimento di energia nell'urto}
+                    Ora ci troviamo nella "fase di urto", dobbiamo capire \textbf{come viene trasmessa l'energia tra le 2 biglie}, in particolare \textbf{quanto sarà veloce alla fine la biglia 2}. In questa fase, possiamo \textbf{approssimare l'urto come un urto unidimensionale}:
+                    \framedImg{3}{L12-img006}
+                    Aprendo una piccola parentesi, concentrandoci solo sulle forze orizzontali presenti in quel piccolissimo istante in cui c'è l'urto effettivo possiamo \textbf{ignorare di fatto la forza peso} che spinge verso il basso, pertanto il sistema "biglie" \textbf{può essere considerato un sistema isolato!}
+                    Tornando a noi, partendo dal principio di conservazione del moto e dell'energia cinetica, possiamo fare un po' di operazioni algebriche in modo da ricavarci effettivamente la velocità della biglia 2 (possiamo farlo perché ci siamo ricondotti al caso monodimensionale):
+                    \begin{align*}
+                        &\begin{cases}
+                            P_i = P_f\\
+                            E_{k, i} = E_{k, f}
+                        \end{cases}&&=>
+                        \begin{cases}
+                            m_1*v_{1, i}+\textcolor{Orange}{m_2*v_{2, i}}=m_1*v_{1, f}+m_2*v_{2, f}\\
+                            \frac{1}{2}*m_1*v^2_{1, i}+\textcolor{Orange}{\frac{1}{2}*m_2*v^2_{2, i}}=\frac{1}{2}*m_1*v^2_{1, f}+\frac{1}{2}*m_2*v^2_{2, f}
+                        \end{cases}\\
+                        &\textcolor{Orange}{v_{2, 1}\ } \textrm{nulla, togliamo}&&=>
+                        \begin{cases}
+                            m_1*v_{1, i}=m_1*v_{1, f}+m_2*v_{2, f}\\
+                            \frac{1}{2}*m_1*v^2_{1, i}=\frac{1}{2}*m_1*v^2_{1, f}+\frac{1}{2}*m_2*v^2_{2, f}
+                        \end{cases}
+                    \end{align*}
+                    A questo punto possiamo identificare \textbf{2 incognite}: $v_{1, f}$ e $v_{2, f}$. Dato che a noi interessa solo conoscere $\theta_2$, ci concentriamo solo sulla risolizione di $v_{2, f}$, quindi ci rigiriamo un po' le formule di prima:
+                    \begin{align*}
+                        &\begin{cases}
+                            m_1*v_{1, i}=m_1*v_{1, f}+m_2*v_{2, f}\\
+                            \frac{1}{2}*m_1*v^2_{1, i}=\frac{1}{2}*m_1*v^2_{1, f}+\frac{1}{2}*m_2*v^2_{2, f}
+                        \end{cases}&&=>
+                        \begin{cases}
+                            v_{1, f}=v_{1, i}-\frac{m_2}{m_1}*v_{2, f}\\
+                            \frac{1}{2}*m_1*v^2_{1, i}=\frac{1}{2}*m_1*(v_{1, i}-\frac{m_2}{m_1}*v_{2, f})^2+\frac{1}{2}*m_2*v^2_{2, f}
+                        \end{cases}\\
+                        & &&=>
+                        \begin{cases}
+                            v_{1, f}=v_{1, i}-\textcolor{Orange}{\frac{m_2}{m_1}}*v_{2, f}\\
+                            v^2_{1, i}=(v_{1, i}-\textcolor{Orange}{\frac{m_2}{m_1}}*v_{2, f})^2+\textcolor{Orange}{\frac{m_2}{m_1}}*v^2_{2, f}
+                        \end{cases}\\
+                        & \textrm{Per comodità nostra, \textcolor{Orange}{questi} li chiamiamo }\rho &&=>
+                        \begin{cases}
+                            v_{1, f}=v_{1, i}-\rho*v_{2, f}\\
+                            v^2_{1, i}=(v_{1, i}-\rho*v_{2, f})^2+\rho*v^2_{2, f}
+                        \end{cases}\\
+                        & \textrm{Sviluppiamo il quadrato } &&=>
+                        \begin{cases}
+                            v_{1, f}=v_{1, i}-\rho*v_{2, f}\\
+                            \bcancel{v^2_{1, i}}= \bcancel{v^2_{1, i}} +\rho^2*v^2_{2, f}-2*v_{1, i}*\rho*v_{2, f} +\rho*v^2_{2, f}
+                        \end{cases}\\
+                        & &&=>
+                        \begin{cases}
+                            v_{1, f}=v_{1, i}-\rho*v_{2, f}\\
+                            0 =\rho^2*v^2_{2, f}-2*v_{1, i}*\rho*v_{2, f} +\rho*v^2_{2, f}
+                        \end{cases}\\
+                        & &&=>
+                        \begin{cases}
+                            v_{1, f}=v_{1, i}-\rho*v_{2, f}\\
+                            0 =v_{2, f}*[\bcancel{\rho}*(1+\rho)*v_{2, f}-2*\bcancel{\rho}*v_{1, i}]
+                        \end{cases}\\
+                        & &&=>
+                        \begin{cases}
+                            v_{1, f}=v_{1, i}-\rho*v_{2, f}\\
+                            \textcolor{Red}{0 =v_{2, f}*[(1+\rho)*v_{2, f}-2*v_{1, i}]}
+                        \end{cases}\\
+                    \end{align*}
+                    Da quest'ultima equazione in \textcolor{Red}{rosso} otteniamo che la velocità di uscita della seconda biglia può assumere 2 valori distinti:
+                    \begin{itemize}
+                        \item $v_{2, f} = 0$, questo potrebbe succedere \textbf{qualora non ci fosse interazione tra le 2 biglie}, questo caso a noi non interessa;
+                        \item $v_{2, f} = \frac{2*v_{1, i}}{1+\rho} = \frac{2*v_{1, i}}{1+\frac{m_2}{m_1}} = \frac{2*m_1*v_{1, i}}{m_1+m_2}$, quest'ultima soluzione è molto più interessante per noi!
+                    \end{itemize}
+
+                \subparagraph{Calcolo finale dell'angolo}
+                    Nella fase precedente ci siamo calcolati la \textbf{velocità di uscita della biglia 2 dall'urto}, ora dobbiamo calcolare l'angolo di oscillazione massimo. Come facciamo? Allora, prima abbiamo stabilito che:
+                    \begin{align*}
+                          v_{i, 1}=\sqrt{(2*g*\Delta h_1)}=\sqrt{(2*g*l(1-cos(\theta_1))}
+                    \end{align*}
+                    Allo stesso modo, possiamo dire praticamente la stessa cosa per la velocità finale della biglia 2! Ovvero:
+                    \begin{align*}
+                          v_{2, f}=\sqrt{(2*g*\Delta h_f)}=\textcolor{Red}{\sqrt{(2*g*l(1-cos(\theta_2))}}
+                    \end{align*}
+                    PERO', al punto prima abbiamo stabilito che:
+                    \begin{align*}
+                        v_{2, f} = \textcolor{Red}{\frac{2*m_1*v_{1, i}}{m_1+m_2}}
+                    \end{align*}
+                    A questo punto ci basta mettere questi 2 punti insieme e rigirare un po' il tutto, in modo da \textbf{trovare l'angolo che ci interessa!}
+                    \begin{align*}
+                        &\frac{2*m_1*v_{1, i}}{m_1+m_2}=\sqrt{(2*g*l(1-cos(\theta_2))}&&=>
+                        \textcolor{Orange}{\frac{2*m_1}{m_1+m_2}}*\sqrt{(2*g*l(1-cos(\theta_1))}=\sqrt{(2*g*l(1-cos(\theta_2))}\\
+                        &\textrm{\textcolor{Orange}{Questa} costante la chiamiamo "A" noi}&&=>
+                        A*\sqrt{\bcancel{2*g*l}(1-cos(\theta_1))}=\sqrt{\bcancel{2*g*l}(1-cos(\theta_2 ))}\\
+                        &&&=>
+                        A*\sqrt{1-cos(\theta_1)}=\sqrt{1-cos(\theta_2)}\\
+                    \end{align*}
+                    A questo punto, abbiamo le radici che rompono, quindi possiamo \textbf{moltiplicare da entrambe le parti per 2 ed applicare la formula di bisezione del seno} (nota che si riesce a fare anche senza, semplicemente viene più comodo):
+                    \begin{align*}
+                        & A*\sqrt{1-cos(\theta_1)}=\sqrt{1-cos(\theta_2)} &&=>
+                        A*\sqrt{2*\textcolor{Orange}{\frac{1-cos(\theta_1)}{2}}}=\sqrt{2*\textcolor{Orange}{\frac{1-cos(\theta_2)}{2}}}\\
+                        & \textrm{\textcolor{Orange}{Bisezione del seno}} &&=>
+                        A*\bcancel{\sqrt{2}}*sin(\frac{\theta_1}{2})=\bcancel{\sqrt{2}}*sin(\frac{\theta_2}{2})\\
+                        & &&=>\frac{\theta_2}{2} = arcsin(A*sin(\frac{\theta_1}{2}))\\
+                        & &&=>\textcolor{Red}{\theta_2 = 2*arcsin(A*sin(\frac{\theta_1}{2}))}\\
+                    \end{align*}
