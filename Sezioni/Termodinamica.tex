@@ -112,10 +112,43 @@
             \end{align*}
 
 
-        \subsection{Cambi di fase}
+    \subsection{Cambi di fase}
+        La materia può trovarsi in \textbf{3 diversi stati}:
+        \begin{itemize}
+            \item solido: il corpo ha forma e volume propri;
+            \item liquido: il corpo ha un volume proprio ma assume la forma del recipiente che lo contiene;
+            \item gassoso: il corpo, molto spesso aeroforme, assume forma e volume del recipiente che lo contiene;
+        \end{itemize}
+        Sotto certe condizioni, un corpo può passare da uno stato all'altro, questo passaggio, in base agli stati iniziale e finale, ha doversi nomi:
+        \framedImg{5}{L15-img001}
+        Quando si parla di termodinamica, le "scale di misura" importanti sono volume, \textbf{pressione e temperatura}, se prendiamo le ultime 2 e le rappresentiamo su un piano cartesiano otteniamo quello che viene detto \textbf{diagramma di fase}:
+        \framedImg{5}{L15-img002}
+        Ovviamente varia da materiale a materiale, ma sostanzialmente la forma è quella. Prendendo ad esempio l'acqua, in corrispondenza di $T = 273,16 K$ e $P = 611 Pa$ abbiamo quello che si definisce \textbf{punto triplo}, ovvero quel punto in cui le \textbf{3 linee di demarcazione si intersecano}. In questo punto, i 3 stati possono coesistere contemporaneamente (in rosso nell'immagine)! È particolarmente importante perché \textbf{definisce la scala di temperatura}. Un altro punto particolarmente importante è quello che viene definito \textbf{punto critico}, ovvero il punto in cui \textbf{finisce la linea di demarcazione tra liquido e gas}. In particolare, oltre quel punto, gli stati gassoso e liquido non sono più distinguibili (fluido supercritico).
 
+        \subsubsection{Calori latenti}
+            Immaginiamo di voler far passare dell'acqua dallo stato liquido a quello gassoso: osservando il diagramma di fase, possiamo notare che per farlo potremmo far variare la pressione, mantenendo la temperatura stabile, oppure modificare la temperatura mantenendo la pressione stabile (oppure anche modificare entrambe ovviamente). Se decidessimo di mantenere la temperatura stabile, e quindi spostarci solo sull'asse P, potremmo notare che per mantenere la temperatura effettivamente stabile \textbf{dobbiamo fornire calore al sistema!} Il passaggio da liquido a gassoso, in genere, \textbf{ha bisogno di assorbire calore dall'ambiente circostante per effettuare il cambio di fase}. Allo stesso modo, se passassimo da gassoso a liquido dovremmo \textbf{assorbire noi calore} per poter mantenere la temperatura stabile.\\
+            In particolare, questo "calore che non fa variare la temperatura", definito \textbf{calore latente di fusione/evaporazione/...}, è proporzionale alla massa dell'oggetto sottoposto al cambio di fase, in particolare la formula è:
+            \begin{align*}
+                \textcolor{Red}{Q_\lambda=\lambda*m}
+            \end{align*}
+            Il paramentro importante di questa formula è il $\textcolor{Red}{\lambda}$, ovvero la \textbf{costante di calore latente} e varia da materiale a materiale e, soprattutto, in base alla temperatura alla quale si trova il corpo sottoposto al cambio di fase. Facciamo alcuni esempi con l'acqua:
+            \begin{align*}
+                & \lambda_{fusione} = 3,3 *10^5\frac{J}{Kg} <==> 273,16 K && \lambda_{evaporazione} = 22,6 *10^5\frac{J}{Kg} <==> 373,16 K
+            \end{align*}
+            Idealmente, se andiamo verso lo stato solido (nel diagramma di fase saliamo verso l'alto sull'asse della pressione) è \textbf{il cambio di fase a darci calore} (siamo noi che dobbiamo assorbirlo), quindi abbiamo:
+            \begin{align*}
+                Q_\lambda=\textcolor{Red}{-}\lambda*m
+            \end{align*}
+            Se invece andiamo verso lo stato gassoso (nel diagramma di fase sceniamo verso il basso sull'asse della pressione) siamo \textbf{noi che dobbiamo dare calore al cambio di fase} (è il cambio di fase che lo assorbe), quindi abbiamo:
+            \begin{align*}
+                Q_\lambda=\textcolor{Red}{+}\lambda*m
+            \end{align*}
+            Nota che facciamo questo discorso (noi che forniamo calore, noi che assorbiamo calore). I \textbf{calori latenti} sono molto interessanti in quanto sono uno dei pochi casi in cui \textbf{abbiamo uno scambio di calore senza un'effettiva variazione di temperatura}.
 
-
-
-        
-            \subsubsection{Calore latente per il cambio di fase}
+            \paragraph{Esempio}
+                Facciamo un veloce esercizio: \textit{abbiamo \textbf{1 litro} di acqua \textbf{liquida} ad una temperatura di \textbf{273,16 K}, \textbf{quanto calore dobbiamo fornire/sottrarre dal sistema per solidificare l'acqua mantenendo la temperatura costante?}} \\
+                Allora, la prima cosa da notare è che \textbf{da liquido vogliamo passare a solido}, quindi la costante che ci interessa sarà \textbf{quella della fusione "al contrario"}. Avremmo allora:
+                \begin{align*}
+                    Q_\lambda = \lambda_{solidificazione}*m=\textcolor{Red}{-\lambda_{fusione}}*m
+                \end{align*}
+                Ora, un altro problema è che noi abbiamo \textbf{litri} di acqua, non chili. Di persè,
