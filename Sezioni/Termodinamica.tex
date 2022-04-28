@@ -151,4 +151,49 @@
                 \begin{align*}
                     Q_\lambda = \lambda_{solidificazione}*m=\textcolor{Red}{-\lambda_{fusione}}*m
                 \end{align*}
-                Ora, un altro problema è che noi abbiamo \textbf{litri} di acqua, non chili. Di persè,
+                Ora, un altro problema è che noi abbiamo \textbf{litri} di acqua, non chili. Ricorda che i \textbf{i litri sono un'unità di misura del volume}, quindi ci basta semplicemente \textbf{moltiplicare il volume per la densità dell'acqua} (in particolare $1\frac{Kg}{dm^3}$, aka. $1\frac{Kg}{l}$, infatti $1 litro = 1 dm^3$). Tornando a noi, avremmo:
+                \begin{align*}
+                    &Q_\lambda &&= -\lambda_{fusione}*m\\
+                    & &&= -\lambda_{fusione}*\textcolor{Red}{\delta_{H2O}*V_{H2O}}\\
+                    & &&= -3,3 *10^5\frac{J}{\bcancel{Kg}}*1\frac{\bcancel{Kg}}{\bcancel{l}}*1\bcancel{l}\\
+                    & &&= -3,3 *10^5J = -330 KJ
+                \end{align*}
+
+    \subsection{Trasferimento di calore}
+        Iniziamo col ricordare che il calore non è altro che "\textit{energia in movimento}": fisicamente parlando, un corpa \textbf{non ha calore}, ma \textbf{ha energia} (ricordalo per l'orale :P). Detto ciò, introduciamo i 3 principali metodi per il trasferimento del calore:
+        \begin{itemize}
+            \item conduzione;
+            \item convezione;
+            \item irraggiamento;
+        \end{itemize}
+
+        \subsubsection{Conduzione}
+            Ovvero il \textbf{trasferimento di energia tramite contatto}, immaginamo di avere una barra di "\textit{qualcosa}" collegata ad una \textbf{sorgente di calore ideale} (definiamo sorgente di calore ideale un \textit{corpo ideale capace di fornire/assorbire calore all'infinito}):
+            \framedImg{7}{L15-img003}
+            La barra inizialmente si trova ad una sua \textbf{temperatura iniziale $T_i$}, mentre la sorgente si trova costantemente ad una \textbf{temperatura $T_s$}. Supponendo che le dimensioni $L_x$ ed $L_y$ della barra (la sua sezione trasversale) siano \textbf{trascurabili}, possiamo immaginarla di \textbf{dividerla in tratti infinitesimali} per lunghezza. Se lasciamo scorrere il tempo, i \textbf{tratti vicini alla sorgente cambieranno la loro temperatura}, avvicinandosi (fino a raggiungere) $T_s$. Dopo un certo tempo, avremmo che \textbf{tutta la barra raggiungerà la temperatura} $T_2$.\\
+
+            Come facciamo a quantificare il tutto? Come detto prima, immaginiamo di dividere la barra in molte sezioni trasversali:
+            \framedImg{7}{L15-img004}
+            Ora, possiamo notare diverse "proporzionalità":
+            \begin{itemize}
+                \item Q $\propto \Delta$ T: il calore assorbito dalla barra è \textbf{proporzionale alla differenza di temperatura tra le sue sezioni trasversali};
+                \item Q $\propto \Delta$ t: il calore assorbito dalla barra è \textbf{proporzionale al tempo per cui resta a contatto con la sorgente ideale} (più tempo resto a contatto e più calore assorbo);
+                \item Q $\propto$ S: il calore assorbito dalla barra è \textbf{proporzionale alla superficie di contatto tra la barra e la sorgete} (più superficie ho a contatto con la sorgente e più calore assorbo);
+            \end{itemize}
+            Se consideriamo \textbf{tratti infinitesimi} possiamo ricavare la \textbf{legge di Fourier}, ovvero:
+            \begin{align*}
+                \textcolor{Red}{dQ=-K*\frac{dT}{dz}*dS*dt}
+            \end{align*}
+            Analizziamola un po': sostanzialmente ci sta dicendo che la \textit{quantità infinitesima di calore \textbf{assorbito dalla barra}} (e quindi sottratto alla sorgente, per quello il segno -) \textit{è proporzionale alla differenza di temperatura per unità di lunghezza($\frac{\Delta T}{dz}$), alla superficie trasversale della barra ($dS$) e al tempo di contatto ($dt$). Tutto ciò è regolato da una costante di proporzionalità ($K$, nota che è DIVERSA dal Kelvin) che rappresenta la \textbf{conducibilità del materiale}}.
+
+            \paragraph{La costante di conducibilità}
+                Se ci rigiriamo un po' la formula di Fourier, possiamo facilmente notare che l'unità di misura di questa costante corrisponde a $\frac{[energ]}{[lung]*[temp]*[temperat]}$, in particolare avremmo $\frac{J}{m*s*K}$. Più è grande questa costante e più facilmente il notro materiale condurrà calore, vediamo qualche esempio:
+                \begin{itemize}
+                    \item alluminio: $200\frac{J}{msK}$, buon conduttore di calore;
+                    \item sughero: $0,04\frac{J}{msK}$, cattivo conduttore di calore
+                \end{itemize}
+                Nota che, la maggior parte delle volte, i buoni conduttori di calore sono anche buni conduttori di energia elettrica (quindi i metalli).
+
+
+        \subsubsection{Convezione}
+        \subsubsection{Irraggiamento}

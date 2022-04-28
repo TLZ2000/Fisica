@@ -15,3 +15,8 @@
 \contentsline {subsection}{\numberline {1.7}Cambi di fase}{6}{subsection.1.7}%
 \contentsline {subsubsection}{\numberline {1.7.1}Calori latenti}{6}{subsubsection.1.7.1}%
 \contentsline {paragraph}{\numberline {1.7.1.1}Esempio}{7}{paragraph.1.7.1.1}%
+\contentsline {subsection}{\numberline {1.8}Trasferimento di calore}{8}{subsection.1.8}%
+\contentsline {subsubsection}{\numberline {1.8.1}Conduzione}{8}{subsubsection.1.8.1}%
+\contentsline {paragraph}{\numberline {1.8.1.1}La costante di conducibilità}{9}{paragraph.1.8.1.1}%
+\contentsline {subsubsection}{\numberline {1.8.2}Convezione}{9}{subsubsection.1.8.2}%
+\contentsline {subsubsection}{\numberline {1.8.3}Irraggiamento}{9}{subsubsection.1.8.3}%
