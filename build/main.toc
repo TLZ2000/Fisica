@@ -120,3 +120,10 @@
 \contentsline {subsubsection}{\numberline {6.6.3}Termometro}{70}{subsubsection.6.6.3}%
 \contentsline {subsubsection}{\numberline {6.6.4}Contatto termico}{71}{subsubsection.6.6.4}%
 \contentsline {subsubsection}{\numberline {6.6.5}Principio zero della termodinamica}{71}{subsubsection.6.6.5}%
+\contentsline {subsection}{\numberline {6.7}Esperimento di Joule}{71}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Calore}{72}{subsection.6.8}%
+\contentsline {subsubsection}{\numberline {6.8.1}Esempio di calore}{72}{subsubsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.2}Principio di equivalenza calore-lavoro}{72}{subsubsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.3}I principio della termodinamica}{72}{subsubsection.6.8.3}%
+\contentsline {subsection}{\numberline {6.9}Cambi di fase}{73}{subsection.6.9}%
+\contentsline {subsubsection}{\numberline {6.9.1}Calore latente per il cambio di fase}{73}{subsubsection.6.9.1}%

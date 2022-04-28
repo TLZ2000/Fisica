@@ -111,11 +111,86 @@
                 T_A=T_B\quad AND\quad T_B=T_C\quad =>\quad T_A=T_C
             \end{align*}
 
+    \subsection{Esperimento di Joule}
+        %\framedImg{40}{L14-img001}
+        Supponiamo di avere un contenitore con pareti adiabatiche, riempito di un fluido al cui interno è inserito un \textbf{mulinello} agganciato ad una puleggia a cui è appesa una massa $m$. La massa andando su e giù fa girare il mulinello, che a sua volta fa scaldare l'acqua.\\
+        Ora si può legare $\Delta h$ a $\Delta T$. Il lavoro che compio è il seguente,
+        \begin{align*}
+            W=mg\Delta h
+        \end{align*}
+        Analogamente al mulinello posso immergere una \textbf{resistenza} nell'acqua e in questo caso ottengo lavoro,
+        \begin{align*}
+            W=\frac{\Delta V^2}{R}\Delta t
+        \end{align*}
+        Stessa cosa se immergo in acqua un'\textbf{elica} e la faccio muovere su e giù, o due \textbf{piastre} che faccio sfregare tra loro producendo attrito.\\
+        Posso anche immergere un \textbf{pallone} nell'acqua e far variare il suo volume.\\
+        In conclusione quindi se faccio lavoro (o casino) dentro ad un sistema termodinamico, la temperatura (o agitazione) aumenta, infatti il lavoro è legato alla variazione di temperatura, a lavori uguali corrispondono variazioni di temperatura uguali,
+        \begin{align*}
+            W=-\Delta U_{int}
+        \end{align*}
+        osserviamo che il segno "-" è una convenzione adottata in termodinamica, dato che quello che interessa della macchina termica è il lavoro che "l'acqua" può compiere. Se il sistema da energia il lavoro sarà $>0$, se invece il sistema riceve energia il lavoro sarà $<0$.\\
+        Con questo esperimento abbiamo appreso che l'energia interna dipende solo dalla temperatura ovvero,
+        \begin{align*}
+            U = U(T)
+        \end{align*}
 
-        \subsection{Cambi di fase}
+    \subsection{Calore}
+        Il \textbf{calore} è quindi ciò che determina la variazione di temperatura,
+        \begin{align*}
+            \Delta T = \gamma Q => Q = \frac{1}{\gamma}\Delta T = \frac{1}{\gamma}(T_f - T_i) = \frac{1}{\gamma}(U_f - U_i) = \frac{1}{\gamma}\Delta U = \eta \Delta U
+        \end{align*}
+        con $\eta = \frac{1}{\gamma}$.
+        Ora quindi se confrontiamo due differenze di temperature,
+        \begin{align*}
+            &\Delta T_1=\gamma Q_1\\
+            &\Delta T_2=\gamma Q_2
+        \end{align*}
+        otteniamo,
+        \begin{align*}
+            \frac{\Delta T_2}{\Delta T_1}=\frac{\bcancel{\gamma} Q_2}{\bcancel{\gamma} Q_1}
+        \end{align*}
+        Ora sperimentalmente si prova che $\eta = 1$ e quindi ottengo che,
+        \begin{align*}
+            Q = \Delta U_{int}
+        \end{align*}
+        ovvero il calore è tutto energia interna.\\
+
+        \subsubsection{Esempio di calore}
+            La massa (e.g. carbone) che brucio per scaldare una pentola d'acqua darà un certo calore che, a parità di massa, dipende da tante cose come l'umidità, la qualità del carbone, il tipo di pentola che uso,... Tutte queste sono delle costanti quindi ho,
+            \begin{align*}
+                Q = c_p c_h c_q ... m
+            \end{align*}
+            Facendo un po' di esperimenti in condizioni diverse si potranno osservare delle variazioni di temperatura diverse, quello che però osservo sempre è che se raddoppio la massa che brucio, raddoppia anche la variazione di temperatura, la costante $\gamma$ tiene conto di queste costanti.
+
+        \subsubsection{Principio di equivalenza calore-lavoro}
+            Dato ora quindi che il calore è $Q = \Delta U_{int}$ e ricordandoci da prima che $W=-\Delta U_{int}$ possiamo ricavare che,
+            \begin{align*}
+                Q = -W <=> W = -Q
+            \end{align*}
+            Il calore e il lavoro quindi sono energia in trasferimento/movimento, identificano una differenza tra lo stato iniziale e lo stato finale.
+
+        \subsubsection{I principio della termodinamica}
+            Tornando ora a parlare della variazione d'energia interna, essa è causata in parte dal lavoro che il sistema compie/subisce e in parte dal calore che il sistema assorbe/cede, ovvero
+            \begin{align*}
+                &\Delta U_{int} = \Delta U_{int}^{(W)} + \Delta U_{int}^{(Q)}\\
+                &\Delta U_{int}^{(W)}=-W\\
+                &\Delta U_{int}^{(Q)}=Q
+            \end{align*}
+            La variazione di energia interna dovuta al lavoro è $-W$ dato che se il sistema compie lavoro, questo viene a "danno" della sua energia interna. Per la variazione di energia dovuta al calore invece è $Q$ dato che se ricevo calore questo si "trasforma" in energia interna.\\
+            In conclusione quindi ho che la variazione di energia interna è la differenza tra il calore e il lavoro,
+            \begin{align*}
+                \Delta U{int} = Q - W
+            \end{align*}
+            Osserviamo ora che per passare dallo stato iniziale a quello finale ci sono tanti modi/traiettorie, ognuna delle quali ha il suo $Q_i$ e il suo $W_i$, la $\Delta U$ però è sempre uguale, indipendentemente dalla traiettoria.
+
+        \subsubsection{Trasformazione ciclica}
+
+
+
+    \subsection{Cambi di fase}
 
 
 
 
-        
-            \subsubsection{Calore latente per il cambio di fase}
+
+        \subsubsection{Calore latente per il cambio di fase}

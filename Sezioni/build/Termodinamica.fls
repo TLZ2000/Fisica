@@ -1,0 +1,10 @@
+PWD /Users/samuele/git/Fisica2/Sezioni
+INPUT /usr/local/texlive/2021/texmf.cnf
+INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT Termodinamica.tex
+OUTPUT build/Termodinamica.log
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT build/Termodinamica.pdf
+INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
