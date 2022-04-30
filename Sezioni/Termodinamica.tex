@@ -159,6 +159,8 @@
                     & &&= -3,3 *10^5J = -330 KJ
                 \end{align*}
 
+            \paragraph{Esempio temperatura di equilibrio}
+
     \subsection{Trasferimento di calore}
         Iniziamo col ricordare che il calore non è altro che "\textit{energia in movimento}": fisicamente parlando, un corpa \textbf{non ha calore}, ma \textbf{ha energia} (ricordalo per l'orale :P). Detto ciò, introduciamo i 3 principali metodi per il trasferimento del calore:
         \begin{itemize}
@@ -196,4 +198,39 @@
 
 
         \subsubsection{Convezione}
+            Il metodo di trasferimento del calore principale quando si parla di liquidi e di atmosfera. Non lo trattiamo approfonditamente (dato che i meccanismi algebrici che lo riguardano sono molto complessi), ma lo vediamo velocemente comunque. Supponiamo di essere in questa situazione:
+            \framedImg{3}{L15-img005}
+            Abbiamo una sorgente a contatto con un liquido più freddo. Ora, vediamo cosa succede se alziamo la temperatura della sorgente e aspettiamo un certo tempo (non specificato, un tempo generico):
+            \framedImg{7}{L15-img006}
+            Consideriamo diversi momenti:
+            \begin{enumerate}
+                \item partiremo in un momento in cui tutto il liquido (sia a contatto con la sorgente che non) è alla \textbf{stessa pressione $P_0$ e temperatura $T_0$};
+                \item col passare del tempo, il liquido a contatto con la sorgente \textbf{inizia a scaldarsi} e ciò comporta un \textbf{aumento della sua pressione} (al momento prendi per buono);
+                \item dato che la pressione $P_1 > P_0$, allora il liquido caldo \textbf{inizia ad espandersi in maniera irregolare};
+                \item dato che l'espansione è irregolare, può succedere che \textbf{bolle calde si "staccano" dalla sorgente} ed iniziano a "fluttuare" nel liquido freddo, \textbf{permettendo ad altro linquido freddo di scaldarsi con la sorgente}. Un'altro punto importante è che \textbf{anche la bolla calda scalderà il liquido freddo!}
+            \end{enumerate}
+            Concludendo, l'idea è che, con il passare del tempo, il numero di bolle calde che navigano nel fluido continua ad aumentare finché \textbf{tutto il fluido non arriverà alla temperatura della sorgente}.
+
         \subsubsection{Irraggiamento}
+            Ogni corpo emette delle \textbf{onde elettromagnetiche}, queste non sono altro che \textbf{fasci di energia pura}: trasferendo energia possiamo trasferire calore! Ora, la formula che regola questo fenomeno è la \textbf{legge di Stefan-Boltzmann}, ovvero:
+            \begin{align*}
+                \textcolor{Red}{\epsilon=\sigma*e*T^4}
+            \end{align*}
+            In particolare abbiamo che:
+            \begin{itemize}
+                \item $\varepsilon$: l'energia emessa da un corpo;
+                \item $\sigma$: la \textbf{costante di Stefan-Boltzmann}, vale \textcolor{Red}{$\sigma=5,67*10^-8\frac{J}{m^2*s*K^4}$};
+                \item $e$: emissività del corpo, possiamo vederla anche come la capacità del corpo di riflettere le onde elettromagnetiche. Vale un valore $\in [0, 1]$, dove 1 identifica la "massima rifelttività" del corpo, mentre 0 il "massimo assorbimento" (un corpo totalmente nero) NON SICURO!!! RICONTROLLARE;
+                \item $T^4$: la temperatura $^4$ del corpo che consideriamo.
+            \end{itemize}
+            Se analizziamo l'unità di misura di questa quantità $\varepsilon$ vediamo che corrisponde a $\textcolor{Red}{\frac{J}{m^2*K}}$, in altre parole $[\varepsilon]=[\frac{E}{L^2*T}]$, ovvero Energia su Lunghezza$^2$*Temperatura.
+            Nota che tutti i corpi emettono queste onde elettromagnetiche, un esempio interessante (e soprattutto che potrebbe tornare all'esame) è quello della \textbf{costante solare}, ovvero la quantità di energia "irragiata" dal sole. Identifichiamo qusta quantità (così come un sacco di altre cose che non centrano niente, quindi ATTENZIANE) con la lettera $c$ e la chiamiamo \textbf{costante solare}. In particolare, vale (mediamente):
+            \begin{align*}
+                c=1,36\frac{J}{m^2*s}
+            \end{align*}
+            Una piccola nota conclusiva: è abbastanza improprio considerare l'irraggiamento come forma di trasmissione del calore "normale", infatti \textbf{non c'è un vero e proprio trasferimento meccanico del calore}
+
+            \paragraph{Esercizio con costante solare}
+
+        \subsubsection{Contenitore adiabatico}
+            Ora che conosciamo i vari metodi per il trasferimento di calore, possiamo porci il quesito \textbf{"come costruire un contenitore veramente adiabatico"} (isolante)? Uno dei metodi possibili è quello del \textbf{\textit{vaso Dewar}}
