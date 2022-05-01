@@ -56,6 +56,7 @@
             \item variazione differenza di potenziale\\
             \item variazione di riflettività/trasmittanza
         \end{itemize}
+        È utile rappresentare le trasformazioni come spostamenti in un piano di coordinate. Per i gas di solito si usa il piano $V, p$.
 
     \subsection{Temperatura}
         La \textbf{temperatura} si misura su una scala e corrisponde alla media dell'energia cinetica dei componenti del sistema, ovvero quanto i componenti "sono agitati".
@@ -128,7 +129,7 @@
         \begin{align*}
             W=-\Delta U_{int}
         \end{align*}
-        osserviamo che il segno "-" è una convenzione adottata in termodinamica, dato che quello che interessa della macchina termica è il lavoro che "l'acqua" può compiere. Se il sistema da energia il lavoro sarà $>0$, se invece il sistema riceve energia il lavoro sarà $<0$.\\
+        osserviamo che il segno "-" è una convenzione adottata in termodinamica, dato che quello che interessa della macchina termica è il lavoro che "l'acqua" può compiere. Se il sistema da energia, il lavoro sarà $>0$, se invece il sistema riceve energia, il lavoro sarà $<0$.\\
         Con questo esperimento abbiamo appreso che l'energia interna dipende solo dalla temperatura ovvero,
         \begin{align*}
             U = U(T)
@@ -154,6 +155,7 @@
             Q = \Delta U_{int}
         \end{align*}
         ovvero il calore è tutto energia interna.\\
+        Osserviamo che introducendo il calore abbiamo generalizzato il principio di conservazione dell'energia, infatti il calore è un modo per scambiare l'energia.
 
         \subsubsection{Esempio di calore}
             La massa (e.g. carbone) che brucio per scaldare una pentola d'acqua darà un certo calore che, a parità di massa, dipende da tante cose come l'umidità, la qualità del carbone, il tipo di pentola che uso,... Tutte queste sono delle costanti quindi ho,
@@ -162,28 +164,136 @@
             \end{align*}
             Facendo un po' di esperimenti in condizioni diverse si potranno osservare delle variazioni di temperatura diverse, quello che però osservo sempre è che se raddoppio la massa che brucio, raddoppia anche la variazione di temperatura, la costante $\gamma$ tiene conto di queste costanti.
 
-        \subsubsection{Principio di equivalenza calore-lavoro}
-            Dato ora quindi che il calore è $Q = \Delta U_{int}$ e ricordandoci da prima che $W=-\Delta U_{int}$ possiamo ricavare che,
-            \begin{align*}
-                Q = -W <=> W = -Q
-            \end{align*}
-            Il calore e il lavoro quindi sono energia in trasferimento/movimento, identificano una differenza tra lo stato iniziale e lo stato finale.
+    \subsection{Principio di equivalenza calore-lavoro}
+        Dato ora quindi che il calore è $Q = \Delta U_{int}$ e ricordandoci da prima che $W=-\Delta U_{int}$ possiamo ricavare che,
+        \begin{align*}
+            Q = -W <=> W = -Q
+        \end{align*}
+        Il calore e il lavoro quindi sono energia in trasferimento/movimento, identificano una differenza tra lo stato iniziale e lo stato finale.
 
-        \subsubsection{I principio della termodinamica}
-            Tornando ora a parlare della variazione d'energia interna, essa è causata in parte dal lavoro che il sistema compie/subisce e in parte dal calore che il sistema assorbe/cede, ovvero
-            \begin{align*}
-                &\Delta U_{int} = \Delta U_{int}^{(W)} + \Delta U_{int}^{(Q)}\\
-                &\Delta U_{int}^{(W)}=-W\\
-                &\Delta U_{int}^{(Q)}=Q
-            \end{align*}
-            La variazione di energia interna dovuta al lavoro è $-W$ dato che se il sistema compie lavoro, questo viene a "danno" della sua energia interna. Per la variazione di energia dovuta al calore invece è $Q$ dato che se ricevo calore questo si "trasforma" in energia interna.\\
-            In conclusione quindi ho che la variazione di energia interna è la differenza tra il calore e il lavoro,
-            \begin{align*}
-                \Delta U{int} = Q - W
-            \end{align*}
-            Osserviamo ora che per passare dallo stato iniziale a quello finale ci sono tanti modi/traiettorie, ognuna delle quali ha il suo $Q_i$ e il suo $W_i$, la $\Delta U$ però è sempre uguale, indipendentemente dalla traiettoria.
+    \subsection{I principio della termodinamica}
+        Tornando ora a parlare della variazione d'energia interna, essa è causata in parte dal lavoro che il sistema compie/subisce e in parte dal calore che il sistema assorbe/cede, ovvero
+        \begin{align*}
+            &\Delta U_{int} = \Delta U_{int}^{(W)} + \Delta U_{int}^{(Q)}\\
+            &\Delta U_{int}^{(W)}=-W\\
+            &\Delta U_{int}^{(Q)}=Q
+        \end{align*}
+        La variazione di energia interna dovuta al lavoro è $-W$ dato che se il sistema compie lavoro, questo viene a "danno" della sua energia interna. Per la variazione di energia dovuta al calore invece è $Q$ dato che se ricevo calore questo si "trasforma" in energia interna.\\
+        In conclusione quindi ho che la variazione di energia interna è la differenza tra il calore e il lavoro,
+        \begin{align*}
+            \Delta U{int} = Q - W
+        \end{align*}
+        Osserviamo ora che per passare dallo stato iniziale a quello finale ci sono tanti modi/traiettorie, ognuna delle quali ha il suo $Q_i$ e il suo $W_i$, la $\Delta U$ però è sempre uguale, indipendentemente dalla traiettoria.\\\\
+        Ora posso concentrarmi sulle quantità infinitesimali, quindi mi verrebbe da scrivere,
+        \begin{align*}
+            dU = dQ - dW
+        \end{align*}
+        La parte sinistra all'"=" è corretta, infatti la variazione di energia dipende solo dallo stato iniziale e da quello finale, è differenziabile. La parte destra invece, quindi la variazione di calore e di lavoro dipende anche dal percorso e non è un differenziale esatto, quindi si usa $\delta$ come segue,
+        \begin{align*}
+            dU = \delta Q - \delta W
+        \end{align*}
+        La variazione infinitesima di calore e di lavoro dipende quindi dalla trasformazione $\gamma$ che effettuo sul piano,
+        \begin{align*}
+            &\delta Q = \delta Q_{\gamma}(p, V, T)\\
+            &\delta W = \delta W_{\gamma}(p, V, T)
+        \end{align*}
+
+    \subsection{Tipi di trasformazioni termodinamiche}
 
         \subsubsection{Trasformazione ciclica}
+            Una \textbf{trasformazione ciclica} è una trasformazione per cui lo stato iniziale e quello finale coincidono. Dato quindi che $i\equiv f$ ho che,
+            \begin{align*}
+                &T_i = T_f\\
+                &U_i = U_f
+            \end{align*}
+            e quindi,
+            \begin{align*}
+                \Delta U = 0 => Q = W
+            \end{align*}
+            Infatti se ho incamerato energia, devo in qualche modo restituirla all'ambiente esterno, per far si stato iniziale e finale coincidano.\\
+            I motori per esempio fanno trasformazioni cicliche.
+
+        \subsubsection{Trasformazione quasi-statica}
+            Una \textbf{trasformazione quasi-statica} è una trasformazione in cui ogni stato intermedio è uno stato di equilibrio, dove le "cose" sono fatte con "dolcezza" tale da non perturbare ne il sistema ne l'ambiente esterno.
+
+        \subsubsection{Trasformazione reversibile}
+            Una \textbf{trasformazione reversibile} è una trasformazione in cui si "può tornare indietro". Per essere reversibile, una trasformazione deve essere quasi statica e non ci devono essere dissipazioni.
+
+            \paragraph{Esempio trasformazione reversibile}
+                %\framedImg{40}{L13-img002}
+                Supponiamo di avere un contenitore, con del gas all'interno, aperto sopra e nell'apertura è inserito un pistone, supponiamo anche che tra il pistone e le pareti non ci siano perdite. Se ora metto dei pesetti sopra il pistone, riesco a farlo abbassare. Posso assumere che gli infiniti stati intermedi infinitesimi sono in equilibrio, quindi la trasformazione è quasi-statica. Inoltre è una trasformazione reversibile, infatti togliendo i pesetti che ho messo sopra il pistone, il sistema ritorna allo stato in cui era prima di metterci i pesetti.
+
+            \paragraph{Esempio trasformazione non reversibile}
+                %\framedImg{40}{L13-img003}
+                Questo esempio riguarda l'espansione libera dei gas, infatti ho un contenitore adiabatico separato all'interno in due camere con un rubinetto che le collega. All'inizio il rubinetto è chiuso e nella camera destra c'è gas, mentre in quella sinistra il vuoto. Se ora apro il rubinetto ed aspetto un certo tempo, finisco nella situazione in cui il gas si è distribuito nelle due camere. Ora per far si che il gas torni tutto nella camera destra (situazione iniziale) devo aspettare tempo infinito.
+
+        \subsubsection{Lentezza}
+            Ci riferiamo alla \textbf{lentezza} come la caratteristica/velocità di un processo (trasformazione termodinamica) che ci consente di trattare tutti gli stati intermedi come stati di equilibrio e che ci consente di raffigurare la trasformazione come passaggi su infiniti stati intermedi tutti di equilibrio.
+
+    \subsection{Calorimetria}
+        %\framedImg{40}{L13-img004}
+        Consideriamo un sistema termodinamico composto da un contenitore adiabatico con all'interno $H_2O$ a $T_{H_2O,i}$ ed un corpo $c$ immerso nell'acqua a $T_{c,i}$ (analogamente se considero due masse solide a contatto tra loro in un contenitore adiabatico ottengo gli stessi risultati). Aspettando un istante di tempo abbastanza lungo passo dal sistema descritto sopra, ad un sistema in cui l'$H_2O$ e $c$ hanno la stessa temperatura $T_*$, quindi ipotizzando che l'$H_2O$ abbia temperatura inferiore a $c$ abbiamo che $T_{H_2O,i}<T_*<T_{c,i}$.\\
+        Ora essendo il sistema isolato abbiamo che,
+        \begin{align*}
+            Q = 0 \quad AND\quad W = 0 => \Delta U = 0
+        \end{align*}
+        e quindi,
+        \begin{align*}
+            0=\Delta U=\Delta U_{H_2O} + \Delta U_c => \Delta U_{H_2O} = - \Delta U_c
+        \end{align*}
+        ovvero l'energia interna che l'$H_2O$ "guadagna" la "toglie" dal corpo $c$. Osserviamo ora che $\Delta V = 0$, ovvero il volume non cambia, e quindi $\Delta W = 0$ sia per l'$H_2O$ che per $c$ e quindi ho che,
+        \begin{align*}
+            &\Delta U_{H_2O}=Q_{H_2O} - \bcancel{W_{H_2O}}\\
+            &\Delta U_c=Q_c - \bcancel{W_c}
+        \end{align*}
+        La variazione di energia interna avviene tutta per cambio di calore, e quindi ora ottengo,
+        \begin{align*}
+            \Delta U_{H_2O} = - \Delta U_c => Q_{H_2O} = -Q_c
+        \end{align*}
+        Ora devo capire a che energia corrisponde la variazione di temperatura, questa mi consente di calcolare il lavoro che mi serve per fare aumentare la temperatura dell'${H_2O}$. Questo sarà il calore $Q_{H_2O}$, che sarà $-Q_c$.\\
+        Ora ottengo che
+        \begin{align*}
+            Q = c_{\gamma}m\Delta T
+        \end{align*}
+        dove $c_{\gamma}$ è il calore specifico.\\
+        Osserviamo che questa è una trasformazione non reversibile, infatti devo aspettare infinito tempo per far si che le due temperature tornino ai valori iniziali.
+
+        \subsubsection{Calore specifico}
+            Il \textbf{calore specifico} di un corpo è una costante definita come segue,
+            \begin{align*}
+                c = \frac{1}{m}\left[\frac{dQ}{dT}\right]_{\gamma}
+            \end{align*}
+            La sua unità di misura è quindi $\frac{J}{kgK}$.\\
+            Osserviamo ora che il calore specifico si cita per una particolare trasformazione, infatti scrivere,
+            \begin{align*}
+                c = \frac{1}{m}\frac{dQ}{dT}
+            \end{align*}
+            oppure,
+            \begin{align*}
+                c = \frac{1}{m}\frac{\delta Q}{dT}
+            \end{align*}
+            sarebbe sbagliato.\\
+            Osserviamo ora che il fatto di scambiare calore con l'esterno non implica che ci sia una variazione di temperatura, infatti quest'ultima si ha solo quando varia l'energia interna.\\
+            Il calore specifico è utile solo nel caso in cui c'è variazione di temperatura. Per esempio quando l'acqua nel freezer diventa ghiaccio (passaggio di fase), non c'è variazione di temperatura anche se il frigo ha spento energia per ghiacciare l'acqua, quindi c'è scambio di calore ma non ha senso parlare di calore specifico.\\
+
+            Per una qualsiasi trasformazione quasi-statica, da $P_i$ a $P_f$, il calore è definito come segue,
+            \begin{align*}
+                Q = \int_{P_i}^{P_f} \delta Q = \int_{P_i}^{P_f} mc_{\gamma}dT
+            \end{align*}
+            ed in alternativa,
+            \begin{align*}
+                Q = C(T_f - T_i)
+            \end{align*}
+            dove $C$ è la capacità termica.
+
+        \subsubsection{Calorimetro}
+            Il \textbf{calorimetro} è un sistema controllato per il quale so connettere la variazione di temperatura al calore ricevuto. Quello dell'esempio precedente (contenitore adiabatico contenente acqua ed un oggetto immerso), è un calorimetro a bagno.
+
+        \subsubsection{Capacità termica}
+            La \textbf{capacità termica} è il prodotto tra massa e calore specifico della trasformazione che stiamo considerando, ovvero come segue,
+            \begin{align*}
+                C=mc_{\gamma}
+            \end{align*}
 
 
 
