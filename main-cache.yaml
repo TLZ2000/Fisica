@@ -1,0 +1,2409 @@
+version: 0.12.2
+filePath: main.tex
+options:
+  $BIBINPUTS:
+    - $ROOTDIR
+    - $ROOTDIR/$OUTDIR
+    - ''
+  $TEXINPUTS:
+    - $ROOTDIR
+    - $ROOTDIR/$OUTDIR
+    - ''
+  bibtexEngine: bibtex
+  cleanPatterns:
+    - '**/*.aux'
+    - '**/*.aux.bak'
+    - '**/*.bbl'
+    - '**/*.bcf'
+    - '**/*.blg'
+    - '**/*.dvi'
+    - '**/*.fdb_latexmk'
+    - '**/*.fls'
+    - '**/*.idx'
+    - '**/*.idx.bak'
+    - '**/*.ilg'
+    - '**/*.ind'
+    - '**/*.lof'
+    - '**/*.log'
+    - '**/*.lol'
+    - '**/*.lot'
+    - '**/*.nav'
+    - '**/*.out'
+    - '**/*.pdf'
+    - '**/*.ps'
+    - '**/*.snm'
+    - '**/*.synctex.gz'
+    - '**/*.toc'
+    - '/**/_minted-${JOB}'
+    - '/${OUTDIR}/sage-plots-for-${JOB}.tex'
+    - /missfont.log
+    - /texput.log
+    - /texput.aux
+  dviToPdfEngine: xdvipdfmx
+  engine: pdflatex
+  epstopdfBoundingBox: default
+  epstopdfOutputPath: $DIR_0/$NAME_0.pdf
+  indexAutomaticRanges: true
+  indexEngine: makeindex
+  indexOrdering: word
+  indexSorting: default
+  knitrConcordance: true
+  knitrOutputPath: $JOB.tex
+  lhs2texStyle: poly
+  literateAgdaEngine: agda
+  literateHaskellEngine: lhs2TeX
+  loadCache: true
+  loadUserOptions: true
+  outputFormat: pdf
+  phaseCycles: 20
+  pweaveCacheDirectory: pweave-cache-for-$JOB
+  pweaveFigureDirectory: pweave-figures-for-$JOB
+  pweaveKernel: python3
+  pweaveOutputFormat: tex
+  pweaveOutputPath: $JOB.tex
+  saveCache: true
+  severity: info
+  validateCache: true
+  synctex: true
+  copyTargetsToRoot: true
+  outputDirectory: ''
+  intermediatePostScript: false
+  $PATH: /usr/local/texlive/2022/bin/x86_64-linux
+files:
+  dicy-instance.yaml-ParsedYAML:
+    timeStamp: 2022-04-30T18:25:11.728Z
+    jobNames: []
+    value:
+      severity: info
+    type: ParsedYAML
+  dicy.yaml-ParsedYAML:
+    jobNames: []
+    type: ParsedYAML
+  main.yaml-ParsedYAML:
+    jobNames: []
+    type: ParsedYAML
+  main.tex-ParsedLaTeXMagic:
+    timeStamp: 2022-04-30T15:13:22.567Z
+    jobNames: []
+    value: {}
+    type: ParsedLaTeXMagic
+  /home/thomas/.var/app/io.atom.Atom/config/dicy/config.yaml-ParsedYAML:
+    timeStamp: 2022-04-30T18:25:11.850Z
+    jobNames: []
+    value:
+      synctex: true
+      engine: pdflatex
+      severity: warning
+      copyTargetsToRoot: true
+      outputDirectory: ''
+      outputFormat: pdf
+      cleanPatterns:
+        - '**/*.aux'
+        - '**/*.aux.bak'
+        - '**/*.bbl'
+        - '**/*.bcf'
+        - '**/*.blg'
+        - '**/*.dvi'
+        - '**/*.fdb_latexmk'
+        - '**/*.fls'
+        - '**/*.idx'
+        - '**/*.idx.bak'
+        - '**/*.ilg'
+        - '**/*.ind'
+        - '**/*.lof'
+        - '**/*.log'
+        - '**/*.lol'
+        - '**/*.lot'
+        - '**/*.nav'
+        - '**/*.out'
+        - '**/*.pdf'
+        - '**/*.ps'
+        - '**/*.snm'
+        - '**/*.synctex.gz'
+        - '**/*.toc'
+        - '/**/_minted-${JOB}'
+        - '/${OUTDIR}/sage-plots-for-${JOB}.tex'
+        - /missfont.log
+        - /texput.log
+        - /texput.aux
+      intermediatePostScript: false
+      $PATH: /usr/local/texlive/2022/bin/x86_64-linux
+    type: ParsedYAML
+  main.tex:
+    timeStamp: 2022-04-30T18:25:37.227Z
+    jobNames: []
+    hash: NFQXEwIneG6d9YAoTU8lv7v2YiHAknuASuPWCHtoce0=
+    type: LaTeX
+    subType: article
+  /home/thomas/.var/app/io.atom.Atom/config/dicy/config.yaml:
+    timeStamp: 2022-04-30T18:25:11.730Z
+    jobNames: []
+    type: YAML
+  x.y-Nil:
+    jobNames: []
+    type: Nil
+  main.log:
+    timeStamp: 2022-04-30T15:13:56.127Z
+    jobNames: []
+    hash: 4YQBZ+G5gOYM/pasZOeu6Ny17IJ2LFuTVq7qnOWitRA=
+    type: LaTeXLog
+    subType: pdfTeX
+  main.fls-ParsedFileListing:
+    jobNames: []
+    type: ParsedFileListing
+  main.log-ParsedLaTeXLog:
+    timeStamp: 2022-04-30T15:14:06.040Z
+    jobNames: []
+    value:
+      messages:
+        - name: pdfTeX
+          severity: info
+          text: mathtools 2022/02/07 v1.28a mathematical typesetting tools
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.st
+          log:
+            file: main.log
+            range:
+              start: 29
+              end: 29
+        - name: pdfTeX
+          severity: info
+          text: keyval 2014/10/28 v1.15 key=value parser (DPC)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+          log:
+            file: main.log
+            range:
+              start: 31
+              end: 31
+        - name: pdfTeX
+          severity: info
+          text: 'calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+          log:
+            file: main.log
+            range:
+              start: 34
+              end: 34
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \setlength
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+            range:
+              start: 80
+              end: 80
+          log:
+            file: main.log
+            range:
+              start: 41
+              end: 41
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \addtolength
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+            range:
+              start: 81
+              end: 81
+          log:
+            file: main.log
+            range:
+              start: 42
+              end: 42
+        - name: pdfTeX
+          severity: info
+          text: mhsetup 2021/03/18 v1.4 programming setup (MH)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+          log:
+            file: main.log
+            range:
+              start: 47
+              end: 47
+        - name: pdfTeX
+          severity: info
+          text: amsmath 2021/10/15 v2.17l AMS math features
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+          log:
+            file: main.log
+            range:
+              start: 49
+              end: 49
+        - name: pdfTeX
+          severity: info
+          text: amstext 2021/08/26 v2.01 AMS text
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+          log:
+            file: main.log
+            range:
+              start: 54
+              end: 54
+        - name: pdfTeX
+          severity: info
+          text: amsbsy 1999/11/29 v1.2d Bold Symbols
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+          log:
+            file: main.log
+            range:
+              start: 62
+              end: 62
+        - name: pdfTeX
+          severity: info
+          text: amsopn 2021/08/26 v2.02 operator names
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+          log:
+            file: main.log
+            range:
+              start: 66
+              end: 66
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \frac
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+            range:
+              start: 234
+              end: 234
+          log:
+            file: main.log
+            range:
+              start: 69
+              end: 69
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \overline
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+            range:
+              start: 399
+              end: 399
+          log:
+            file: main.log
+            range:
+              start: 72
+              end: 72
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \ldots
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+            range:
+              start: 496
+              end: 496
+          log:
+            file: main.log
+            range:
+              start: 75
+              end: 75
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \dots
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+            range:
+              start: 499
+              end: 499
+          log:
+            file: main.log
+            range:
+              start: 76
+              end: 76
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \cdots
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+            range:
+              start: 620
+              end: 620
+          log:
+            file: main.log
+            range:
+              start: 77
+              end: 77
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Redeclaring font encoding OML
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+            range:
+              start: 743
+              end: 743
+          log:
+            file: main.log
+            range:
+              start: 81
+              end: 81
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Redeclaring font encoding OMS
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+            range:
+              start: 744
+              end: 744
+          log:
+            file: main.log
+            range:
+              start: 82
+              end: 82
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: 'Redefining \['
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+            range:
+              start: 2938
+              end: 2938
+          log:
+            file: main.log
+            range:
+              start: 103
+              end: 103
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: 'Redefining \]'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+            range:
+              start: 2939
+              end: 2939
+          log:
+            file: main.log
+            range:
+              start: 104
+              end: 104
+        - name: pdfTeX
+          severity: info
+          text: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+          log:
+            file: main.log
+            range:
+              start: 119
+              end: 119
+        - name: pdfTeX
+          severity: info
+          text: array 2021/10/04 v2.5f Tabular extension package (FMi)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+          log:
+            file: main.log
+            range:
+              start: 122
+              end: 122
+        - name: pdfTeX
+          severity: info
+          text: inputenc 2021/02/14 v1.3d Input encoding file
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+          log:
+            file: main.log
+            range:
+              start: 140
+              end: 140
+        - name: pdfTeX
+          severity: info
+          text: fontenc 2021/04/29 v2.0v Standard LaTeX package
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+          log:
+            file: main.log
+            range:
+              start: 145
+              end: 145
+        - name: pdfTeX
+          severity: info
+          text: 'natbib 2010/09/13 8.31b (PWD, AO)'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+          log:
+            file: main.log
+            range:
+              start: 148
+              end: 148
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \cite
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+            range:
+              start: 694
+              end: 694
+          log:
+            file: main.log
+            range:
+              start: 151
+              end: 151
+        - name: pdfTeX
+          severity: info
+          text: 'graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+          log:
+            file: main.log
+            range:
+              start: 155
+              end: 155
+        - name: pdfTeX
+          severity: info
+          text: 'graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+          log:
+            file: main.log
+            range:
+              start: 158
+              end: 158
+        - name: pdfTeX
+          severity: info
+          text: trig 2021/08/11 v1.11 sin cos tan (DPC)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+          log:
+            file: main.log
+            range:
+              start: 161
+              end: 161
+        - severity: info
+          name: pdfTeX
+          category: Package graphics
+          text: 'Driver file: pdftex.def'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+            range:
+              start: 107
+              end: 107
+          log:
+            file: main.log
+            range:
+              start: 167
+              end: 167
+        - name: pdfTeX
+          severity: info
+          text: babel 2022/02/26 3.73 The Babel package
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+          log:
+            file: main.log
+            range:
+              start: 176
+              end: 176
+        - name: pdfTeX
+          severity: info
+          text: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+          log:
+            file: main.log
+            range:
+              start: 199
+              end: 199
+        - name: pdfTeX
+          severity: info
+          text: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+          log:
+            file: main.log
+            range:
+              start: 203
+              end: 203
+        - name: pdfTeX
+          severity: info
+          text: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+          log:
+            file: main.log
+            range:
+              start: 205
+              end: 205
+        - name: pdfTeX
+          severity: info
+          text: iftex 2022/02/03 v1.0f TeX engine tests
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+          log:
+            file: main.log
+            range:
+              start: 207
+              end: 207
+        - name: pdfTeX
+          severity: info
+          text: >-
+            pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX
+            (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+          log:
+            file: main.log
+            range:
+              start: 211
+              end: 212
+        - name: pdfTeX
+          severity: info
+          text: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
+          log:
+            file: main.log
+            range:
+              start: 216
+              end: 216
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdf@primitive is available.
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+          log:
+            file: main.log
+            range:
+              start: 218
+              end: 218
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdf@ifprimitive is available.
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+          log:
+            file: main.log
+            range:
+              start: 219
+              end: 219
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdfdraftmode found.
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+          log:
+            file: main.log
+            range:
+              start: 220
+              end: 220
+        - name: pdfTeX
+          severity: info
+          text: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.
+          log:
+            file: main.log
+            range:
+              start: 224
+              end: 224
+        - name: pdfTeX
+          severity: info
+          text: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+          log:
+            file: main.log
+            range:
+              start: 228
+              end: 228
+        - name: pdfTeX
+          severity: info
+          text: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
+          log:
+            file: main.log
+            range:
+              start: 232
+              end: 232
+        - name: pdfTeX
+          severity: info
+          text: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+          log:
+            file: main.log
+            range:
+              start: 235
+              end: 235
+        - name: pdfTeX
+          severity: info
+          text: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+          log:
+            file: main.log
+            range:
+              start: 239
+              end: 239
+        - name: pdfTeX
+          severity: info
+          text: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+          log:
+            file: main.log
+            range:
+              start: 242
+              end: 242
+        - name: pdfTeX
+          severity: info
+          text: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
+          log:
+            file: main.log
+            range:
+              start: 246
+              end: 246
+        - name: pdfTeX
+          severity: info
+          text: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+          log:
+            file: main.log
+            range:
+              start: 257
+              end: 257
+        - name: pdfTeX
+          severity: info
+          text: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.st
+          log:
+            file: main.log
+            range:
+              start: 261
+              end: 261
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Hyper figures OFF
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 4137
+              end: 4137
+          log:
+            file: main.log
+            range:
+              start: 269
+              end: 269
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link nesting OFF
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 4142
+              end: 4142
+          log:
+            file: main.log
+            range:
+              start: 270
+              end: 270
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Hyper index ON
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 4145
+              end: 4145
+          log:
+            file: main.log
+            range:
+              start: 271
+              end: 271
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Plain pages OFF
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 4152
+              end: 4152
+          log:
+            file: main.log
+            range:
+              start: 272
+              end: 272
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Backreferencing OFF
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 4157
+              end: 4157
+          log:
+            file: main.log
+            range:
+              start: 273
+              end: 273
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Implicit mode ON; LaTeX internals redefined.
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+          log:
+            file: main.log
+            range:
+              start: 274
+              end: 274
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Bookmarks ON
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 4390
+              end: 4390
+          log:
+            file: main.log
+            range:
+              start: 275
+              end: 275
+        - name: pdfTeX
+          severity: info
+          text: 'url 2013/09/16 ver 3.4 Verb mode for urls, etc.'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+          log:
+            file: main.log
+            range:
+              start: 279
+              end: 279
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \url
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 4749
+              end: 4749
+          log:
+            file: main.log
+            range:
+              start: 281
+              end: 281
+        - name: pdfTeX
+          severity: info
+          text: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+          log:
+            file: main.log
+            range:
+              start: 285
+              end: 285
+        - name: pdfTeX
+          severity: info
+          text: >-
+            bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers
+            (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+          log:
+            file: main.log
+            range:
+              start: 289
+              end: 290
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Hyper figures OFF
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 6027
+              end: 6027
+          log:
+            file: main.log
+            range:
+              start: 295
+              end: 295
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link nesting OFF
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 6032
+              end: 6032
+          log:
+            file: main.log
+            range:
+              start: 296
+              end: 296
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Hyper index ON
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 6035
+              end: 6035
+          log:
+            file: main.log
+            range:
+              start: 297
+              end: 297
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: backreferencing OFF
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 6042
+              end: 6042
+          log:
+            file: main.log
+            range:
+              start: 298
+              end: 298
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link coloring OFF
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 6047
+              end: 6047
+          log:
+            file: main.log
+            range:
+              start: 299
+              end: 299
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link coloring with OCG OFF
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 6052
+              end: 6052
+          log:
+            file: main.log
+            range:
+              start: 300
+              end: 300
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: PDF/A mode OFF
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 6057
+              end: 6057
+          log:
+            file: main.log
+            range:
+              start: 301
+              end: 301
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \ref
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 6097
+              end: 6097
+          log:
+            file: main.log
+            range:
+              start: 302
+              end: 302
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \pageref
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+            range:
+              start: 6101
+              end: 6101
+          log:
+            file: main.log
+            range:
+              start: 303
+              end: 303
+        - name: pdfTeX
+          severity: info
+          text: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+          log:
+            file: main.log
+            range:
+              start: 306
+              end: 306
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: 'Driver (autodetected): hpdftex.'
+          source:
+            file: main.tex
+          log:
+            file: main.log
+            range:
+              start: 313
+              end: 313
+        - name: pdfTeX
+          severity: info
+          text: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+          log:
+            file: main.log
+            range:
+              start: 327
+              end: 327
+        - name: pdfTeX
+          severity: info
+          text: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+          log:
+            file: main.log
+            range:
+              start: 331
+              end: 331
+        - severity: info
+          name: pdfTeX
+          category: Package uniquecounter
+          text: New unique counter `rerunfilecheck'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+            range:
+              start: 286
+              end: 286
+          log:
+            file: main.log
+            range:
+              start: 333
+              end: 334
+        - name: pdfTeX
+          severity: info
+          text: textcomp 2020/02/02 v2.0n Standard LaTeX package
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+          log:
+            file: main.log
+            range:
+              start: 339
+              end: 339
+        - name: pdfTeX
+          severity: info
+          text: float 2001/11/08 v1.3d Float enhancements (AL)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+          log:
+            file: main.log
+            range:
+              start: 342
+              end: 342
+        - name: pdfTeX
+          severity: info
+          text: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+          log:
+            file: main.log
+            range:
+              start: 350
+              end: 350
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: 'Driver file: pdftex.def'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+            range:
+              start: 227
+              end: 227
+          log:
+            file: main.log
+            range:
+              start: 355
+              end: 355
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `cmy' substituted by `cmy0'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+            range:
+              start: 1352
+              end: 1352
+          log:
+            file: main.log
+            range:
+              start: 356
+              end: 356
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `hsb' substituted by `rgb'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+            range:
+              start: 1356
+              end: 1356
+          log:
+            file: main.log
+            range:
+              start: 357
+              end: 357
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `RGB' extended
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+            range:
+              start: 1368
+              end: 1368
+          log:
+            file: main.log
+            range:
+              start: 358
+              end: 358
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `HTML' substituted by `rgb'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+            range:
+              start: 1370
+              end: 1370
+          log:
+            file: main.log
+            range:
+              start: 359
+              end: 359
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `Hsb' substituted by `hsb'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+            range:
+              start: 1371
+              end: 1371
+          log:
+            file: main.log
+            range:
+              start: 360
+              end: 360
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `tHsb' substituted by `hsb'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+            range:
+              start: 1372
+              end: 1372
+          log:
+            file: main.log
+            range:
+              start: 361
+              end: 361
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `HSB' substituted by `hsb'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+            range:
+              start: 1373
+              end: 1373
+          log:
+            file: main.log
+            range:
+              start: 362
+              end: 362
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `Gray' substituted by `gray'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+            range:
+              start: 1374
+              end: 1374
+          log:
+            file: main.log
+            range:
+              start: 363
+              end: 363
+        - severity: info
+          name: pdfTeX
+          category: Package xcolor
+          text: Model `wave' substituted by `hsb'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+            range:
+              start: 1375
+              end: 1375
+          log:
+            file: main.log
+            range:
+              start: 364
+              end: 364
+        - severity: warning
+          name: pdfTeX
+          category: LaTeX
+          text: Command \underbar has changed.
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.styPackage:
+              sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading
+              styles
+          log:
+            file: main.log
+            range:
+              start: 373
+              end: 373
+        - severity: warning
+          name: pdfTeX
+          category: LaTeX
+          text: Command \underline has changed.
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.styPackage:
+              sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading
+              styles
+          log:
+            file: main.log
+            range:
+              start: 377
+              end: 377
+        - name: pdfTeX
+          severity: info
+          text: >-
+            pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents
+            (AM)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+          log:
+            file: main.log
+            range:
+              start: 382
+              end: 382
+        - name: pdfTeX
+          severity: info
+          text: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+          log:
+            file: main.log
+            range:
+              start: 385
+              end: 385
+        - name: pdfTeX
+          severity: info
+          text: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+          log:
+            file: main.log
+            range:
+              start: 388
+              end: 388
+        - name: pdfTeX
+          severity: info
+          text: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+          log:
+            file: main.log
+            range:
+              start: 409
+              end: 409
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Redeclaring math symbol \hbar
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+            range:
+              start: 98
+              end: 98
+          log:
+            file: main.log
+            range:
+              start: 412
+              end: 412
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting math alphabet `\mathfrak' in version `bold' U/euf/m/n
+            --> U/euf/b/n.
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+            range:
+              start: 106
+              end: 106
+          log:
+            file: main.log
+            range:
+              start: 413
+              end: 414
+        - name: pdfTeX
+          severity: info
+          text: amsthm 2020/05/29 v2.20.6
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+          log:
+            file: main.log
+            range:
+              start: 416
+              end: 416
+        - name: pdfTeX
+          severity: info
+          text: enumitem 2019/06/20 v3.9 Customized lists
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+          log:
+            file: main.log
+            range:
+              start: 428
+              end: 428
+        - name: pdfTeX
+          severity: info
+          text: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+          log:
+            file: main.log
+            range:
+              start: 436
+              end: 436
+        - severity: info
+          name: pdfTeX
+          category: Package bm
+          text: 'No bold for \OMX/cmex/m/n, using \pmb.'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+          log:
+            file: main.log
+            range:
+              start: 440
+              end: 440
+        - severity: info
+          name: pdfTeX
+          category: Package bm
+          text: 'No bold for \U/msa/m/n, using \pmb.'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+          log:
+            file: main.log
+            range:
+              start: 441
+              end: 441
+        - severity: info
+          name: pdfTeX
+          category: Package bm
+          text: 'No bold for \U/msb/m/n, using \pmb.'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+          log:
+            file: main.log
+            range:
+              start: 442
+              end: 442
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Redeclaring math alphabet \mathbf
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+            range:
+              start: 149
+              end: 149
+          log:
+            file: main.log
+            range:
+              start: 443
+              end: 443
+        - name: pdfTeX
+          severity: info
+          text: geometry 2020/01/02 v5.9 Page Geometry
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+          log:
+            file: main.log
+            range:
+              start: 446
+              end: 446
+        - name: pdfTeX
+          severity: info
+          text: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+          log:
+            file: main.log
+            range:
+              start: 449
+              end: 449
+        - name: pdfTeX
+          severity: info
+          text: bigints 2010/02/15 Writing big integrals
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/bigints\bigints.sty
+          log:
+            file: main.log
+            range:
+              start: 466
+              end: 466
+        - severity: info
+          name: pdfTeX
+          category: Package bigints
+          text: This is Bigints by Merciadri Luca.
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/bigints\bigints.sty
+            range:
+              start: 5
+              end: 5
+          log:
+            file: main.log
+            range:
+              start: 467
+              end: 467
+        - name: pdfTeX
+          severity: info
+          text: 'mdframed 2013/07/01 1.9b: mdframed'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.st
+          log:
+            file: main.log
+            range:
+              start: 470
+              end: 470
+        - name: pdfTeX
+          severity: info
+          text: expl3 2022-02-24 L3 programming layer (loader)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+          log:
+            file: main.log
+            range:
+              start: 475
+              end: 475
+        - name: pdfTeX
+          severity: info
+          text: xparse 2022-01-12 L3 Experimental document command parser
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+          log:
+            file: main.log
+            range:
+              start: 483
+              end: 483
+        - name: pdfTeX
+          severity: info
+          text: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.sty
+          log:
+            file: main.log
+            range:
+              start: 486
+              end: 486
+        - name: pdfTeX
+          severity: info
+          text: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
+          log:
+            file: main.log
+            range:
+              start: 489
+              end: 489
+        - severity: info
+          name: pdfTeX
+          category: Package zref
+          text: 'New property list: main'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
+            range:
+              start: 764
+              end: 764
+          log:
+            file: main.log
+            range:
+              start: 490
+              end: 490
+        - severity: info
+          name: pdfTeX
+          category: Package zref
+          text: 'New property: default'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
+            range:
+              start: 765
+              end: 765
+          log:
+            file: main.log
+            range:
+              start: 491
+              end: 491
+        - severity: info
+          name: pdfTeX
+          category: Package zref
+          text: 'New property: page'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
+            range:
+              start: 766
+              end: 766
+          log:
+            file: main.log
+            range:
+              start: 492
+              end: 492
+        - severity: info
+          name: pdfTeX
+          category: Package zref
+          text: 'New property: abspage'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.sty
+            range:
+              start: 66
+              end: 66
+          log:
+            file: main.log
+            range:
+              start: 495
+              end: 495
+        - name: pdfTeX
+          severity: info
+          text: needspace 2010/09/12 v1.3d reserve vertical space
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.st
+          log:
+            file: main.log
+            range:
+              start: 499
+              end: 499
+        - severity: info
+          name: pdfTeX
+          category: Package zref
+          text: 'New property: mdf@pagevalue'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.st
+            range:
+              start: 895
+              end: 895
+          log:
+            file: main.log
+            range:
+              start: 589
+              end: 589
+        - name: pdfTeX
+          severity: info
+          text: cancel 2013/04/12 v2.2 Cancel math terms
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/cancel\cancel.sty
+          log:
+            file: main.log
+            range:
+              start: 591
+              end: 591
+        - name: pdfTeX
+          severity: info
+          text: gensymb 2003/07/02 v1.0 (WaS)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/was\gensymb.sty
+          log:
+            file: main.log
+            range:
+              start: 593
+              end: 593
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OML/cmm/m/it ... okay
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 631
+              end: 632
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OMS/cmsy/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 633
+              end: 634
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OT1/cmr/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 635
+              end: 636
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for T1/cmr/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 637
+              end: 638
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for TS1/cmr/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 639
+              end: 640
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OMX/cmex/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 641
+              end: 642
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for U/cmr/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 643
+              end: 644
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for PD1/pdf/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 645
+              end: 646
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for PU/pdf/m/n ... okay
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 647
+              end: 648
+        - name: pdfTeX
+          severity: info
+          text: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+          log:
+            file: main.log
+            range:
+              start: 667
+              end: 667
+        - severity: info
+          name: pdfTeX
+          category: Package epstopdf-base
+          text: Redefining graphics rule for `.eps'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+            range:
+              start: 485
+              end: 485
+          log:
+            file: main.log
+            range:
+              start: 668
+              end: 669
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \it@ocap
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 675
+              end: 675
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \it@ccap
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 676
+              end: 676
+        - severity: info
+          name: pdfTeX
+          category: Package hyperref
+          text: Link coloring OFF
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 677
+              end: 677
+        - name: pdfTeX
+          severity: info
+          text: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+          log:
+            file: main.log
+            range:
+              start: 680
+              end: 680
+        - name: pdfTeX
+          severity: info
+          text: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+          log:
+            file: main.log
+            range:
+              start: 683
+              end: 683
+        - name: pdfTeX
+          severity: info
+          text: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+          log:
+            file: main.log
+            range:
+              start: 687
+              end: 687
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \ref
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 691
+              end: 691
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \pageref
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 692
+              end: 692
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \nameref
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 693
+              end: 693
+        - name: pdfTeX
+          severity: info
+          text: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.st
+          log:
+            file: main.log
+            range:
+              start: 701
+              end: 701
+        - name: pdfTeX
+          severity: info
+          text: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+          log:
+            file: main.log
+            range:
+              start: 703
+              end: 703
+        - severity: info
+          name: pdfTeX
+          category: Package pdflscape
+          text: 'Auto-detected driver: pdftex'
+          source:
+            file: >-
+              C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.st
+            range:
+              start: 81
+              end: 81
+          log:
+            file: main.log
+            range:
+              start: 705
+              end: 705
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: >-
+            Overwriting symbol font `gns@font' in version `bold' TS1/cmr/m/n -->
+            TS1/cmr/b/n.
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 742
+              end: 743
+        - severity: info
+          name: pdfTeX
+          category: Package gensymb
+          text: Math companion symbols declared
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 744
+              end: 744
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \degree
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 745
+              end: 745
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \celsius
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 746
+              end: 746
+        - severity: info
+          name: pdfTeX
+          category: Package gensymb
+          text: 'Using text companion symbols for \degree, \celsius and \perthousand'
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 747
+              end: 748
+        - severity: info
+          name: pdfTeX
+          category: LaTeX
+          text: Redefining \ohm
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 749
+              end: 749
+        - severity: info
+          name: pdfTeX
+          category: Package gensymb
+          text: Using \textohm for \ohm
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 750
+              end: 750
+        - severity: info
+          name: pdfTeX
+          category: Package gensymb
+          text: Using \textmu for \micro
+          source:
+            file: main.tex
+            range:
+              start: 69
+              end: 69
+          log:
+            file: main.log
+            range:
+              start: 751
+              end: 751
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: './Img//LOGO1.png used Requested size: 273.0042pt x 228.48059pt.'
+          source:
+            file: main.tex
+            range:
+              start: 72
+              end: 72
+          log:
+            file: main.log
+            range:
+              start: 755
+              end: 756
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Trying to load font information for U+msa
+          source:
+            file: main.tex
+            range:
+              start: 72
+              end: 72
+          log:
+            file: main.log
+            range:
+              start: 757
+              end: 757
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Trying to load font information for U+msb
+          source:
+            file: main.tex
+            range:
+              start: 72
+              end: 72
+          log:
+            file: main.log
+            range:
+              start: 762
+              end: 762
+        - severity: warning
+          name: pdfTeX
+          category: Package hyperref
+          text: 'Token not allowed in a PDF string (Unicode): removing `math shift''.'
+          source:
+            file: Sezioni/Termodinamica.tex
+            range:
+              start: 73
+              end: 73
+          log:
+            file: main.log
+            range:
+              start: 823
+              end: 824
+        - severity: warning
+          name: pdfTeX
+          category: Package hyperref
+          text: 'Token not allowed in a PDF string (Unicode): removing `subscript''.'
+          source:
+            file: Sezioni/Termodinamica.tex
+            range:
+              start: 73
+              end: 73
+          log:
+            file: main.log
+            range:
+              start: 827
+              end: 828
+        - severity: warning
+          name: pdfTeX
+          category: Package hyperref
+          text: 'Token not allowed in a PDF string (Unicode): removing `math shift''.'
+          source:
+            file: Sezioni/Termodinamica.tex
+            range:
+              start: 73
+              end: 73
+          log:
+            file: main.log
+            range:
+              start: 831
+              end: 832
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: './Img//L15-img001.jpg used Requested size: 273.0042pt x 167.65068pt.'
+          source:
+            file: Sezioni/Termodinamica.tex
+            range:
+              start: 123
+              end: 123
+          log:
+            file: main.log
+            range:
+              start: 843
+              end: 844
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: './Img//L15-img002.jpg used Requested size: 273.0042pt x 113.61707pt.'
+          source:
+            file: Sezioni/Termodinamica.tex
+            range:
+              start: 125
+              end: 125
+          log:
+            file: main.log
+            range:
+              start: 848
+              end: 849
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: >-
+            ./Img//L15-img003.jpg used Requested size: 382.20421pt x
+            162.79039pt.
+          source:
+            file: Sezioni/Termodinamica.tex
+            range:
+              start: 172
+              end: 172
+          log:
+            file: main.log
+            range:
+              start: 854
+              end: 855
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: './Img//L15-img004.jpg used Requested size: 382.20421pt x 61.61298pt.'
+          source:
+            file: Sezioni/Termodinamica.tex
+            range:
+              start: 176
+              end: 176
+          log:
+            file: main.log
+            range:
+              start: 864
+              end: 865
+        - severity: info
+          name: pdfTeX
+          category: Package rerunfilecheck
+          text: >-
+            File `main.out' has not changed. Checksum:
+            F76505E69CE28E91A05B3353B467D513;3153.
+          source:
+            file: main.tex
+          log:
+            file: main.log
+            range:
+              start: 867
+              end: 868
+      inputs: []
+      outputs:
+        - main.pdf
+      calls: []
+    type: ParsedLaTeXLog
+  main.pdf:
+    timeStamp: 2022-04-30T15:01:15.127Z
+    jobNames: []
+    hash: QF6zc3Sj91+oSLI/ZR7V9CPDUIe2+JQKACedaNo5g6k=
+    type: PortableDocumentFormat
+rules:
+  - name: ApplyOptions
+    command: load
+    phase: initialize
+    parameters: []
+    inputs:
+      - file: dicy.yaml-ParsedYAML
+        type: default
+      - file: main.yaml-ParsedYAML
+        type: default
+      - file: main.tex-ParsedLaTeXMagic
+        type: default
+      - file: dicy-instance.yaml-ParsedYAML
+        type: default
+      - file: /home/thomas/.var/app/io.atom.Atom/config/dicy/config.yaml-ParsedYAML
+        type: default
+    outputs: []
+  - name: LoadAndValidateCache
+    command: load
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: Migrate
+    command: load
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ApplyOptions
+    command: load
+    phase: execute
+    parameters: []
+    inputs:
+      - file: dicy.yaml-ParsedYAML
+        type: default
+      - file: main.yaml-ParsedYAML
+        type: default
+      - file: main.tex-ParsedLaTeXMagic
+        type: default
+      - file: dicy-instance.yaml-ParsedYAML
+        type: default
+      - file: /home/thomas/.var/app/io.atom.Atom/config/dicy/config.yaml-ParsedYAML
+        type: default
+    outputs: []
+  - name: ParseOptionsFile
+    command: load
+    phase: execute
+    parameters: []
+    inputs:
+      - file: /home/thomas/.var/app/io.atom.Atom/config/dicy/config.yaml
+        type: default
+    outputs:
+      - file: /home/thomas/.var/app/io.atom.Atom/config/dicy/config.yaml-ParsedYAML
+        type: default
+  - name: ParseLaTeXMagic
+    command: load
+    phase: execute
+    parameters:
+      - main.tex
+    inputs:
+      - file: main.tex
+        type: default
+    outputs:
+      - file: main.tex-ParsedLaTeXMagic
+        type: default
+  - name: AssignJobNames
+    command: load
+    phase: finalize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: FindLogFiles
+    command: build
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: LaTeX
+    command: build
+    phase: execute
+    parameters:
+      - main.tex
+    inputs:
+      - file: main.tex
+        type: default
+      - file: main.fls-ParsedFileListing
+        type: default
+      - file: main.log-ParsedLaTeXLog
+        type: default
+    outputs:
+      - file: main.pdf
+        type: default
+  - name: ParseLaTeXLog
+    command: build
+    phase: execute
+    parameters:
+      - main.log
+    inputs:
+      - file: main.log
+        type: default
+    outputs:
+      - file: main.log-ParsedLaTeXLog
+        type: default
+  - name: LogProducedTargets
+    command: build
+    phase: finalize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: CheckForMissingBuildRule
+    command: build
+    phase: finalize
+    parameters:
+      - main.tex
+    inputs:
+      - file: main.tex
+        type: default
+    outputs: []
+  - name: FindLogFiles
+    command: log
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ParseLaTeXLog
+    command: log
+    phase: execute
+    parameters:
+      - main.log
+    inputs:
+      - file: main.log
+        type: default
+    outputs:
+      - file: main.log-ParsedLaTeXLog
+        type: default
+  - name: ReportLogMessages
+    command: log
+    phase: execute
+    parameters:
+      - main.log-ParsedLaTeXLog
+    inputs:
+      - file: main.log-ParsedLaTeXLog
+        type: default
+    outputs: []
+  - name: SaveCache
+    command: save
+    phase: execute
+    parameters: []
+    inputs: []
+    outputs: []

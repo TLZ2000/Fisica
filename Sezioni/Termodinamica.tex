@@ -298,9 +298,180 @@
 
 
     \subsection{Cambi di fase}
+        La materia può trovarsi in \textbf{3 diversi stati}:
+        \begin{itemize}
+            \item solido: il corpo ha forma e volume propri;
+            \item liquido: il corpo ha un volume proprio ma assume la forma del recipiente che lo contiene;
+            \item gassoso: il corpo, molto spesso aeroforme, assume forma e volume del recipiente che lo contiene;
+        \end{itemize}
+        Sotto certe condizioni, un corpo può passare da uno stato all'altro, questo passaggio, in base agli stati iniziale e finale, ha doversi nomi:
+        \framedImg{5}{L15-img001}
+        Quando si parla di termodinamica, le "scale di misura" importanti sono volume, \textbf{pressione e temperatura}, se prendiamo le ultime 2 e le rappresentiamo su un piano cartesiano otteniamo quello che viene detto \textbf{diagramma di fase}:
+        \framedImg{5}{L15-img002}
+        Ovviamente varia da materiale a materiale, ma sostanzialmente la forma è quella. Prendendo ad esempio l'acqua, in corrispondenza di $T = 273,16 K$ e $P = 611 Pa$ abbiamo quello che si definisce \textbf{punto triplo}, ovvero quel punto in cui le \textbf{3 linee di demarcazione si intersecano}. In questo punto, i 3 stati possono coesistere contemporaneamente (in rosso nell'immagine)! È particolarmente importante perché \textbf{definisce la scala di temperatura}. Un altro punto particolarmente importante è quello che viene definito \textbf{punto critico}, ovvero il punto in cui \textbf{finisce la linea di demarcazione tra liquido e gas}. In particolare, oltre quel punto, gli stati gassoso e liquido non sono più distinguibili (fluido supercritico).
+
+        \subsubsection{Calori latenti}
+            Immaginiamo di voler far passare dell'acqua dallo stato liquido a quello gassoso: osservando il diagramma di fase, possiamo notare che per farlo potremmo far variare la pressione, mantenendo la temperatura stabile, oppure modificare la temperatura mantenendo la pressione stabile (oppure anche modificare entrambe ovviamente). Se decidessimo di mantenere la temperatura stabile, e quindi spostarci solo sull'asse P, potremmo notare che per mantenere la temperatura effettivamente stabile \textbf{dobbiamo fornire calore al sistema!} Il passaggio da liquido a gassoso, in genere, \textbf{ha bisogno di assorbire calore dall'ambiente circostante per effettuare il cambio di fase}. Allo stesso modo, se passassimo da gassoso a liquido dovremmo \textbf{assorbire noi calore} per poter mantenere la temperatura stabile.\\
+            In particolare, questo "calore che non fa variare la temperatura", definito \textbf{calore latente di fusione/evaporazione/...}, è proporzionale alla massa dell'oggetto sottoposto al cambio di fase, in particolare la formula è:
+            \begin{align*}
+                \textcolor{Red}{Q_\lambda=\lambda*m}
+            \end{align*}
+            Il paramentro importante di questa formula è il $\textcolor{Red}{\lambda}$, ovvero la \textbf{costante di calore latente} e varia da materiale a materiale e, soprattutto, in base alla temperatura alla quale si trova il corpo sottoposto al cambio di fase. Facciamo alcuni esempi con l'acqua:
+            \begin{align*}
+                & \lambda_{fusione} = 3,3 *10^5\frac{J}{Kg} <==> 273,16 K && \lambda_{evaporazione} = 22,6 *10^5\frac{J}{Kg} <==> 373,16 K
+            \end{align*}
+            Idealmente, se andiamo verso lo stato solido (nel diagramma di fase saliamo verso l'alto sull'asse della pressione) è \textbf{il cambio di fase a darci calore} (siamo noi che dobbiamo assorbirlo), quindi abbiamo:
+            \begin{align*}
+                Q_\lambda=\textcolor{Red}{-}\lambda*m
+            \end{align*}
+            Se invece andiamo verso lo stato gassoso (nel diagramma di fase sceniamo verso il basso sull'asse della pressione) siamo \textbf{noi che dobbiamo dare calore al cambio di fase} (è il cambio di fase che lo assorbe), quindi abbiamo:
+            \begin{align*}
+                Q_\lambda=\textcolor{Red}{+}\lambda*m
+            \end{align*}
+            Nota che facciamo questo discorso (noi che forniamo calore, noi che assorbiamo calore). I \textbf{calori latenti} sono molto interessanti in quanto sono uno dei pochi casi in cui \textbf{abbiamo uno scambio di calore senza un'effettiva variazione di temperatura}.
+
+            \paragraph{Esempio}
+                Facciamo un veloce esercizio: \textit{abbiamo \textbf{1 litro} di acqua \textbf{liquida} ad una temperatura di \textbf{273,16 K}, \textbf{quanto calore dobbiamo fornire/sottrarre dal sistema per solidificare l'acqua mantenendo la temperatura costante?}} \\
+                Allora, la prima cosa da notare è che \textbf{da liquido vogliamo passare a solido}, quindi la costante che ci interessa sarà \textbf{quella della fusione "al contrario"}. Avremmo allora:
+                \begin{align*}
+                    Q_\lambda = \lambda_{solidificazione}*m=\textcolor{Red}{-\lambda_{fusione}}*m
+                \end{align*}
+                Ora, un altro problema è che noi abbiamo \textbf{litri} di acqua, non chili. Ricorda che i \textbf{i litri sono un'unità di misura del volume}, quindi ci basta semplicemente \textbf{moltiplicare il volume per la densità dell'acqua} (in particolare $1\frac{Kg}{dm^3}$, aka. $1\frac{Kg}{l}$, infatti $1 litro = 1 dm^3$). Tornando a noi, avremmo:
+                \begin{align*}
+                    &Q_\lambda &&= -\lambda_{fusione}*m\\
+                    & &&= -\lambda_{fusione}*\textcolor{Red}{\delta_{H2O}*V_{H2O}}\\
+                    & &&= -3,3 *10^5\frac{J}{\bcancel{Kg}}*1\frac{\bcancel{Kg}}{\bcancel{l}}*1\bcancel{l}\\
+                    & &&= -3,3 *10^5J = -330 KJ
+                \end{align*}
+
+            \paragraph{Esempio temperatura di equilibrio}
+
+    \subsection{Trasferimento di calore}
+        Iniziamo col ricordare che il calore non è altro che "\textit{energia in movimento}": fisicamente parlando, un corpa \textbf{non ha calore}, ma \textbf{ha energia} (ricordalo per l'orale :P). Detto ciò, introduciamo i 3 principali metodi per il trasferimento del calore:
+        \begin{itemize}
+            \item conduzione;
+            \item convezione;
+            \item irraggiamento;
+        \end{itemize}
+
+        \subsubsection{Conduzione}
+            Ovvero il \textbf{trasferimento di energia tramite contatto}, immaginamo di avere una barra di "\textit{qualcosa}" collegata ad una \textbf{sorgente di calore ideale} (definiamo sorgente di calore ideale un \textit{corpo ideale capace di fornire/assorbire calore all'infinito}):
+            \framedImg{7}{L15-img003}
+            La barra inizialmente si trova ad una sua \textbf{temperatura iniziale $T_i$}, mentre la sorgente si trova costantemente ad una \textbf{temperatura $T_s$}. Supponendo che le dimensioni $L_x$ ed $L_y$ della barra (la sua sezione trasversale) siano \textbf{trascurabili}, possiamo immaginarla di \textbf{dividerla in tratti infinitesimali} per lunghezza. Se lasciamo scorrere il tempo, i \textbf{tratti vicini alla sorgente cambieranno la loro temperatura}, avvicinandosi (fino a raggiungere) $T_s$. Dopo un certo tempo, avremmo che \textbf{tutta la barra raggiungerà la temperatura} $T_2$.\\
+
+            Come facciamo a quantificare il tutto? Come detto prima, immaginiamo di dividere la barra in molte sezioni trasversali:
+            \framedImg{7}{L15-img004}
+            Ora, possiamo notare diverse "proporzionalità":
+            \begin{itemize}
+                \item Q $\propto \Delta$ T: il calore assorbito dalla barra è \textbf{proporzionale alla differenza di temperatura tra le sue sezioni trasversali};
+                \item Q $\propto \Delta$ t: il calore assorbito dalla barra è \textbf{proporzionale al tempo per cui resta a contatto con la sorgente ideale} (più tempo resto a contatto e più calore assorbo);
+                \item Q $\propto$ S: il calore assorbito dalla barra è \textbf{proporzionale alla superficie di contatto tra la barra e la sorgete} (più superficie ho a contatto con la sorgente e più calore assorbo);
+            \end{itemize}
+            Se consideriamo \textbf{tratti infinitesimi} possiamo ricavare la \textbf{legge di Fourier}, ovvero:
+            \begin{align*}
+                \textcolor{Red}{dQ=-K*\frac{dT}{dz}*dS*dt}
+            \end{align*}
+            Analizziamola un po': sostanzialmente ci sta dicendo che la \textit{quantità infinitesima di calore \textbf{assorbito dalla barra}} (e quindi sottratto alla sorgente, per quello il segno -) \textit{è proporzionale alla differenza di temperatura per unità di lunghezza($\frac{\Delta T}{dz}$), alla superficie trasversale della barra ($dS$) e al tempo di contatto ($dt$). Tutto ciò è regolato da una costante di proporzionalità ($K$, nota che è DIVERSA dal Kelvin) che rappresenta la \textbf{conducibilità del materiale}}.
+
+            \paragraph{La costante di conducibilità}
+                Se ci rigiriamo un po' la formula di Fourier, possiamo facilmente notare che l'unità di misura di questa costante corrisponde a $\frac{[energ]}{[lung]*[temp]*[temperat]}$, in particolare avremmo $\frac{J}{m*s*K}$. Più è grande questa costante e più facilmente il notro materiale condurrà calore, vediamo qualche esempio:
+                \begin{itemize}
+                    \item alluminio: $200\frac{J}{msK}$, buon conduttore di calore;
+                    \item sughero: $0,04\frac{J}{msK}$, cattivo conduttore di calore
+                \end{itemize}
+                Nota che, la maggior parte delle volte, i buoni conduttori di calore sono anche buni conduttori di energia elettrica (quindi i metalli).
 
 
+        \subsubsection{Convezione}
+            Il metodo di trasferimento del calore principale quando si parla di liquidi e di atmosfera. Non lo trattiamo approfonditamente (dato che i meccanismi algebrici che lo riguardano sono molto complessi), ma lo vediamo velocemente comunque. Supponiamo di essere in questa situazione:
+            \framedImg{3}{L15-img005}
+            Abbiamo una sorgente a contatto con un liquido più freddo. Ora, vediamo cosa succede se alziamo la temperatura della sorgente e aspettiamo un certo tempo (non specificato, un tempo generico):
+            \framedImg{7}{L15-img006}
+            Consideriamo diversi momenti:
+            \begin{enumerate}
+                \item partiremo in un momento in cui tutto il liquido (sia a contatto con la sorgente che non) è alla \textbf{stessa pressione $P_0$ e temperatura $T_0$};
+                \item col passare del tempo, il liquido a contatto con la sorgente \textbf{inizia a scaldarsi} e ciò comporta un \textbf{aumento della sua pressione} (al momento prendi per buono);
+                \item dato che la pressione $P_1 > P_0$, allora il liquido caldo \textbf{inizia ad espandersi in maniera irregolare};
+                \item dato che l'espansione è irregolare, può succedere che \textbf{bolle calde si "staccano" dalla sorgente} ed iniziano a "fluttuare" nel liquido freddo, \textbf{permettendo ad altro linquido freddo di scaldarsi con la sorgente}. Un'altro punto importante è che \textbf{anche la bolla calda scalderà il liquido freddo!}
+            \end{enumerate}
+            Concludendo, l'idea è che, con il passare del tempo, il numero di bolle calde che navigano nel fluido continua ad aumentare finché \textbf{tutto il fluido non arriverà alla temperatura della sorgente}.
 
+        \subsubsection{Irraggiamento}
+            Ogni corpo emette delle \textbf{onde elettromagnetiche}, queste non sono altro che \textbf{fasci di energia pura}: trasferendo energia possiamo trasferire calore! Ora, la formula che regola questo fenomeno è la \textbf{legge di Stefan-Boltzmann}, ovvero:
+            \begin{align*}
+                \textcolor{Red}{\epsilon=\sigma*e*T^4}
+            \end{align*}
+            In particolare abbiamo che:
+            \begin{itemize}
+                \item $\varepsilon$: l'energia emessa da un corpo;
+                \item $\sigma$: la \textbf{costante di Stefan-Boltzmann}, vale \textcolor{Red}{$\sigma=5,67*10^-8\frac{J}{m^2*s*K^4}$};
+                \item $e$: emissività del corpo, possiamo vederla anche come la capacità del corpo di riflettere le onde elettromagnetiche. Vale un valore $\in [0, 1]$, dove 1 identifica la "massima rifelttività" del corpo, mentre 0 il "massimo assorbimento" (un corpo totalmente nero) NON SICURO!!! RICONTROLLARE;
+                \item $T^4$: la temperatura $^4$ del corpo che consideriamo.
+            \end{itemize}
+            Se analizziamo l'unità di misura di questa quantità $\varepsilon$ vediamo che corrisponde a $\textcolor{Red}{\frac{J}{m^2*K}}$, in altre parole $[\varepsilon]=[\frac{E}{L^2*T}]$, ovvero Energia su Lunghezza$^2$*Temperatura.
+            Nota che tutti i corpi emettono queste onde elettromagnetiche, un esempio interessante (e soprattutto che potrebbe tornare all'esame) è quello della \textbf{costante solare}, ovvero la quantità di energia "irragiata" dal sole. Identifichiamo qusta quantità (così come un sacco di altre cose che non centrano niente, quindi ATTENZIANE) con la lettera $c$ e la chiamiamo \textbf{costante solare}. In particolare, vale (mediamente):
+            \begin{align*}
+                c=1,36\frac{J}{m^2*s}
+            \end{align*}
+            Una piccola nota conclusiva: è abbastanza improprio considerare l'irraggiamento come forma di trasmissione del calore "normale", infatti \textbf{non c'è un vero e proprio trasferimento meccanico del calore}
 
+            \paragraph{Esercizio con costante solare}
 
-        \subsubsection{Calore latente per il cambio di fase}
+        \subsubsection{Contenitore adiabatico}
+            Ora che conosciamo i vari metodi per il trasferimento di calore, possiamo porci il quesito \textbf{"come costruire un contenitore veramente adiabatico"} (isolante)? Uno dei metodi possibili è quello del \textbf{\textit{vaso Dewar}}, che possiamo schematizzare in questo modo:
+            \framedImg{4}{L15-img007}
+            Per evitare tutti i tipi di trasferimento di calore, il contenitore deve avere diverse caratteristiche, in particolare:
+            \begin{enumerate}
+                \item essere a tenuta stagna, in modo da \textbf{evitare la convezione};
+                \item avere uno "strato di vuoto" il più vicino al liquido da mantenere a temperatura, in modo da \textbf{evitare la conduzione};
+                \item avere delle pareti \textbf{riflettenti} (Dewar usava delle pareti argentate) in modo da \textbf{evitare l'irraggiamento}. Nota che le pareti devono essere riflettenti \textbf{sia verso l'esterno} (per riflettere le onde dell'ambiente esterno) \textbf{sia verso l'interno} (in modo da impedire al liquido di disperdere il suo calore).
+            \end{enumerate}
+
+    \subsection{I gas ideali}
+        I gas sono un sistema termodinamico composto da un \textbf{gran numero di molecole libere di muoversi nello spazio}. Per descrivere i gas, usiamo principalmente \textbf{3 variabili}:
+        \begin{itemize}
+            \item volume ($V$);
+            \item pressione ($P$);
+            \item temperatura ($T$);
+        \end{itemize}
+        Analizziamole velocemente:
+        \subsubsection{Volume}
+            La più semplice delle 3: quando parliamo di gas supponiamo che \textbf{questo sia contenuo in un qualche contenitore}, questo contenitore \textbf{"contiene" una porzione di spazio} che rappresenta appunto il volume. Nota che, se non diversamente specificato, supponiamo che il gas \textbf{occupi tutto il volume a sua disposizione}. Il volume si misura come una \textbf{lunghezza al qubo} ($L^3$), in particolare il \textcolor{Red}{\textbf{metro$^3$}} oppure il \textbf{litro} (che corrisponde a un $dm^3 = 10^{-3}m^3$).
+        \subsubsection{Pressione}
+            Il fatto che il gas occupi tutto lo spazio a sua disposizione implica che \textbf{sarà a contatto col contenitore che lo contiene}. Inoltre, le molecole del gas sono in costante movimento quindi ci saranno \textbf{degli urti tra il contenitore e le molecole del gas}: ciò darà origine ad una forza che premerà sul contenitore.
+            \framedImg{4}{L15-img008}
+            Formalizzando il tutto, ogni molecola del gas si muove liberamente nel contenitore con una \textbf{certa velocità} \textcolor{Red}{$v$} ed ha anche una \textbf{certa massa} \textcolor{Red}{$m$}. Possiamo quindi dire che \textbf{ogni molecola ha una certa quantità di moto} \textcolor{Red}{$m*v = p$}. Ora, quando le molecole urtano il contenitore avviene \textbf{un urto perfettamente elastico} tra la molecola e la parete del contenitore. C'è da notare che la massa della molecola ($m$) è \textbf{infinitesimale} rispetto alla massa della parete del contenitore ($m_{parete}$), quindi potremmo dire che c'è una specie di "\textbf{inversione del moto}". Questa variazione della quantità di moto $\Delta p$ avviene in un certo tempo $\Delta t$ e sappiamo che non è nulla, quindi abbiamo \textbf{una forza impulsiva!}
+            \begin{align*}
+                \frac{m*\vec{v}_i - m*\vec{v}_f}{\Delta t} = \frac{\Delta p}{\Delta t} => \vec{F}\neq \vec{0}
+            \end{align*}
+            Questo per ogni singola molecola, se però sommiamo le forze impulsive di tutte le molecole del gas otteniamo una forza (ortogonale alla parete del contenitore) non trascurabile. Se poi andiamo a considerare la \textbf{forza ortogonale per unità di superficie otteniamo proprio la pressione!} In particolare:
+            \begin{align*}
+                p = \frac{F_\bot}{S}
+            \end{align*}
+            Dimensionalmente, ci troviamo con una Forza fratto una Superficie, avremmo quindi:
+            \begin{align*}
+                [p]=\frac{[F]}{[L^2]}=\frac{N}{m^2}=\textcolor{Red}{Pascal=Pa}
+            \end{align*}
+            L'unità di misura fondamentale della pressione è il Pascal, esistono poi delle "derivate", in particolare citiamo:
+            \begin{align*}
+                &\textcolor{Red}{bar = 10^5Pa}&&\textcolor{Red}{atmosfera=atm=1,013bar}
+            \end{align*}
+            Terminiamo la pressione con una precisazione per quanto riguarda i \textbf{gas in equilibrio}. Immaginiamo di avere una situazione di questo tipo:
+            \framedImg{5}{L15-img009}
+            Una supposizione importante per capire questo "esempio" è che il contenitore (in verde) possa, volendo, espandersi all'infinito. Ora, abbiamo detto che le molecole del gas all'interno del contenitore, scontrandosi con le sue pareti, creano una forza (che noi chiamiamo \textbf{pressione}) che \textbf{spinge verso l'esterno}. Se prendiamo ad esempio un palloncino e lo gonfiamo, notiamo che inizia ad \textbf{aumentare di volume}. Ad un certo punto però \textbf{si ferma}. Ciò avviene perché si è raggiunto uno \textbf{stato di equilibrio}, ovvero abbiamo la forza della pressione che spinge verso l'esterno ma c'è anche una forza uguale ma opposta che bilancia la pressione. Nel caso del palloncino, questa è la \textbf{risultante della somma tra forza elastica del pallone} ($\vec{F}_{gas->S_1}$) \textbf{e pressione dell'ambiente esterno} che preme sul pallove dall'esterno verso l'interno ($\vec{F}_{amb->S_1}$). Se noi "estremizziamo" questo esempio e togliamo la forza elastica del pallone, abbiamo che il pallone smette di crescere solo quando \textbf{la forza del gas che preme sulla superficie è uguale alla forza dell'ambiente che preme sulla superficie}, ovvero:
+            \begin{align*}
+                &\vec{F}_{amb->S_1} = -\vec{F}_{gas->S_1}&&=>\frac{F_{\bot,a}}{S_1}=\frac{F_{\bot,g}}{S_1}\\
+                & && =>\textcolor{Red}{P_a=P_g}
+            \end{align*}
+            Questa equazione in \textcolor{Red}{rosso} è molto importante per i \textbf{sistemi in equilibrio}. Di fatto, la parete del contenitore trasmette meccanicamente le forze dall'interno verso l'esterno e vice versa. Possiamo quindi pensare di "togliere virtualmente" la parete e fare dei confronti tra i 2 gas. In molti casi, infatti, non possiamo direttamente misurare la pressione dei gas che ci interessano, però, se questi si trovano in equilibrio con l'ambiente esterno, possiamo calcolarla considerando la pressione dell'ambiente esterno! Ad esempio:
+            \framedImg{5}{L15-img010}
+            Abbiamo un pistone che preme del gas contenuto in un contenitore a tenuta stagna. Di questo pistone conosciamo la \textbf{massa} ($m$) e la \textbf{superficie} (S), come facciamo a calcolare la pressione del gas in rosso? Se il sistema si trova in uno stato di equilibrio, ovvero il pistone è fermo e non scende (comprimento ulteriormente il gas), possiamo dire che la pressione del gas rosso è \textbf{uguale alla pressione dell'ambiente esterno}, ovvero:
+            \begin{align*}
+                &P_{ambiente}&&=P_{atmosferica}+P_{pistone}\\
+                & &&=P_{atmosferica}+\frac{F_{pesoPistone}}{S}\\
+                & &&=P_{atmosferica}+\frac{m*g}{S}
+            \end{align*}
+            Concludendo, dato che la pressione del gas rosso è uguale alla pressione dell'ambiente esterno (perchè il sistema è in equilibrio), abbiamo che $P_{gasRosso}=P_{atmosferica}+\frac{m*g}{S}$!
+
+            \subsubsection{Temperatura}
+            La temperatura è \textbf{fortemente legata all'energia interna del gas}. Possiamo vedere l'energia interna del gas come la \textbf{somma del'energia cinetica di ogni molecola del gas} ($\frac{1}{2}mv^2$). Per quanto riguarda le unità di misura, abbiamo già detto prima che utilizziamo il \textbf{Kelvin} ($K$) e, in alcuni casi, i gradi \textit{Celsius} ($^\circ C$) o \textit{Fahrenheit} ($^\circ F$)
