@@ -427,51 +427,98 @@
                 \item avere delle pareti \textbf{riflettenti} (Dewar usava delle pareti argentate) in modo da \textbf{evitare l'irraggiamento}. Nota che le pareti devono essere riflettenti \textbf{sia verso l'esterno} (per riflettere le onde dell'ambiente esterno) \textbf{sia verso l'interno} (in modo da impedire al liquido di disperdere il suo calore).
             \end{enumerate}
 
-    \subsection{I gas ideali}
-        I gas sono un sistema termodinamico composto da un \textbf{gran numero di molecole libere di muoversi nello spazio}. Per descrivere i gas, usiamo principalmente \textbf{3 variabili}:
+    \subsection{Gas ideali}
+        I gas sono un sistema termodinamico composto da un \textbf{gran numero di molecole libere di muoversi nello spazio}. Noi consideriamo i cosidetti \textbf{"gas ideali"}, ovvero quei gas per cui valgono le seguenti condizioni:
         \begin{itemize}
-            \item volume ($V$);
-            \item pressione ($P$);
-            \item temperatura ($T$);
+          \item gli elementi che compongono il gas \textbf{non interagiscono tra di loro in alcun modo};
+          \item gli elementi che compongono il gas \textbf{hanno volume nullo} (li approssimiamo come dei punti materiali, infatti, rispetto a loro, il contenitore che le contiene è infinitamente grande [di solito]);
+          \item \textbf{non ci sono reazioni chimiche} tra le componenti del gas o col contenitore.
         \end{itemize}
-        Analizziamole velocemente:
-        \subsubsection{Volume}
-            La più semplice delle 3: quando parliamo di gas supponiamo che \textbf{questo sia contenuo in un qualche contenitore}, questo contenitore \textbf{"contiene" una porzione di spazio} che rappresenta appunto il volume. Nota che, se non diversamente specificato, supponiamo che il gas \textbf{occupi tutto il volume a sua disposizione}. Il volume si misura come una \textbf{lunghezza al qubo} ($L^3$), in particolare il \textcolor{Red}{\textbf{metro$^3$}} oppure il \textbf{litro} (che corrisponde a un $dm^3 = 10^{-3}m^3$).
-        \subsubsection{Pressione}
-            Il fatto che il gas occupi tutto lo spazio a sua disposizione implica che \textbf{sarà a contatto col contenitore che lo contiene}. Inoltre, le molecole del gas sono in costante movimento quindi ci saranno \textbf{degli urti tra il contenitore e le molecole del gas}: ciò darà origine ad una forza che premerà sul contenitore.
-            \framedImg{4}{L15-img008}
-            Formalizzando il tutto, ogni molecola del gas si muove liberamente nel contenitore con una \textbf{certa velocità} \textcolor{Red}{$v$} ed ha anche una \textbf{certa massa} \textcolor{Red}{$m$}. Possiamo quindi dire che \textbf{ogni molecola ha una certa quantità di moto} \textcolor{Red}{$m*v = p$}. Ora, quando le molecole urtano il contenitore avviene \textbf{un urto perfettamente elastico} tra la molecola e la parete del contenitore. C'è da notare che la massa della molecola ($m$) è \textbf{infinitesimale} rispetto alla massa della parete del contenitore ($m_{parete}$), quindi potremmo dire che c'è una specie di "\textbf{inversione del moto}". Questa variazione della quantità di moto $\Delta p$ avviene in un certo tempo $\Delta t$ e sappiamo che non è nulla, quindi abbiamo \textbf{una forza impulsiva!}
-            \begin{align*}
-                \frac{m*\vec{v}_i - m*\vec{v}_f}{\Delta t} = \frac{\Delta p}{\Delta t} => \vec{F}\neq \vec{0}
-            \end{align*}
-            Questo per ogni singola molecola, se però sommiamo le forze impulsive di tutte le molecole del gas otteniamo una forza (ortogonale alla parete del contenitore) non trascurabile. Se poi andiamo a considerare la \textbf{forza ortogonale per unità di superficie otteniamo proprio la pressione!} In particolare:
-            \begin{align*}
-                p = \frac{F_\bot}{S}
-            \end{align*}
-            Dimensionalmente, ci troviamo con una Forza fratto una Superficie, avremmo quindi:
-            \begin{align*}
-                [p]=\frac{[F]}{[L^2]}=\frac{N}{m^2}=\textcolor{Red}{Pascal=Pa}
-            \end{align*}
-            L'unità di misura fondamentale della pressione è il Pascal, esistono poi delle "derivate", in particolare citiamo:
-            \begin{align*}
-                &\textcolor{Red}{bar = 10^5Pa}&&\textcolor{Red}{atmosfera=atm=1,013bar}
-            \end{align*}
-            Terminiamo la pressione con una precisazione per quanto riguarda i \textbf{gas in equilibrio}. Immaginiamo di avere una situazione di questo tipo:
-            \framedImg{5}{L15-img009}
-            Una supposizione importante per capire questo "esempio" è che il contenitore (in verde) possa, volendo, espandersi all'infinito. Ora, abbiamo detto che le molecole del gas all'interno del contenitore, scontrandosi con le sue pareti, creano una forza (che noi chiamiamo \textbf{pressione}) che \textbf{spinge verso l'esterno}. Se prendiamo ad esempio un palloncino e lo gonfiamo, notiamo che inizia ad \textbf{aumentare di volume}. Ad un certo punto però \textbf{si ferma}. Ciò avviene perché si è raggiunto uno \textbf{stato di equilibrio}, ovvero abbiamo la forza della pressione che spinge verso l'esterno ma c'è anche una forza uguale ma opposta che bilancia la pressione. Nel caso del palloncino, questa è la \textbf{risultante della somma tra forza elastica del pallone} ($\vec{F}_{gas->S_1}$) \textbf{e pressione dell'ambiente esterno} che preme sul pallove dall'esterno verso l'interno ($\vec{F}_{amb->S_1}$). Se noi "estremizziamo" questo esempio e togliamo la forza elastica del pallone, abbiamo che il pallone smette di crescere solo quando \textbf{la forza del gas che preme sulla superficie è uguale alla forza dell'ambiente che preme sulla superficie}, ovvero:
-            \begin{align*}
-                &\vec{F}_{amb->S_1} = -\vec{F}_{gas->S_1}&&=>\frac{F_{\bot,a}}{S_1}=\frac{F_{\bot,g}}{S_1}\\
-                & && =>\textcolor{Red}{P_a=P_g}
-            \end{align*}
-            Questa equazione in \textcolor{Red}{rosso} è molto importante per i \textbf{sistemi in equilibrio}. Di fatto, la parete del contenitore trasmette meccanicamente le forze dall'interno verso l'esterno e vice versa. Possiamo quindi pensare di "togliere virtualmente" la parete e fare dei confronti tra i 2 gas. In molti casi, infatti, non possiamo direttamente misurare la pressione dei gas che ci interessano, però, se questi si trovano in equilibrio con l'ambiente esterno, possiamo calcolarla considerando la pressione dell'ambiente esterno! Ad esempio:
-            \framedImg{5}{L15-img010}
-            Abbiamo un pistone che preme del gas contenuto in un contenitore a tenuta stagna. Di questo pistone conosciamo la \textbf{massa} ($m$) e la \textbf{superficie} (S), come facciamo a calcolare la pressione del gas in rosso? Se il sistema si trova in uno stato di equilibrio, ovvero il pistone è fermo e non scende (comprimento ulteriormente il gas), possiamo dire che la pressione del gas rosso è \textbf{uguale alla pressione dell'ambiente esterno}, ovvero:
-            \begin{align*}
-                &P_{ambiente}&&=P_{atmosferica}+P_{pistone}\\
-                & &&=P_{atmosferica}+\frac{F_{pesoPistone}}{S}\\
-                & &&=P_{atmosferica}+\frac{m*g}{S}
-            \end{align*}
-            Concludendo, dato che la pressione del gas rosso è uguale alla pressione dell'ambiente esterno (perchè il sistema è in equilibrio), abbiamo che $P_{gasRosso}=P_{atmosferica}+\frac{m*g}{S}$!
+        Come si intuisce dal nome, i \textbf{gas ideali} (in quanto ideali) \textbf{sono impossibili}, però sono una \textbf{buona approssimazione per quei gas a bassa pressione} (in genere $< 100 atm$).
 
-            \subsubsection{Temperatura}
-            La temperatura è \textbf{fortemente legata all'energia interna del gas}. Possiamo vedere l'energia interna del gas come la \textbf{somma del'energia cinetica di ogni molecola del gas} ($\frac{1}{2}mv^2$). Per quanto riguarda le unità di misura, abbiamo già detto prima che utilizziamo il \textbf{Kelvin} ($K$) e, in alcuni casi, i gradi \textit{Celsius} ($^\circ C$) o \textit{Fahrenheit} ($^\circ F$)
+        \subsubsection{Le variabili principali}
+          Per descrivere i gas, usiamo principalmente \textbf{3 variabili}:
+          \begin{itemize}
+              \item volume ($V$);
+              \item pressione ($P$);
+              \item temperatura ($T$);
+          \end{itemize}
+          Analizziamole velocemente:
+            \paragraph{Volume}
+                La più semplice delle 3: quando parliamo di gas supponiamo che \textbf{questo sia contenuo in un qualche contenitore}, questo contenitore \textbf{"contiene" una porzione di spazio} che rappresenta appunto il volume. Nota che, se non diversamente specificato, supponiamo che il gas \textbf{occupi tutto il volume a sua disposizione}. Il volume si misura come una \textbf{lunghezza al qubo} ($L^3$), in particolare il \textcolor{Red}{\textbf{metro$^3$}} oppure il \textbf{litro} (che corrisponde a un $dm^3 = 10^{-3}m^3$).
+            \paragraph{Pressione}
+                Il fatto che il gas occupi tutto lo spazio a sua disposizione implica che \textbf{sarà a contatto col contenitore che lo contiene}. Inoltre, le molecole del gas sono in costante movimento quindi ci saranno \textbf{degli urti tra il contenitore e le molecole del gas}: ciò darà origine ad una forza che premerà sul contenitore.
+                \framedImg{4}{L15-img008}
+                Formalizzando il tutto, ogni molecola del gas si muove liberamente nel contenitore con una \textbf{certa velocità} \textcolor{Red}{$v$} ed ha anche una \textbf{certa massa} \textcolor{Red}{$m$}. Possiamo quindi dire che \textbf{ogni molecola ha una certa quantità di moto} \textcolor{Red}{$m*v = p$}. Ora, quando le molecole urtano il contenitore avviene \textbf{un urto perfettamente elastico} tra la molecola e la parete del contenitore. C'è da notare che la massa della molecola ($m$) è \textbf{infinitesimale} rispetto alla massa della parete del contenitore ($m_{parete}$), quindi potremmo dire che c'è una specie di "\textbf{inversione del moto}". Questa variazione della quantità di moto $\Delta p$ avviene in un certo tempo $\Delta t$ e sappiamo che non è nulla, quindi abbiamo \textbf{una forza impulsiva!}
+                \begin{align*}
+                    \frac{m*\vec{v}_i - m*\vec{v}_f}{\Delta t} = \frac{\Delta p}{\Delta t} => \vec{F}\neq \vec{0}
+                \end{align*}
+                Questo per ogni singola molecola, se però sommiamo le forze impulsive di tutte le molecole del gas otteniamo una forza (ortogonale alla parete del contenitore) non trascurabile. Se poi andiamo a considerare la \textbf{forza ortogonale per unità di superficie otteniamo proprio la pressione!} In particolare:
+                \begin{align*}
+                    p = \frac{F_\bot}{S}
+                \end{align*}
+                Dimensionalmente, ci troviamo con una Forza fratto una Superficie, avremmo quindi:
+                \begin{align*}
+                    [p]=\frac{[F]}{[L^2]}=\frac{N}{m^2}=\textcolor{Red}{Pascal=Pa}
+                \end{align*}
+                L'unità di misura fondamentale della pressione è il Pascal, esistono poi delle "derivate", in particolare citiamo:
+                \begin{align*}
+                    &\textcolor{Red}{bar = 10^5Pa}&&\textcolor{Red}{atmosfera=atm=1,013bar}
+                \end{align*}
+                Terminiamo la pressione con una precisazione per quanto riguarda i \textbf{gas in equilibrio}. Immaginiamo di avere una situazione di questo tipo:
+                \framedImg{5}{L15-img009}
+                Una supposizione importante per capire questo "esempio" è che il contenitore (in verde) possa, volendo, espandersi all'infinito. Ora, abbiamo detto che le molecole del gas all'interno del contenitore, scontrandosi con le sue pareti, creano una forza (che noi chiamiamo \textbf{pressione}) che \textbf{spinge verso l'esterno}. Se prendiamo ad esempio un palloncino e lo gonfiamo, notiamo che inizia ad \textbf{aumentare di volume}. Ad un certo punto però \textbf{si ferma}. Ciò avviene perché si è raggiunto uno \textbf{stato di equilibrio}, ovvero abbiamo la forza della pressione che spinge verso l'esterno ma c'è anche una forza uguale ma opposta che bilancia la pressione. Nel caso del palloncino, questa è la \textbf{risultante della somma tra forza elastica del pallone} ($\vec{F}_{gas->S_1}$) \textbf{e pressione dell'ambiente esterno} che preme sul pallove dall'esterno verso l'interno ($\vec{F}_{amb->S_1}$). Se noi "estremizziamo" questo esempio e togliamo la forza elastica del pallone, abbiamo che il pallone smette di crescere solo quando \textbf{la forza del gas che preme sulla superficie è uguale alla forza dell'ambiente che preme sulla superficie}, ovvero:
+                \begin{align*}
+                    &\vec{F}_{amb->S_1} = -\vec{F}_{gas->S_1}&&=>\frac{F_{\bot,a}}{S_1}=\frac{F_{\bot,g}}{S_1}\\
+                    & && =>\textcolor{Red}{P_a=P_g}
+                \end{align*}
+                Questa equazione in \textcolor{Red}{rosso} è molto importante per i \textbf{sistemi in equilibrio}. Di fatto, la parete del contenitore trasmette meccanicamente le forze dall'interno verso l'esterno e vice versa. Possiamo quindi pensare di "togliere virtualmente" la parete e fare dei confronti tra i 2 gas. In molti casi, infatti, non possiamo direttamente misurare la pressione dei gas che ci interessano, però, se questi si trovano in equilibrio con l'ambiente esterno, possiamo calcolarla considerando la pressione dell'ambiente esterno! Ad esempio:
+                \framedImg{5}{L15-img010}
+                Abbiamo un pistone che preme del gas contenuto in un contenitore a tenuta stagna. Di questo pistone conosciamo la \textbf{massa} ($m$) e la \textbf{superficie} (S), come facciamo a calcolare la pressione del gas in rosso? Se il sistema si trova in uno stato di equilibrio, ovvero il pistone è fermo e non scende (comprimento ulteriormente il gas), possiamo dire che la pressione del gas rosso è \textbf{uguale alla pressione dell'ambiente esterno}, ovvero:
+                \begin{align*}
+                    &P_{ambiente}&&=P_{atmosferica}+P_{pistone}\\
+                    & &&=P_{atmosferica}+\frac{F_{pesoPistone}}{S}\\
+                    & &&=P_{atmosferica}+\frac{m*g}{S}
+                \end{align*}
+                Concludendo, dato che la pressione del gas rosso è uguale alla pressione dell'ambiente esterno (perchè il sistema è in equilibrio), abbiamo che $P_{gasRosso}=P_{atmosferica}+\frac{m*g}{S}$!
+
+                \paragraph{Temperatura}
+                    La temperatura è \textbf{fortemente legata all'energia interna del gas}. Possiamo vedere l'energia interna del gas come la \textbf{somma del'energia cinetica di ogni molecola del gas} ($\frac{1}{2}mv^2$). Per quanto riguarda le unità di misura, abbiamo già detto prima che utilizziamo il \textbf{Kelvin} ($K$) e, in alcuni casi, i gradi \textit{Celsius} ($^\circ C$) o \textit{Fahrenheit} ($^\circ F$)
+
+            \subsubsection{Equazione di stato dei gas ideali (o perfetti)}
+                Introduciamo ora l'\textbf{equazione di stato di questi gas ideali}, prima però una veloce definizione (tratta da Wikipedia) di equazione di stato:
+                \begin{center}
+                    \textit{In termodinamica e chimica fisica, una equazione di stato è una legge costitutiva che descrive lo stato della materia sotto un dato insieme di condizioni fisiche. Fornisce una relazione matematica tra due o più variabili di stato associate alla materia, come temperatura, pressione, volume o energia interna.}
+                \end{center}
+                In pratica, è una funzione (= 0) che ci descrive il comportamento del nostro gas in base alla variazione delle variabili termodinamiche che consideriamo. Come detto prima, per i gas usiamo come variabili \textbf{pressione, volume e temperatura}, dato che sono 3 rappresentiamo il tutto in un \textbf{diagramma bidimensionale} ($3-1$, infatti se avessimo N variabili dovremmo usare una dimensione $N-1$, questo perché, di solito, siamo interessati a scoprire il valore di una particolare variabile date le altre). In particolare, per i gas l'equazione di stato è:
+                \begin{align*}
+                    \textcolor{Red}{p*V - n R T = 0}
+                \end{align*}
+
+                Questa equazione la si ottiene basandosi sui risultati di 3 (o meglio 4) leggi:
+                \begin{itemize}
+                    \item \textbf{Legge isocora di Gay-Lussac}: se noi teniamo il \textbf{volume costante} ($V=const$, isocora), abbiamo che pressione la corrisponde a:
+                        \begin{align*}
+                            p=p_0(1+\beta t)
+                        \end{align*}
+                        Se noi rappresentassimo questa equazione sul piano cartesiano in funzione della temperatura, otterremo qualcosa del genere:
+                        \framedImg{5}{L16-img001}
+                        Nota come la retta è crescente, questo implica che, per qualche valore di temperatura ($t^*$), avremmo \textbf{pressione = 0}, e ciò è particolarmente interessante! Idealmente, più è bassa la temperatura e, a parità di volume, la pressione si abbassa: però la pressione \textbf{non può essere negativa}! Su questo punto ci torneremo in seguito;
+                    \item \textbf{Legge isobara di Gay-Lussac}: se noi teniamo la \textbf{pressione costante} ($p=const$, isobara), abbiamo che il volume in funzione della temperatura corrisponde a:
+                        \begin{align*}
+                            V=V_0(1+\alpha t)
+                        \end{align*}
+                        Se noi rappresentassimo questa equazione sul piano cartesiano in funzione della temperatura, otterremo qualcosa del genere:
+                        \framedImg{5}{L16-img002}
+                        Nota come la retta è crescente, questo implica che, per qualche valore di temperatura ($t^{**}$), avremmo \textbf{volume = 0}, e anche questo è particolarmente interessante! Idealmente, più è bassa la temperatura e, a parità di pressione, il volume si abbassa: però il volume \textbf{non può essere negativo}! Cosa ancora più interessante, $t^* = t^{**}$ (i 2 punti sono uguali)! Dopo ci torneremo più in dettaglio;
+                    \item \textbf{Legge isoterma di Boyle}: a parità di temperatura, il \textbf{prodotto $p*V$ resta costante}! Ovvero:
+                    \begin{align*}
+                        p_i*V_i = p_f*V_f = const
+                    \end{align*}
+                    In soldoni, se tengo la temperatura costante e abbasso la pressione, il volume \textbf{aumenta per compensare} e \textbf{viceversa}. Se prendiamo questa equazione e la rappresentiamo su un grafico bidimensionale, otteniamo un'iperbole equilatera:
+                    \framedImg{5}{L16-img003}
+                    \item \textbf{Legge di Avogadro}: gas diversi nelle stesse condizioni di temperatura, pressione e volume, \textbf{contengono lo stesso numero di elementi} ($N$). In particolare, abbiamo che:
+                    \begin{align*}
+                        N=\frac{1}{K_B}\frac{pV}{T}
+                    \end{align*}
+                \end{itemize}
