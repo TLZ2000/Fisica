@@ -495,30 +495,47 @@
                     \textcolor{Red}{p*V - n R T = 0}
                 \end{align*}
 
-                Questa equazione la si ottiene basandosi sui risultati di 3 (o meglio 4) leggi:
-                \begin{itemize}
-                    \item \textbf{Legge isocora di Gay-Lussac}: se noi teniamo il \textbf{volume costante} ($V=const$, isocora), abbiamo che pressione la corrisponde a:
-                        \begin{align*}
-                            p=p_0(1+\beta t)
-                        \end{align*}
-                        Se noi rappresentassimo questa equazione sul piano cartesiano in funzione della temperatura, otterremo qualcosa del genere:
-                        \framedImg{5}{L16-img001}
-                        Nota come la retta è crescente, questo implica che, per qualche valore di temperatura ($t^*$), avremmo \textbf{pressione = 0}, e ciò è particolarmente interessante! Idealmente, più è bassa la temperatura e, a parità di volume, la pressione si abbassa: però la pressione \textbf{non può essere negativa}! Su questo punto ci torneremo in seguito;
-                    \item \textbf{Legge isobara di Gay-Lussac}: se noi teniamo la \textbf{pressione costante} ($p=const$, isobara), abbiamo che il volume in funzione della temperatura corrisponde a:
-                        \begin{align*}
-                            V=V_0(1+\alpha t)
-                        \end{align*}
-                        Se noi rappresentassimo questa equazione sul piano cartesiano in funzione della temperatura, otterremo qualcosa del genere:
-                        \framedImg{5}{L16-img002}
-                        Nota come la retta è crescente, questo implica che, per qualche valore di temperatura ($t^{**}$), avremmo \textbf{volume = 0}, e anche questo è particolarmente interessante! Idealmente, più è bassa la temperatura e, a parità di pressione, il volume si abbassa: però il volume \textbf{non può essere negativo}! Cosa ancora più interessante, $t^* = t^{**}$ (i 2 punti sono uguali)! Dopo ci torneremo più in dettaglio;
-                    \item \textbf{Legge isoterma di Boyle}: a parità di temperatura, il \textbf{prodotto $p*V$ resta costante}! Ovvero:
+                Questa equazione la si ottiene basandosi sui risultati di 3 (o meglio 4) leggi, vediamole.
+                \paragraph{Legge isocora di Gay-Lussac}
+                    Se noi teniamo il \textbf{volume costante} ($V=const$, isocora), abbiamo che pressione la corrisponde a:
+                    \begin{align*}
+                        p=p_0(1+\beta t)
+                    \end{align*}
+                    Se noi rappresentassimo questa equazione sul piano cartesiano in funzione della temperatura, otterremo qualcosa del genere:
+                    \framedImg{5}{L16-img001}
+                    Nota come la retta è crescente, questo implica che, per qualche valore di temperatura ($t^*$), avremmo \textbf{pressione = 0}, e ciò è particolarmente interessante! Idealmente, più è bassa la temperatura e, a parità di volume, la pressione si abbassa: però la pressione \textbf{non può essere negativa}! Su questo punto ci torneremo in seguito;
+                \paragraph{Legge isobara di Gay-Lussac}
+                    Se noi teniamo la \textbf{pressione costante} ($p=const$, isobara), abbiamo che il volume in funzione della temperatura corrisponde a:
+                    \begin{align*}
+                        V=V_0(1+\alpha t)
+                    \end{align*}
+                    Se noi rappresentassimo questa equazione sul piano cartesiano in funzione della temperatura, otterremo qualcosa del genere:
+                    \framedImg{5}{L16-img002}
+                    Nota come la retta è crescente, questo implica che, per qualche valore di temperatura ($t^{**}$), avremmo \textbf{volume = 0}, e anche questo è particolarmente interessante! Idealmente, più è bassa la temperatura e, a parità di pressione, il volume si abbassa: però il volume \textbf{non può essere negativo}! Cosa ancora più interessante, $t^* = t^{**}$ (i 2 punti sono uguali)! Dopo ci torneremo più in dettaglio;
+                \paragraph{Legge isoterma di Boyle}
+                    A parità di temperatura, il \textbf{prodotto $p*V$ resta costante}! Ovvero:
                     \begin{align*}
                         p_i*V_i = p_f*V_f = const
                     \end{align*}
                     In soldoni, se tengo la temperatura costante e abbasso la pressione, il volume \textbf{aumenta per compensare} e \textbf{viceversa}. Se prendiamo questa equazione e la rappresentiamo su un grafico bidimensionale, otteniamo un'iperbole equilatera:
                     \framedImg{5}{L16-img003}
-                    \item \textbf{Legge di Avogadro}: gas diversi nelle stesse condizioni di temperatura, pressione e volume, \textbf{contengono lo stesso numero di elementi} ($N$). In particolare, abbiamo che:
+
+                \paragraph{Legge di Avogadro}
+                    Gas diversi nelle stesse condizioni di temperatura, pressione e volume \textbf{contengono lo stesso numero di oggetti} ($N$). In particolare, abbiamo che:
                     \begin{align*}
                         N=\frac{1}{K_B}\frac{pV}{T}
                     \end{align*}
-                \end{itemize}
+                    Dove $K_B$ rappresenta la \textbf{costante di Boltzmann} (\textcolor{Red}{$K_B = 1,38*10^{-23}\frac{J}{K}$}). Da dove deriva la sua unità di misura? Se controlliamo l'equazione precedente, abbiamo che $N$, ovvero il numero di "molecole" del gas (adimensionale) è (tralasciando $K_B$) uguale al $[\frac{pV}{T}] =[\frac{\frac{F}{L^2}*L^3}{T}]=[\frac{F*L}{T}]=[\frac{E}{T}]=\frac{J}{K}$ ricorda che, per definizione, \textbf{una forza per uno spostamente è un'energia} (che ha unità di misura Joule). Dato che dobbiamo "semplificare" queste unità di misura per rendere il tutto adimensionale, la costante di Boltzmann avrà come unità di misura $\frac{J}{K}$!
+                    Molto spesso però, ci troveremo a lavorare con il \textbf{numero di moli} $n$ invece che con il numero esatto di elementi $N$. Possiamo quindi modificare la formula precedente in questo modo:
+                    \begin{align*}
+                        n=\frac{1}{R}\frac{pV}{T}
+                    \end{align*}
+                    Sappiamo infatti che le moli $n=\frac{N}{N_A}$ (ricorda che il \textit{numero di Avogadro} $N_A=6,022*10^{23}$), quindi ci basta \textbf{divedere da entrambe le parti per $\mathbf{N_A}$}. Infatti $R$ corrisponde proprio a $R=\frac{1}{K_B*N_A}\approx8,314\frac{J}{K*mol}$. Concludiamo con un po' di numeri, supponiamo di avere un gas con queste caratteristiche:
+                    \begin{align*}
+                        &n = 1mol&&p=1atm&&t=0^\circ C =>273,16 K
+                    \end{align*}
+                    Allora il suo volume è fissato, e vale:
+                    \begin{align*}
+                        &V = 22,414 m^3
+                    \end{align*}
+                    Questo viene definito \textbf{volume molare}.
