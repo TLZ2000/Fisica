@@ -40,6 +40,17 @@
 	\end{figure}
 }
 
+\newcommand{\doubleFramedImg}[3]
+{
+	\begin{figure}[H]
+		\centering
+		\begin{tabular}{c c}
+			\framebox{\includegraphics[width=.#1\textwidth]{#2}}&
+			\framebox{\includegraphics[width=.#1\textwidth]{#3}}
+		\end{tabular}
+	\end{figure}
+}
+
 \newcommand{\nFramedImg}[2]
 {
 	\begin{figure}[H]
