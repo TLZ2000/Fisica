@@ -699,12 +699,24 @@
                 \begin{align*}
                     E_{k,i,(M+m)}=U_{f,(M+m)} =>\frac{1}{2}(M+m){v_f}^2 = (M+m)g\Delta h
                 \end{align*}
-                Osserviamo ora che $v_f$ è la stessa che c'è sopra nella conservazione della quantità di moto, quindi possiamo ricavarla da quella e sostituirla qui, infatti consideriamo che la quantità di moto finale e l'energia cinetica iniziale sono allo stesso momento (istante di tempo). Otteniamo quindi che,
+                Osserviamo ora che $v_f$ è la stessa che c'è sopra nella conservazione della quantità di moto, quindi possiamo ricavarla da quella e sostituirla qui. Questo perchè consideriamo che la quantità di moto finale (nella formula della conservazione della quantità di moto) e l'energia cinetica iniziale (nella formula della conservazione dell'energia) sono prese allo stesso istante di tempo.\\
+                Sostituendo e facendo un po di calcoli arriviamo al risultato finale. Osserviamo che il $\Delta h$ si calcola prendendo $l$, ovvero la lunghezza del filo, e sottraendogli $l*cos\theta$, come segue,
                 \begin{align*}
-                    &\frac{1}{2}(M+m){v_f}^2 = (M+m)g\Delta h &&=> \\
-                    & &&=> \\
-                    & &&=>
+                    &\frac{1}{2}(M+m){v_f}^2 = (M+m)g\Delta h &&=>\frac{1}{2}\bigg(\frac{mv}{M+m}\bigg)^2=gl(1-cos\theta)\\
+                    & &&=>cos\theta=1-\frac{1}{2gl}\bigg(\frac{mv}{M+m}\bigg)^2\\
+                    & &&=>cos\theta=1-\frac{m^2v^2}{2gl(M+m)^2}\\
+                    & &&=>\theta=arccos\bigg(1-\frac{m^2v^2}{2gl(M+m)^2}\bigg)
                 \end{align*}
+                Questo risultato può essere scritto anche dividendo numeratore e denominatore per $M$ come segue,
+                \begin{align*}
+                    cos\theta=1-\frac{\bigg(\frac{m}{M}\bigg)^2v^2}{2gl\bigg(1+\frac{m}{M}\bigg)^2}\\
+                \end{align*}
+                e con questo possiamo osservare che se la massa $m$ del proiettile è molto piccola (quasi nulla), rispetto alla massa $M$ del sacco di sabbia ho che $cos\theta\simeq1$, ciò significa che $\theta=0$ e quindi il sacco non si muove.
+                Osserviamo ora che per $\theta<<1$, per Taylor si ha $cos\theta=1-\frac{\theta^2}{2}$ e quindi ho che,
+                \begin{align*}
+                    \theta=\frac{mv}{\sqrt{gl}(M+m)}
+                \end{align*}
+
 
         \subsubsection{Urto elastico}
             Il secondo tipo di urto che vediamo è quello \textbf{elastico}, ovvero quello dove \textbf{i 2 corpi restano tali e "rimbalzano"}. A differenza dell'urto anelastico, in questo caso \textbf{l'energia cinetica si conserva} ($E_{k, i} = E_{k, f}$). Ovviamente, anche la \textbf{quantità di moto si conserva}. Possiamo quindi scrivere:
