@@ -501,7 +501,7 @@
                     \begin{align*}
                         p=p_0(1+\beta t)
                     \end{align*}
-                    Se noi rappresentassimo questa equazione sul piano cartesiano in funzione della temperatura, otterremo qualcosa del genere:
+                    Dove $p_0$ corrsiponde alla pressione ad una temperatura di \textbf{0 gradi Celsious}. Se noi rappresentassimo questa equazione sul piano cartesiano in funzione della temperatura, otterremo qualcosa del genere:
                     \framedImg{5}{L16-img001}
                     Nota come la retta è crescente, questo implica che, per qualche valore di temperatura ($t^*$), avremmo \textbf{pressione = 0}, e ciò è particolarmente interessante! Idealmente, più è bassa la temperatura e, a parità di volume, la pressione si abbassa: però la pressione \textbf{non può essere negativa}! Su questo punto ci torneremo in seguito;
                 \paragraph{Legge isobara di Gay-Lussac}
@@ -509,7 +509,7 @@
                     \begin{align*}
                         V=V_0(1+\alpha t)
                     \end{align*}
-                    Se noi rappresentassimo questa equazione sul piano cartesiano in funzione della temperatura, otterremo qualcosa del genere:
+                    Dove $V_0$ corrsiponde al volume ad una temperatura di \textbf{0 gradi Celsious}. Se noi rappresentassimo questa equazione sul piano cartesiano in funzione della temperatura, otterremo qualcosa del genere:
                     \framedImg{5}{L16-img002}
                     Nota come la retta è crescente, questo implica che, per qualche valore di temperatura ($t^{**}$), avremmo \textbf{volume = 0}, e anche questo è particolarmente interessante! Idealmente, più è bassa la temperatura e, a parità di pressione, il volume si abbassa: però il volume \textbf{non può essere negativo}! Cosa ancora più interessante, $t^* = t^{**}$ (i 2 punti sono uguali)! Dopo ci torneremo più in dettaglio;
                 \paragraph{Legge isoterma di Boyle}
@@ -543,13 +543,72 @@
                 \paragraph{Mettiamo tutte le leggi insieme}
                     L'equazione di stato dei gas si ottine \textbf{mettendo insieme le 4 leggi viste prima}, cominciamo da quelle di \textit{Gay-Lussac}:
                     \doubleFramedImg{4}{L16-img001}{L16-img002}
-                    Avevamo questi 2 grafici, ovviamente la retta dipende dal gas: per gas diversi otterremo rette diverse. La cosa interessante però è che i punto $t^*$ e $t^{**}$ \textbf{puntano allo stesso valore di temperatura}! Prendendo 2 misurazioni (2 punti sul grafico) siamo capaci di tracciare la retta associata e stimare questa temperatura. Col tempo, siamo arrivati ad un'ottima approssimazione, ovvero:
+                    Avevamo questi 2 grafici, ovviamente la retta dipende dal gas: per gas diversi otterremo rette diverse. La cosa interessante però è che i punto $t^*$ e $t^{**}$ \textbf{puntano allo stesso valore di temperatura}! Questo succede indipendentemente dal valore  di $\alpha$ e $\beta$ (che dipendono dal tipo di gas, dal contenitore, ...). Prendendo 2 misurazioni (2 punti sul grafico) siamo capaci di tracciare la retta associata e stimare questa temperatura. Col tempo, siamo arrivati ad un'ottima approssimazione, ovvero:
                     \begin{align*}
                         t^*=t^{**}=t_0=-273,15^\circ C = 0 K
                     \end{align*}
                     L'idea ora è quella di fare una cosa del genere:
                     \doubleFramedImg{4}{L16-img004}{L16-img005}
-                    Ovvero \textbf{spostiamo il sistema di riferimento}, in modo da usare il \textbf{sistema di riferimento assoluto per la temperatura} (i gradi \textit{Kelvin} appunto). Se facciamo cos', le equazioni delle leggi fondamentali cambiano leggermente (il significato resta sempre lo stesso), permettendoci di ricavare \textbf{l'equazione di stato dei gas ideali}:
+                    Ovvero \textbf{spostiamo il sistema di riferimento}, in modo da usare il \textbf{sistema di riferimento assoluto per la temperatura} (i gradi \textit{Kelvin} appunto). Se facciamo cos', le equazioni delle leggi fondamentali cambiano leggermente, in particolare:
                     \begin{align*}
-
+                        &\begin{cases}
+                            gay-lussac:\ p=p_0(1+\beta t)\\
+                            gay-lussac:\ p=V_0(1+\alpha t)\\
+                            boyle:\ p_i*V_i = p_f*V_f = const\\
+                            avogadro:\ n=\frac{1}{R}\frac{pV}{T}\\
+                        \end{cases}&&=>
+                        &&\begin{cases}
+                            \textcolor{Red}{gay-lussac:\ p=p_0\beta T}\\
+                            \textcolor{Red}{gay-lussac:\ p=V_0\alpha T}\\
+                            boyle:\ p*V=const\\
+                            avogadro:\ \frac{pV}{T}=nR\\
+                        \end{cases}
                     \end{align*}
+                    Il significato resta sempre lo stesso, le stiamo solo considerando con la scala della temperatura assoluta. Questa formulazione delle \textbf{leggi sperimentali} ci permette di capire che questi sono solo dei "casi particolari" di una formulazione più generica, che è proprio la nostra \textbf{equazione di stato dei gas ideali}:
+                    \begin{align*}
+                        pV=nRT
+                    \end{align*}
+                    Ricorda che questa equazione vale \textbf{solo per gli stati di equilibrio del nostro sistema termodinamico}! Un'altra cosa interessante da notare è che l'equazione di stato è uguale all'equazione di Avogadro: in realtà la formulazione della legge di Avogadro non è esattamente quella data. Nell'originale ci sono delle costanti moltiplicative che la rendono effettivamente diversa dall'equazione di stato. Al momento però ce la facciamo andare bene così.
+
+                \paragraph{Esempio}
+
+            \subsubsection{Lavoro dei gas}
+                In questa parte è importante \textbf{ricordare la prima legge della termodinamica}:
+                \begin{align*}
+                    \Delta U = Q-W
+                \end{align*}
+                Ora, immaginiamo di essere in una situazione in cui c'è un gas che si espande:
+                \framedImg{8}{L16-img006}
+                Partiamo con un gas a volume $V_0$ e a pressione $p_0$, ora supponiamo che si facciam un \textbf{incremento infinitesimale del volume}, passando al volume $V_1=V_0+dV$, mantenendo una pressione $p_0$ costante. Come calcoliamo il lavoro infinitesimale ($dW$) compiuto con questo incremento di volume? Sappiamo che \textbf{il lavoro corrisponde a Forza * Spostamento} ($dW = \vec{F}*d\vec{s}$, volendo possiamo togliere anche il simbolo del vettore, dato che tutto avvien sullo stesso asse). Possiamo fare un po' di passaggi algebrici:
+                \begin{align*}
+                    &dW= &&= \vec{F}*d\vec{s}\\
+                    &\textrm{\textit{Sostituiamo i parametri}}&& =\textcolor{Purple}{F}*\textcolor{Orange}{dh}\\
+                    &\textrm{\textit{Moltiplichiamo e dividiamo per la Superficie}}&& = \frac{F}{\textcolor{OrangeRed}{S}}*\textcolor{OrangeRed}{S}dh\\
+                    &\textrm{\textit{Abbiamo che $\frac{F}{S}=pressione$ e $S*dh=L^2*L=volume$}} &&=p*dV
+                \end{align*}
+                Questo ragionamento vale solo per \textbf{lavori infinitesimi} e, quindi, per \textbf{spostamenti infinitesimi}: cosa succede quando abbiamo spostamenti più grandi? "Semplicemente" facciamo l'integrale di tutti i lavori infinitesimi! In particolare:
+                \begin{align*}
+                    \int_i^f dW = \int_i^f p(v)*dV
+                \end{align*}
+                Nota come \textbf{la pressione dipende dal volume}: nell'esempio prima potevamo mettere che la pressione restasse costante dato che la variazione di volume è infinitesima, ma nel caso in cui abbiamo una variazione maggire dobbiamo tenerne conto! Il messaggio da portare a casa è che \textbf{il gas compie del lavoro quando cambia di volume}!
+
+            \subsubsection{Energia interna dei gas}
+                Diciamolo subito: \textbf{l'energia interna di un gas dipende SOLO dalla sua temperatura}. Possiamo arrivare a questa conclusione con diversi metodi, vediamoli.
+                \paragraph{Esperimento dell'espasione libera del gas}
+                    A questo punto è molto importante citare l'\textbf{esperimento dell'espansione libera di Joule}:
+                    \framedImg{5}{L16-img007}
+                    In questo esperimento abbiamo un vaso Dewar che contiene un liquido, in questo liquido sono immerse 2 camere: una contiene del gas, l'altra il vuoto. Nota che il liquido è in equilibrio termico col gas. Queste camere sono collegate da un piccolo passaggio, inizialmente chiuso, e sono fatte di un materiale che \textbf{conduce calore}. Ad un certo punto \textbf{apriamo il passaggio tra le 2 camere}, permettendo al gas di passare nella camera vuota. Dopo questa \textbf{espansione libera del gas} "succedono delle cose", in particolare:
+                    \begin{align*}
+                        & V_i < V_f && \textrm{Il volume occupata dal gas aumenta (occupa entrambe le camere)}\\
+                        & p_i > p_f && \textrm{La pressione del gas diminuisce (stessa quantità in volume maggiore)}\\
+                        T_i \approx T_f
+                    \end{align*}
+                    L'ultima riga è la più interessante: nonostante il volume e la pressione siano cambiati, la temperatura resta uguale (in realtà cambia, ma in modo quasi impercettibile). In generale, l'energia interna del sistema dipende da pressione, volume e temperatura ($U(p, V, T)$). Inoltre, per il primo principio della termodinamica, abbiamo che $\Delta U = Q - W$. Ora, il \textbf{contenitore è rigido}  quindi il \textbf{volume resta effettivamente costante}, di conseguenza \textbf{NON C'E' LAVORO} ($W=0$, è solo il gas che aumenta di volume, quello del contenitore resta costante). Per quanto riguarda il calore, tutto il nostro sistema si trova in un \textbf{contenitore adiabatico}, allora \textbf{non abbiamo scambio di calore con l'esterno} ($Q=0$, il calore del sistema è già all'interno del sistema, non si può prendere calore da nessuna parte). Dunque, per la prima legge della dinamica abbiamo che:
+                    \begin{align*}
+                        \Delta U = Q-W = 0-0 = 0 => \mathbf{\Delta U = 0}
+                    \end{align*}
+                    Abbiamo detto prima che, \textbf{in genere}, l'energia interna di un sistema dipende da pressione, volume e temperatura, \textbf{PERO'} abbiamo visto sperimentalmente che, pur cambiando la pressione ed il volume, \textbf{l'energia interna del sistema resta ugugale}: possiamo quindi dire che \textbf{l'energia interna del gas dipende solo dalla Temperatura}!
+
+
+            \paragraph{Teoria cinetica dei gas}
+                Prima abbiamo visto un \textbf{metodo sperimentale}, ora passiamo a vedere il "metodo" matematico. Per fare ciò dobbiamo introdurre quella che viene definita \textbf{teoria cinentica dei gas}, ovvero "\textit{come si muovono le molecole dei gas?}"
