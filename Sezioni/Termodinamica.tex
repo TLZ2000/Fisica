@@ -610,5 +610,107 @@
                     Abbiamo detto prima che, \textbf{in genere}, l'energia interna di un sistema dipende da pressione, volume e temperatura, \textbf{PERO'} abbiamo visto sperimentalmente che, pur cambiando la pressione ed il volume, \textbf{l'energia interna del sistema resta ugugale}: possiamo quindi dire che \textbf{l'energia interna del gas dipende solo dalla Temperatura}!
 
 
-            \paragraph{Teoria cinetica dei gas}
-                Prima abbiamo visto un \textbf{metodo sperimentale}, ora passiamo a vedere il "metodo" matematico. Per fare ciò dobbiamo introdurre quella che viene definita \textbf{teoria cinentica dei gas}, ovvero "\textit{come si muovono le molecole dei gas?}"
+                \paragraph{Teoria cinetica dei gas}
+                    Prima abbiamo visto un \textbf{metodo sperimentale}, ora passiamo a vedere il "metodo" matematico. Per fare ciò dobbiamo introdurre quella che viene definita \textbf{teoria cinentica dei gas}, ovvero "\textit{come si muovono le molecole dei gas?}" Immaginiamo di avere un contenitore tridimensionale che contiene del gas:
+                    \framedImg{3}{L16-img008}
+                    Le molecole del gas si \textbf{muovono in modo caotico}, \textbf{\underline{non hanno una direzione preferita}} (molto importante). Supponiamo che il contenitore sia un qubo di \textbf{lato $\mathbf{L}$}. Iniziamo considerando una parete singola:
+                    \framedImg{3}{L16-img009}
+                    La nostra molecola entrerà in collisione con la "parete $L_y/L_z$" con \textbf{un angolo $\mathbf{\theta}$, una certa velocità $\mathbf{v_x}$ ed una massa $m$} (la stessa per tutte le molecole): in questo caso si verificherà un \textbf{urto perfettamente elastico} dove la \textbf{parete del contenitore resterà perfettamente immobile} (dato che la sua massa è praticamente infinita rispetto a quella della molecola). Ora, l'angolo di uscita della molecola sarà uguale a quello di entrata e, più importante, la \textbf{velocità sull'asse x} (che nel caso della parete ortogonale all'asse x è l'unica che ci interessa) sarà \textbf{uguale e contraria alla velocità di entrata}. Avremmo quindi un $\Delta p$ (quantità di moto) molto specifico:
+                    \begin{align*}
+                        \textcolor{Red}{\Delta p} = p_f-p_i = m*v_{x, f}-m*v_{x, i}=m*(v_{x, f}-v_{x, i}) =2m*v_{x, i}= \textcolor{Red}{2m*v_{x}}
+                    \end{align*}
+                    Ora possiamo chiederci "\textit{ogni quanto, in termini di tempo, questa molecola urta QUESTA parete}"? Dato che in ogni urto l'angolo d'uscita è lo stesso di quello in entrata, possiamo immaginare che le molecole del gas si muovano in questo modo "speculare":
+                    \framedImg{5}{L16-img010}
+                    Dunque, per percorrere nella sua interezza la lunghezza $L_x$ (che si trova sull'asse x) alla velocità $v_x$ impiegheremo esattamente $\frac{L_x}{v_x}$, poi moltiplichiamo il tutto per 2 dato che vogliamo gli urti sulla stessa parete (praticamente si deve percorrere $2L_x$). Otteniamo quindi:
+                    \begin{align*}
+                        \textcolor{Red}{\Delta t = \frac{2L_x}{v_x}}
+                    \end{align*}
+                    Abbiamo un $\Delta p$ e abbiamo un $\Delta t$, quindi \textbf{abbiamo una forza impulsiva}! In particolare:
+                    \begin{align*}
+                        F_x=\frac{\Delta p}{\Delta t}= \frac{2m*v_{x}}{\frac{2L_x}{v_x}} = \frac{2m*v_{x}*v_{x}}{2L_x}= \frac{m*v_{x}^2}{L_x}
+                    \end{align*}
+                    Questa è la forza esercitata da una paticella sola, se vogliamo calcolare la \textbf{forza totale esercitata sulla parete} dobbiamo sommare la forza esercitata da tutte le particelle, quindi:
+                    \begin{align*}
+                        F_x^{tot}=\sum_{i=1}^N  \frac{m*v_{x}^2}{L_x}=  \frac{m}{L_x}\sum_{i=1}^Nv_{x}^2
+                    \end{align*}
+                    Nota come $m$ ed $L_x$ siano 2 valore costanti per tutte le particelle, quindi li portiamo fuori dalla sommatoria. A questo punto, le particelle sono davvero tante e trovare la velocità di tutte potrebbe essere un procedimento un po' lungo, quindi \textbf{iniziamo a considerare la velocità media delle particelle} ($<v_x>$), quindi possiamo scrivere così:
+                    \begin{align*}
+                        &F_x^{tot}=\frac{m}{L_x}\sum_{i=1}^Nv_{x}^2=\frac{m}{L_x}N*<v_{x}^2>&&=>&&\textcolor{Red}{F_x^{tot}=\frac{m}{L_x}N*<v_{x}^2>}
+                    \end{align*}
+                    Bene, a questo punto decidiamo di \textbf{dividere da entrambe le parti per} $\mathbf{L_y}$ \textbf{e} $\mathbf{L_z}$, ottenendo:
+                    \begin{align*}
+                        &F_x^{tot}=\frac{m}{L_x}N*<v_{x}^2> &&=>\frac{F_x^{tot}}{L_y*L_z}=\frac{m}{L_x*L_y*L_z}N*<v_{x}^2>\\
+                        & Superficie\ e\ Volume&&=>\frac{F_x^{tot}}{S}=\frac{m}{V}N*<v_{x}^2>\\
+                        &Pressione\ su\ X&&=>P_x=\frac{m}{V}N*<v_{x}^2>
+                    \end{align*}
+                    Questo è un risultato abbastanza importante: abbiamo ottenuto la \textbf{pressione misurata sull'asse x}. Ora facciamo un passaggio abbastanza "scivoloso": \textbf{la pressione che misuriamo sull'asse x deve essere uguale a quella che misuriamo sull'asse y e sull'asse z} (la pressione del gas deve essere uguale in tutto il gas)!
+                    \begin{align*}
+                        P_x=P_y=P_z=P
+                    \end{align*}
+                    Da questo punto, considerando la formula della $P-x$ che abbiamo trovato prima, possiamo dedurre che:
+                    \begin{align*}
+                        <v_x^2>=<v_y^2>=<v_z^2>
+                    \end{align*}
+                    Questo è vero perché il gas \textbf{non può avere una direzione preferita \underline{in media}}! Tutte le particelle si muovono in moto assolutamente caotico. Ora, considerando la velocità al quadrato media del gas:
+                    \begin{align*}
+                        <v^2>=<v_x^2+v_y^2+v_z^2>=<v_x^2>+<v_y^2>+<v_z^2>
+                    \end{align*}
+                    PERO', dato che $<v_x^2>=<v_y^2>=<v_z^2>$, abbiamo:
+                    \begin{align*}
+                        <v^2>=<v_x^2>+<v_y^2>+<v_z^2>=3*<v_x^2>
+                    \end{align*}
+                    Allora $<v_x^2>$ sarà ugugale a:
+                    \begin{align*}
+                        <v^2>=3*<v_x^2>=>\textcolor{Red}{<v_x^2>=\frac{<v^2>}{3}}
+                    \end{align*}
+                    Possiamo usare questa nuova informazione nella formula precedente:
+                    \begin{align*}
+                        P=\frac{m}{V}N*<v_{x}^2>=\frac{m*N*<v^2>}{3V}=\frac{N*<m*v^2>}{3V}
+                    \end{align*}
+                    Questo è un risultato molto interessante, infatti possiamo \textbf{moltiplicare e dividere per 2}, ottenendo \textbf{l'energia cinetica media}:
+                    \begin{align*}
+                        &P=\frac{N*<m*v^2>}{3V}&&=>P=\frac{N}{3V}*<m*v^2>\\
+                        & &&=>P=\frac{2N}{3V}*<\frac{1}{2}*m*v^2>\\
+                        & &&=>\textcolor{Red}{P=\frac{2N}{3V}*<E_K>}
+                    \end{align*}
+                    Ma non ci fermiamo qui, infatti possiamo "spostare" il volume così:
+                    \begin{align*}
+                        &P=\frac{2N}{3V}*<E_K>&&=>PV=\frac{2N}{3}*<E_K>
+                    \end{align*}
+                    Ora, per l'equazione di stato dei gas ideali, possiamo \textbf{sostituire quel $\mathbf{PV}$}:
+                    \begin{align*}
+                        & PV=\frac{2N}{3}*<E_K> && => \bcancel{N}K_BT=\frac{2\bcancel{N}}{3}*<E_K>
+                    \end{align*}
+                    Alla fine di tutto questo procedimento molto verboso, possiamo finalmente concludere con:
+                    \begin{align*}
+                        \textcolor{Red}{<E_K>=\frac{3}{2}*K_BT}
+                    \end{align*}
+                    \textbf{L'energia cinetica media delle particelle del gas dipende solo dalla sua Temperatura} (moltiplicata per una costante). Questo è un risultato molto interessante. Avevamo detto in precedenza che, nel nostro modello molto easy dei gas ideali, l'\textbf{energia interna del sistema corrisponde alla dell'energia cinetica delle particelle che compongono in nostro gas} ($N<E_K>=U$), possiamo  quindi dire che:
+                    \begin{align*}
+                        U=\textcolor{Red}{\frac{3}{2}*NK_B}T
+                    \end{align*}
+                    Questa formula è fantastica: abbiamo stabilito per \textbf{deduzione dal modello} che \textbf{l'energia cinetica} delle particelle del gas e quindi l'energia interna del gas \textbf{dipende solo la temperatura}! Infatti tutta la \textcolor{Red}{parte in rosso} è \textbf{costante}, l'unica roba che può cambiare e far variare l'energia interna è la Temperatura. Rigirando la formula, possiamo dire che la temperatura del gas dipende dall'energia cinetica delle sue particelle! Da questo possiamo dire che, per raggiungere lo \textit{zero assoluto} (0 K o -273,16 $^\circ$ C) solo quando tutte le particelle sono completamente ferme.
+
+                    \subparagraph{Gradi di libertà}
+                        Per quanto riguarda questo metodo "matematico" c'è un discorso sui \textit{gradi di libertà}. Partiamo da questa formul:
+                        \begin{align*}
+                            U=\frac{\textcolor{Orange}{3}}{2}*NK_BT
+                        \end{align*}
+                        Ora, \textbf{da dove deriva \textcolor
+                        {Orange}{questo 3}}? Se ricordi, quel 3 deriva da come abbiamo "semplificato" la velocità della particella del gas:
+                        \begin{align*}
+                            <v^2>=<v_x^2>+<v_y^2>+<v_z^2>=3<v_x^2>
+                        \end{align*}
+                        Questo ragionamento va bene per \textbf{i gas mono-atomici} (A), ovvero quelli composti da "particelle uniche". Se però abbiamo \textbf{gas bi-atomici} (B) o \textbf{poli-atomici} (C)?
+                        \framedImg{5}{L16-img011}
+                        Non si deve cambiare molto il ragionamento, si deve solo tenere conto del fatto che le particelle bi-atomiche e poli-atomiche \textbf{possono ruotare}. Non ci fermiamo troppo, basti sapere che la \textbf{formula generale per l'energia interna è}:
+                        \begin{align*}
+                            \textcolor{Purple}{U=\frac{l}{2}*NK_BT}
+                        \end{align*}
+                        Dove $l$ rappresenta i \textbf{gradi di libertà} e vale:
+                        \begin{itemize}
+                            \item \textbf{gas mono-atomici}, la particella può muoversi su 3 assi: \textcolor{Red}{$l=3$};
+                            \item \textbf{gas bi-atomici}, la particella è composta da 2 atomi, può muoversi su 3 assi e ruotare in modo "significativo" su 2 assi (una rotazione sull'asse che connette i 2 atomi non comporta nessun cambiamento significativo della particella): \textcolor{Red}{$l=3 + 2 = 5$};
+                            \item \textbf{gas poli-atomici}, la particella è composta da più di 2 atomi, può muoversi su 3 assi e ruotare in modo "significativo" su 3 assi: \textcolor{Red}{$l=3 + 3 = 6$};
+                        \end{itemize}
+                        Negli esercizi verrà detto il tipo di gas: basta \textbf{sostituire la \textit{l}}!
