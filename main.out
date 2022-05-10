@@ -100,65 +100,70 @@
 \BOOKMARK [4][-]{paragraph.5.12.1.1}{Esempio neutrini \(oggetti che "esplodono"\)}{subsubsection.5.12.1}% 100
 \BOOKMARK [3][-]{subsubsection.5.12.2}{Urto \(puramente\) anelastico}{subsection.5.12}% 101
 \BOOKMARK [4][-]{paragraph.5.12.2.1}{Energie cinetiche}{subsubsection.5.12.2}% 102
-\BOOKMARK [3][-]{subsubsection.5.12.3}{Urto elastico}{subsection.5.12}% 103
-\BOOKMARK [4][-]{paragraph.5.12.3.1}{Esempio di esercizio}{subsubsection.5.12.3}% 104
-\BOOKMARK [1][-]{section.6}{Termodinamica}{}% 105
-\BOOKMARK [2][-]{subsection.6.1}{Numero di Avogadro}{section.6}% 106
-\BOOKMARK [2][-]{subsection.6.2}{Sistema termodinamico}{section.6}% 107
-\BOOKMARK [2][-]{subsection.6.3}{Variabili termodinamiche}{section.6}% 108
-\BOOKMARK [2][-]{subsection.6.4}{Equilibrio termodinamico}{section.6}% 109
-\BOOKMARK [2][-]{subsection.6.5}{Trasformazione termodinamica}{section.6}% 110
-\BOOKMARK [2][-]{subsection.6.6}{Temperatura}{section.6}% 111
-\BOOKMARK [3][-]{subsubsection.6.6.1}{Unit\340 di misura temperatura}{subsection.6.6}% 112
-\BOOKMARK [3][-]{subsubsection.6.6.2}{Punto triplo dell'H2O}{subsection.6.6}% 113
-\BOOKMARK [3][-]{subsubsection.6.6.3}{Termometro}{subsection.6.6}% 114
-\BOOKMARK [3][-]{subsubsection.6.6.4}{Contatto termico}{subsection.6.6}% 115
-\BOOKMARK [3][-]{subsubsection.6.6.5}{Principio zero della termodinamica}{subsection.6.6}% 116
-\BOOKMARK [2][-]{subsection.6.7}{Esperimento di Joule}{section.6}% 117
-\BOOKMARK [2][-]{subsection.6.8}{Calore}{section.6}% 118
-\BOOKMARK [3][-]{subsubsection.6.8.1}{Esempio di calore}{subsection.6.8}% 119
-\BOOKMARK [2][-]{subsection.6.9}{Principio di equivalenza calore-lavoro}{section.6}% 120
-\BOOKMARK [2][-]{subsection.6.10}{I principio della termodinamica}{section.6}% 121
-\BOOKMARK [2][-]{subsection.6.11}{Tipi di trasformazioni termodinamiche}{section.6}% 122
-\BOOKMARK [3][-]{subsubsection.6.11.1}{Trasformazione ciclica}{subsection.6.11}% 123
-\BOOKMARK [3][-]{subsubsection.6.11.2}{Trasformazione quasi-statica}{subsection.6.11}% 124
-\BOOKMARK [3][-]{subsubsection.6.11.3}{Trasformazione reversibile}{subsection.6.11}% 125
-\BOOKMARK [4][-]{paragraph.6.11.3.1}{Esempio trasformazione reversibile}{subsubsection.6.11.3}% 126
-\BOOKMARK [4][-]{paragraph.6.11.3.2}{Esempio trasformazione non reversibile}{subsubsection.6.11.3}% 127
-\BOOKMARK [3][-]{subsubsection.6.11.4}{Lentezza}{subsection.6.11}% 128
-\BOOKMARK [2][-]{subsection.6.12}{Calorimetria}{section.6}% 129
-\BOOKMARK [3][-]{subsubsection.6.12.1}{Calore specifico}{subsection.6.12}% 130
-\BOOKMARK [3][-]{subsubsection.6.12.2}{Calorimetro}{subsection.6.12}% 131
-\BOOKMARK [3][-]{subsubsection.6.12.3}{Capacit\340 termica}{subsection.6.12}% 132
-\BOOKMARK [2][-]{subsection.6.13}{Cambi di fase}{section.6}% 133
-\BOOKMARK [3][-]{subsubsection.6.13.1}{Calori latenti}{subsection.6.13}% 134
-\BOOKMARK [4][-]{paragraph.6.13.1.1}{Esempio}{subsubsection.6.13.1}% 135
-\BOOKMARK [4][-]{paragraph.6.13.1.2}{Esempio temperatura di equilibrio}{subsubsection.6.13.1}% 136
-\BOOKMARK [2][-]{subsection.6.14}{Trasferimento di calore}{section.6}% 137
-\BOOKMARK [3][-]{subsubsection.6.14.1}{Conduzione}{subsection.6.14}% 138
-\BOOKMARK [4][-]{paragraph.6.14.1.1}{La costante di conducibilit\340}{subsubsection.6.14.1}% 139
-\BOOKMARK [3][-]{subsubsection.6.14.2}{Convezione}{subsection.6.14}% 140
-\BOOKMARK [3][-]{subsubsection.6.14.3}{Irraggiamento}{subsection.6.14}% 141
-\BOOKMARK [4][-]{paragraph.6.14.3.1}{Esercizio con costante solare}{subsubsection.6.14.3}% 142
-\BOOKMARK [3][-]{subsubsection.6.14.4}{Contenitore adiabatico}{subsection.6.14}% 143
-\BOOKMARK [2][-]{subsection.6.15}{Gas ideali}{section.6}% 144
-\BOOKMARK [3][-]{subsubsection.6.15.1}{Le variabili principali}{subsection.6.15}% 145
-\BOOKMARK [4][-]{paragraph.6.15.1.1}{Volume}{subsubsection.6.15.1}% 146
-\BOOKMARK [4][-]{paragraph.6.15.1.2}{Pressione}{subsubsection.6.15.1}% 147
-\BOOKMARK [4][-]{paragraph.6.15.1.3}{Temperatura}{subsubsection.6.15.1}% 148
-\BOOKMARK [3][-]{subsubsection.6.15.2}{Equazione di stato dei gas ideali \(o perfetti\)}{subsection.6.15}% 149
-\BOOKMARK [4][-]{paragraph.6.15.2.1}{Legge isocora di Gay-Lussac}{subsubsection.6.15.2}% 150
-\BOOKMARK [4][-]{paragraph.6.15.2.2}{Legge isobara di Gay-Lussac}{subsubsection.6.15.2}% 151
-\BOOKMARK [4][-]{paragraph.6.15.2.3}{Legge isoterma di Boyle}{subsubsection.6.15.2}% 152
-\BOOKMARK [4][-]{paragraph.6.15.2.4}{Legge di Avogadro}{subsubsection.6.15.2}% 153
-\BOOKMARK [4][-]{paragraph.6.15.2.5}{Mettiamo tutte le leggi insieme}{subsubsection.6.15.2}% 154
-\BOOKMARK [4][-]{paragraph.6.15.2.6}{Esempio}{subsubsection.6.15.2}% 155
-\BOOKMARK [3][-]{subsubsection.6.15.3}{Lavoro dei gas}{subsection.6.15}% 156
-\BOOKMARK [3][-]{subsubsection.6.15.4}{Energia interna dei gas}{subsection.6.15}% 157
-\BOOKMARK [4][-]{paragraph.6.15.4.1}{Esperimento dell'espasione libera del gas}{subsubsection.6.15.4}% 158
-\BOOKMARK [4][-]{paragraph.6.15.4.2}{Teoria cinetica dei gas}{subsubsection.6.15.4}% 159
-\BOOKMARK [3][-]{subsubsection.6.15.5}{Trasformazioni particolari dei gas ideali}{subsection.6.15}% 160
-\BOOKMARK [4][-]{paragraph.6.15.5.1}{Trasformazione isocora}{subsubsection.6.15.5}% 161
-\BOOKMARK [4][-]{paragraph.6.15.5.2}{Trasformazione isobara}{subsubsection.6.15.5}% 162
-\BOOKMARK [4][-]{paragraph.6.15.5.3}{Trasformazione isoterma}{subsubsection.6.15.5}% 163
-\BOOKMARK [4][-]{paragraph.6.15.5.4}{Trasformazione adiabatica}{subsubsection.6.15.5}% 164
+\BOOKMARK [4][-]{paragraph.5.12.2.2}{Esercizio urto unelastico}{subsubsection.5.12.2}% 103
+\BOOKMARK [3][-]{subsubsection.5.12.3}{Urto elastico}{subsection.5.12}% 104
+\BOOKMARK [4][-]{paragraph.5.12.3.1}{Esempio di esercizio}{subsubsection.5.12.3}% 105
+\BOOKMARK [1][-]{section.6}{Termodinamica}{}% 106
+\BOOKMARK [2][-]{subsection.6.1}{Numero di Avogadro}{section.6}% 107
+\BOOKMARK [2][-]{subsection.6.2}{Sistema termodinamico}{section.6}% 108
+\BOOKMARK [2][-]{subsection.6.3}{Variabili termodinamiche}{section.6}% 109
+\BOOKMARK [2][-]{subsection.6.4}{Equilibrio termodinamico}{section.6}% 110
+\BOOKMARK [2][-]{subsection.6.5}{Trasformazione termodinamica}{section.6}% 111
+\BOOKMARK [2][-]{subsection.6.6}{Temperatura}{section.6}% 112
+\BOOKMARK [3][-]{subsubsection.6.6.1}{Unit\340 di misura temperatura}{subsection.6.6}% 113
+\BOOKMARK [3][-]{subsubsection.6.6.2}{Punto triplo dell'H2O}{subsection.6.6}% 114
+\BOOKMARK [3][-]{subsubsection.6.6.3}{Termometro}{subsection.6.6}% 115
+\BOOKMARK [3][-]{subsubsection.6.6.4}{Contatto termico}{subsection.6.6}% 116
+\BOOKMARK [3][-]{subsubsection.6.6.5}{Principio zero della termodinamica}{subsection.6.6}% 117
+\BOOKMARK [2][-]{subsection.6.7}{Esperimento di Joule}{section.6}% 118
+\BOOKMARK [2][-]{subsection.6.8}{Calore}{section.6}% 119
+\BOOKMARK [3][-]{subsubsection.6.8.1}{Esempio di calore}{subsection.6.8}% 120
+\BOOKMARK [2][-]{subsection.6.9}{Principio di equivalenza calore-lavoro}{section.6}% 121
+\BOOKMARK [2][-]{subsection.6.10}{I principio della termodinamica}{section.6}% 122
+\BOOKMARK [2][-]{subsection.6.11}{Tipi di trasformazioni termodinamiche}{section.6}% 123
+\BOOKMARK [3][-]{subsubsection.6.11.1}{Trasformazione ciclica}{subsection.6.11}% 124
+\BOOKMARK [3][-]{subsubsection.6.11.2}{Trasformazione quasi-statica}{subsection.6.11}% 125
+\BOOKMARK [3][-]{subsubsection.6.11.3}{Trasformazione reversibile}{subsection.6.11}% 126
+\BOOKMARK [4][-]{paragraph.6.11.3.1}{Esempio trasformazione reversibile}{subsubsection.6.11.3}% 127
+\BOOKMARK [4][-]{paragraph.6.11.3.2}{Esempio trasformazione non reversibile}{subsubsection.6.11.3}% 128
+\BOOKMARK [3][-]{subsubsection.6.11.4}{Lentezza}{subsection.6.11}% 129
+\BOOKMARK [2][-]{subsection.6.12}{Calorimetria}{section.6}% 130
+\BOOKMARK [3][-]{subsubsection.6.12.1}{Calore specifico}{subsection.6.12}% 131
+\BOOKMARK [3][-]{subsubsection.6.12.2}{Calorimetro}{subsection.6.12}% 132
+\BOOKMARK [3][-]{subsubsection.6.12.3}{Capacit\340 termica}{subsection.6.12}% 133
+\BOOKMARK [2][-]{subsection.6.13}{Cambi di fase}{section.6}% 134
+\BOOKMARK [3][-]{subsubsection.6.13.1}{Calori latenti}{subsection.6.13}% 135
+\BOOKMARK [4][-]{paragraph.6.13.1.1}{Esempio}{subsubsection.6.13.1}% 136
+\BOOKMARK [4][-]{paragraph.6.13.1.2}{Esempio temperatura di equilibrio}{subsubsection.6.13.1}% 137
+\BOOKMARK [2][-]{subsection.6.14}{Trasferimento di calore}{section.6}% 138
+\BOOKMARK [3][-]{subsubsection.6.14.1}{Conduzione}{subsection.6.14}% 139
+\BOOKMARK [4][-]{paragraph.6.14.1.1}{La costante di conducibilit\340}{subsubsection.6.14.1}% 140
+\BOOKMARK [3][-]{subsubsection.6.14.2}{Convezione}{subsection.6.14}% 141
+\BOOKMARK [3][-]{subsubsection.6.14.3}{Irraggiamento}{subsection.6.14}% 142
+\BOOKMARK [4][-]{paragraph.6.14.3.1}{Esercizio con costante solare}{subsubsection.6.14.3}% 143
+\BOOKMARK [3][-]{subsubsection.6.14.4}{Contenitore adiabatico}{subsection.6.14}% 144
+\BOOKMARK [2][-]{subsection.6.15}{Gas ideali}{section.6}% 145
+\BOOKMARK [3][-]{subsubsection.6.15.1}{Le variabili principali}{subsection.6.15}% 146
+\BOOKMARK [4][-]{paragraph.6.15.1.1}{Volume}{subsubsection.6.15.1}% 147
+\BOOKMARK [4][-]{paragraph.6.15.1.2}{Pressione}{subsubsection.6.15.1}% 148
+\BOOKMARK [4][-]{paragraph.6.15.1.3}{Temperatura}{subsubsection.6.15.1}% 149
+\BOOKMARK [3][-]{subsubsection.6.15.2}{Equazione di stato dei gas ideali \(o perfetti\)}{subsection.6.15}% 150
+\BOOKMARK [4][-]{paragraph.6.15.2.1}{Legge isocora di Gay-Lussac}{subsubsection.6.15.2}% 151
+\BOOKMARK [4][-]{paragraph.6.15.2.2}{Legge isobara di Gay-Lussac}{subsubsection.6.15.2}% 152
+\BOOKMARK [4][-]{paragraph.6.15.2.3}{Legge isoterma di Boyle}{subsubsection.6.15.2}% 153
+\BOOKMARK [4][-]{paragraph.6.15.2.4}{Legge di Avogadro}{subsubsection.6.15.2}% 154
+\BOOKMARK [4][-]{paragraph.6.15.2.5}{Mettiamo tutte le leggi insieme}{subsubsection.6.15.2}% 155
+\BOOKMARK [4][-]{paragraph.6.15.2.6}{Esempio}{subsubsection.6.15.2}% 156
+\BOOKMARK [3][-]{subsubsection.6.15.3}{Lavoro dei gas}{subsection.6.15}% 157
+\BOOKMARK [3][-]{subsubsection.6.15.4}{Energia interna dei gas}{subsection.6.15}% 158
+\BOOKMARK [4][-]{paragraph.6.15.4.1}{Esperimento dell'espasione libera del gas}{subsubsection.6.15.4}% 159
+\BOOKMARK [4][-]{paragraph.6.15.4.2}{Teoria cinetica dei gas}{subsubsection.6.15.4}% 160
+\BOOKMARK [2][-]{subsection.6.16}{Trasformazioni particolari dei gas ideali}{section.6}% 161
+\BOOKMARK [3][-]{subsubsection.6.16.1}{Trasformazione isocora}{subsection.6.16}% 162
+\BOOKMARK [3][-]{subsubsection.6.16.2}{Trasformazione isobara}{subsection.6.16}% 163
+\BOOKMARK [4][-]{paragraph.6.16.2.1}{Relazione di Meyer}{subsubsection.6.16.2}% 164
+\BOOKMARK [3][-]{subsubsection.6.16.3}{Trasformazione isoterma}{subsection.6.16}% 165
+\BOOKMARK [3][-]{subsubsection.6.16.4}{Trasformazione adiabatica}{subsection.6.16}% 166
+\BOOKMARK [2][-]{subsection.6.17}{Trasformazioni cicliche}{section.6}% 167
+\BOOKMARK [2][-]{subsection.6.18}{Ciclo di Carnot}{section.6}% 168
+\BOOKMARK [2][-]{subsection.6.19}{Secondo principio della termodinamica}{section.6}% 169
