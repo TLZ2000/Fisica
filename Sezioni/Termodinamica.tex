@@ -732,11 +732,81 @@
             Ci tornerà molto utile nell'analisi delle trasformazioni.
 
             \subsubsection{Trasformazione isocora}
+                %\framedImg{40}{L17-img001}
+                La \textbf{trasformazione isocora} è una trasformazione per cui il volume rimane costante. La variazione di energia interna è quindi legata solamente al calore che il sistema scambia con l'esterno.
+                \begin{align*}
+                    V = cost => dV = 0
+                \end{align*}
+                Osserviamo ora che anche la variazione di lavoro infinitesimale è nulla e la variazione di calore infinitesimale è,
+                \begin{align*}
+                    &\delta W = p*\bcancel{dV} = 0\\
+                    &\delta Q = nc_VdT
+                \end{align*}
+                Osserviamo che in questo caso (quando si parla di gas) non si una il calore specifico inteso come capacità termica ma introduciamo il \textbf{calore specifico molare} e quindi usiamo il numero di moli $n$ e non la massa $m$.\\
+                Ora calcoliamo la variazione di energia interna,
+                \begin{align*}
+                    &dU=\delta Q - \bcancel{\delta W} = nc_VdT\\
+                    &\Delta U = nc_V\Delta T
+                \end{align*}
+                \textcolor{Red}{NOTA IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}\\
+                Questa formulazione dell'energia interna vale anche per le altre trasformazioni, non solo per l'isocora.
+
             \subsubsection{Trasformazione isobara}
-                \paragraph{Relazione di Meyer}
+                %\framedImg{40}{L17-img002}
+                La \textbf{trasformazione isobara} è una trasformazione per cui la pressione rimane costante.
+                \begin{align*}
+                    p = cost => dp = 0
+                \end{align*}
+                Ora dall'\textbf{equazione di stato dei gas ideali} possiamo ricavarci la pressione,
+                \begin{align*}
+                    pV=nRT => p = \frac{nRT}{V} = cost
+                \end{align*}
+                ed otteniamo variazione di lavoro e variazione di calore,
+                \begin{align*}
+                    &\delta W=pdV = \frac{nRT}{V}dV\\
+                    &\delta Q = nc_PdT
+                \end{align*}
+                e quindi variazione di energia interna,
+                \begin{align*}
+                    dU=\delta Q - \delta W=nc_PdT-pdV
+                \end{align*}
+
+            \subsubsection{Relazione di Mayer}
+                La \textbf{relazione di Mayer} è una relazione tra il calore specifico a pressione costante ed il calore specifico a volume costante per i gas ideali. Per calcolarla facciamo come segue.\\
+                Per la trasformazione isocora avevamo ottenuto,
+                \begin{align*}
+                    dU=nc_VdT
+                \end{align*}
+                che valeva anche per le altre trasformazioni. Ora osserviamo che la variazione di energia interna può essere definita anche come,
+                \begin{align*}
+                    dU=\delta Q - \delta W
+                \end{align*}
+                e quindi da questa possiamo ricavare la variazione di calore,
+                \begin{align*}
+                    \delta Q =dU+\delta W
+                \end{align*}
+                e sostituendo all'energia interna il valore ottenuto per l'isocora e al lavoro la sua definizione, ottengo,
+                \begin{align*}
+                    \delta Q=nc_VdT + pdV
+                \end{align*}
+                Mettendo insieme quindi quest'ultima formula e il valore di $\delta Q$ ottenuto per l'isobara, ottengo che,
+                \begin{align*}
+                    nc_PdT=nc_VdT + pdV
+                \end{align*}
+                Ora posso osservare che derivando l'equazione di stato dei gas ideali, dato che siamo nell'isobara ho pressione costante, ed inoltre $n$ ed $R$ sono costanti e quindi ottengo,
+                \begin{align*}
+                    d[pV] = d[nRT] => pdV = nRdT
+                \end{align*}
+                Sostituendo questa alla formula precedente ottengo quindi,
+                \begin{align*}
+                    &nc_PdT=nc_VdT + nRdT && =>  \bcancel{n}c_P \bcancel{dT} =\bcancel{n}c_V \bcancel{dT} + \bcancel{n}R \bcancel{dT}\\
+                    & && => \textcolor{Red}{c_P - c_V = R}
+                \end{align*}
 
             \subsubsection{Trasformazione isoterma}
+            %\framedImg{40}{L17-img003}
             \subsubsection{Trasformazione adiabatica}
+            %\framedImg{40}{L17-img004}
 
         \subsection{Trasformazioni cicliche}
 
