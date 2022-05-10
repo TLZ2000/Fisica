@@ -737,10 +737,12 @@
                 \begin{align*}
                     V = cost => dV = 0
                 \end{align*}
-                Osserviamo ora che anche la variazione di lavoro infinitesimale è nulla e la variazione di calore infinitesimale è,
+                Osserviamo ora che anche la variazione di lavoro infinitesimale e la variazione di calore sono,
                 \begin{align*}
                     &\delta W = p*\bcancel{dV} = 0\\
-                    &\delta Q = nc_VdT
+                    &\Delta W = 0\\
+                    &\delta Q = nc_VdT\\
+                    &\Delta Q = nc_V\Delta T
                 \end{align*}
                 Osserviamo che in questo caso (quando si parla di gas) non si una il calore specifico inteso come capacità termica ma introduciamo il \textbf{calore specifico molare} e quindi usiamo il numero di moli $n$ e non la massa $m$.\\
                 Ora calcoliamo la variazione di energia interna,
@@ -769,6 +771,12 @@
                 e quindi variazione di energia interna,
                 \begin{align*}
                     dU=\delta Q - \delta W=nc_PdT-pdV
+                \end{align*}
+                In conclusione abbiamo quindi che,
+                \begin{align*}
+                    &W=p\Delta V\\
+                    &Q = nc_P\Delta T\\
+                    &\Delta U=Q - W=nc_P\Delta T-p\Delta V=nc_V\Delta T
                 \end{align*}
 
             \subsubsection{Relazione di Mayer}
@@ -803,10 +811,77 @@
                     & && => \textcolor{Red}{c_P - c_V = R}
                 \end{align*}
 
+            \subsubsection{Calore specifico a volume costante}
+                Dalla teoria cinetica dei gas abbiamo che l'energia interna è,
+                \begin{align*}
+                    U = N\frac{l}{2}k_BT
+                \end{align*}
+                e se considero il numero di moli invece che il numero di componenti diventa,
+                \begin{align*}
+                    U = n\frac{l}{2}RT
+                \end{align*}
+                questo perchè se moltiplico e divido per $N_A$ a destra, ottengo,
+                \begin{align*}
+                    U = \frac{N}{N_A}\frac{l}{2}k_BN_AT
+                \end{align*}
+                e $\frac{N}{N_A}=n$ e $k_B N_A=R$.\\
+                Ora abbiamo anche dalla isocora che,
+                \begin{align*}
+                    U = nc_VT
+                \end{align*}
+                e quindi mettendole insieme ottengo,
+                \begin{align*}
+                    n\frac{l}{2}RT=nc_VT => c_V=\frac{l}{2}R
+                \end{align*}
+                Per i gas mono-atomici ho quindi che $c_V=\frac{3}{2}R$ e per i gas bi-atomici ho che $c_V=\frac{5}{2}R$.
+
+            \subsubsection{Calore specifico a pressione costante}
+                Per calcolare il calore specifico a pressione costante utilizzo la relazione di Mayer ed il calore specifico a volume costante appena calcolato,
+                \begin{align*}
+                    c_P = c_V + R = \frac{l}{2}R + R = \frac{l + 2}{2}R
+                \end{align*}
+                Per i gas mono-atomici ho quindi che $c_P=\frac{5}{2}R$ e per i gas bi-atomici ho che $c_P=\frac{7}{2}R$.
+
             \subsubsection{Trasformazione isoterma}
-            %\framedImg{40}{L17-img003}
+                %\framedImg{40}{L17-img003}
+                La \textbf{trasformazione isoterma} è una trasformazione per cui la temperatura rimane costante. Di conseguenza anche l'energia rimarrà costante.
+                \begin{align*}
+                    &T = cost => \Delta T = 0\\
+                    &U = cost => dU = 0
+                \end{align*}
+                e quindi l'equazione di stato dei gas sarà,
+                \begin{align*}
+                    pV = nRT = cost
+                \end{align*}
+                Ora la variazione di energia è,
+                \begin{align*}
+                    dU = \delta Q - \delta W => \delta Q = \delta W
+                \end{align*}
+                Lo scambio di calore quindi coincide con lo scambio di lavoro.\\
+                In questo caso non vale,
+                \begin{align*}
+                    \delta Q = nc_TdT
+                \end{align*}
+                ma il calore si calcola tramite il lavoro,
+                \begin{align*}
+                    \delta W = pdV = nRT\frac{dV}{V}
+                \end{align*}
+                Il lavoro ora sarà quindi,
+                \begin{align*}
+                    W=\int_i^f \delta W = \int_i^f nRT\frac{dV}{V} = nRT \int_i^f \frac{dV}{V} = nRTln\bigg(\frac{V_f}{V_i}\bigg)
+                \end{align*}
+                quindi il lavoro compiuto durante un'espansione/compressione isoterma è proporzionale ad $nRT$ e quindi alla temperatura in cui avviene la trasformazione.\\
+                In conclusione ho quindi che,
+                \begin{align*}
+                    Q = W = nRTln\bigg(\frac{V_f}{V_i}\bigg)
+                \end{align*}
+                Se ho un'espansione allora calore e lavoro saranno positivi, se ho una compressione invece saranno negativi.
+
+                \paragraph{Esempio espansione isoterma}
+
+
             \subsubsection{Trasformazione adiabatica}
-            %\framedImg{40}{L17-img004}
+                %\framedImg{40}{L17-img004}
 
         \subsection{Trasformazioni cicliche}
 

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1652187580 "main.tex" "build/main.pdf" "main" 1652187584
+["pdflatex"] 1652193387 "main.tex" "build/main.pdf" "main" 1652193390
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -262,14 +262,14 @@
   "Sezioni/Lezione01.tex" 1649248804 27067 57278fffc90bc4daaed44c0a2691e167 ""
   "Sezioni/Meccanica.tex" 1652173651 70188 216d5fcf2a3bde264c537e67ecdcd9b2 ""
   "Sezioni/Roba.tex" 1646831746 301 c75da0db7d53bcd2c9ab30721cd9c797 ""
-  "Sezioni/Termodinamica.tex" 1652187578 74506 d3d6d80414df82b0b1b4e4ab68203228 ""
-  "build/main.aux" 1652187584 25315 529c29d8a61bdfe0ecb2f248b1a68961 "pdflatex"
-  "build/main.out" 1652187584 31312 77c3db72ce1a4c1f1f2b8192b8fe052d "pdflatex"
-  "build/main.toc" 1652187584 16574 fc3f34f92fa5cde0187b1dedaf83e9c1 "pdflatex"
+  "Sezioni/Termodinamica.tex" 1652193381 78446 c8ec07e79a7ad89b33c0cb238eeaf762 ""
+  "build/main.aux" 1652193390 25772 0585bc6ce311716684d8f33685915ee6 "pdflatex"
+  "build/main.out" 1652193390 32048 953351ff7e471a4e00d068bf2d7ce32d "pdflatex"
+  "build/main.toc" 1652193390 16908 a8450825d94dc52ba24f7c5879d1bd75 "pdflatex"
   "main.tex" 1652173294 2186 a83e274c2966a8e3ba44d221cbe4c0a2 ""
   (generated)
   "build/main.pdf"
-  "build/main.out"
   "build/main.log"
   "build/main.toc"
   "build/main.aux"
+  "build/main.out"
