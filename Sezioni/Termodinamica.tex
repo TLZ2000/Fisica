@@ -920,3 +920,30 @@
                 Per calcolare il coefficiente di prestazione devo mettere a numeratore ciò di cui voglio misurare l'efficenza e a denominatore ciò che devo pagare.
 
         \subsection{Ciclo di Carnot}
+            %\framedImg{40}{L17-img006}
+            Il \textbf{ciclo di Carnot} è un ciclo reversibile, quindi composto da trasformazioni reversibili. È composto infatti da una espansione isoterma, da A a B, e da una adiabatica, da B a C, e da una compressione isoterma, da C a D, e da una adiabatica, da D ad A, tutte reversibili. Per l'espansione isoterma ho $T_2$ e per la compressione isoterma ho $T_1$.\\
+            Posso rappresentare il ciclo di Carnot come una macchina come segue,
+            %\framedImg{60}{L17-img007}
+            Per i vari tratti (trasformazioni) ho quindi,
+            \begin{center}
+                \begin{tabular}{|cr|cr|cr|cr|}
+                    \hline
+                    & \quad & $\Delta U$ & $Q$ & $W$\tabularnewline
+                    \hline
+                    & AB & $0$ & $-nRT2ln\bigg(\frac{V_B}{V_A}\bigg)$ & $nRT2ln\bigg(\frac{V_B}{V_A}\bigg)$\tabularnewline
+                    \hline
+                    & BC & $mc_V(T_1 - T_2)$ & $0$ & $-mc_V(T_1 - T_2)$\tabularnewline
+                    \hline
+                    & CD & $0$ & $-nRT1ln\bigg(\frac{V_D}{V_C}\bigg)$ & $nRT1ln\bigg(\frac{V_D}{V_C}\bigg)$\tabularnewline
+                    \hline
+                    & DA & $mc_V(T_2 - T_1)$ & $0$ & $-mc_V(T_2 - T_1)$\tabularnewline
+                    \hline
+                \end{tabular}
+            \end{center}
+            Ora calcolo il rendimento,
+            \begin{align*}
+                &W = nRT2ln\bigg(\frac{V_B}{V_A}\bigg) + nRT1ln\bigg(\frac{V_D}{V_C}\bigg) \bcancel{- mc_V(T_1 - T_2)} \bcancel{- mc_V(T_2 - T_1)}\\
+                &Q_A = nRT2ln\bigg(\frac{V_B}{V_A}\bigg)\\
+                &\eta = \frac{nRT2ln\bigg(\frac{V_B}{V_A}\bigg) + nRT1ln\bigg(\frac{V_D}{V_C}\bigg)}{nRT2ln\bigg(\frac{V_B}{V_A}\bigg)}=1 + \frac{ T1ln\bigg(\frac{V_D}{V_C}\bigg)}{T2ln\bigg(\frac{V_B}{V_A}\bigg)} = 1 + \frac{T1}{T2}\frac{ln\bigg(\frac{V_D}{V_C}\bigg)}{ln\bigg(\frac{V_B}{V_A}\bigg)} = 1 + \frac{T1}{T2}
+            \end{align*}
+            Se ho quindi $T_1$ molto bassa e $T_2$ molto alta, il rendimento è $\eta\simeq 1$, quindi ho rendimento massimo.
