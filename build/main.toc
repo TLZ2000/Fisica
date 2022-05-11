@@ -172,7 +172,9 @@
 \contentsline {subsubsection}{\numberline {6.16.4}Calore specifico a volume costante}{100}{subsubsection.6.16.4}%
 \contentsline {subsubsection}{\numberline {6.16.5}Calore specifico a pressione costante}{101}{subsubsection.6.16.5}%
 \contentsline {subsubsection}{\numberline {6.16.6}Trasformazione isoterma}{101}{subsubsection.6.16.6}%
-\contentsline {paragraph}{\numberline {6.16.6.1}Esempio espansione isoterma}{101}{paragraph.6.16.6.1}%
-\contentsline {subsubsection}{\numberline {6.16.7}Trasformazione adiabatica}{101}{subsubsection.6.16.7}%
-\contentsline {subsection}{\numberline {6.17}Trasformazioni cicliche}{101}{subsection.6.17}%
-\contentsline {subsection}{\numberline {6.18}Ciclo di Carnot}{101}{subsection.6.18}%
+\contentsline {paragraph}{\numberline {6.16.6.1}Esempio espansione isoterma}{102}{paragraph.6.16.6.1}%
+\contentsline {subsubsection}{\numberline {6.16.7}Trasformazione adiabatica}{103}{subsubsection.6.16.7}%
+\contentsline {subsection}{\numberline {6.17}Trasformazioni cicliche}{104}{subsection.6.17}%
+\contentsline {subsubsection}{\numberline {6.17.1}Macchine termiche}{105}{subsubsection.6.17.1}%
+\contentsline {subsubsection}{\numberline {6.17.2}Macchine frigorifere}{105}{subsubsection.6.17.2}%
+\contentsline {subsection}{\numberline {6.18}Ciclo di Carnot}{105}{subsection.6.18}%

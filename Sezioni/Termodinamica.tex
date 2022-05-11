@@ -878,11 +878,45 @@
                 Se ho un'espansione allora calore e lavoro saranno positivi, se ho una compressione invece saranno negativi.
 
                 \paragraph{Esempio espansione isoterma}
-
+                \quad\\
+                \nFramedImg{80}{L17-imgEsIsoterma}
 
             \subsubsection{Trasformazione adiabatica}
                 %\framedImg{40}{L17-img004}
+                \nFramedImg{80}{L17-imgTrasAdiabatica1}
+                \nFramedImg{80}{L17-imgTrasAdiabatica2}
 
         \subsection{Trasformazioni cicliche}
+            %\framedImg{40}{L17-img005}
+            Le \textbf{trasformazioni cicliche} sono trasformazioni dove il punto iniziale coincide con quello finale. La variazione di energia interna è 0.
+            \begin{align*}
+                \Delta U = 0 => Q = W \bcancel{=>}\delta Q = \delta W
+            \end{align*}
+            Osserviamo che però le variazioni di calore e lavoro infinitesimali non sono uguali.\\
+            Il lavoro totale è quindi l'area del ciclo nel piano p,V, il lavoro ha segno che dipende dal senso di percorrenza.
+
+            \subsubsection{Macchine termiche}
+                Le \textbf{macchine termiche} sono macchine per cui il lavoro e quindi di conseguenza il calore è positivo. Quindi prende calore dall'esterno e lo trasforma in lavoro.
+                \begin{align*}
+                    W > 0 => Q > 0
+                \end{align*}
+                Il rendimento delle macchine termiche è il lavoro che la macchina compie diviso il calore che assorbe,
+                \begin{align*}
+                    \eta = \frac{W}{Q_A} = \frac{Q_A + Q_C}{Q_A} = 1 + \frac{Q_C}{Q_A} = 1 - \frac{|Q_C|}{Q_A}
+                \end{align*}
+                dato che il calore ceduto $Q_C < 0$.\\
+                In pratica è impossibile che il rendimento sia $\eta=1$, perchè c'è sempre una piccola quantità di calore che cedo all'ambiente esterno.\\
+                Per calcolare il rendimento devo mettere a numeratore ciò di cui voglio misurare l'efficenza e a denominatore ciò che devo pagare.
+
+            \subsubsection{Macchine frigorifere}
+                Le \textbf{macchine frigorifere} sono macchine per cui il lavoro e quindi di conseguenza il calore è negativo. Quindi viene portato via calore.
+                \begin{align*}
+                    W < 0 => Q < 0
+                \end{align*}
+                Il coefficiente di prestazione delle macchine frigorifere è il calore che assorbo diviso il lavoro che subisco.
+                \begin{align*}
+                    \eta = \frac{Q_A}{|W|}
+                \end{align*}
+                Per calcolare il coefficiente di prestazione devo mettere a numeratore ciò di cui voglio misurare l'efficenza e a denominatore ciò che devo pagare.
 
         \subsection{Ciclo di Carnot}
