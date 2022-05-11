@@ -745,7 +745,86 @@
         \subsection{Secondo principio della termodinamica}
             Possiamo dividere il secondo principio della termodinamica in 2 parti (+ 1):
             \begin{enumerate}
-                \item \textbf{principio di Kelvin}: \textit{è impossibile realizzare una macchina termica ciclica il cui unico risultato sia la conversione in lavoro di tutto il calore assorbito da una sorgente omogenea};
-                \item \textbf{principio di Claudius}: \textit{è impossibile realizzare una trasformazione il cui unico risultato sia quello di trasferire calore da un corpo più freddo a uno più caldo senza l'apporto di lavoro esterno}:
-                \item \textit{è impossibile realizzare una macchina termica il cui rendimento sia pari al 100\%} (questa parte non viene citata dal professore, la aggiungo io per completezza, trovata su Wikipedia).
+                \item \textbf{principio di Kelvin}: \textit{è impossibile realizzare una macchina termica ciclica il cui \textbf{unico} risultato sia la conversione in lavoro di tutto il calore assorbito da una sorgente omogenea};
+                \item \textbf{principio di Claudius}: \textit{è impossibile realizzare una trasformazione il cui \textbf{unico} risultato sia quello di trasferire calore da un corpo più freddo a uno più caldo senza l'apporto di lavoro esterno};
+                \item \textit{è impossibile realizzare una macchina termica il cui rendimento sia pari al 100\%} (questa parte non viene citata dal professore, la aggiungo io per completezza [trovata su Wikipedia], da questo punto in poi lo ignorerò).
             \end{enumerate}
+            Questi, in quanto principi, \textbf{non vanno dimostrati}! Però, è possibile (con una dimostrazione per assurdo) dimostrare che entrambi i principi \textbf{sono equivalenti}.
+
+            \subsubsection{Veloce recap sulle macchine}
+                Prima di passare alla dimostrazione per assurdo precedentemente citata, facciamo un veloce ripasso per quanto riguarda le macchine termiche e le macchine frigorifere. In entrambi i casi, nota che la temperatura $T_2$ è sempre \textbf{maggiore} della temperatura $T_1$
+                \paragraph{Macchine termiche}
+                    Definiamo una \textbf{macchina termica} una macchina che ha come scopo \textbf{produrre lavoro} ($W$) tramite \textbf{l'assorbimento di calore} ($Q_A$). Come visto in precedenza, questo NON è un procedimento efficiente al 100\% (tutto il \textit{calore assorbito} ($Q_A$) non verrà mai convertito 1:1 in lavoro), ma ci sarà anche del \textit{calore ceduto} ($Q_C$). In particolare, il rendimento della nostra macchina corrisponderà a:
+                    \begin{align*}
+                        \eta = \frac{W}{Q_A} = \frac{Q_A-|Q_C|}{Q_A} =  \frac{Q_A}{Q_A}- \frac{Q_C|}{Q_A} = 1- \frac{|Q_C|}{Q_A}
+                    \end{align*}
+                    Vediamo un rapido esempio:
+                    \framedImg{7}{L18-img001}
+                    La macchina ($M$) assorbe calore ($Q_A$, segno positivo dato che lo assorbe) e produce un certo lavoro in uscita ($W$, segno positivo perché lo produce). In contemporanea però, cede del calore ($Q_C$, segno negativo perché lo perde). Ora, seguendo la formuletta vista prima, possiamo dire che $M$ \textbf{lavora con un rendimento del 30\%}, però possiamo anche andare oltre! Supponendo che questa sia una \textbf{macchina di Carnot}, possiamo anche dire il \textbf{rapporto tra le temperature in gioco}! In particolare, avevamo detto che il rendimento di una macchina di Carnot corrisponde a:
+                    \begin{align*}
+                        \eta=1-\frac{T_1}{T_2}
+                    \end{align*}
+                    Quindi possiamo dire che:
+                    \begin{align*}
+                        \eta=1-\frac{T_1}{T_2}=30\%=\frac{3}{10} => \frac{T_1}{T_2}= \frac{7}{10}
+                    \end{align*}
+                    Data una delle 2 temperature possiamo dire quale deve essere l'altra temperatura per lavorare con un rendimento del 30\%!
+
+                \paragraph{Macchine frigorifere}
+                    Definiamo una \textbf{macchina frigorifera} una macchina che ha come scopo \textbf{assorbire calore} ($Q_A$) tramite \textbf{l'assorbimento di lavoro} ($W$). In questo caso, il rendimento di questa macchina dipende dal rappotro tra calore assorbito e quantità di lavoro impiegata per assorbire tale calore. La formula sarà quindi:
+                    \begin{align*}
+                        \eta = \frac{Q_A}{|W|}
+                    \end{align*}
+                    Ricorda che nelle macchine frigorifere, il lavoro viene "rubato" a noi, quindi (nel nostro sistema di riferimento) avrà segno negativo  (da qui il modulo). Ricorda inoltre che $W = Q_A-|Q_C|$ (ancora, nel nostro sistema di riferimento il calore ceduto è negativo, quindi mettiamo il modulo). Vediamo ora un rapido esempio:
+                    \framedImg{7}{L18-img002}
+                    La macchina ($M$) assorbe calore ($Q_A$, segno positivo dato che lo assorbe)  da una zona di \textbf{bassa temperatura} ($T_1$) utilizzando una certa quantità di lavoro in entrata ($W$, segno negativo perché lo "ruba" a noi). In contemporanea cede del calore ($Q_C$, segno negativo perché lo perde) ad una zona ad \textbf{alta temperatura} ($T_2$).
+
+            \subsubsection{Dimostrazione dell'uguaglianza delle 2 principi}
+                I 2 princip (di Kelvin e Clausius) sono equivalenti, ciò è facilmente dimostrabile con una dimostrazione per assurdo, vediamo entrambi i casi.
+                \paragraph{Kelvin => Clausius}
+                    Immaginiamo di avere una macchina "$\bcancel{K}$" capace di violare il principio di Kelvin: se tale macchina esistesse, allora sarebbe anche possibile violare il principio di Clausius! Quindi, immaginiamo di avere questa macchina "$\bcancel{K}$", capace di \textbf{assorbire una quantità $Q_2$} di calore (da una sorgente a temperatura $T_2$) e convertire tutto questo calore un un \textbf{lavoro $W$} \textbf{senza dispersione}:
+                    \framedImg{2}{L18-img003}
+                    Ora, possiamo affiancarci una normalissima macchina che compie una \textbf{trasformazione isoterma}. Questa macchina \textbf{assorbirà tutto il lavoro} prodotto da $\bcancel{K}$ e \textbf{restituirà una quantità $Q_2$} di calore ad una sorgente a temperatura $T_1$. Visto che possiamo, supponiamo anche che $\mathbf{T_1>T_2}$ (molto importante):
+                    \framedImg{4}{L18-img004}
+                    A questo punto possiamo "\textbf{compattare}" \textcolor{Red}{queste macchine} in una \textbf{macchina unica} che andremmo a chiamare $\bcancel{C}$:
+                    \framedImg{6}{L18-img005}
+                    Se andiamo ad analizzare la macchina $\bcancel{C}$ notiamo che \textbf{viola il principio di Clausius}! Infatti è capace di \textbf{trasferire calore dalla sorgente a temperatura $T_2$ a quella a temperatura $T_1$} e , come abbiamo detto prima, $\mathbf{T_1>T_2}$: in questa macchina il calore passa da una zona fredda ad una zona più calda "naturalmente", senza l'assorbimento di lavoro esterno (il lavoro viene generato tutto internamente alla macchina $\bcancel{C}$, quindi quello possiamo ignorarlo)!
+
+                \paragraph{Clausius => Kelvin}
+                    In un modo simile, possiamo dimostrare che l'esistenza di una macchina capace di violare il principio di Clausius implicherebbe l'esistenza di una macchina capace di violare il principio di Kelvin. Come prima, immaginiamo di avere questa macchina "$\bcancel{C}$", capace di \textbf{assorbire una quantità $Q$} di calore da una sorgente a temperatura $T_1$ e \textbf{cedere la stessa quantità di calore} (quindi $-Q$) ad una sorgente a temperatura $T_2$ (vale sempre $\mathbf{T_1>T_2}$):
+                    \framedImg{2}{L18-img006}
+                    Ora, a questa macchina impossibile ne affianchiamo una normalissima che assorbe un calore $Q^*$ dalla sorgente $T_2$ e produce un certo lavoro $W$. La parte importante qui è il \textbf{calore ceduto}: supponimao che \textbf{corrisponda esattamente a $-Q$} ($Q^*$ può essere arbitrariamente grande, quindi gestiamo il rendimento della macchina e l'assorbimento di calore in modo da cederne quanto vogliamo noi):
+                    \framedImg{4}{L18-img007}
+                    E adesso comprimiamo \textcolor{Red}{queste macchine}: dato che \textbf{assorbiamo e cediamo una quantità di calore Q dalla sorgente $T_1$} è come se \textbf{non assorbissimo effettivamente calore}! Quindi otteniamo una \textbf{macchina} (che possiamo chiamare $\bcancel{K}$) \textbf{capace di violare il principio di Kelvin}!
+                    \framedImg{6}{L18-img008}
+
+        \subsection{Teorema di Carnot}
+            Questo teorema nasce da una domanda molto semplice: "\textit{\textbf{a parità di temperature, e più efficiente una macchina termica reversibile o una irreversibile?}}". Nota MOLTO bene quel "\textbf{a parità di temperature}": durante l'orale è importante citarlo! Per la dimostrazione ci troviamo in questa situazione:
+            \framedImg{6}{L18-img009}
+            \begin{enumerate}
+                \item abbiamo 2 macchine termiche:
+                \begin{itemize}
+                    \item una \textbf{macchina generica} $X$ di cui non conosciamo le specifiche, in particolare \textbf{non sappiamo se è reversibile} (può diventare una macchina frigorifera) \textbf{o irreversibile};
+                    \item una \textbf{macchina NON generica} $R$ che \textbf{sappiamo essere reversibile}
+                \end{itemize}
+                \item abbiamo 2 sorgenti di temperatura:
+                \begin{itemize}
+                    \item una alla temperatura $T_2$;
+                    \item una alla temperatura $T_1$ che sappiamo essere \textbf{più fredda} dell'altra ($T_1<T_2$);
+                \end{itemize}
+                \item entrambe le macchine \textbf{assorbono calore da $\mathbf{T_2}$} e \textbf{cedono calore a $\mathbf{T_1}$}, nota che \textbf{non è detto che le 2 macchine assorbano/cedano le stesse quantità di calore};
+                \item entrambe le macchine \textbf{producono la stessa quantità di lavoro $\mathbf{W}$}.
+            \end{enumerate}
+
+            Ora, noi ci chiediamo:
+            \begin{align*}
+                \eta_{X, (T_1, T_2)} >=< \eta_{R, (T_1, T_2)}
+            \end{align*}
+            ovvero, \textbf{come si relazionano i rendimenti delle 2 macchine tra di loro}? Il teorema di Carnot risponde proprio a questo quesito: \textcolor{Red}{\textbf{il rendimento di una macchina termica generica X è SEMPRE minore o uguale al rendimento di una macchina termica reversibile}} (l'= vale quando entrambe le macchine sono reversibili). Come arriviamo a questa conclusione? Ci arriviamo tramite delle assunzioni, in particolare assumiamo (per assurdo) che :
+            \begin{align*}
+                \eta_{X, (T_1, T_2)} > \eta_{R, (T_1, T_2)}
+            \end{align*}
+            Ok, dato che la macchina R è reversibile, possiamo farne la \textbf{versione "negata" $\overline{R}$}:
+            \framedImg{3}{L18-img010}
+            e dato che assorbe proprio una \textbf{quantità $\mathbf{-W}$ di lavoro} la possiamo \textbf{connettere in serie alla macchina generica X}:
+            \framedImg{4}{L18-img011}
