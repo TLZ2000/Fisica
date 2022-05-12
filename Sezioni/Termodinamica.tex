@@ -746,7 +746,7 @@
             Possiamo dividere il secondo principio della termodinamica in 2 parti (+ 1):
             \begin{enumerate}
                 \item \textbf{principio di Kelvin}: \textit{è impossibile realizzare una macchina termica ciclica il cui \textbf{unico} risultato sia la conversione in lavoro di tutto il calore assorbito da una sorgente omogenea};
-                \item \textbf{principio di Claudius}: \textit{è impossibile realizzare una trasformazione il cui \textbf{unico} risultato sia quello di trasferire calore da un corpo più freddo a uno più caldo senza l'apporto di lavoro esterno};
+                \item \textbf{principio di Clausius}: \textit{è impossibile realizzare una trasformazione il cui \textbf{unico} risultato sia quello di trasferire calore da un corpo più freddo a uno più caldo senza l'apporto di lavoro esterno};
                 \item \textit{è impossibile realizzare una macchina termica il cui rendimento sia pari al 100\%} (questa parte non viene citata dal professore, la aggiungo io per completezza [trovata su Wikipedia], da questo punto in poi lo ignorerò).
             \end{enumerate}
             Questi, in quanto principi, \textbf{non vanno dimostrati}! Però, è possibile (con una dimostrazione per assurdo) dimostrare che entrambi i principi \textbf{sono equivalenti}.
@@ -828,3 +828,64 @@
             \framedImg{3}{L18-img010}
             e dato che assorbe proprio una \textbf{quantità $\mathbf{-W}$ di lavoro} la possiamo \textbf{connettere in serie alla macchina generica X}:
             \framedImg{4}{L18-img011}
+            Possiamo quindi immaginare di \textbf{comprimere le 2 macchine} (annullando di fatto l'apporto del lavoro, è tutta roba interna alla macchine quindi noi non perdiamo niente), ottenendo la macchina $\mathbf{M_1}$:
+            \framedImg{4}{L18-img012}
+            Ora, ci sono dei trasferimenti di energia tra $T_1<->M_1$ e $T_2<->M_1$, però in quale verso? Prima abbiamo supposto "$\eta_{X, (T_1, T_2)} > \eta_{R, (T_1, T_2)}$", quindi possiamo ragionarci sopra:
+            \begin{align*}
+                &\eta_{X, (T_1, T_2)} > \eta_{R, (T_1, T_2)} &&=> \frac{\bcancel{W}}{Q_2} > \frac{\bcancel{W}}{Q_2'}\\
+                & && =>\frac{1}{Q_2} > \frac{1}{Q_2'}\\
+                & && =>Q_2' > Q_2\\
+            \end{align*}
+            Dato il lavoro prodotto dalle macchine e i calori che assorbono possiamo facilmente calcolare il loro rendimento, dato che sappiamo (o meglio, abbiamo supposto) che il rendimento di $X$ è maggiore di quello di $R$ possiamo applicare dei semplici passaggi algebrici e scoprire che \textbf{$\mathbf{Q_2'}$ deve essere maggiore di $\mathbf{Q_2}$}. Fai attenzione qui: se il calore è $> 0$ allora \textbf{la macchina lo sta assorbendo}, se è $< 0$ allora \textbf{lo sta cedendo}. Dato che non stiamo producendo lavoro, \textbf{i 2 calori devono essere uguali e contrari}, cioè \textbf{stiamo trasferendo calore da una sorgente ad un'altra}. Facciamo un disegno:
+            \framedImg{4}{L18-img013}
+            Qui ci accorgiamo però che \textbf{c'è un problema}: abbiamo detto prima che $T_1<T_2$, quindi \textbf{$\mathbf{T_1}$ è più fredda di $\mathbf{T_2}$}! Stiamo \textbf{trasferendo calore da una fonte fredda verso una fonte calda}, ma questo è \textbf{impossibile per il principio di Clausius}! Non possiamo trasferire calore da una fonte fredda verso una fonte calda senza l'apporto di lavoro esterno, possiamo quindi dire che:
+            \begin{align*}
+                \textcolor{Red}{\bcancel{\eta_{X, (T_1, T_2)} > \eta_{R, (T_1, T_2)}}}
+            \end{align*}
+            Non si può fare, è impossibile. \textbf{Quindi deve essere}:
+            \begin{align*}
+                \mathbf{\eta_{X, (T_1, T_2)} <= \eta_{R, (T_1, T_2)}}
+            \end{align*}
+            Ora, possiamo considerare un altro caso: e se \textbf{anche la macchina $\mathbf{X}$ fosse reversibile}? Ricorda che è una macchina generica, potrebbe essere reversibile come no: nel caso fosse reversibile potremmo invertire $X$ e fare \textbf{gli stessi identici passaggi fatti prima}. Da questi otteremo che:
+            \begin{align*}
+                \mathbf{\eta_{X, (T_1, T_2)} => \eta_{R, (T_1, T_2)}}
+            \end{align*}
+            Se ora mettiamo insieme quanto abbiamo scoperto, otteniamo che:
+            \begin{align*}
+                \begin{rcases*}
+                    \eta_{X, (T_1, T_2)} <= \eta_{R, (T_1, T_2)} \\
+                    \eta_{X, (T_1, T_2)} => \eta_{R, (T_1, T_2)}
+                \end{rcases*}
+                \textcolor{Red}{\mathbf{\eta_{X, (T_1, T_2)} = \eta_{R, (T_1, T_2)}}}
+            \end{align*}
+            \textbf{Se le 2 macchine sono entrambe reversibili} (e lavorano nello stesso range di temperatura) \textbf{devono avere lo stesso rendimento}! Sostanziamlmente, questa è la legge di Carnot:
+            \begin{align}
+                \textcolor{Red}{\eta_{X, (T_1, T_2)} <= \eta_{R, (T_1, T_2)}}
+            \end{align}
+            \textcolor{Red}{\textbf{Il rendimento di una macchina termica qualsiasi è, sempre minore o ugugale del rendimento di una qualsiasi macchina termica reversibile che lavora nello stesso range di temperatura}} (se anche la prima macchina è reversibile, le 2 macchine DEVONO avere lo stesso rendimento).
+
+            \paragraph{Corollari0 e osservazioni}
+                A questo punto possiamo mettere insieme un corollario:
+                \begin{enumerate}
+                    \item \textbf{corollario}: come già detto in precendenza, \textbf{tutte le macchine reversibili che lavorano alle stesse temperature hanno lo stesso rendimento};
+                    \item \textbf{osservazione 1}: abbiamo detto che \textbf{tutte le macchine reversibili DEVONO avere la stessa efficienza} (a parità di temperatura), dato che la \textbf{macchina di carnot è reversibile} ed ha un rendimento che corrisponde a "$1-\frac{T_1}{T_2}$" (ricorda che $T_1<T_2$) possiamo dire che \textbf{tutte le macchine termiche reversibili hanno rendimento \textcolor{Red}{$\-\frac{T_1}{T_2}$}};
+                    \item \textbf{osservazione 2}: supponendo che la macchina $X$ \textbf{ceda il calore $Q_1$ a $T_1$ ed assorba $Q_2$ da $T_2$}, possiamo dire che il suo rendimento corrisponde a $1-\frac{|Q_1|}{Q_2}$ (ricorda che $Q_1$ è negativo perché è il calore ceduto dalla macchina). Ora, per il teorema di Carnot, possiamo dire che:
+                    \begin{align*}
+                        &\eta_{X, (T_1, T_2)} <= \eta_{R, (T_1, T_2)}&&===>1-\frac{|Q_{1, X}|}{Q_{2, X}} <= 1-\frac{|Q_{1, R}|}{Q_{2, R}}\\
+                        & Per\ osservazione\ precedente\ (R\ reversibile) &&===>1-\frac{|Q_{1, X}|}{Q_{2, X}} <= 1-\frac{T_1}{T_2}\\
+                        & Tolgo\ _X\ per\ semplicita && ===>\bcancel{1}-\frac{|Q_1|}{T_1} <= \bcancel{1}-\frac{Q_2}{T_2}\\
+                        & Q_1\ ==\ -|Q_1|&& ===>+\frac{Q_1}{T_1} <= -\frac{Q_2}{T_2}\\
+                        & && ===>\textcolor{Red}{\frac{Q_1}{T_1}+ \frac{Q_2}{T_2} <= 0}\\
+                    \end{align*}
+                    \textcolor{Red}{Questa} è una formulazione alternativa del teorema di Carnot che ci tornerà molto utile in futuro;
+                    \item \textbf{osservazione 3}: dato che, all'\textit{osservazione 2}, abbiamo stabilito che "$\frac{|Q_{1, X}|}{Q_{2, X}} <= 1-\frac{T_1}{T_2}$". Bene, possiamo quindi dire che il \textbf{massimo rendimento possibile per qualsiasi macchina} che lavora nel range di temperatura \textbf{[$\mathbf{T_1}$, $\mathbf{T_2}$]} corrispone esattamente a:
+                    \begin{align*}
+                        \eta_{MAX, (T_1, T_2)} = 1-\frac{T_1}{T_2}
+                    \end{align*}
+                    Questa è una cosa abbastanza sorprendente: a livello teorico siamo riusciti a trovare un limite effettivamente impossibile da superare nella realtà! Supponendo di avere $T_1 = 283K$ e $T_2 = 300K$, possiamo subito dire che qualsiasi macchina che lavora in questo range di temperature avrà di sicuro un rendimento che non supera $1-\frac{283}{300} = \frac{17}{300}$ (piuttosto basso come rendimento): questo è il trucco! Più è piccolo è il divario delle temperature e minore sarà il rendimento! Questa è un limite teorico, dimostrabile con i teoremi!
+                    \item \textbf{osservazione 4}: facendo riferimento all'\textit{osservazione 2}, se abbiamo 2 macchine reversibili possiamo dire che: $\frac{Q_1}{T_1}+ \frac{Q_2}{T_2} \textcolor{Red}{=} 0$. Se esplicitiamo i segni dei 2 calori (usando i moduli), otteniamo: $\frac{-|Q_1|}{T_1}+ \frac{|Q_2|}{T_2} = 0$. Questo "cambio di segni" ci permette di ottenere questa equazione:
+                    \begin{align*}
+                        \frac{|Q_1|}{T_1} = \frac{|Q_2|}{T_2}
+                    \end{align*}
+                    Questa equazione ci permette di stabilire una \textbf{relazione tra calore trasferito $\mathbf{Q}$ e la temperatura $\mathbf{T}$}: questo rapporto ci permette di creare degli strumenti di misurazione della temperatura assoluta. Misurando lo scambio del calore, possiamo misurare le temperature!
+                \end{enumerate}
