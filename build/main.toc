@@ -104,51 +104,77 @@
 \contentsline {subsubsection}{\numberline {5.12.2}Urto (puramente) anelastico}{64}{subsubsection.5.12.2}%
 \contentsline {paragraph}{\numberline {5.12.2.1}Energie cinetiche}{65}{paragraph.5.12.2.1}%
 \contentsline {paragraph}{\numberline {5.12.2.2}Esercizio urto unelastico}{65}{paragraph.5.12.2.2}%
-\contentsline {subsubsection}{\numberline {5.12.3}Urto elastico}{66}{subsubsection.5.12.3}%
+\contentsline {subsubsection}{\numberline {5.12.3}Urto elastico}{67}{subsubsection.5.12.3}%
 \contentsline {paragraph}{\numberline {5.12.3.1}Esempio di esercizio}{67}{paragraph.5.12.3.1}%
 \contentsline {subparagraph}{Velocità pre-impatto}{68}{section*.3}%
 \contentsline {subparagraph}{Trasferimento di energia nell'urto}{69}{section*.4}%
 \contentsline {subparagraph}{Calcolo finale dell'angolo}{70}{section*.5}%
-\contentsline {section}{\numberline {6}Termodinamica}{70}{section.6}%
+\contentsline {section}{\numberline {6}Termodinamica}{71}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Numero di Avogadro}{71}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Sistema termodinamico}{71}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Variabili termodinamiche}{71}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Equilibrio termodinamico}{71}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.4}Equilibrio termodinamico}{72}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Trasformazione termodinamica}{72}{subsection.6.5}%
 \contentsline {subsection}{\numberline {6.6}Temperatura}{72}{subsection.6.6}%
-\contentsline {subsubsection}{\numberline {6.6.1}Unità di misura temperatura}{72}{subsubsection.6.6.1}%
-\contentsline {subsubsection}{\numberline {6.6.2}Punto triplo dell'$H_2O$}{72}{subsubsection.6.6.2}%
+\contentsline {subsubsection}{\numberline {6.6.1}Unità di misura temperatura}{73}{subsubsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.2}Punto triplo dell'$H_2O$}{73}{subsubsection.6.6.2}%
 \contentsline {subsubsection}{\numberline {6.6.3}Termometro}{73}{subsubsection.6.6.3}%
 \contentsline {subsubsection}{\numberline {6.6.4}Contatto termico}{73}{subsubsection.6.6.4}%
-\contentsline {subsubsection}{\numberline {6.6.5}Principio zero della termodinamica}{73}{subsubsection.6.6.5}%
-\contentsline {subsection}{\numberline {6.7}Esperimento di Joule}{73}{subsection.6.7}%
-\contentsline {subsection}{\numberline {6.8}Calore}{74}{subsection.6.8}%
+\contentsline {subsubsection}{\numberline {6.6.5}Principio zero della termodinamica}{74}{subsubsection.6.6.5}%
+\contentsline {subsection}{\numberline {6.7}Esperimento di Joule}{74}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Calore}{75}{subsection.6.8}%
 \contentsline {subsubsection}{\numberline {6.8.1}Esempio di calore}{75}{subsubsection.6.8.1}%
-\contentsline {subsection}{\numberline {6.9}Principio di equivalenza calore-lavoro}{75}{subsection.6.9}%
-\contentsline {subsection}{\numberline {6.10}I principio della termodinamica}{75}{subsection.6.10}%
+\contentsline {subsection}{\numberline {6.9}Principio di equivalenza calore-lavoro}{76}{subsection.6.9}%
+\contentsline {subsection}{\numberline {6.10}I principio della termodinamica}{76}{subsection.6.10}%
 \contentsline {subsection}{\numberline {6.11}Tipi di trasformazioni termodinamiche}{76}{subsection.6.11}%
 \contentsline {subsubsection}{\numberline {6.11.1}Trasformazione ciclica}{76}{subsubsection.6.11.1}%
-\contentsline {subsubsection}{\numberline {6.11.2}Trasformazione quasi-statica}{76}{subsubsection.6.11.2}%
-\contentsline {subsubsection}{\numberline {6.11.3}Trasformazione reversibile}{76}{subsubsection.6.11.3}%
-\contentsline {paragraph}{\numberline {6.11.3.1}Esempio trasformazione reversibile}{76}{paragraph.6.11.3.1}%
-\contentsline {paragraph}{\numberline {6.11.3.2}Esempio trasformazione non reversibile}{76}{paragraph.6.11.3.2}%
-\contentsline {subsubsection}{\numberline {6.11.4}Lentezza}{76}{subsubsection.6.11.4}%
-\contentsline {subsection}{\numberline {6.12}Calorimetria}{77}{subsection.6.12}%
-\contentsline {subsubsection}{\numberline {6.12.1}Calore specifico}{77}{subsubsection.6.12.1}%
-\contentsline {subsubsection}{\numberline {6.12.2}Calorimetro}{78}{subsubsection.6.12.2}%
-\contentsline {subsubsection}{\numberline {6.12.3}Capacità termica}{78}{subsubsection.6.12.3}%
-\contentsline {subsection}{\numberline {6.13}Cambi di fase}{78}{subsection.6.13}%
-\contentsline {subsubsection}{\numberline {6.13.1}Calori latenti}{79}{subsubsection.6.13.1}%
-\contentsline {paragraph}{\numberline {6.13.1.1}Esempio}{80}{paragraph.6.13.1.1}%
-\contentsline {paragraph}{\numberline {6.13.1.2}Esempio temperatura di equilibrio}{80}{paragraph.6.13.1.2}%
-\contentsline {subsection}{\numberline {6.14}Trasferimento di calore}{80}{subsection.6.14}%
-\contentsline {subsubsection}{\numberline {6.14.1}Conduzione}{81}{subsubsection.6.14.1}%
-\contentsline {paragraph}{\numberline {6.14.1.1}La costante di conducibilità}{82}{paragraph.6.14.1.1}%
-\contentsline {subsubsection}{\numberline {6.14.2}Convezione}{82}{subsubsection.6.14.2}%
-\contentsline {subsubsection}{\numberline {6.14.3}Irraggiamento}{83}{subsubsection.6.14.3}%
-\contentsline {paragraph}{\numberline {6.14.3.1}Esercizio con costante solare}{83}{paragraph.6.14.3.1}%
-\contentsline {subsubsection}{\numberline {6.14.4}Contenitore adiabatico}{84}{subsubsection.6.14.4}%
-\contentsline {subsection}{\numberline {6.15}I gas ideali}{84}{subsection.6.15}%
-\contentsline {subsubsection}{\numberline {6.15.1}Volume}{85}{subsubsection.6.15.1}%
-\contentsline {subsubsection}{\numberline {6.15.2}Pressione}{85}{subsubsection.6.15.2}%
-\contentsline {subsubsection}{\numberline {6.15.3}Temperatura}{87}{subsubsection.6.15.3}%
+\contentsline {subsubsection}{\numberline {6.11.2}Trasformazione quasi-statica}{77}{subsubsection.6.11.2}%
+\contentsline {subsubsection}{\numberline {6.11.3}Trasformazione reversibile}{77}{subsubsection.6.11.3}%
+\contentsline {paragraph}{\numberline {6.11.3.1}Esempio trasformazione reversibile}{77}{paragraph.6.11.3.1}%
+\contentsline {paragraph}{\numberline {6.11.3.2}Esempio trasformazione non reversibile}{78}{paragraph.6.11.3.2}%
+\contentsline {subsubsection}{\numberline {6.11.4}Lentezza}{78}{subsubsection.6.11.4}%
+\contentsline {subsection}{\numberline {6.12}Calorimetria}{78}{subsection.6.12}%
+\contentsline {subsubsection}{\numberline {6.12.1}Calore specifico}{79}{subsubsection.6.12.1}%
+\contentsline {subsubsection}{\numberline {6.12.2}Calorimetro}{79}{subsubsection.6.12.2}%
+\contentsline {subsubsection}{\numberline {6.12.3}Capacità termica}{79}{subsubsection.6.12.3}%
+\contentsline {subsection}{\numberline {6.13}Cambi di fase}{80}{subsection.6.13}%
+\contentsline {subsubsection}{\numberline {6.13.1}Calori latenti}{81}{subsubsection.6.13.1}%
+\contentsline {paragraph}{\numberline {6.13.1.1}Esempio}{81}{paragraph.6.13.1.1}%
+\contentsline {paragraph}{\numberline {6.13.1.2}Esempio temperatura di equilibrio}{82}{paragraph.6.13.1.2}%
+\contentsline {subsection}{\numberline {6.14}Trasferimento di calore}{82}{subsection.6.14}%
+\contentsline {subsubsection}{\numberline {6.14.1}Conduzione}{82}{subsubsection.6.14.1}%
+\contentsline {paragraph}{\numberline {6.14.1.1}La costante di conducibilità}{83}{paragraph.6.14.1.1}%
+\contentsline {subsubsection}{\numberline {6.14.2}Convezione}{83}{subsubsection.6.14.2}%
+\contentsline {subsubsection}{\numberline {6.14.3}Irraggiamento}{84}{subsubsection.6.14.3}%
+\contentsline {paragraph}{\numberline {6.14.3.1}Esercizio con costante solare}{85}{paragraph.6.14.3.1}%
+\contentsline {subsubsection}{\numberline {6.14.4}Contenitore adiabatico}{85}{subsubsection.6.14.4}%
+\contentsline {subsection}{\numberline {6.15}Gas ideali}{86}{subsection.6.15}%
+\contentsline {subsubsection}{\numberline {6.15.1}Le variabili principali}{86}{subsubsection.6.15.1}%
+\contentsline {paragraph}{\numberline {6.15.1.1}Volume}{86}{paragraph.6.15.1.1}%
+\contentsline {paragraph}{\numberline {6.15.1.2}Pressione}{86}{paragraph.6.15.1.2}%
+\contentsline {paragraph}{\numberline {6.15.1.3}Temperatura}{88}{paragraph.6.15.1.3}%
+\contentsline {subsubsection}{\numberline {6.15.2}Equazione di stato dei gas ideali (o perfetti)}{89}{subsubsection.6.15.2}%
+\contentsline {paragraph}{\numberline {6.15.2.1}Legge isocora di Gay-Lussac}{89}{paragraph.6.15.2.1}%
+\contentsline {paragraph}{\numberline {6.15.2.2}Legge isobara di Gay-Lussac}{89}{paragraph.6.15.2.2}%
+\contentsline {paragraph}{\numberline {6.15.2.3}Legge isoterma di Boyle}{90}{paragraph.6.15.2.3}%
+\contentsline {paragraph}{\numberline {6.15.2.4}Legge di Avogadro}{90}{paragraph.6.15.2.4}%
+\contentsline {paragraph}{\numberline {6.15.2.5}Mettiamo tutte le leggi insieme}{91}{paragraph.6.15.2.5}%
+\contentsline {paragraph}{\numberline {6.15.2.6}Esempio}{92}{paragraph.6.15.2.6}%
+\contentsline {subsubsection}{\numberline {6.15.3}Lavoro dei gas}{92}{subsubsection.6.15.3}%
+\contentsline {subsubsection}{\numberline {6.15.4}Energia interna dei gas}{93}{subsubsection.6.15.4}%
+\contentsline {paragraph}{\numberline {6.15.4.1}Esperimento dell'espasione libera del gas}{93}{paragraph.6.15.4.1}%
+\contentsline {paragraph}{\numberline {6.15.4.2}Teoria cinetica dei gas}{94}{paragraph.6.15.4.2}%
+\contentsline {subparagraph}{Gradi di libertà}{97}{section*.6}%
+\contentsline {subsection}{\numberline {6.16}Trasformazioni particolari dei gas ideali}{98}{subsection.6.16}%
+\contentsline {subsubsection}{\numberline {6.16.1}Trasformazione isocora}{99}{subsubsection.6.16.1}%
+\contentsline {subsubsection}{\numberline {6.16.2}Trasformazione isobara}{99}{subsubsection.6.16.2}%
+\contentsline {subsubsection}{\numberline {6.16.3}Relazione di Mayer}{100}{subsubsection.6.16.3}%
+\contentsline {subsubsection}{\numberline {6.16.4}Calore specifico a volume costante}{100}{subsubsection.6.16.4}%
+\contentsline {subsubsection}{\numberline {6.16.5}Calore specifico a pressione costante}{101}{subsubsection.6.16.5}%
+\contentsline {subsubsection}{\numberline {6.16.6}Trasformazione isoterma}{101}{subsubsection.6.16.6}%
+\contentsline {paragraph}{\numberline {6.16.6.1}Esempio espansione isoterma}{102}{paragraph.6.16.6.1}%
+\contentsline {subsubsection}{\numberline {6.16.7}Trasformazione adiabatica}{103}{subsubsection.6.16.7}%
+\contentsline {subsection}{\numberline {6.17}Trasformazioni cicliche}{104}{subsection.6.17}%
+\contentsline {subsubsection}{\numberline {6.17.1}Macchine termiche}{105}{subsubsection.6.17.1}%
+\contentsline {subsubsection}{\numberline {6.17.2}Macchine frigorifere}{105}{subsubsection.6.17.2}%
+\contentsline {subsection}{\numberline {6.18}Ciclo di Carnot}{105}{subsection.6.18}%

@@ -732,15 +732,195 @@
             Ci tornerà molto utile nell'analisi delle trasformazioni.
 
             \subsubsection{Trasformazione isocora}
+                %\framedImg{40}{L17-img001}
+                La \textbf{trasformazione isocora} è una trasformazione per cui il volume rimane costante. La variazione di energia interna è quindi legata solamente al calore che il sistema scambia con l'esterno.
+                \begin{align*}
+                    V = cost => dV = 0
+                \end{align*}
+                Osserviamo ora che anche la variazione di lavoro infinitesimale e la variazione di calore sono,
+                \begin{align*}
+                    &\delta W = p*\bcancel{dV} = 0\\
+                    &\Delta W = 0\\
+                    &\delta Q = nc_VdT\\
+                    &\Delta Q = nc_V\Delta T
+                \end{align*}
+                Osserviamo che in questo caso (quando si parla di gas) non si una il calore specifico inteso come capacità termica ma introduciamo il \textbf{calore specifico molare} e quindi usiamo il numero di moli $n$ e non la massa $m$.\\
+                Ora calcoliamo la variazione di energia interna,
+                \begin{align*}
+                    &dU=\delta Q - \bcancel{\delta W} = nc_VdT\\
+                    &\Delta U = nc_V\Delta T
+                \end{align*}
+                \textcolor{Red}{NOTA IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}\\
+                Questa formulazione dell'energia interna vale anche per le altre trasformazioni, non solo per l'isocora.
+
             \subsubsection{Trasformazione isobara}
-                \paragraph{Relazione di Meyer}
+                %\framedImg{40}{L17-img002}
+                La \textbf{trasformazione isobara} è una trasformazione per cui la pressione rimane costante.
+                \begin{align*}
+                    p = cost => dp = 0
+                \end{align*}
+                Ora dall'\textbf{equazione di stato dei gas ideali} possiamo ricavarci la pressione,
+                \begin{align*}
+                    pV=nRT => p = \frac{nRT}{V} = cost
+                \end{align*}
+                ed otteniamo variazione di lavoro e variazione di calore,
+                \begin{align*}
+                    &\delta W=pdV = \frac{nRT}{V}dV\\
+                    &\delta Q = nc_PdT
+                \end{align*}
+                e quindi variazione di energia interna,
+                \begin{align*}
+                    dU=\delta Q - \delta W=nc_PdT-pdV
+                \end{align*}
+                In conclusione abbiamo quindi che,
+                \begin{align*}
+                    &W=p\Delta V\\
+                    &Q = nc_P\Delta T\\
+                    &\Delta U=Q - W=nc_P\Delta T-p\Delta V=nc_V\Delta T
+                \end{align*}
+
+            \subsubsection{Relazione di Mayer}
+                La \textbf{relazione di Mayer} è una relazione tra il calore specifico a pressione costante ed il calore specifico a volume costante per i gas ideali. Per calcolarla facciamo come segue.\\
+                Per la trasformazione isocora avevamo ottenuto,
+                \begin{align*}
+                    dU=nc_VdT
+                \end{align*}
+                che valeva anche per le altre trasformazioni. Ora osserviamo che la variazione di energia interna può essere definita anche come,
+                \begin{align*}
+                    dU=\delta Q - \delta W
+                \end{align*}
+                e quindi da questa possiamo ricavare la variazione di calore,
+                \begin{align*}
+                    \delta Q =dU+\delta W
+                \end{align*}
+                e sostituendo all'energia interna il valore ottenuto per l'isocora e al lavoro la sua definizione, ottengo,
+                \begin{align*}
+                    \delta Q=nc_VdT + pdV
+                \end{align*}
+                Mettendo insieme quindi quest'ultima formula e il valore di $\delta Q$ ottenuto per l'isobara, ottengo che,
+                \begin{align*}
+                    nc_PdT=nc_VdT + pdV
+                \end{align*}
+                Ora posso osservare che derivando l'equazione di stato dei gas ideali, dato che siamo nell'isobara ho pressione costante, ed inoltre $n$ ed $R$ sono costanti e quindi ottengo,
+                \begin{align*}
+                    d[pV] = d[nRT] => pdV = nRdT
+                \end{align*}
+                Sostituendo questa alla formula precedente ottengo quindi,
+                \begin{align*}
+                    &nc_PdT=nc_VdT + nRdT && =>  \bcancel{n}c_P \bcancel{dT} =\bcancel{n}c_V \bcancel{dT} + \bcancel{n}R \bcancel{dT}\\
+                    & && => \textcolor{Red}{c_P - c_V = R}
+                \end{align*}
+
+            \subsubsection{Calore specifico a volume costante}
+                Dalla teoria cinetica dei gas abbiamo che l'energia interna è,
+                \begin{align*}
+                    U = N\frac{l}{2}k_BT
+                \end{align*}
+                e se considero il numero di moli invece che il numero di componenti diventa,
+                \begin{align*}
+                    U = n\frac{l}{2}RT
+                \end{align*}
+                questo perchè se moltiplico e divido per $N_A$ a destra, ottengo,
+                \begin{align*}
+                    U = \frac{N}{N_A}\frac{l}{2}k_BN_AT
+                \end{align*}
+                e $\frac{N}{N_A}=n$ e $k_B N_A=R$.\\
+                Ora abbiamo anche dalla isocora che,
+                \begin{align*}
+                    U = nc_VT
+                \end{align*}
+                e quindi mettendole insieme ottengo,
+                \begin{align*}
+                    n\frac{l}{2}RT=nc_VT => c_V=\frac{l}{2}R
+                \end{align*}
+                Per i gas mono-atomici ho quindi che $c_V=\frac{3}{2}R$ e per i gas bi-atomici ho che $c_V=\frac{5}{2}R$.
+
+            \subsubsection{Calore specifico a pressione costante}
+                Per calcolare il calore specifico a pressione costante utilizzo la relazione di Mayer ed il calore specifico a volume costante appena calcolato,
+                \begin{align*}
+                    c_P = c_V + R = \frac{l}{2}R + R = \frac{l + 2}{2}R
+                \end{align*}
+                Per i gas mono-atomici ho quindi che $c_P=\frac{5}{2}R$ e per i gas bi-atomici ho che $c_P=\frac{7}{2}R$.
 
             \subsubsection{Trasformazione isoterma}
+                %\framedImg{40}{L17-img003}
+                La \textbf{trasformazione isoterma} è una trasformazione per cui la temperatura rimane costante. Di conseguenza anche l'energia rimarrà costante.
+                \begin{align*}
+                    &T = cost => \Delta T = 0\\
+                    &U = cost => dU = 0
+                \end{align*}
+                e quindi l'equazione di stato dei gas sarà,
+                \begin{align*}
+                    pV = nRT = cost
+                \end{align*}
+                Ora la variazione di energia è,
+                \begin{align*}
+                    dU = \delta Q - \delta W => \delta Q = \delta W
+                \end{align*}
+                Lo scambio di calore quindi coincide con lo scambio di lavoro.\\
+                In questo caso non vale,
+                \begin{align*}
+                    \delta Q = nc_TdT
+                \end{align*}
+                ma il calore si calcola tramite il lavoro,
+                \begin{align*}
+                    \delta W = pdV = nRT\frac{dV}{V}
+                \end{align*}
+                Il lavoro ora sarà quindi,
+                \begin{align*}
+                    W=\int_i^f \delta W = \int_i^f nRT\frac{dV}{V} = nRT \int_i^f \frac{dV}{V} = nRTln\bigg(\frac{V_f}{V_i}\bigg)
+                \end{align*}
+                quindi il lavoro compiuto durante un'espansione/compressione isoterma è proporzionale ad $nRT$ e quindi alla temperatura in cui avviene la trasformazione.\\
+                In conclusione ho quindi che,
+                \begin{align*}
+                    Q = W = nRTln\bigg(\frac{V_f}{V_i}\bigg)
+                \end{align*}
+                Se ho un'espansione allora calore e lavoro saranno positivi, se ho una compressione invece saranno negativi.
+
+                \paragraph{Esempio espansione isoterma}
+                \quad\\
+                \nFramedImg{80}{L17-imgEsIsoterma}
+
             \subsubsection{Trasformazione adiabatica}
+                %\framedImg{40}{L17-img004}
+                \nFramedImg{80}{L17-imgTrasAdiabatica1}
+                \nFramedImg{80}{L17-imgTrasAdiabatica2}
 
         \subsection{Trasformazioni cicliche}
+            %\framedImg{40}{L17-img005}
+            Le \textbf{trasformazioni cicliche} sono trasformazioni dove il punto iniziale coincide con quello finale. La variazione di energia interna è 0.
+            \begin{align*}
+                \Delta U = 0 => Q = W \bcancel{=>}\delta Q = \delta W
+            \end{align*}
+            Osserviamo che però le variazioni di calore e lavoro infinitesimali non sono uguali.\\
+            Il lavoro totale è quindi l'area del ciclo nel piano p,V, il lavoro ha segno che dipende dal senso di percorrenza.
+
+            \subsubsection{Macchine termiche}
+                Le \textbf{macchine termiche} sono macchine per cui il lavoro e quindi di conseguenza il calore è positivo. Quindi prende calore dall'esterno e lo trasforma in lavoro.
+                \begin{align*}
+                    W > 0 => Q > 0
+                \end{align*}
+                Il rendimento delle macchine termiche è il lavoro che la macchina compie diviso il calore che assorbe,
+                \begin{align*}
+                    \eta = \frac{W}{Q_A} = \frac{Q_A + Q_C}{Q_A} = 1 + \frac{Q_C}{Q_A} = 1 - \frac{|Q_C|}{Q_A}
+                \end{align*}
+                dato che il calore ceduto $Q_C < 0$.\\
+                In pratica è impossibile che il rendimento sia $\eta=1$, perchè c'è sempre una piccola quantità di calore che cedo all'ambiente esterno.\\
+                Per calcolare il rendimento devo mettere a numeratore ciò di cui voglio misurare l'efficenza e a denominatore ciò che devo pagare.
+
+            \subsubsection{Macchine frigorifere}
+                Le \textbf{macchine frigorifere} sono macchine per cui il lavoro e quindi di conseguenza il calore è negativo. Quindi viene portato via calore.
+                \begin{align*}
+                    W < 0 => Q < 0
+                \end{align*}
+                Il coefficiente di prestazione delle macchine frigorifere è il calore che assorbo diviso il lavoro che subisco.
+                \begin{align*}
+                    \eta = \frac{Q_A}{|W|}
+                \end{align*}
+                Per calcolare il coefficiente di prestazione devo mettere a numeratore ciò di cui voglio misurare l'efficenza e a denominatore ciò che devo pagare.
 
         \subsection{Ciclo di Carnot}
+<<<<<<< HEAD
 
         \subsection{Secondo principio della termodinamica}
             Possiamo dividere il secondo principio della termodinamica in 2 parti (+ 1):
@@ -889,3 +1069,32 @@
                     \end{align*}
                     Questa equazione ci permette di stabilire una \textbf{relazione tra calore trasferito $\mathbf{Q}$ e la temperatura $\mathbf{T}$}: questo rapporto ci permette di creare degli strumenti di misurazione della temperatura assoluta. Misurando lo scambio del calore, possiamo misurare le temperature!
                 \end{enumerate}
+=======
+            %\framedImg{40}{L17-img006}
+            Il \textbf{ciclo di Carnot} è un ciclo reversibile, quindi composto da trasformazioni reversibili. È composto infatti da una espansione isoterma, da A a B, e da una adiabatica, da B a C, e da una compressione isoterma, da C a D, e da una adiabatica, da D ad A, tutte reversibili. Per l'espansione isoterma ho $T_2$ e per la compressione isoterma ho $T_1$.\\
+            Posso rappresentare il ciclo di Carnot come una macchina come segue,
+            %\framedImg{60}{L17-img007}
+            Per i vari tratti (trasformazioni) ho quindi,
+            \begin{center}
+                \begin{tabular}{|cr|cr|cr|cr|}
+                    \hline
+                    & \quad & $\Delta U$ & $Q$ & $W$\tabularnewline
+                    \hline
+                    & AB & $0$ & $-nRT2ln\bigg(\frac{V_B}{V_A}\bigg)$ & $nRT2ln\bigg(\frac{V_B}{V_A}\bigg)$\tabularnewline
+                    \hline
+                    & BC & $mc_V(T_1 - T_2)$ & $0$ & $-mc_V(T_1 - T_2)$\tabularnewline
+                    \hline
+                    & CD & $0$ & $-nRT1ln\bigg(\frac{V_D}{V_C}\bigg)$ & $nRT1ln\bigg(\frac{V_D}{V_C}\bigg)$\tabularnewline
+                    \hline
+                    & DA & $mc_V(T_2 - T_1)$ & $0$ & $-mc_V(T_2 - T_1)$\tabularnewline
+                    \hline
+                \end{tabular}
+            \end{center}
+            Ora calcolo il rendimento,
+            \begin{align*}
+                &W = nRT2ln\bigg(\frac{V_B}{V_A}\bigg) + nRT1ln\bigg(\frac{V_D}{V_C}\bigg) \bcancel{- mc_V(T_1 - T_2)} \bcancel{- mc_V(T_2 - T_1)}\\
+                &Q_A = nRT2ln\bigg(\frac{V_B}{V_A}\bigg)\\
+                &\eta = \frac{nRT2ln\bigg(\frac{V_B}{V_A}\bigg) + nRT1ln\bigg(\frac{V_D}{V_C}\bigg)}{nRT2ln\bigg(\frac{V_B}{V_A}\bigg)}=1 + \frac{ T1ln\bigg(\frac{V_D}{V_C}\bigg)}{T2ln\bigg(\frac{V_B}{V_A}\bigg)} = 1 + \frac{T1}{T2}\frac{ln\bigg(\frac{V_D}{V_C}\bigg)}{ln\bigg(\frac{V_B}{V_A}\bigg)} = 1 + \frac{T1}{T2}
+            \end{align*}
+            Se ho quindi $T_1$ molto bassa e $T_2$ molto alta, il rendimento è $\eta\simeq 1$, quindi ho rendimento massimo.
+>>>>>>> samuele
