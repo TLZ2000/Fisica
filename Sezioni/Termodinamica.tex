@@ -603,10 +603,11 @@
                         & p_i > p_f && \textrm{La pressione del gas diminuisce (stessa quantità in volume maggiore)}\\
                         T_i \approx T_f
                     \end{align*}
-                    L'ultima riga è la più interessante: nonostante il volume e la pressione siano cambiati, la temperatura resta uguale (in realtà cambia, ma in modo quasi impercettibile). In generale, l'energia interna del sistema dipende da pressione, volume e temperatura ($U(p, V, T)$). Inoltre, per il primo principio della termodinamica, abbiamo che $\Delta U = Q - W$. Ora, il \textbf{contenitore è rigido}  quindi il \textbf{volume resta effettivamente costante}, di conseguenza \textbf{NON C'E' LAVORO} ($W=0$, è solo il gas che aumenta di volume, quello del contenitore resta costante). Per quanto riguarda il calore, tutto il nostro sistema si trova in un \textbf{contenitore adiabatico}, allora \textbf{non abbiamo scambio di calore con l'esterno} ($Q=0$, il calore del sistema è già all'interno del sistema, non si può prendere calore da nessuna parte). Dunque, per la prima legge della dinamica abbiamo che:
+                    L'ultima riga è la più interessante: nonostante il volume e la pressione siano cambiati, la temperatura resta uguale (in realtà cambia, ma in modo quasi impercettibile). In generale, l'energia interna del sistema dipende da pressione, volume e temperatura ($U(p, V, T)$). Inoltre, per il primo principio della termodinamica, abbiamo che $\Delta U = Q - W$. Ora, il \textbf{contenitore è rigido}  quindi il \textbf{volume resta effettivamente costante}, di conseguenza \textbf{NON C'E' LAVORO} ($W=0$, è vero che il gas aumenta di volume però lo fa liberamente senza opporsi a nessuno [es. un pistone], quindi NON c'è lavoro). Per quanto riguarda il calore, tutto il nostro sistema si trova in un \textbf{contenitore adiabatico}, allora \textbf{non abbiamo scambio di calore con l'esterno} ($Q=0$, il calore del sistema è già all'interno del sistema, non si può prendere calore da nessuna parte). Dunque, per la prima legge della dinamica abbiamo che:
                     \begin{align*}
                         \Delta U = Q-W = 0-0 = 0 => \mathbf{\Delta U = 0}
                     \end{align*}
+                    Quindi, se $\Delta U == 0$, allora che $\Delta T == 0$!
                     Abbiamo detto prima che, \textbf{in genere}, l'energia interna di un sistema dipende da pressione, volume e temperatura, \textbf{PERO'} abbiamo visto sperimentalmente che, pur cambiando la pressione ed il volume, \textbf{l'energia interna del sistema resta ugugale}: possiamo quindi dire che \textbf{l'energia interna del gas dipende solo dalla Temperatura}!
 
 
@@ -864,7 +865,7 @@
             \end{align}
             \textcolor{Red}{\textbf{Il rendimento di una macchina termica qualsiasi è, sempre minore o ugugale del rendimento di una qualsiasi macchina termica reversibile che lavora nello stesso range di temperatura}} (se anche la prima macchina è reversibile, le 2 macchine DEVONO avere lo stesso rendimento).
 
-            \paragraph{Corollario e osservazioni}
+            \subsubsection{Corollario e osservazioni}
                 A questo punto possiamo mettere insieme un corollario:
                 \begin{enumerate}
                     \item \textbf{corollario}: come già detto in precendenza, \textbf{tutte le macchine reversibili che lavorano alle stesse temperature hanno lo stesso rendimento};
@@ -887,5 +888,73 @@
                     \begin{align*}
                         \frac{|Q_1|}{T_1} = \frac{|Q_2|}{T_2}
                     \end{align*}
-                    Questa equazione ci permette di stabilire una \textbf{relazione tra calore trasferito $\mathbf{Q}$ e la temperatura $\mathbf{T}$}: questo rapporto ci permette di creare degli strumenti di misurazione della temperatura assoluta. Misurando lo scambio del calore, possiamo misurare le temperature!
+                    Questa equazione ci permette di stabilire una \textbf{relazione tra calore trasferito $\mathbf{Q}$ e la temperatura $\mathbf{T}$}: questo rapporto ci permette di creare degli strumenti di misurazione della temperatura assoluta. Misurando lo scambio del calore, possiamo misurare la temperatura!
                 \end{enumerate}
+        \subsection{Teorema di Clausius}
+            Il teorema di Clausius è un'estensione del teorema di Carnot su \textbf{cicli generici}. Allora, partiamo dalla formulazione di Carnot vista nel corollario:
+            \begin{align*}
+                \frac{Q_1}{T_1}+ \frac{Q_2}{T_2} <= 0
+            \end{align*}
+            In questa formula notiamo facilmente che il ciclo in questione \textbf{lavora tra 2 temperature fisse} (ha 2 scambi di calore):
+            \framedImg{4}{L19-img001}
+            Ma se avessimo un "ciclo termodinamico generico" che lavora \textbf{a contatto con più temperature diverse}? Ad esempio:
+            \framedImg{4}{L19-img002}
+            Possiamo immaginare di prendere questo ciclo e \textbf{dividerlo in piccoli cicli di carnot}, ottenendo qualcosa del genere:
+            \framedImg{4}{L19-img003}
+            Questa è un'apporssiamzione molto grossolana: devi immaginarla con tratti infinitesimi, prossimi al ciclo generico vero e proprio (se abbiamo N tratti, allora N dovrebbe tendere ad $\infty$).  Immaginiamo di ingrandire un tratto di questa approssimazione e disegnami i cicli di carnot:
+            \framedImg{5}{L19-img004}
+            Che info possiamo estrarre da ogni ciclo di carnot? Per il ciclo i-esimo possiamo dire che:
+            \begin{align*}
+                \frac{Q_1}{T_1}+ \frac{Q_2}{T_2} <= 0
+            \end{align*}
+            (L'= vale solo se il ciclo è reversibile). Ora, se immaginiamo che i cicli interni siano tutti reversibili, abbiamo che i loro \textbf{tratti adiabatici non scambiano calore} mentre \textbf{quelli isotermi si!} In particolare, in un tratto \textbf{assorbono calore} (da dx a sx), mentre in un tratto \textbf{cedono calore} (da sx a dx). Ora un passaggio importante: dal disegno precedente si può notare che ogni tratto interno al ciclo (quelli tratteggiati) viene condiviso tra 2 diversi cicli. Uno \textbf{cederà calore}, mentre l'altro \textbf{lo assorbità}: avremmo la stessa quantità $\frac{Q}{T}$ \textbf{2 volte ma di segno opposto}! Se sommiamo tutte queste quantità, \textbf{quelle interne si bilanciano tra di loro} e \textbf{resteremmo solo con i contributi dei tratti esterni}! Quindi, se facciamo:
+            \begin{align*}
+                \sum_{MicroCicli}(\frac{Q_1}{T_1}+\frac{Q_2}{T_2}) \leq 0
+            \end{align*}
+            Se poi espandessimo questa sommatoria, potremmo notare che i termini interni si semplificherebbero tra di loro, \textbf{lasciando solo le quantità relative ai tratti esterni}. Quindi, possiamo sommare i contributi di tutti i tratti esterni (supponiamo N) ottenendo:
+            \begin{align*}
+                \sum_{j=1}^N\frac{Q_{j}}{T_{j}} \leq 0
+            \end{align*}
+            Ovvero \textit{\textcolor{Red}{la somma dei rapporti tra i calori scambiati e le rispettive temperature delle sorgenti è negativa (macchine irriversibili) o uguale a 0 (macchine reversibili)}}. Sostanzialmente questo è il teorema di Clausius. Esiste anche la sua versione "continua", ovvero l'integrale:
+            \begin{align*}
+                \oint\frac{dQ}{T} \leq 0
+            \end{align*}
+            Anche in questo caso, il "<" vale per le macchine (i cicli) irreversibili, mentre l'"=" per quelli reversibili. Questa poi è la base per l'\textbf{\textit{integrale di Clausius}}:
+            \begin{align*}
+                \oint\frac{dQ}{T}
+            \end{align*}
+            Fondamentale per andare poi a definire quella che è l'\textbf{entropia}.
+
+        \subsection{Entropia}
+            Supponiamo di cominciare con una \textbf{trasformazione ciclica "divisia" in 2 parti}, ad esempio:
+            \framedImg{4}{L19-img005}
+            Possiamo qundi individuare 2 tratti:
+            \begin{itemize}
+                \item $A\rightarrow B$: lo chiamiamo tratto $I$;
+                \item $B\rightarrow A$: lo chiamiamo tratto $II$;
+            \end{itemize}
+            Ora possiamo dire che, per il teorema di Clausius visto prima, abbiamo:
+            \begin{align*}
+                \oint\frac{dQ}{T} \leq 0
+            \end{align*}
+            In particolare per i cicli reversibili:
+            \begin{align*}
+                \oint\frac{dQ}{T} = 0
+            \end{align*}
+            Concentriamoci su quest'ultimi per il momento. Per le proprietà degli integrali possiamo dire che:
+            \begin{align*}
+                &\oint\frac{dQ}{T} = 0 &&=> \oint_{A}^B(\frac{dQ}{T})_{(I)}+\oint_{B}^A(\frac{dQ}{T})_{(II)} = 0\\
+                & Applico\ reversibilità\ integrali&&=> \oint_{A}^B(\frac{dQ}{T})_{(I)}\textcolor{Orange}{-\oint_{A}^B}(\frac{dQ}{T})_{(II)} = 0\\
+                & &&=> \oint_{A}^B(\frac{dQ}{T})_{(I)} = \oint_{A}^B(\frac{dQ}{T})_{(II)}\\
+            \end{align*}
+            Tutto questo \textbf{indipendentemente dal percorso compiuto dal tratto}! Volendo avrei potuto prendere dei percorsi completamente diversi, tipo:
+            \framedImg{6}{L19-img006}
+            ed avrei \textbf{ottenuto la stessa identica formula}. Morale della favola: $\oint_{A}^B(\frac{dQ}{T})$ \textbf{NON dipende dal percorso che scelgo}. Nota che questo discorso vale solo per i cicli reversibili, per quelli irreversibili si deve fare un po' più di lavoro. Tornando alle reversibili, dato che il percorso non ci interessa possiamo dire che il risultato di $\oint_{A}^B(\frac{dQ}{T})$ è un \textbf{integrando perfetto}, quindi lo possiamo "risolvere" in questo modo:
+            \begin{align*}
+                \oint_{A}^B(\frac{dQ}{T}) \triangleq S(B)-S(A)
+            \end{align*}
+            [Small nota di servizio: "$\triangleq$" è "uguale per definizione"] Dove $S$ corrisponde ad un nuova funzione di stato chiamata \textbf{entropia}. Ora un punto molto importante, possiamo dire che:
+            \begin{align*}
+                \Delta S_{A\rightarrow B}=\oint_{A}^B(\frac{dQ}{T})_{\textcolor{Red}{perRevQualsiasi}}
+            \end{align*}
+            Concentrati su quel "\textcolor{Red}{per una reversibile qualsiasi}" (perRevQualsiasi): \textbf{la variazione di entropia dallo stato termodinamico A allo stato termodinamico B dipende soltanto dalla posizione di questi 2 punti, ed è completamente \underline{indipendendte dal percorso} che li congiunge}!
