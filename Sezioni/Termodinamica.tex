@@ -1095,3 +1095,43 @@
                     \end{align*}
                     Questa equazione ci permette di stabilire una \textbf{relazione tra calore trasferito $\mathbf{Q}$ e la temperatura $\mathbf{T}$}: questo rapporto ci permette di creare degli strumenti di misurazione della temperatura assoluta. Misurando lo scambio del calore, possiamo misurare le temperature!
                 \end{enumerate}
+
+
+    \subsection{Esercizi termodinamica}
+        \subsubsection{Esercizio n.10, esame giugno2021b}
+            \framedImg{60}{L20-img001}
+            Nel testo del problema manca $T_f = 600K$ temperatura di fusione del piombo!!!!\\
+            Possiamo subito notare che il calore assorbito dal cubo di piombo ($Q_A > 0$) è dovuto all'attrito con l'aria, il lavoro dell'attrito sarà quindi $W_{ATT} < 0$. Ora abbiamo variazione di energia interna,
+            \begin{align*}
+                \Delta U = Q - W = 0 => Q_A = -W_{ATT}
+            \end{align*}
+            Osserviamo ora che il calore di fusione è,
+            \begin{align*}
+                Q_F = m\lambda
+            \end{align*}
+            Ora osserviamo che l'energia potenziale iniziale è $=0$ dato che il cubo di piombo parte da fermo, la variazione di energia potenziale è quindi,
+            \begin{align*}
+                \Delta E_p = E_{p,f} - E_{p,i} = Q_A + Q_F \bcancel{- 0}
+            \end{align*}
+            da questa sostituiamo e otteniamo,
+            \begin{align*}
+                mgh = mc\Delta T + m\lambda => gh = c(T_f - T_0) + \lambda
+            \end{align*}
+            e da questa ci ricaviamo la temperatura iniziale $T_0$ come segue,
+            \begin{align*}
+                T_0 = T_f - \frac{gh - \lambda}{c}
+            \end{align*}
+            Ora convertiamo $c$ e $\lambda$,
+            \begin{align*}
+                &c=0.031\frac{kcal}{Kkg}= 0.031*4184\frac{J}{Kkg}= 0.129*10^3\frac{J}{Kkg}\\
+                &\lambda=6\frac{kcal}{kg}=6*4184\frac{J}{kg}=25.1*10^3\frac{J}{kg}
+            \end{align*}
+            Ora sostituiamo i valori e calcoliamo la temperatura iniziale,
+            \begin{align*}
+                &T_0 = 600K - \frac{9.8\frac{m}{s^2}*6,6*10^3m - 25,2*10^3 \frac{J}{kg}}{0.126* 10^3\frac{J}{Kkg}}= 600K - \frac{6.4*10^4\frac{m^2}{s^2} - 2.52* 10^4 \frac{\frac{\bcancel{kg}m^2}{s^2}}{\bcancel{kg}}}{0.0126*10^4\frac{\frac{\bcancel{kg}m^2}{s^2}}{K\bcancel{kg}}}\\
+                &= 600K - \frac{6.4*\bcancel{10^4} - 2.52* \bcancel{10^4}}{0.0126*\bcancel{10^4}\frac{1}{K}} = 600K - \frac{6.4 - 2.52}{0.0126}K = 600K - 308K = 292K
+            \end{align*}
+            Ora convertiamo la temperatura in $^{\circ}C$,
+            \begin{align*}
+                292 - 273.16 = 18.84^{\circ}C
+            \end{align*}

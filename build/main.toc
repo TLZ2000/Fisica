@@ -131,7 +131,7 @@
 \contentsline {subsubsection}{\numberline {6.11.2}Trasformazione quasi-statica}{77}{subsubsection.6.11.2}%
 \contentsline {subsubsection}{\numberline {6.11.3}Trasformazione reversibile}{77}{subsubsection.6.11.3}%
 \contentsline {paragraph}{\numberline {6.11.3.1}Esempio trasformazione reversibile}{77}{paragraph.6.11.3.1}%
-\contentsline {paragraph}{\numberline {6.11.3.2}Esempio trasformazione non reversibile}{78}{paragraph.6.11.3.2}%
+\contentsline {paragraph}{\numberline {6.11.3.2}Esempio trasformazione non reversibile}{77}{paragraph.6.11.3.2}%
 \contentsline {subsubsection}{\numberline {6.11.4}Lentezza}{78}{subsubsection.6.11.4}%
 \contentsline {subsection}{\numberline {6.12}Calorimetria}{78}{subsection.6.12}%
 \contentsline {subsubsection}{\numberline {6.12.1}Calore specifico}{79}{subsubsection.6.12.1}%
@@ -178,3 +178,14 @@
 \contentsline {subsubsection}{\numberline {6.17.1}Macchine termiche}{105}{subsubsection.6.17.1}%
 \contentsline {subsubsection}{\numberline {6.17.2}Macchine frigorifere}{105}{subsubsection.6.17.2}%
 \contentsline {subsection}{\numberline {6.18}Ciclo di Carnot}{105}{subsection.6.18}%
+\contentsline {subsection}{\numberline {6.19}Secondo principio della termodinamica}{106}{subsection.6.19}%
+\contentsline {subsubsection}{\numberline {6.19.1}Veloce recap sulle macchine}{106}{subsubsection.6.19.1}%
+\contentsline {paragraph}{\numberline {6.19.1.1}Macchine termiche}{106}{paragraph.6.19.1.1}%
+\contentsline {paragraph}{\numberline {6.19.1.2}Macchine frigorifere}{107}{paragraph.6.19.1.2}%
+\contentsline {subsubsection}{\numberline {6.19.2}Dimostrazione dell'uguaglianza delle 2 principi}{108}{subsubsection.6.19.2}%
+\contentsline {paragraph}{\numberline {6.19.2.1}Kelvin => Clausius}{108}{paragraph.6.19.2.1}%
+\contentsline {paragraph}{\numberline {6.19.2.2}Clausius => Kelvin}{109}{paragraph.6.19.2.2}%
+\contentsline {subsection}{\numberline {6.20}Teorema di Carnot}{110}{subsection.6.20}%
+\contentsline {paragraph}{\numberline {6.20.0.1}Corollario e osservazioni}{113}{paragraph.6.20.0.1}%
+\contentsline {subsection}{\numberline {6.21}Esercizi termodinamica}{114}{subsection.6.21}%
+\contentsline {subsubsection}{\numberline {6.21.1}Esercizio n.10, esame giugno2021b}{114}{subsubsection.6.21.1}%
