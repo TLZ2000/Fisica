@@ -603,10 +603,11 @@
                         & p_i > p_f && \textrm{La pressione del gas diminuisce (stessa quantità in volume maggiore)}\\
                         T_i \approx T_f
                     \end{align*}
-                    L'ultima riga è la più interessante: nonostante il volume e la pressione siano cambiati, la temperatura resta uguale (in realtà cambia, ma in modo quasi impercettibile). In generale, l'energia interna del sistema dipende da pressione, volume e temperatura ($U(p, V, T)$). Inoltre, per il primo principio della termodinamica, abbiamo che $\Delta U = Q - W$. Ora, il \textbf{contenitore è rigido}  quindi il \textbf{volume resta effettivamente costante}, di conseguenza \textbf{NON C'E' LAVORO} ($W=0$, è solo il gas che aumenta di volume, quello del contenitore resta costante). Per quanto riguarda il calore, tutto il nostro sistema si trova in un \textbf{contenitore adiabatico}, allora \textbf{non abbiamo scambio di calore con l'esterno} ($Q=0$, il calore del sistema è già all'interno del sistema, non si può prendere calore da nessuna parte). Dunque, per la prima legge della dinamica abbiamo che:
+                    L'ultima riga è la più interessante: nonostante il volume e la pressione siano cambiati, la temperatura resta uguale (in realtà cambia, ma in modo quasi impercettibile). In generale, l'energia interna del sistema dipende da pressione, volume e temperatura ($U(p, V, T)$). Inoltre, per il primo principio della termodinamica, abbiamo che $\Delta U = Q - W$. Ora, il \textbf{contenitore è rigido}  quindi il \textbf{volume resta effettivamente costante}, di conseguenza \textbf{NON C'E' LAVORO} ($W=0$, è vero che il gas aumenta di volume però lo fa liberamente senza opporsi a nessuno [es. un pistone], quindi NON c'è lavoro). Per quanto riguarda il calore, tutto il nostro sistema si trova in un \textbf{contenitore adiabatico}, allora \textbf{non abbiamo scambio di calore con l'esterno} ($Q=0$, il calore del sistema è già all'interno del sistema, non si può prendere calore da nessuna parte). Dunque, per la prima legge della dinamica abbiamo che:
                     \begin{align*}
                         \Delta U = Q-W = 0-0 = 0 => \mathbf{\Delta U = 0}
                     \end{align*}
+                    Quindi, se $\Delta U == 0$, allora che $\Delta T == 0$!
                     Abbiamo detto prima che, \textbf{in genere}, l'energia interna di un sistema dipende da pressione, volume e temperatura, \textbf{PERO'} abbiamo visto sperimentalmente che, pur cambiando la pressione ed il volume, \textbf{l'energia interna del sistema resta ugugale}: possiamo quindi dire che \textbf{l'energia interna del gas dipende solo dalla Temperatura}!
 
 
@@ -1070,7 +1071,7 @@
             \end{align}
             \textcolor{Red}{\textbf{Il rendimento di una macchina termica qualsiasi è, sempre minore o ugugale del rendimento di una qualsiasi macchina termica reversibile che lavora nello stesso range di temperatura}} (se anche la prima macchina è reversibile, le 2 macchine DEVONO avere lo stesso rendimento).
 
-            \paragraph{Corollario e osservazioni}
+            \subsubsection{Corollario e osservazioni}
                 A questo punto possiamo mettere insieme un corollario:
                 \begin{enumerate}
                     \item \textbf{corollario}: come già detto in precendenza, \textbf{tutte le macchine reversibili che lavorano alle stesse temperature hanno lo stesso rendimento};
@@ -1093,5 +1094,158 @@
                     \begin{align*}
                         \frac{|Q_1|}{T_1} = \frac{|Q_2|}{T_2}
                     \end{align*}
-                    Questa equazione ci permette di stabilire una \textbf{relazione tra calore trasferito $\mathbf{Q}$ e la temperatura $\mathbf{T}$}: questo rapporto ci permette di creare degli strumenti di misurazione della temperatura assoluta. Misurando lo scambio del calore, possiamo misurare le temperature!
+                    Questa equazione ci permette di stabilire una \textbf{relazione tra calore trasferito $\mathbf{Q}$ e la temperatura $\mathbf{T}$}: questo rapporto ci permette di creare degli strumenti di misurazione della temperatura assoluta. Misurando lo scambio del calore, possiamo misurare la temperatura!
                 \end{enumerate}
+        \subsection{Teorema di Clausius}
+            Il teorema di Clausius è un'estensione del teorema di Carnot su \textbf{cicli generici}. Allora, partiamo dalla formulazione di Carnot vista nel corollario:
+            \begin{align*}
+                \frac{Q_1}{T_1}+ \frac{Q_2}{T_2} <= 0
+            \end{align*}
+            In questa formula notiamo facilmente che il ciclo in questione \textbf{lavora tra 2 temperature fisse} (ha 2 scambi di calore):
+            \framedImg{4}{L19-img001}
+            Ma se avessimo un "ciclo termodinamico generico" che lavora \textbf{a contatto con più temperature diverse}? Ad esempio:
+            \framedImg{4}{L19-img002}
+            Possiamo immaginare di prendere questo ciclo e \textbf{dividerlo in piccoli cicli di carnot}, ottenendo qualcosa del genere:
+            \framedImg{4}{L19-img003}
+            Questa è un'apporssiamzione molto grossolana: devi immaginarla con tratti infinitesimi, prossimi al ciclo generico vero e proprio (se abbiamo N tratti, allora N dovrebbe tendere ad $\infty$).  Immaginiamo di ingrandire un tratto di questa approssimazione e disegnami i cicli di carnot:
+            \framedImg{5}{L19-img004}
+            Che info possiamo estrarre da ogni ciclo di carnot? Per il ciclo i-esimo possiamo dire che:
+            \begin{align*}
+                \frac{Q_1}{T_1}+ \frac{Q_2}{T_2} <= 0
+            \end{align*}
+            (L'= vale solo se il ciclo è reversibile). Ora, se immaginiamo che i cicli interni siano tutti reversibili, abbiamo che i loro \textbf{tratti adiabatici non scambiano calore} mentre \textbf{quelli isotermi si!} In particolare, in un tratto \textbf{assorbono calore} (da dx a sx), mentre in un tratto \textbf{cedono calore} (da sx a dx). Ora un passaggio importante: dal disegno precedente si può notare che ogni tratto interno al ciclo (quelli tratteggiati) viene condiviso tra 2 diversi cicli. Uno \textbf{cederà calore}, mentre l'altro \textbf{lo assorbità}: avremmo la stessa quantità $\frac{Q}{T}$ \textbf{2 volte ma di segno opposto}! Se sommiamo tutte queste quantità, \textbf{quelle interne si bilanciano tra di loro} e \textbf{resteremmo solo con i contributi dei tratti esterni}! Quindi, se facciamo:
+            \begin{align*}
+                \sum_{MicroCicli}(\frac{Q_1}{T_1}+\frac{Q_2}{T_2}) \leq 0
+            \end{align*}
+            Se poi espandessimo questa sommatoria, potremmo notare che i termini interni si semplificherebbero tra di loro, \textbf{lasciando solo le quantità relative ai tratti esterni}. Quindi, possiamo sommare i contributi di tutti i tratti esterni (supponiamo N) ottenendo:
+            \begin{align*}
+                \sum_{j=1}^N\frac{Q_{j}}{T_{j}} \leq 0
+            \end{align*}
+            Ovvero \textit{\textcolor{Red}{la somma dei rapporti tra i calori scambiati e le rispettive temperature delle sorgenti è negativa (macchine irriversibili) o uguale a 0 (macchine reversibili)}}. Sostanzialmente questo è il teorema di Clausius. Esiste anche la sua versione "continua", ovvero l'integrale:
+            \begin{align*}
+                \oint\frac{dQ}{T} \leq 0
+            \end{align*}
+            Anche in questo caso, il "<" vale per le macchine (i cicli) irreversibili, mentre l'"=" per quelli reversibili. Questa poi è la base per l'\textbf{\textit{integrale di Clausius}}:
+            \begin{align*}
+                \oint\frac{dQ}{T}
+            \end{align*}
+            Fondamentale per andare poi a definire quella che è l'\textbf{entropia}.
+
+        \subsection{Entropia}
+            Supponiamo di cominciare con una \textbf{trasformazione ciclica "divisia" in 2 parti}, ad esempio:
+            \framedImg{4}{L19-img005}
+            Possiamo qundi individuare 2 tratti:
+            \begin{itemize}
+                \item $A\rightarrow B$: lo chiamiamo tratto $I$;
+                \item $B\rightarrow A$: lo chiamiamo tratto $II$;
+            \end{itemize}
+            Ora possiamo dire che, per il teorema di Clausius visto prima, abbiamo:
+            \begin{align*}
+                \oint\frac{dQ}{T} \leq 0
+            \end{align*}
+            In particolare per i cicli reversibili:
+            \begin{align*}
+                \oint\frac{dQ}{T} = 0
+            \end{align*}
+            Concentriamoci su quest'ultimi per il momento. Per le proprietà degli integrali possiamo dire che:
+            \begin{align*}
+                &\oint\frac{dQ}{T} = 0 &&=> \oint_{A}^B(\frac{dQ}{T})_{(I)}+\oint_{B}^A(\frac{dQ}{T})_{(II)} = 0\\
+                & Applico\ reversibilità\ integrali&&=> \oint_{A}^B(\frac{dQ}{T})_{(I)}\textcolor{Orange}{-\oint_{A}^B}(\frac{dQ}{T})_{(II)} = 0\\
+                & &&=> \oint_{A}^B(\frac{dQ}{T})_{(I)} = \oint_{A}^B(\frac{dQ}{T})_{(II)}\\
+            \end{align*}
+            Tutto questo \textbf{indipendentemente dal percorso compiuto dal tratto}! Volendo avrei potuto prendere dei percorsi completamente diversi, tipo:
+            \framedImg{6}{L19-img006}
+            ed avrei \textbf{ottenuto la stessa identica formula}. Morale della favola: $\oint_{A}^B(\frac{dQ}{T})$ \textbf{NON dipende dal percorso che scelgo}. Dato che il percorso non ci interessa possiamo dire che il risultato di $\oint_{A}^B(\frac{dQ}{T})$ è un \textbf{integrando perfetto}, quindi lo possiamo "risolvere" in questo modo:
+            \begin{align*}
+                \oint_{A}^B(\frac{dQ}{T}) \triangleq S(B)-S(A)
+            \end{align*}
+            [Small nota di servizio: "$\triangleq$" è "uguale per definizione"] Dove $S$ corrisponde ad un nuova funzione di stato chiamata \textbf{entropia}. É anche possibile avere la "versione infinitesima" della variazione di entropia, ovvero $\frac{dQ}{T} = dS$ (praticamente abbiamo solo tolto l'integrale, molto probabilmente è solo una notazione).
+
+
+            \subsubsection{Variazione di entropia $\Delta S$}
+                Ora un punto molto importante, possiamo dire che:
+                \begin{align*}
+                    \Delta S_{A\rightarrow B}=\oint_{A}^B(\frac{dQ}{T})_{\textcolor{Red}{perRevQualsiasi}}
+                \end{align*}
+                Concentrati su quel "\textcolor{Red}{per una reversibile qualsiasi}" (perRevQualsiasi): \textbf{la variazione di entropia, per una trasformazione qualsiasi} (sia reversibile che non)\textbf{, dallo stato termodinamico A allo stato termodinamico B dipende soltanto dalla posizione di questi 2 punti, ed è completamente \underline{indipendendte dal percorso} che li congiunge}!\bigskip\\
+                Calcolare la variazione di entropia è molto semplici: dato che non ci interessa il percorso, ci basta prendere \textbf{il punto iniziale ed il punto finale, scegliere la trasformazione REVERSIBILE più semplice tra questi 2 punti e calcolare l'integrale} $\oint_{A}^B(\frac{dQ}{T})$.
+
+            \subsubsection{Alcune osservazioni}
+                Facciamo alcune osservazioni sull'entropia:
+                \begin{enumerate}
+                    \item l'entropia è una \textbf{quantità additiva}, ovvero: se abbiamo 2 sistemi (con relative entropie $S_1$ ed $S_2$) e creiamo un terzo sistema dall'\textbf{unione dei 2 sistemi precedenti}, l'entropia del terzo sistema corrisponderà a $S_3 = S_1 + S_2$;
+                    \item l'entropia è una \textbf{grandezza fisica estensiva}, ovvero \textbf{dipende dalle dimensioni del sistema}, in particolare dal calore scambiato col sistema esterno (a sua volta il calore è anche un grandezza fisica estensiva);
+                    \item per il calcolo della $\Delta S$ \textbf{occore scegliere la trasformazione termodinamica REVERSIBILE più conveniente}, ad esempio supponiamo di avere questa trasformazione irreversibile.
+                    \framedImg{4}{L19-img007}
+                    Dato che la trasformazione fornitn è IRREVERSIBILE, non possiamo calcolarti $\oint_{A}^B(\frac{dQ}{T})_{IRR}$, questo perché $\oint_{A}^B(\frac{dQ}{T})_{IRR}\neq S_B-S_A$ (e anche perché calcolalo tu questo integrale :P). Supponendo che (il testo dell'esercizio ci dica che) $T_A = T_B$, allora possiamo \textbf{collegare i 2 stati termodinamici con una ISOTERMA REVERSIBILE}. Per quel caso specifico (dell'isoterma reversibile) \textbf{noi SAPPIAMO} che:
+                    \begin{align*}
+                        &dQ = \frac{n*R*T}{V}dV&&=>\frac{dQ}{T}=n*R*\frac{dV}{V}&&=> \int_A^B(\frac{dQ}{T}) = \int_A^Bn*R*\frac{dV}{V}
+                    \end{align*}
+                    A questo punto risolviamo semplicemente l'integrale, ed otteniamo:
+                    \begin{align*}
+                        &\int_A^B(\frac{dQ}{T}) &&= \int_A^Bn*R*\frac{dV}{V}n*R*\int_A^B\frac{dV}{V}\\
+                         & && = n*R*(ln(V_f)-ln(V_i))\\
+                         & && = \textcolor{Red}{n*R*(ln(\frac{V_f}{V_i}))}\\
+                    \end{align*}
+                    \textcolor{Red}{Questa} è la nostra \textbf{variazione di entropia}!
+                \end{enumerate}
+
+            \subsubsection{Variazione di entropia per le trasformazioni termodinamiche notevoli}
+                Vediamo la formulazione della variazione di entropia per le principali trasformazioni termodinamiche:
+                \paragraph{Trasformazione isoterma}
+                    Come abbiamo già visto prima, abbiamo che $V_i \rightarrow V_f$ e sappiamo che $dQ = \frac{n*R*T}{V}dV$, quindi mettiamo insieme l'integrale e risolviamo:
+                    \begin{align*}
+                        &\int_A^B(\frac{dQ}{T}) &&= \int_A^Bn*R*\frac{dV}{V}n*R*\int_A^B\frac{dV}{V}\\
+                         & && = n*R*(ln(V_f)-ln(V_i))\\
+                         & && = n*R*ln(\frac{V_f}{V_i})\\
+                    \end{align*}
+                    Quindi possiamo dire che per le isoterme \textcolor{OliveGreen}{$\mathbf{\Delta S = n*R*(ln(\frac{V_f}{V_i}))}$}.
+                \paragraph{Trasformazione isocora}
+                    In questo caso abbiamo $dV = 0$, di conseguenza anche $W=0$. Per definizione, abbiamo quindi che $dQ = dU = nc_vdT$, di conseguenza la variazione infinitesima di entropia corrisponderà a $\frac{dQ}{T} = nC_v\frac{dT}{T}$. Facciamo l'integrale e, similmente a prima, finiamo con: \textcolor{OliveGreen}{$\mathbf{\Delta S = n*R*ln(\frac{T_f}{T_i})}$}.
+                \paragraph{Trasformazione isobara}
+                    Qui abbiamo che $p = const$, allora $dQ = nc_pdT$, quindi $\frac{dQ}{T} = nc_p\frac{dT}{T} = dS$, svolgendo l'integrale abbiamo: \textcolor{OliveGreen}{$\mathbf{\Delta S = \int_i^fdS = n*c_p*ln(\frac{T_f}{T_i})}$}.
+                \paragraph{Trasformazione adiabatica}
+                    Sappiamo che il $dQ = 0$ (nelle adiabatiche non c'è scambio di temperatura), di conseguenza $\int_A^B(\frac{dQ}{T})\triangleq 0$ (per definizione degli integrali);
+
+                \paragraph{Cambi di fase (non necessariamente gas ideali)}
+                    Allora, sappiamo che nei cambi di fase $dQ = \lambda*dm$ (ricorda che $\lambda$ corrisponde al calore latente, mentre $dm$ corrisponde alla massa che cambia di fase). Ora basta applicare tutti i passaggi visti prima ed otteniamo che $\frac{dQ}{T} =\frac{\lambda}{T}*dm = dS$ e fare l'integrale per ottenere: \textcolor{OliveGreen}{$\mathbf{\Delta S = \int dS =\frac{\lambda*m}{T}}$}
+
+            \subsubsection{Diagrammi T-S}
+                Tutte le trasformazion che abbiam visto prima le possiamo anche rappresentare sui \textbf{diagrammi T-S}, che mettono in rapporto la temperatura con l'entropia:
+                \framedImg{8}{L19-img008}
+
+            \subsubsection{Teorema dell'entropia (formulazione matematica del secondo principio della termodinamica)}
+                Supponiamo di avere una trasformazione ciclica divisa in 2 tratti: uno IRREVERSIBILE (I) ed uno REVERSIBILE (II).
+                \framedImg{4}{L19-img009}
+                Ora, per il \textbf{teorema di Clausius} abbiamo che:
+                \begin{align*}
+                    \oint \frac{dQ}{T}<0
+                \end{align*}
+                Dovrebbe essere "$<=$", ma dato che la trasformazione comprende un tratto irreversibile va considerata tutta irreversibile! Possiamo quindi togliere l'"$=$" (che vale solo nel caso reversibile). Adesso facciamo un po' di passaggi algebrici:
+                \begin{align*}
+                    & \oint \frac{dQ}{T}<0 &&=>\int_A^B (\frac{dQ}{T})_{IRR} + \int_B^A (\frac{dQ}{T})_{REV}<0\\
+                    & Invertiamo\ la\ reversibile &&=>\int_A^B (\frac{dQ}{T})_{IRR} - \int_A^B (\frac{dQ}{T})_{REV}<0\\
+                    & &&=>\int_A^B (\frac{dQ}{T})_{IRR} < \int_A^B (\frac{dQ}{T})_{REV}\\
+                    & Giriamo\ l'equazione\ per\ comodita &&=>\textcolor{Orange}{\int_A^B (\frac{dQ}{T})_{REV} > \int_A^B (\frac{dQ}{T})_{IRR}}\\
+                \end{align*}
+                Teniamo a mente \textcolor{Orange}{questo} pezzo, ci torna utile dopo. Fatto ciò, consideriamo una \textbf{sistema isolato} dove, per definizione, $\mathbf{dQ = 0}$. Non abbiamo scambio di calore con l'esterno, quindi qualsiasi integrale della forma $\int_A^B (\frac{dQ}{T}) = 0$. Ora, ricordiamo a cosa corrisponde la variazione di entropia:
+                \begin{align*}
+                    \Delta S_{A\rightarrow B} = S_B-S_A=\int_A^B (\frac{dQ}{T})_{REV}
+                \end{align*}
+                Quindi, secondo questa definizione se $dQ = 0$, e se la trasformazione che facciamo è \textbf{reversibile}, allora anche $\Delta S_{A\rightarrow B} = 0$. Fin qui niente di strano. Ora però \textbf{riprendiamo \textcolor{Orange}{quel pezzo di prima}}:
+                \begin{align*}
+                    \Delta S_{A\rightarrow B} = S_B-S_A=\int_A^B (\frac{dQ}{T})_{REV} \textcolor{Orange}{>\int_A^B (\frac{dQ}{T})_{IRR}}
+                \end{align*}
+                Questo è molto interessante: se lo scambio di calore è nullo, allora anche l'integrale di Clausius è nullo. Però, se questo è \textbf{relativo ad una trasformazione irreversibile rappresenterà} (matematicamente, per quanto abbiamo dimostrato prima) \textbf{una quantità inferiore alla variazione di entropia}! Di conseguenza, se $dQ = 0$ e quindi $\int_A^B (\frac{dQ}{T})_{IRR} = 0$ avremmo:
+                \begin{align*}
+                    \Delta S_{A\rightarrow B} = S_B-S_A \textcolor{Orange}{>\int_A^B (\frac{dQ}{T})_{IRR}} = 0
+                \end{align*}
+                Quindi avremmo che $S_B-S_A > 0$. Mettendo tutto insieme, possiamo dire che:
+                \begin{align*}
+                    \textcolor{Red}{S_B-S_A >= 0
+                    \begin{cases}
+                        S_B = S_A \ \ \ \ \ \ \ \ Se\ trasformazione\ reversibile\\
+                        S_B > S_A \ \ \ \ \ \ \ \ Se\ trasformazione\ irreversibile
+                    \end{cases}}
+                \end{align*}
+                Questo è un risultato molto importante: \textbf{\textit{nei sistemi isolati, l'entropia NON PUO' MAI CALARE!}} Ciò viene anche chiamato \textit{formulazione matematica del secondo principio della termodinamica}. Se poi andiamo a pensare che l'\textbf{l'universo può essere considerato un sistema isolato}, possiamo dire che \textbf{l'entropia dell'universo continua ad aumentare} (o al massimo resta uguale). Questo è un concetto interessante, da un senso fisico al tempo se ci pensiamo. In natura (fisicamente parlando), un evento avviene solo nel senso in cui aumenta l'entropia dell'universo!
