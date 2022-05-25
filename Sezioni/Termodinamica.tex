@@ -951,7 +951,7 @@
             \framedImg{6}{L19-img006}
             ed avrei \textbf{ottenuto la stessa identica formula}. Morale della favola: $\oint_{A}^B(\frac{dQ}{T})$ \textbf{NON dipende dal percorso che scelgo}. Dato che il percorso non ci interessa possiamo dire che il risultato di $\oint_{A}^B(\frac{dQ}{T})$ è un \textbf{integrando perfetto}, quindi lo possiamo "risolvere" in questo modo:
             \begin{align*}
-                \oint_{A}^B() \triangleq S(B)-S(A)
+                \oint_{A}^B(\frac{dQ}{T}) \triangleq S(B)-S(A)
             \end{align*}
             [Small nota di servizio: "$\triangleq$" è "uguale per definizione"] Dove $S$ corrisponde ad un nuova funzione di stato chiamata \textbf{entropia}. É anche possibile avere la "versione infinitesima" della variazione di entropia, ovvero $\frac{dQ}{T} = dS$ (praticamente abbiamo solo tolto l'integrale, molto probabilmente è solo una notazione).
 
@@ -983,6 +983,7 @@
                     \end{align*}
                     \textcolor{Red}{Questa} è la nostra \textbf{variazione di entropia}!
                 \end{enumerate}
+
             \subsubsection{Variazione di entropia per le trasformazioni termodinamiche notevoli}
                 Vediamo la formulazione della variazione di entropia per le principali trasformazioni termodinamiche:
                 \paragraph{Trasformazione isoterma}
@@ -999,4 +1000,46 @@
                     Qui abbiamo che $p = const$, allora $dQ = nc_pdT$, quindi $\frac{dQ}{T} = nc_p\frac{dT}{T} = dS$, svolgendo l'integrale abbiamo: \textcolor{OliveGreen}{$\mathbf{\Delta S = \int_i^fdS = n*c_p*ln(\frac{T_f}{T_i})}$}.
                 \paragraph{Trasformazione adiabatica}
                     Sappiamo che il $dQ = 0$ (nelle adiabatiche non c'è scambio di temperatura), di conseguenza $\int_A^B(\frac{dQ}{T})\triangleq 0$ (per definizione degli integrali);
-                    14.40
+
+                \paragraph{Cambi di fase (non necessariamente gas ideali)}
+                    Allora, sappiamo che nei cambi di fase $dQ = \lambda*dm$ (ricorda che $\lambda$ corrisponde al calore latente, mentre $dm$ corrisponde alla massa che cambia di fase). Ora basta applicare tutti i passaggi visti prima ed otteniamo che $\frac{dQ}{T} =\frac{\lambda}{T}*dm = dS$ e fare l'integrale per ottenere: \textcolor{OliveGreen}{$\mathbf{\Delta S = \int dS =\frac{\lambda*m}{T}}$}
+
+            \subsubsection{Diagrammi T-S}
+                Tutte le trasformazion che abbiam visto prima le possiamo anche rappresentare sui \textbf{diagrammi T-S}, che mettono in rapporto la temperatura con l'entropia:
+                \framedImg{8}{L19-img008}
+
+            \subsubsection{Teorema dell'entropia (formulazione matematica del secondo principio della termodinamica)}
+                Supponiamo di avere una trasformazione ciclica divisa in 2 tratti: uno IRREVERSIBILE (I) ed uno REVERSIBILE (II).
+                \framedImg{4}{L19-img009}
+                Ora, per il \textbf{teorema di Clausius} abbiamo che:
+                \begin{align*}
+                    \oint \frac{dQ}{T}<0
+                \end{align*}
+                Dovrebbe essere "$<=$", ma dato che la trasformazione comprende un tratto irreversibile va considerata tutta irreversibile! Possiamo quindi togliere l'"$=$" (che vale solo nel caso reversibile). Adesso facciamo un po' di passaggi algebrici:
+                \begin{align*}
+                    & \oint \frac{dQ}{T}<0 &&=>\int_A^B (\frac{dQ}{T})_{IRR} + \int_B^A (\frac{dQ}{T})_{REV}<0\\
+                    & Invertiamo\ la\ reversibile &&=>\int_A^B (\frac{dQ}{T})_{IRR} - \int_A^B (\frac{dQ}{T})_{REV}<0\\
+                    & &&=>\int_A^B (\frac{dQ}{T})_{IRR} < \int_A^B (\frac{dQ}{T})_{REV}\\
+                    & Giriamo\ l'equazione\ per\ comodita &&=>\textcolor{Orange}{\int_A^B (\frac{dQ}{T})_{REV} > \int_A^B (\frac{dQ}{T})_{IRR}}\\
+                \end{align*}
+                Teniamo a mente \textcolor{Orange}{questo} pezzo, ci torna utile dopo. Fatto ciò, consideriamo una \textbf{sistema isolato} dove, per definizione, $\mathbf{dQ = 0}$. Non abbiamo scambio di calore con l'esterno, quindi qualsiasi integrale della forma $\int_A^B (\frac{dQ}{T}) = 0$. Ora, ricordiamo a cosa corrisponde la variazione di entropia:
+                \begin{align*}
+                    \Delta S_{A\rightarrow B} = S_B-S_A=\int_A^B (\frac{dQ}{T})_{REV}
+                \end{align*}
+                Quindi, secondo questa definizione se $dQ = 0$, e se la trasformazione che facciamo è \textbf{reversibile}, allora anche $\Delta S_{A\rightarrow B} = 0$. Fin qui niente di strano. Ora però \textbf{riprendiamo \textcolor{Orange}{quel pezzo di prima}}:
+                \begin{align*}
+                    \Delta S_{A\rightarrow B} = S_B-S_A=\int_A^B (\frac{dQ}{T})_{REV} \textcolor{Orange}{>\int_A^B (\frac{dQ}{T})_{IRR}}
+                \end{align*}
+                Questo è molto interessante: se lo scambio di calore è nullo, allora anche l'integrale di Clausius è nullo. Però, se questo è \textbf{relativo ad una trasformazione irreversibile rappresenterà} (matematicamente, per quanto abbiamo dimostrato prima) \textbf{una quantità inferiore alla variazione di entropia}! Di conseguenza, se $dQ = 0$ e quindi $\int_A^B (\frac{dQ}{T})_{IRR} = 0$ avremmo:
+                \begin{align*}
+                    \Delta S_{A\rightarrow B} = S_B-S_A \textcolor{Orange}{>\int_A^B (\frac{dQ}{T})_{IRR}} = 0
+                \end{align*}
+                Quindi avremmo che $S_B-S_A > 0$. Mettendo tutto insieme, possiamo dire che:
+                \begin{align*}
+                    \textcolor{Red}{S_B-S_A >= 0
+                    \begin{cases}
+                        S_B = S_A \ \ \ \ \ \ \ \ Se\ trasformazione\ reversibile\\
+                        S_B > S_A \ \ \ \ \ \ \ \ Se\ trasformazione\ irreversibile
+                    \end{cases}}
+                \end{align*}
+                Questo è un risultato molto importante: \textbf{\textit{nei sistemi isolati, l'entropia NON PUO' MAI CALARE!}} Ciò viene anche chiamato \textit{formulazione matematica del secondo principio della termodinamica}. Se poi andiamo a pensare che l'\textbf{l'universo può essere considerato un sistema isolato}, possiamo dire che \textbf{l'entropia dell'universo continua ad aumentare} (o al massimo resta uguale). Questo è un concetto interessante, da un senso fisico al tempo se ci pensiamo. In natura (fisicamente parlando), un evento avviene solo nel senso in cui aumenta l'entropia dell'universo!
