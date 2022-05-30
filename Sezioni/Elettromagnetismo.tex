@@ -4,3 +4,39 @@
 
 
     \subsection{Principio di sovrapposizione}
+        Supponiamo di essere in questa situazione: abbiamo \textbf{2 cariche} "importanti" statiche ($Q_1$ e $Q_2$) ed una \textbf{carica di prova} ($q_0$). Ora, la carica di $q_0$ è \textbf{molto minore rispetto alle altre 2} ($|q_0|<<Q_1$ e $|q_0|<<Q_2$): questo è molto importante perché, come già detto prima, \textbf{esiste una carica "elettromagnetica" [ricontrollla questo ""] minima} ($1,6*10^{-9}C$) \textbf{sotto la quale non si può andare}! Quindi anche $q_0$ ha una carica elettrica che va ad interagire con le altre 2 cariche e, quindi, a perturbare il nostro sistema! Questa supposizione serve a perturbare il sistema il meno possibile. Tornando al discorso iniziale, supponiamo di avere queste cariche posizionate in su un piano e che interagiscano tra loro in questo modo:
+        \framedImg{8}{L21-img001}
+        Secondo la \textbf{legge di Culomb}, $Q_1$ eserciterà una forza $F_{1->0}$ sulla carica $q_0$ (lo stesso vale per $Q_2$ con la forza $F_{2->0}$), possiamo immaginare che le 2 forze siano quelle mostrate in figura (sono uguali solo per puro caso). Ora, per capire quale forza agisce complessivamente sulla carica $q_0$ possiamo \textbf{sommare i 2 vettori delle forze secondo la regola del parallelogramma}: per fare questo ci avvaliamo del \textbf{principio di sovrapposizione}, che ci garantisce che \textbf{l'interazione tra $Q_1$ e $q_0$ non viene perturbata in alcun modo dall'interazione tra $Q_2$ e $q_0$ e viceversa}, permettendoci quindi di \underline{\textbf{"sovrapporre" le 2 forze}!} (Sostanzialmente, il principio di sovrapposizione dice solo la parte sulla sovrapposizione, la prima parte delle interazioni è una conseguenza di questa seconda parte :P) \bigskip\\
+        In questo caso specifico abbiamo solo 2 cariche puntiformi, però nulla ci vieta di usare N cariche disposte in varie forme, ad esempio un cavo:
+        \framedImg{4}{L21-img002}
+        In questo caso però si deve introdurre una \textbf{densità lineare di carica "$\mathbf{\lambda}$"} che, sostanzialmente, corrisponde alla \textbf{quantità di carica ($dq$) disposta presente in una certa lunghezza di filo ($dl$)}. Come per l'esempio delle cariche puntiformi, la forza totale che agisce su $q_0$ corrisponde alla \textbf{sovrapposizione di tutte le forze (infinitesime) delle varie cariche (infinitesime, infatti $dq = \lambda dl$)}. Allo stesso modo, il discorso si può estendere a 2 e 3 dimensioni, l'unica cosa che cambia è che al posto di $\lambda$ (1-D) avremmo $\sigma$ (2-D, \textit{densità superficiale di carica}) e $\rho$ (3-D, \textit{densità volumica di carica}):
+        \framedImg{4}{L21-img003}
+
+    \subsection{Campo elettrico}
+        Diventa interessante analizzare l'effetto che le cariche hanno sulla carica di prova \textbf{senza considerare le cariche stesse} (senza dover quindi effettuare un integrale considerando tutte le cariche)! Per questo motivo viene introdotto il concetto di \textbf{campo elettrico} (o meglio, \textit{elettrostatico} dato che le nostre cariche sono ferme). Formalmente, definiamo il campo elettrico ($\vec{E}$) come il rapporto tra la forza provata dalla carica di prova ($\vec{F}$) e la carica di prova stessa ($q_0$), quindi:
+        \begin{align*}
+            \textcolor{Red}{\vec{E} \triangleq \frac{\vec{F}}{q_0}}
+        \end{align*}
+        Pensa a $q_0$ come ad una sonda che \textbf{va a \underline{misurare} la forza in un certo punto dello spazio}, misurando questa forza in, idealmente, tutte le possibili posizioni e mettendo tutto insieme otteniamo un \textbf{campo vettoriale} dove ad ogni posizione è assegnato un vettore!
+
+        \subsubsection{Campo elettrico per campo puntiforme}
+            Cominciamo considerando una \textbf{carica puntiforme}: se inseriamo la nostra sonda e facciamo un sistema del genere:
+            \framedImg{7}{L21-img005}
+            Possiamo dire che, per definizione, il campo elettrico della carica $Q$ corrisponde a:
+            \begin{align*}
+                &\vec{F}=K*\frac{q_0*Q}{r^2}\hat{r}&&=>\vec{E}=K*\frac{\bcancel{q_0}*Q}{r^2*\bcancel{q_0}}\hat{r}=\textcolor{Red}{K*\frac{Q}{r^2}\hat{r}}
+            \end{align*}
+            Si nota facilmente che, tralasciando la costante elettrica $K$, il campo elettrico è \textbf{direttamente proporzionale alla carica elettrica $Q$ ed è diretto in senso raiale alla carica}, ottenendo qualcosa del genere:
+            \framedImg{7}{L21-img004}
+            A livello di convenzione, si assume sempre che la nostra \textbf{carica di prova $q_0$ sia positiva}, quindi:
+            \begin{itemize}
+                \item se $Q>0$ allora \textbf{il campo sarà uscente};
+                \item se $Q<0$ allora \textbf{il campo sarà entrante};
+            \end{itemize}
+
+        \subsubsection{Campo di dipolo}
+            Se ora prendiamo 2 sorgenti puntiformi statiche di segno opposto e le mettiamo vicine. Per ogni carica puntiforme ci saranno delle \textbf{linee di campo} (uscenti per $+Q$ ed entranti per $-Q$) e, se le congiungiamo, otteniamo un campo elettrico del genere:
+            \framedImg{4}{L21-img006}
+            In ogni posizione associamo un vettore che indica il campo elettrico in quel punto specifico: in questo caso il campo elettrico sarà dato proprio dalla \textbf{sovrapposizione delle forze delle 2 cariche Q}! Se ci viene fornita la funzione che descrive questo \textbf{campo elettrico in funzione della posizione}, ci \textbf{risparmiamo tutto il lavoro sul calcolo degli effetti sulla carica di prova dovuti all'interazione con tutte le sorgenti del nostro sistema}! In un certo senso, la nozione di campo elettrico ci permette di descrivere la "realtà fisica" del nostro sistema \textbf{senza dover considerare in modo "geometrico, perfetto" le sorgenti} del campo (le sorgenti potrebbero essere estremamente tante, irregolari, difficili da analizzare o, adirittura, impossibili da analizzare perché magari non le conosciamo, quindi con il campo elettrico andiamo a considerare solo l'effetto che queste cariche hanno sulla nostra carica di prova).
+
+        \subsubsection{Esempio di esercizio con il campo elettrico}

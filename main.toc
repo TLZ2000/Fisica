@@ -200,3 +200,10 @@
 \contentsline {paragraph}{\numberline {6.22.3.5}Cambi di fase (non necessariamente gas ideali)}{121}{paragraph.6.22.3.5}%
 \contentsline {subsubsection}{\numberline {6.22.4}Diagrammi T-S}{121}{subsubsection.6.22.4}%
 \contentsline {subsubsection}{\numberline {6.22.5}Teorema dell'entropia (formulazione matematica del secondo principio della termodinamica)}{122}{subsubsection.6.22.5}%
+\contentsline {section}{\numberline {7}Elettromagnetismo}{123}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Roba di Samuele}{123}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Principio di sovrapposizione}{123}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Campo elettrico}{125}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Campo elettrico per campo puntiforme}{125}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Campo di dipolo}{126}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Esempio di esercizio con il campo elettrico}{126}{subsubsection.7.3.3}%
