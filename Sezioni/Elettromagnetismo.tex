@@ -37,6 +37,75 @@
         \subsubsection{Campo di dipolo}
             Se ora prendiamo 2 sorgenti puntiformi statiche di segno opposto e le mettiamo vicine. Per ogni carica puntiforme ci saranno delle \textbf{linee di campo} (uscenti per $+Q$ ed entranti per $-Q$) e, se le congiungiamo, otteniamo un campo elettrico del genere:
             \framedImg{4}{L21-img006}
-            In ogni posizione associamo un vettore che indica il campo elettrico in quel punto specifico: in questo caso il campo elettrico sarà dato proprio dalla \textbf{sovrapposizione delle forze delle 2 cariche Q}! Se ci viene fornita la funzione che descrive questo \textbf{campo elettrico in funzione della posizione}, ci \textbf{risparmiamo tutto il lavoro sul calcolo degli effetti sulla carica di prova dovuti all'interazione con tutte le sorgenti del nostro sistema}! In un certo senso, la nozione di campo elettrico ci permette di descrivere la "realtà fisica" del nostro sistema \textbf{senza dover considerare in modo "geometrico, perfetto" le sorgenti} del campo (le sorgenti potrebbero essere estremamente tante, irregolari, difficili da analizzare o, adirittura, impossibili da analizzare perché magari non le conosciamo, quindi con il campo elettrico andiamo a considerare solo l'effetto che queste cariche hanno sulla nostra carica di prova).
+            In ogni posizione associamo un vettore che indica il campo elettrico in quel punto specifico: in questo caso il campo elettrico sarà dato proprio dalla \textbf{sovrapposizione delle forze delle 2 cariche Q}! Se ci viene fornita la funzione che descrive questo \textbf{campo elettrico in funzione della posizione}, ci \textbf{risparmiamo tutto il lavoro sul calcolo degli effetti sulla carica di prova dovuti all'interazione con tutte le sorgenti del nostro sistema}! In un certo senso, la nozione di campo elettrico ci permette di descrivere la "realtà fisica" del nostro sistema \textbf{senza dover considerare in modo "geometrico, perfetto" le sorgenti} del campo (le sorgenti potrebbero essere estremamente tante, irregolari, difficili da analizzare o, adirittura, impossibili da analizzare perché magari non le conosciamo, quindi con il campo elettrico andiamo a considerare solo l'effetto che queste cariche hanno sulla nostra carica di prova).\bigskip\\
+            Nota però che con questa rappresentazione grafica perdiamo la quantificazione del modulo del vettore della forza nella posizione specifica, ma questo non è un problema.
 
         \subsubsection{Esempio di esercizio con il campo elettrico}
+            La formula fondamentale per lavorare negli esercizi con i campi elettrici è questa:
+            \begin{align*}
+                \textcolor{Red}{\vec{F}(\vec{r})\triangleq q* \vec{E}(\vec{r})}
+            \end{align*}
+            Vediamo il problema:
+            \framedImg{8}{L21-img007}
+            Dunque, abbiamo una \textbf{carica di prova} $p$ di \textbf{massa} $m$ che \textbf{si muove ad una velocità} $v_0$. Ad un certo punto \textcolor{Blue}{\textbf{entra nel campo elettrico}} (nota che nella realtà uno "spezzamento" così netto tra "campo elettrico" e "non campo elettrico" non è realizzabile, in questo caso facciamo delle approssimazioni e non ci interessa :P). Ora, entrando nel campo elettrico, la nostra carica di prova "devia" dal suo percorso: quando uscirà dal campo elettrico, lo farà con un \textbf{certo angolo $\mathbf{\theta}$}. Conoscendo il \textbf{campo elettrico} $\vec{E}$, quanto vale l'\textbf{l'angolo $\mathbf{\theta}$}?\bigskip\\
+            Allora, cominciamo con la seconda legge della dinamica:
+            \begin{align*}
+                \vec{F} = m*\vec{a}=m*\frac{d\vec{v}}{dt}
+            \end{align*}
+            Però a cosa corrisponde quella forza specifica? Proprio alla forza dovuta all campo elettrico:
+            \begin{align*}
+                \vec{F}=q*\vec{E}=q*E*\hat{y}
+            \end{align*}
+            Ora, quest'ultimo pezzo è importante: la forza legata al \textbf{campo elettrico agisce solo sull'asse y}! La velocità della carica sull'asse x quindi resterà costante:
+            \begin{align*}
+                &\begin{cases}
+                    x)\frac{dv_x}{dt}=0 & Perche\ v_x\ è\ costante\\
+                    y)
+                    \begin{cases}
+                        \vec{F} = m*a_y =m*\frac{dv_y}{dt}\\
+                        \vec{F} = q*\vec{E} =q*E
+                    \end{cases}&=>\textcolor{Red}{\frac{dv_y}{dt}=\frac{q*E}{m}}
+                \end{cases}
+            \end{align*}
+            Facciamo qualche magheggio da fisico su \textcolor{Red}{questo pezzo}, ottenendo:
+            \begin{align*}
+                & \frac{dv_y}{dt}=\frac{q*E}{m} && => dv_y=\frac{q*E}{m} * dt\\
+                & && => \int dv_y = \int \frac{q*E}{m} * dt\\
+                & v_y\ dipende\ da\ t\ perche\ tutto\ il\ resto\ e'\ costante && => v_y(t) = \frac{q*E}{m}*t
+            \end{align*}
+            Bene, abbiamo ottenuto $v_y$ \textbf{in funzione del tempo $t$}: quanto vale $t$? Possiamo scoprilo sfruttando la x:
+            \begin{align*}
+                &\frac{dv_x}{dt}=0 && => v_x = const = v_0\\
+                & && => \frac{dx}{dt}= v_0\\
+                & && => dx = v_0 dt\\
+                & && => \int dx = \int v_0 dt\\
+                & && => \int dx = v_0 \int dt\\
+                & && => x(t) = v_0*t\\
+                & && => \textcolor{Red}{\frac{x(t)}{v_0} = t}
+            \end{align*}
+            Ora che abbiamo il \textcolor{Red}{tempo} per percorrere lo spazio L (fai riferimento al disegno) possiamo \textbf{sostituirla nell'equazione della velocità}!
+            \begin{align*}
+                &\begin{cases}
+                    t = \frac{x(t)}{v_0}\\
+                    v_y(t) = \frac{q*E}{m}*t
+                \end{cases}
+                && => v_y(t) = \frac{q*E}{m}*\frac{x(t)}{v_0}
+            \end{align*}
+            Abbiamo la \textcolor{Orange}{velocità su y}, come la riconduciamo all'\textbf{angolo $\mathbf{theta}$}? Ricorda che:
+            \begin{align*}
+                &\vec{v} =
+                \begin{cases}
+                    v_y = sin(\theta)*|\vec{v}|\\
+                    v_x = cos(\theta)*|\vec{v}|\\
+                \end{cases} && => \mathbf{\textcolor{Red}{\frac{v_y}{v_x} = \frac{sin(\theta)*\bcancel{|\vec{v}|}}{cos(\theta)*\bcancel{|\vec{v}|}} = tan(\theta)}}
+            \end{align*}
+            \framedImg{2}{L21-img008}
+            Ora ci basta mettere tutto a sistema:
+            \begin{align*}
+                \frac{v_y}{v_x} = tan(\theta) = \frac{q*E}{m}*\frac{x(t)}{v_0} *\frac{1}{v_0} = \frac{q*E}{m} * \frac{L}{v_0^2}
+            \end{align*}
+            Ricorda che $x(t) = L$. Abbiamo finito, questo è il nostro risultato finale:
+            \begin{align*}
+                \mathbf{tan(\theta) = \frac{q*E}{m} * \frac{L}{v_0^2}} = \frac{q*E*L}{2*(\frac{1}{2}*m*v_0^2)} = \textcolor{Orange}{\frac{q*E*L}{2*E_{K, ini}}}
+            \end{align*}
+            Volendo è possibile fare qualche trasformazione algebrica per ricondurci alla \textcolor{Orange}{all'energia cinetica della particella di prova} (utile per fare delle considerazioni teoriche, esperimento di Rutherford).

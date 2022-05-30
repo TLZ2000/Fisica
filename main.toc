@@ -206,4 +206,4 @@
 \contentsline {subsection}{\numberline {7.3}Campo elettrico}{125}{subsection.7.3}%
 \contentsline {subsubsection}{\numberline {7.3.1}Campo elettrico per campo puntiforme}{125}{subsubsection.7.3.1}%
 \contentsline {subsubsection}{\numberline {7.3.2}Campo di dipolo}{126}{subsubsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3}Esempio di esercizio con il campo elettrico}{126}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.3}Esempio di esercizio con il campo elettrico}{127}{subsubsection.7.3.3}%
