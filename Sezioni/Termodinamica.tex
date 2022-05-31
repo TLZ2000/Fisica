@@ -1249,3 +1249,62 @@
                     \end{cases}}
                 \end{align*}
                 Questo è un risultato molto importante: \textbf{\textit{nei sistemi isolati, l'entropia NON PUO' MAI CALARE!}} Ciò viene anche chiamato \textit{formulazione matematica del secondo principio della termodinamica}. Se poi andiamo a pensare che l'\textbf{l'universo può essere considerato un sistema isolato}, possiamo dire che \textbf{l'entropia dell'universo continua ad aumentare} (o al massimo resta uguale). Questo è un concetto interessante, da un senso fisico al tempo se ci pensiamo. In natura (fisicamente parlando), un evento avviene solo nel senso in cui aumenta l'entropia dell'universo!
+
+
+    \subsection{Esercizi termodinamica}
+        \subsubsection{Esercizio n.10, esame giugno2021b}
+            \framedImg{60}{L20-img001}
+            Nel testo del problema manca $T_f = 600K$ temperatura di fusione del piombo!!!!\\
+            Possiamo subito notare che il calore assorbito dal cubo di piombo ($Q_A > 0$) è dovuto all'attrito con l'aria, il lavoro dell'attrito sarà quindi $W_{ATT} < 0$. Ora abbiamo variazione di energia interna,
+            \begin{align*}
+                \Delta U = Q - W = 0 => Q_A = -W_{ATT}
+            \end{align*}
+            Osserviamo ora che il calore di fusione è,
+            \begin{align*}
+                Q_F = m\lambda
+            \end{align*}
+            Ora osserviamo che l'energia potenziale iniziale è $=0$ dato che il cubo di piombo parte da fermo, la variazione di energia potenziale è quindi,
+            \begin{align*}
+                \Delta E_p = E_{p,f} - E_{p,i} = Q_A + Q_F \bcancel{- 0}
+            \end{align*}
+            da questa sostituiamo e otteniamo,
+            \begin{align*}
+                mgh = mc\Delta T + m\lambda => gh = c(T_f - T_0) + \lambda
+            \end{align*}
+            e da questa ci ricaviamo la temperatura iniziale $T_0$ come segue,
+            \begin{align*}
+                T_0 = T_f - \frac{gh - \lambda}{c}
+            \end{align*}
+            Ora convertiamo $c$ e $\lambda$,
+            \begin{align*}
+                &c=0.031\frac{kcal}{Kkg}= 0.031*4184\frac{J}{Kkg}= 0.129*10^3\frac{J}{Kkg}\\
+                &\lambda=6\frac{kcal}{kg}=6*4184\frac{J}{kg}=25.1*10^3\frac{J}{kg}
+            \end{align*}
+            Ora sostituiamo i valori e calcoliamo la temperatura iniziale,
+            \begin{align*}
+                &T_0 = 600K - \frac{9.8\frac{m}{s^2}*6,6*10^3m - 25,2*10^3 \frac{J}{kg}}{0.126* 10^3\frac{J}{Kkg}}= 600K - \frac{6.4*10^4\frac{m^2}{s^2} - 2.52* 10^4 \frac{\frac{\bcancel{kg}m^2}{s^2}}{\bcancel{kg}}}{0.0126*10^4\frac{\frac{\bcancel{kg}m^2}{s^2}}{K\bcancel{kg}}}\\
+                &= 600K - \frac{6.4*\bcancel{10^4} - 2.52* \bcancel{10^4}}{0.0126*\bcancel{10^4}\frac{1}{K}} = 600K - \frac{6.4 - 2.52}{0.0126}K = 600K - 308K = 292K
+            \end{align*}
+            Ora convertiamo la temperatura in $^{\circ}C$,
+            \begin{align*}
+                292 - 273.16 = 18.84^{\circ}C
+            \end{align*}
+
+        \subsubsection{Entropia esercizio n.10, esame giugno2021b}
+            Arrivati ora alla soluzione dell'esercizio precedente proviamo a calcolare l'entropia,
+            \begin{align*}
+                \Delta S_{AC} = \Delta S_{AB} + \Delta S_{BC}
+            \end{align*}
+            dove $AB$ indica la caduta e $BC$ indica la fusione.//
+            Ai dati precedenti aggiungiamo massa $m=70g$ e ora possiamo procedere con l'esercizio. Calcoliamo prima la parte di caduta che è una isobara,
+            \begin{align*}
+                \Delta S_{AB} = mcln\bbig(\frac{T_f}{T_0}\bbig)=70*10^{-3}\bcancel{kg}*1.26*10^2\frac{J}{K\bcancel{kg}}ln\bbig(\frac{600\bcancel{K}}{292\bcancel{K}}\bbig)= 8.8\frac{J}{K}ln(2.05)=6.34\frac{J}{K}
+            \end{align*}
+            Calcoliamo ora la parte di fusione che è un cambiamento di fase,
+            \begin{align*}
+                \Delta S_{BC} = \frac{\lambda m}{T_F} = \frac{2.5*10^4\frac{J}{\bcancel{kg}}70*10^{-3}\bcancel{kg}}{600K} = \frac{1750J}{600K} = 2.92\frac{J}{K}
+            \end{align*}
+            Ora quindi ho che,
+            \begin{align*}
+                \Delta S = 6.34 + 2.92 = 9.26\frac{J}{K}
+            \end{align*}
