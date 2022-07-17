@@ -1,6 +1,44 @@
 \section{Elettromagnetismo}
 
-    \subsection{Roba di Samuele}
+    \subsection{Introduzione all'elettromagnetismo}
+        In natura, esistono 2 tipi di materiali (elettricamente parlando):
+        \begin{itemize}
+            \item \textbf{conduttori}: materiali abbastanza noiosi (PER IL PROGRAMMA CHE ABBIAMO FATTO NOI QUEST'ANNO) perché \textbf{non si magnetizzano};
+            \item \textbf{isolanti}: tali materiali \textbf{possono essere "elettrizzati"} (ovvero possono assumere delle cariche). Di questi possiamo applicare un'altra classificazione:
+            \begin{itemize}
+                \item \textbf{vetri e affini};
+                \item \textbf{plastiche}.
+            \end{itemize}
+        \end{itemize}
+    
+    \subsection{Forza di Culomb}
+        Vediamo ora perché questa classificazione è interessante:
+        \framedImg{8}{L21A-img001}
+        Ovvero, 2 cariche dello stesso materiale (vetri/vetri o plastiche/plastiche) poste vicine \textbf{si respingono tra loro}. Al contrario, 2 cariche di materiali diversi (vetri/plastiche) \textbf{si attraggono}! Per esplicitare questo concetto di attrazione/repulsione associamo alle cariche dei vetri \textbf{il segno +}, mentre alle cariche dei materiali plastici associamo \textbf{il segno -}. Altro elemento importante è che tale forza si manifesta sull'\textbf{asse congiungente le 2 cariche}. Ora, come quantifichiamo questa forza? Possiamo usare la \textbf{\textit{forza di Culomb}}:
+        \begin{align*}
+            \textcolor{Red}{F_{el}=\textcolor{OliveGreen}{K}*\frac{q_1*q_2}{r^2_{1,2}}*\hat{r_{1,2}}=\textcolor{OliveGreen}{\frac{1}{4\pi\varepsilon_0}}*\frac{q_1*q_2}{r^2_{1,2}}*\hat{r_{1,2}}}
+        \end{align*}
+        Dunque, la \textbf{forza elettrica} ($F_{el}$) è una forza appunto, quindi unità di misura $Newton$, per quanto riguarda le 2 cariche $q_1$ e $q_2$ hanno come unità di misura il $Culomb$. Per quanto riguarda $K$ invece è una costante che permette di ottenere una forza appunto, a sua volta può \textbf{essere scomposta} come $\frac{1}{4\pi\varepsilon_0}$ (utile quando usiamo il teorema di Gauss) dove compare la \textbf{\textit{costante dielettrica del vuoto}} $\textcolor{Red}{\varepsilon_0 = 8,85418*10^{-12}\frac{C^2}{N*m^2}}$. Facciamo un disegnino per visualizzare meglio la situazione:
+        \framedImg{6}{L21A-img002}
+        Nota che noi supponiamo sempre che le 2 cariche siano ferme.
+
+        \subsubsection{Digressione sugli atomi}
+            La materia è composta da atomi, a loro volta gli atomi sono composti da un \textbf{nucleo} di \textbf{protoni} (carica positiva), \textbf{neutroni} (carica neutra, sono la "colla" che tiene insieme i protoni [altrimenti le cariche positive si respingerebbero tra di loro]) ed \textbf{elettroni} (carica negativa). Di solito, l'atomo ha una carica elettrica complessiva nulla (\textbf{i protoni si bilanciano con gli elettroni}), però è possibile "strappare" o aggiungere degli elettroni, in modo che l'atomo abbia una carica elettrica. Ora, è possibile osservare che \textbf{non esistono cariche libere più piccole di una certa soglia} (che corrisponde alla carica dell'elettrone/protone), ovvero $\textcolor{Red}{e=1,602*10^{-19}C}$. Possiamo fare una tabellina veloce:
+            \begin{center}
+                \begin{tabular}{ c c c }
+                    & \textbf{Carica} & \textbf{Massa} \\ 
+                    \textbf{Elettrone} & $-e$ & $m_{el}=0,91*10^{-30}Kg$ \\  
+                    \textbf{Protone} & $+e$ & $m_{pr}=1,67*10^{-27}Kg$\\    
+                    \textbf{Neutrone} & $0$ & $m_{ne}\approx m_{pr}$
+                \end{tabular}
+            \end{center}
+            Ora, perché mettiamo anche la massa? Possiamo notare che la \textit{forza di gravitazione universale} e la \textit{forza di Culomb} hanno una forma \textbf{estremamente simile}! Risulta quindi naturale provare a confrontare le 2 forze, possiamo immaginare di usare un altomo di idrogeno (1 protone e 1 elettrone). Abbiamo quindi:
+            \begin{align*}
+                &<r> = 5,3*10^{-11}m\\
+                &F_{el} = -K*\frac{e^2}{<r>^2}\approx-8,2*10^{-8}N && Forza\ elettrica\\
+                &F_{gr} = -G*\frac{m_e*m_P}{<r>^2}\approx-3,6*10^{-47}N && Forza\ gravitazionale
+            \end{align*}
+            Si nota che \textbf{la forza graviazione è diversi ordini di grandezza inferiore a quella elettrica}! Risulta quindi sensato \textbf{ignorare la forza gravitazionale all'interno dei legami atomici}!
 
 
     \subsection{Principio di sovrapposizione}
