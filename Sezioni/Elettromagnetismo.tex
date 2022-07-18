@@ -147,3 +147,81 @@
                 \mathbf{tan(\theta) = \frac{q*E}{m} * \frac{L}{v_0^2}} = \frac{q*E*L}{2*(\frac{1}{2}*m*v_0^2)} = \textcolor{Orange}{\frac{q*E*L}{2*E_{K, ini}}}
             \end{align*}
             Volendo è possibile fare qualche trasformazione algebrica per ricondurci alla \textcolor{Orange}{all'energia cinetica della particella di prova} (utile per fare delle considerazioni teoriche, esperimento di Rutherford).
+
+    \subsection{Circuitazione e potenziale elettrico}
+        Dato che parliamo di "\textit{forza elettrica}" (quella di \textit{Culomb}) ha senso cercare di \textbf{calcolare il lavoro compiuto da tale forza}! Noi consideriamo solo il \textbf{caso elettrostatico} (dato che abbiamo fatto solo quello). Dunque, la definizione generale di lavoro ci dice che, il lavoro ampiuto da una forza tra il punto A ed il punto B corrisponde a:
+        \begin{align*}
+            W_{A\rightarrow B}=\int^A_B\vec{F}d\vec{s}
+        \end{align*}
+        A questa definizione possiamo applicare quella di \textbf{campo elettrico} (per la precisione, \textit{elettrostatico}), ottenendo:
+        \begin{align*}
+            W_{A\rightarrow B}=\int^A_B\vec{F}ds=\int^A_Bq*\vec{E}d\vec{s}
+        \end{align*}
+        E togliamo la "$q$" dall'integrale in quanto costante:
+        \begin{align*}
+            W_{A\rightarrow B}=\int^A_B\vec{F}ds=\int^A_Bq*\vec{E}d\vec{s}=q*\int^A_B\vec{E}d\vec{s}
+        \end{align*}
+        Ora \textcolor{Red}{questo pezzo} viene chiamato \textbf{circuitazione}, nel caso delle cariche statiche vale:
+        \begin{align*}
+            \oint\vec{E}\ d\vec{s} = 0
+        \end{align*}
+        \subsubsection{Energia potenziale elettrica e potenziale (sono 2 cose relativamente diverse :P) nel caso di cariche puntiformi singole}
+            Allora, nel caso delle cariche singole possiamo dimostrare che la circuitazione vale 0 in modo molto semplice. Per farlo, "calcoliamo" quanto vale il lavoro per gli spostamenti "elementrari", in particolare quelli "\textcolor{Red}{radiali alla carica}" (paralleli al versore con la carica) e quelli "\textcolor{OliveGreen}{ortogonali alla carica}" (ortogonali al versore con la carica):
+            \framedImg{8}{L22-img001}
+            Il tutto si basa sui \textbf{versori}: nel caso rosso abbiamo $\hat{r}*\hat{r} = 1$, mentre nel caso verde abbiamo $\hat{r}*\hat{\theta} = 0$ (infatti $\hat{\theta}$ è ortogonale a $\hat{r}$, quindi il prodotto è uguale a 0), ciò porta tutto a 0!
+            Ora, vediamo un esempio, supponiamo di avere questo spostamento da A a B:
+            \framedImg{4}{L22-img002}
+            L'idea è quella di \textbf{scomporre lo spostamento in tratti \textcolor{OliveGreen}{ortogonali} e tratti \textcolor{Red}{radiali}}. Alla fine possiamo calcolare il lavoro:
+            \begin{align*}
+                W_{A\rightarrow B} = \int_B^AdW=\textcolor{OliveGreen}{\int_B^AdW_{ort}} + \textcolor{Red}{\int_B^AdW_{rad}}
+            \end{align*}
+            Però, sappiamo dalla dimostrazione data prima che il lavoro ortogonale è \textbf{uguale a 0}! Quindi:
+            \begin{align*}
+                W_{A\rightarrow B} = \int_B^AdW=\bcancel{\textcolor{OliveGreen}{\int_B^AdW_{ort}} }+ \textcolor{Red}{\int_B^AdW_{rad}}
+            \end{align*}
+            Allora sviluppiamo l'itegrale del lavoro radiale:
+            \begin{align*}
+                W_{A\rightarrow B} = \int_B^AdW_{rad} =q*\int^A_B\frac{KQ}{r^2}dr
+            \end{align*}
+            Ora, supponiamo di avere "segmenti infinitamente piccoli", quindi avremmo \textcolor{Blue}{qualcosa del tipo}:
+            \begin{align*}
+                W_{A\rightarrow B} = \int_B^AdW_{rad} =q*\int^A_B\frac{KQ}{r^2}dr = -qQK[\textcolor{Blue}{(\frac{1}{r_1}-\frac{1}{r_A})+(\frac{1}{r_2}-\frac{1}{r_1})+...+(\frac{1}{r_{N-1}}-\frac{1}{r_{N-2}})+(\frac{1}{r_{B}}-\frac{1}{r_{N-1}})}]
+            \end{align*}
+            Di questa serie infinita di addizioni e sottrazioni ci sono \textbf{un sacco di elementi che si annullano tra di loro}! In particolare lasceranno SOLO i punti agli estremi:
+            \begin{align*}
+                W_{A\rightarrow B} = \int_B^AdW_{rad} =q*\int^A_B\frac{KQ}{r^2}dr = -qQK[(\frac{1}{r_1}-\frac{1}{r_A})+(\frac{1}{r_2}-\frac{1}{r_1})+...+(\frac{1}{r_{N-1}}-\frac{1}{r_{N-2}})+(\frac{1}{r_{B}}-\frac{1}{r_{N-1}})]=\\
+                \textcolor{Red}{\frac{-qQK}{r_B}-\frac{-qQK}{r_A}}
+            \end{align*}
+            La cosa importante da ricordare qui è che \textcolor{Red}{il lavoro dipende solo dagli estremi $A$ e $B$}! Non da altri punti!\\
+            Facciamo un po' di considerazioni:
+            \begin{itemize}
+                \item \textbf{energia potenziale elettrostatica}: dato che la forza elettrica è convervativa (ovvero il lavoro su un percorso chiuso è 0), possiamo dire che la \textbf{variazione di energia potenziale  elettrica $\Delta U$ corrisponde al lavoro * -1}:
+                \begin{align*}
+                    W_{AB} = -\Delta U_{AB}\\
+                    ---dove---\\
+                    U_X=\frac{KQq}{r_X}+const
+                \end{align*}
+                Nota che la $const$ è una costante arbitraria (che nella pratica non è importante dato che quando facciamo la differenza si semplifica);
+                \item \textbf{La forza potenziale elettrica è conservativa}, quindi abbiamo che:
+                \begin{align*}
+                    \oint\vec{E}\ dr = 0
+                \end{align*}
+                Infatti sappiamo che "$W_{A\rightarrow A} = 0$", possiamo scomporre tale lavoro come "$W_{A\rightarrow A} = q\oint \vec{E}dr = 0$". Dato che "$q=const$", allora deve essere che "$\oint \vec{E}dr = 0$"!
+                \item\textbf{Differenza di potenziale $\Delta V$}: come abbiamo fatto per il campo elettrico, viene naturale pensare di fare lo stesso con l'energia potenziale elettrica:
+                \begin{align*}
+                    \Delta V = \frac{\Delta U}{q}
+                \end{align*}
+                Quindi possiamo dire che il \textbf{potenziale nella posizione A} corrisponde a:
+                \begin{align*}
+                    V_A=\frac{KQ}{r_A}+const'
+                \end{align*}
+                Ora, anche qui la costante $const'$ è arbitraria e relativamente poco importante (a noi interessa la \textbf{differenza} di potenziale, quindi se facciamo la differenza questa costante si semplifica).
+            \end{itemize}
+
+        \subsubsection{Energia potenziale elettrica e potenziale nel caso di cariche puntiformi multiple}
+            Abbiamo visto il caso delle cariche puntiformi singole, ma nel caso ne avessimo di più? Sostanzialmente la stessa cosa di prima, però usiamo \textbf{il principio di sovreapposizione}! In pratica consiste nel calcolare il \textbf{lavoro/energia potenziale/potenziale di tutte le cariche e li sommiamo}!
+            \begin{align*}
+                &W_{TOT, A}=\sum_i W_{i, A}\\
+                &\Delta U_{TOT, A} = \sum_i \Delta U_{i, A}\\
+                &\Delta V_{TOT, A}=\sum_i V_{i, A}
+            \end{align*}
