@@ -225,3 +225,130 @@
                 &\Delta U_{TOT, A} = \sum_i \Delta U_{i, A}\\
                 &\Delta V_{TOT, A}=\sum_i V_{i, A}
             \end{align*}
+
+    \subsection{Teorema di Gauss}
+        Prima di introdurre il teorema vero e proprio, dobbiamo introdurre diversi concetti importanti:
+        \subsubsection{Concetto di "linee di forza"}
+            Possiamo rappresentare un campo vettoriale (un campo elettrico nel nostro caso) tramite delle \textbf{linee di forza}, ad esempio:
+            \framedImg{4}{L21-img006}
+            Da queste linee di forza possiamo "estrarre" le informazioni relative al vettore ($\vec{v}$) di una certa posizione:
+            \begin{itemize}
+                \item \textbf{direzione di $\vec{v_A}$}: corrisponde alla tangente della linea di forza nella posizione A;
+                \item \textbf{verso di $\vec{v_A}$}: corrisponde al verso di percorrenza della linea di forza nella posizione A;
+                \item \textbf{modulo di $\vec{v_A}$}: corrisponde alla densità delle linee di forza nel punto A, non offre spunti di calcolo particolari ma è comunque utile per capire dove il campo è più o meno forte;
+            \end{itemize}
+
+        \subsubsection{Concetto di "flusso di $\vec{v}$"}
+            Supponiamo di avere una \textbf{superficie infinitesima $d\Sigma$ rappresentata da un versore $\hat{n}$} (normale alla superficie). Ora, il flusso infinitesimo viene identificato come:
+            \begin{align*}
+                d\Phi = \vec{v}*\hat{n}*d\Sigma
+            \end{align*}
+            Possiamo vederlo come la "\textit{quantità infinitesima di forza che passa attraverso la superficie infinitesima}". Se immaginiamo di estendere tale superficie in modo che non sia più infinitesima, possiamo calcolare il flusso semplicemente applicando un integrale (inteso come la somma di tutte le aree infinitesime che rappresentano la nostra superficie non infinitesima):
+            \begin{align*}
+                \Phi = \int_\Sigma\vec{v}*\hat{n}*d\Sigma
+            \end{align*}
+            Vediamo un esempio veloce:
+            \framedImg{4}{L22-img003.jpg}
+            Supponiamo di avere un fiume dove l'acqua scorre con una velocità di $10m/s$ lungo il versore $\hat{x}$ e di avere una sezione del fiume con un'area di $20m^2$, identificata da un versore normale $\hat{x}$ che ha la stessa direzione di $\hat{x}$. Ora, se volessimo calcolare il flusso di acqua che passa attraverso la sezione del fiume dovremmo semplicemente applicare la formula vista prima! Espandiamo un po':
+            \begin{align*}
+                \Phi = \int_\Sigma d\Phi = \int_\Sigma \vec{v}*\hat{n}*d\Sigma = \textcolor{Red}{(\vec{v}*\hat{n})}*\textcolor{OliveGreen}{\int_\Sigma d\Sigma}
+            \end{align*}
+            Dunque, \textcolor{Red}{questo pezzo} lo portiamo fuori dato che non dipende da $\Sigma$, mentre \textcolor{OliveGreen}{quest'altro} corrisponde, idealmente, alla somma di tutte le aree infinitesime che compongono la nostra area non infinitesima (quindi corrisponde prorpio alla nostra superficie "completa" $\Sigma$):
+            \begin{align*}
+                \Phi = \textcolor{Red}{(\vec{v}*\hat{n})}*\textcolor{OliveGreen}{\int_\Sigma d\Sigma} = 10m/s*\textcolor{Orange}{(\hat{x}*\hat{n})}*\Sigma = 10m/s*\textcolor{Orange}{(1)}*20m^2 = 200m^3/s
+            \end{align*}
+            Molto semplice!
+        
+        \subsubsection{Concetto di "angolo solido"}
+            Anche qui il concetto è molto semplice, partiamo da quello di "\textit{angolo piano}":
+            \framedImg{3}{L22-img004.jpg}
+            L'angolo $\alpha$ corrisponde alla lunghezza della sezione circolare $a$ fratto il raggio $R$. Ora, possiamo pensare di prendere questo concetto ed allargarlo aggiungendo una dimensione in più, ottenendo appunto l'\textit{\textbf{angolo solido $\omega$}}!
+            \framedImg{3}{L22-img005.jpg}
+            Cosa succede però se abbiamo una calotta sferica (la $S$) \textbf{non ortogonale} al raggio? Ricorda che possiamo identificare una superficie con il versore ortogonale associato, in altre parole cosa facciamo quanto il versore di S non è parallelo al raggio? Basta semplicemente fare la proiezione della calotta non ortogonale in modo che diventi ortogonale al raggio! In pratica basta fare così:
+            \framedImg{3}{L22-img006.jpg}
+            Ora un po' di considerazioni che ci serviranno in seguito, pensa all'angolo piano: quanto vale l'angolo piano totale? Il massimo che possiamo avere come arco è l'intero cerchio, quindi:
+            \framedImg{7}{L22-img007.jpg}
+            Se ci pensi è proprio \textbf{l'angolo giro espresso in radianti}! Ora, facciamo la stessa cosa con gli angoli solidi, la massima calotta sferica che possiamo avere è l'intera sfera, quindi:
+            \begin{align*}
+                \omega_{max}=\frac{<area\ sfera>}{r^2}=\frac{4\pi r^2}{r^2}=4\pi
+            \end{align*}
+            Tieni a mente questa roba, torna dopo nella dimostrazione del teorema di gauss!
+        
+        \subsubsection{Il teorema vero e proprio}
+            Ora che abbiamo tutti i concetti fondamentali, possiamo introdurre il \textbf{teorema di Gauss} vero e proprio! La domanda a cui vogliamo rispondere è, quanto vale:
+            \begin{align*}
+                \textcolor{Red}{\oint \vec{E}*\hat{n}*d\Sigma = ?}
+            \end{align*}
+            Ovvero, \textbf{quanto vale il flusso che passa attraverso una superficie chiusa \textnormal{(il "$\oint$" indica una superficie chiusa)}?}
+            Vediamo un po' di casistiche:
+            \paragraph{Cariche puntiformi}
+                A sua volta, possiamo considerare anche altre casistiche:
+                \subparagraph{Cariche puntiformi singole interne a superfici chiuse}
+                    Dunque, ci troviamo in una situazione di questo tipo:
+                    Abbiamo una \textbf{carica $q$} che si trova all'interno di una certa superficie chiusa. Ora, scegliamo una generica \textcolor{Red}{$d\Sigma$} che avrà un suo versore ortogonale \textcolor{Red}{$\hat{n}$}. Quindi facciamo delle considerazione sull'integrando:
+                    \begin{align*}
+                        \vec{E}*\hat{n}*d\Sigma
+                    \end{align*}
+                    Come prima cosa espandiamo la definizione di campo:
+                    \begin{align*}
+                        \vec{E}*\hat{n}*d\Sigma=\frac{q}{4\pi*\varepsilon_0*r^2}\textcolor{Blue}{\hat{r}*\hat{n}d\Sigma}
+                    \end{align*}
+                    Bene, adesso \textcolor{Blue}{questo pezzo è la definizione vista nell'angolo solido con la calotta non ortogonale},quindi la applichiamo ed otteniamo la \textbf{superficie ortogonale}:
+                    \begin{align*}
+                        \vec{E}*\hat{n}*d\Sigma=\frac{q}{4\pi*\varepsilon_0*r^2}\textcolor{Blue}{\hat{r}*\hat{n}d\Sigma} = \frac{q}{4\pi*\varepsilon_0*r^2}*\textcolor{Blue}{d\Sigma_\perp}
+                    \end{align*}
+                    Però sappiamo per la definizione di angolo solido, sappiamo che la superficie ortogonale corrisponde proprio all'angolo solido moltiplicato per il raggio$^2$ (dobbiamo fare una trasformazione veloce rispetto alla formula di prima, ma nienete di speciale):
+                    \begin{align*}
+                        \vec{E}*\hat{n}*d\Sigma=\frac{q}{4\pi*\varepsilon_0*r^2}\hat{r}*\hat{n}d\Sigma = \frac{q}{4\pi*\varepsilon_0*r^2}*\textcolor{Purple}{d\Sigma_\perp} = \frac{q}{4\pi*\varepsilon_0*\bcancel{r^2}}*\textcolor{Purple}{\bcancel{r^2}*d\omega} = \underline{\textcolor{Red}{\frac{q}{4\pi*\varepsilon_0}d\omega}}
+                    \end{align*}
+                    Si può notare che \textbf{è possibile semplificare un $r^2$}! Proprietà estremamente importante del teorema di gauss perchè ci dice che il flusso \textbf{NON dipende dall'orientamento della superficie}, infatti in qualsiasi modo sia orietata noi andremo solo a considerare l'angolo solido da cui "si vede" quella superficie. Ottimo! Possiamo reintrodurre l'integrale:
+                    \begin{align*}
+                        \oint\vec{E}*\hat{n}*d\Sigma= \oint\textcolor{Red}{\frac{q}{4\pi*\varepsilon_0}d\omega}
+                    \end{align*}
+                    Portiamo fuori tutto quello che non dipende da $\omega$ (quindi tutto :P):
+                    \begin{align*}
+                        \oint\vec{E}*\hat{n}*d\Sigma = \oint\frac{q}{4\pi*\varepsilon_0}d\omega = \frac{q}{4\pi*\varepsilon_0}\oint d\omega
+                    \end{align*}
+                    "Risolviamo" l'integrale e quello ci darà \textbf{l'angolo solido totale} che, abbiamo visto prima, \textbf{vale proprio $4\pi$}, quindi possiamo fare un'altra semplificazione:
+                    \begin{align*}
+                        \oint\vec{E}*\hat{n}*d\Sigma = \oint\frac{q}{4\pi*\varepsilon_0}d\omega = \frac{q}{4\pi*\varepsilon_0}\oint d\omega = \frac{q}{4\pi*\varepsilon_0}\omega_{TOT}=\frac{q}{\bcancel{4\pi}*\varepsilon_0}\bcancel{4\pi}=\underline{\textcolor{Red}{\frac{q}{\varepsilon_0}}}
+                    \end{align*}
+                    \textcolor{Red}{QUESTO} è il risultato finale! Ci dice che il flusso passante attraverso una superficie chiusa dipende solo dalla carica!
+
+                \subparagraph{Cariche puntiformi singole esterne a superfici chiuse}
+                    Risposta veloce: \textcolor{Red}{il flusso in questo caso vale 0}! Ma perché?
+                    \framedImg{7}{L22-img008.jpg}
+                    Dall'immagine possiamo notare che il flusso attraversa la superficie \textbf{2 volte}: la prima \textbf{entra} (quindi il flusso sarà negativo) e la seconda volta \textbf{esce} (quindi il flusso sarà negativo). Facciamo un po' di passaggi:
+                    \begin{align*}
+                        \textcolor{Red}{\vec{E}_1*\hat{n}_1*dS_1} = ... = \textcolor{Red}{-\frac{q}{4\pi \varepsilon_0}d\omega_1}\\
+                        \textcolor{OliveGreen}{\vec{E}_2*\hat{n}_2*dS_2} = ... = \textcolor{OliveGreen}{\frac{q}{4\pi \varepsilon_0}d\omega_2}
+                    \end{align*}
+                    Ora, la "fregatura" sta nel fatto che, in entrambe le equazioni, \textbf{l'angolo solido è lo stesso}! Nel caso di $dS_1$ la calotta sferica è più piccola, però è anche più vicina alla carica! Nel caso di $dS_2$ invece è puù grande, ma è anche più lontana dalla carica! Tutto si bilancia in modo che l'angolo solido è lo stesso! Per calcolare il flusso totale infinitesimo possiamo quindi sommare tutto, ottenendo:
+                    \begin{align*}
+                        \vec{E}_{TOT}=\textcolor{OliveGreen}{\frac{q}{4\pi \varepsilon_0}d\omega_2}\textcolor{Red}{-\frac{q}{4\pi \varepsilon_0}d\omega_1}=\textcolor{OliveGreen}{\frac{q}{4\pi \varepsilon_0}d\omega}\textcolor{Red}{-\frac{q}{4\pi \varepsilon_0}d\omega} = 0
+                    \end{align*}
+                    Ma nel caso di forme strambe?
+                    \framedImg{7}{L22-img009.jpg}
+                    Nulla cambia, è un semplice concetto di topologia: se entro una volta, per forza devo anche uscire! Quindi ogni entrata sarà bilanciata da un uscita.
+
+                \subparagraph{Cariche puntiformi multiple}
+                    Molto semplice! Facciamo le stesse viste prima (sia nel caso delle cariche interne che esterne) ma usando il \textbf{principio di sovrapposizione}! In particolare avremmo che:
+                    \begin{align*}
+                        \vec{E}_{TOT} = \vec{E}_{1}+\vec{E}_{2}+...+\vec{E}_{n-1}+\vec{E}_{n}
+                    \end{align*}
+                    Di conseguenza:
+                    \begin{align*}
+                        \vec{\Phi}_{TOT} = \oint \vec{E}_{TOT}*\hat{n}*d\Sigma= \oint(\vec{E}_{1}+...+\vec{E}_{n})*\hat{n}*d\Sigma
+                    \end{align*}
+                    Dato che abbiamo una somma, possiamo spezzare l'integrale:
+                    \begin{align*}
+                        \vec{\Phi}_{TOT}=\oint(\vec{E}_{1}+...+\vec{E}_{n})*\hat{n}*d\Sigma=\textcolor{Red}{\oint \vec{E}_{1}*\hat{n}*d\Sigma+...+\oint \vec{E}_{n}*\hat{n}*d\Sigma}
+                    \end{align*}
+                    Ma \textcolor{Red}{questi} sono proprio i flussi delle varie cariche, che per definizione (dimostrato prima) corrispondono prorpio alla cariche fratto la costante dielettrica del vuoto:
+                    \begin{align*}
+                        \vec{\Phi}_{TOT}=\oint(\vec{E}_{1}+...+\vec{E}_{n})*\hat{n}*d\Sigma=\textcolor{Red}{\oint \vec{E}_{1}*\hat{n}*d\Sigma+...+\oint \vec{E}_{n}*\hat{n}*d\Sigma}= \Phi_1+...+\Phi_n = \frac{q_1}{\varepsilon_0}+...+\frac{q_n}{\varepsilon_0}
+                    \end{align*}
+                    Quindi possiamo riassumere il tutto come:
+                    \begin{align*}
+                        \textcolor{Red}{\vec{\Phi}_{TOT}=\sum_i\frac{q_i}{\varepsilon_0}}
+                    \end{align*}
