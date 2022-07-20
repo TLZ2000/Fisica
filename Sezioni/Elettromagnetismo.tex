@@ -352,3 +352,64 @@
                     \begin{align*}
                         \textcolor{Red}{\vec{\Phi}_{TOT}=\sum_i\frac{q_i}{\varepsilon_0}}
                     \end{align*}
+
+            \subsubsection{Applicazioni del teorema di Gauss}
+                Calcolare il campo elettrico delle varie distribuzioni di carica può essere motlo complesso, pensa alle distribuzioni lineari e piane (le puntiformi sono abbastanza semplici). Però possiamo usare il \textbf{teorema di Gauss per calcolarlo}! Vediamo i vari casi:
+
+                \paragraph{Cariche puntiformi}
+                    Siamo già riusciti a calcolarlo usando la forza di Culomb, però possiamo dimostrarlo facilmente anche con Gauss. Allora, tutto parte da questa uguaglianza:
+                    \begin{align*}
+                        \oint\vec{E}*\hat{n}*d\Sigma = \sum_i\frac{q_i}{\varepsilon_0}
+                    \end{align*}
+                    Supponiamo inotre che la nostra \textbf{superficie chiusa sia una sfera} (anche se fosse una forma più complessa non cambierebbe molto dato che poi andiamo solo a considerare gli angoli solidi). 
+                    \framedImg{5}{tmp}
+                    A sinistra dell'uguale abbiamo \textbf{la parte "matematica"}, mentre a destra \textbf{quella fisica} potremmo dire. Ora espandiamo le 2 parti e vediamo quanto vale il campo elettrico! Come prima cosa sappiamo che nel caso di cariche puntiformi la forza elettrica si \textbf{diffonde in modo radiale}, quindi possiamo dire che:
+                    \begin{align*}
+                        \vec{E}=E(r)*\hat{r}
+                    \end{align*}
+                    Ora espandiamo la parte a sx dell'uguale:
+                    \begin{align*}
+                        d\Phi=\vec{E}*\hat{n}*d\Sigma = E(r)*\textcolor{Red}{(\hat{r}**\hat{n})}*\textcolor{OliveGreen}{d\Sigma} = \underline{E(r)*\textcolor{Red}{(1)}*\textcolor{OliveGreen}{r^2*d\omega}}
+                    \end{align*}
+                    Ottimo, abbiamo questo risultato, ora per calcolare il flusso ci basta applicare un'integrale sulla superficie chiusa:
+                    \begin{align*}
+                        \Phi = \oint E(r)*\textcolor{Red}{(1)}*\textcolor{OliveGreen}{r^2*d\omega} = E(r)*r^2*\textcolor{Purple}{\oint d\Phi} = E(r)*r^2*\textcolor{Purple}{4\pi}
+                    \end{align*}
+                    Perfetto, ora consideriamo la parte a dx:
+                    \begin{align*}
+                        \Phi = \sum_i\frac{q_i}{\varepsilon_0}
+                    \end{align*}
+                    Qui non c'è niente di particolare, sappiamo che c'è una carica sola di valore q, quindi:
+                    \begin{align*}
+                        \Phi = \frac{q}{\varepsilon_0}
+                    \end{align*}
+                    Adesso semplicemente eguagliamo il tutto ed otteniamo il risultato finale:
+                    \begin{align*}
+                        E(r)*r^2*\textcolor{Purple}{4\pi} = \frac{q}{\varepsilon_0}
+                    \end{align*}
+                    Con un po' di trasformazioni algebriche molto semplici otteniamo il valore del campo elettrico:
+                    \begin{align*}
+                        E(r)= \frac{q}{4\pi*\varepsilon_0*r^2}
+                    \end{align*}
+                    Questo è lo stesso risutato che avevamo ottenuto con Culomb! Figo!
+
+                \paragraph{Cariche lineari}
+                    Il procedimento è simile a quello per le cariche puntiformi, però in questo caso abbiamo un cavo di densità lineare $\lambda$ e di lunghezza infinita (in realtà non è infinita, ma è molto più grande di tutte le altre lunghezze in gioco). A differenza di prima, in questo caso dobbiamo usare le simmetrie in modo intelligente.
+                    \framedImg{5}{tmp}
+                    Come si vede in figura possiamo immaginare che il campo elettrico si diffonda come un cilindro, infatti i contributi "laterali" si compensano tra di loro (data la lunghezza infinita del cavo). Anche in questo caso quindi, possiamo pensare che il campo elettrico si diffonda in direzione radiale rispetto al cavo:
+                    \begin{align*}
+                        \vec{E}=E(r)*\hat{r}
+                    \end{align*}
+                    Ora, proviamo a calcolare il flusso delle superfici circolari laterali:
+                    \begin{align*}
+                        d\Phi_{B1}= E(r)*(\hat{r}*\hat{n})*d\Sigma_{B1} = E(r)*(0)*d\Sigma_{B1} = 0
+                    \end{align*}
+                    Ci rendiamo conto però che \textbf{i 2 versori sono ortogonali tra loro}, quindi il prodotto scalare si \textbf{annulla}! Lo stesso vale anche per l'altra superficie circolare:
+                    \begin{align*}
+                        d\Phi_{B2} = 0
+                    \end{align*}
+                    Consideriamo ora la superficie "radiale" del cilindro:
+                    \begin{align*}
+                        d\Phi_{L} = E(r)*\hat{r}*\hat{n_l}*d\Sigma_L
+                    \end{align*}
+                \paragraph{Cariche piane}
