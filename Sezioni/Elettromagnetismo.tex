@@ -362,7 +362,7 @@
                         \oint\vec{E}*\hat{n}*d\Sigma = \sum_i\frac{q_i}{\varepsilon_0}
                     \end{align*}
                     Supponiamo inotre che la nostra \textbf{superficie chiusa sia una sfera} (anche se fosse una forma più complessa non cambierebbe molto dato che poi andiamo solo a considerare gli angoli solidi). 
-                    \framedImg{5}{tmp}
+                    \framedImg{5}{L22-img010}
                     A sinistra dell'uguale abbiamo \textbf{la parte "matematica"}, mentre a destra \textbf{quella fisica} potremmo dire. Ora espandiamo le 2 parti e vediamo quanto vale il campo elettrico! Come prima cosa sappiamo che nel caso di cariche puntiformi la forza elettrica si \textbf{diffonde in modo radiale}, quindi possiamo dire che:
                     \begin{align*}
                         \vec{E}=E(r)*\hat{r}
@@ -395,7 +395,7 @@
 
                 \paragraph{Cariche lineari}
                     Il procedimento è simile a quello per le cariche puntiformi, però in questo caso abbiamo un cavo di densità lineare $\lambda$ e di lunghezza infinita (in realtà non è infinita, ma è molto più grande di tutte le altre lunghezze in gioco). A differenza di prima, in questo caso dobbiamo usare le simmetrie in modo intelligente.
-                    \framedImg{5}{tmp}
+                    \framedImg{8}{L22-img011}
                     Come si vede in figura possiamo immaginare che il campo elettrico si diffonda come un cilindro, infatti i contributi "laterali" si compensano tra di loro (data la lunghezza infinita del cavo). Anche in questo caso quindi, possiamo pensare che il campo elettrico si diffonda in direzione radiale rispetto al cavo:
                     \begin{align*}
                         \vec{E}=E(r)*\hat{r}
@@ -410,6 +410,33 @@
                     \end{align*}
                     Consideriamo ora la superficie "radiale" del cilindro:
                     \begin{align*}
-                        d\Phi_{L} = E(r)*\hat{r}*\hat{n_l}*d\Sigma_L
+                        d\Phi_{L} = E(r)*\textcolor{Red}{(\hat{r}*\hat{n_l})}*d\Sigma_L = E(r)*\textcolor{Red}{(1)}*d\Sigma_L
                     \end{align*}
-                \paragraph{Cariche piane}
+                    Bene, ora il "problema" è calcolare la $d\Sigma_L$. Allora, per definizione di angolo piano, sappiamo che l'arco della nostra area corrisponde a $a=\alpha*r$, quindi abbiamo che:
+                    \begin{align*}
+                        d\Sigma_L=d\alpha*r*dl
+                    \end{align*}
+                    Possiamo sostituirlo nell'equazione ottenuto finora:
+                    \begin{align*}
+                        d\Phi_{L} = E(r)*(\hat{r}*\hat{n_l})*d\Sigma_L = E(r)*(1)*d\Sigma_L = E(r)*(1)*d\alpha*r*dl
+                    \end{align*}
+                    Ora come prima calcoliamo l'integrale chiuso:
+                    \begin{align*}
+                        \Phi_{L} = \oint E(r)*d\alpha*r*dl = E(r)*r*\textcolor{Red}{\oint d\alpha}\textcolor{OliveGreen}{\oint dl} = E(r)*r*\textcolor{Red}{2\pi}*\textcolor{OliveGreen}{D}
+                    \end{align*}
+                    Completata la parte "matematica" possiamo passare a quella fisica:
+                    \begin{align*}
+                        \Phi_{L} = \sum_i\frac{q_i}{\varepsilon_0}
+                    \end{align*}
+                    Ma quanto vale la carica interna totale? Per calcolarla, semplicemente \textbf{moltiplichiamo la distribuzione di carica per la lunghezza del filo contenuta nel cilindro}:
+                    \begin{align*}
+                        \Phi_{L} = \sum_i\frac{q_i}{\varepsilon_0}=\frac{\lambda*D}{\varepsilon_0}
+                    \end{align*}
+                    Uguaglimo il tutto:
+                    \begin{align*}
+                        E(r)*r*2\pi*\bcancel{D} = \frac{\lambda*\bcancel{D}}{\varepsilon_0}
+                    \end{align*}
+                    Ancora un po' di passaggi algebrici:
+                    \begin{align*}
+                       \underline{\textcolor{Red}{E(r) = \frac{\lambda}{2\pi*r*\varepsilon_0}}}
+                    \end{align*}

@@ -227,4 +227,3 @@
 \contentsline {subsubsection}{\numberline {7.6.5}Applicazioni del teorema di Gauss}{142}{subsubsection.7.6.5}%
 \contentsline {paragraph}{\numberline {7.6.5.1}Cariche puntiformi}{142}{paragraph.7.6.5.1}%
 \contentsline {paragraph}{\numberline {7.6.5.2}Cariche lineari}{144}{paragraph.7.6.5.2}%
-\contentsline {paragraph}{\numberline {7.6.5.3}Cariche piane}{144}{paragraph.7.6.5.3}%

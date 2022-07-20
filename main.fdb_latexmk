@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1658311128 "c:/Repo/Fisica/main.tex" "main.pdf" "main" 1658311134
+["pdflatex"] 1658325854 "c:/Repo/Fisica/main.tex" "main.pdf" "main" 1658325865
   "Img//L01-img001.jpg" 1658296335 331135 84c140d89c9f4d69567e764d4298fb81 ""
   "Img//L01-img002.jpg" 1658296335 76567 34123c7d6040c1041fee60474c6810d7 ""
   "Img//L01-img003.jpg" 1658296335 151297 fe6549c814ca40bf69ff314c67f79517 ""
@@ -132,10 +132,11 @@
   "Img//L22-img007.jpg" 1658305583 261221 bd11d286822708108515cca235c7d646 ""
   "Img//L22-img008.jpg" 1658305583 416225 7122a141c5582af8b7d295de693a1025 ""
   "Img//L22-img009.jpg" 1658305583 270560 b42693d774586f1c66c24079fd4e730c ""
+  "Img//L22-img010.jpg" 1658325576 184669 419ad91387a816d5b1374f8e9f1c099c ""
+  "Img//L22-img011.jpg" 1658325559 396611 1fadd9ab160cb5d54646ec8a8d076cbf ""
   "Img//LOGO1.png" 1658296335 395672 0e4d83e6f718dba5113f9d1aadec3146 ""
-  "Img//tmp.png" 1658309565 221845 db55d59c2099183de726ca2f1ad94f76 ""
   "Sezioni/Dinamica.tex" 1658296335 53146 c406361250852a56a5c07e974747d6d7 ""
-  "Sezioni/Elettromagnetismo.tex" 1658311126 40055 620619d2c756a01e3c915cf3163e08b2 ""
+  "Sezioni/Elettromagnetismo.tex" 1658325851 42007 8069131b73c01cf69029bbc6adcf336d ""
   "Sezioni/Lezione01.tex" 1658296335 27708 3cef6a660140e335e721b2a1588d7046 ""
   "Sezioni/Meccanica.tex" 1658296335 71090 216d5fcf2a3bde264c537e67ecdcd9b2 ""
   "Sezioni/Roba.tex" 1658296335 301 e50c812a0d01c24c8b9bc338fd1c2198 ""
@@ -317,10 +318,10 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1658305305 4448422 53302d27d6d34c8e3e97ce3a8b4bdfa7 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1658305544 2826458 f13ef6a586212b6786e6446240a62b25 ""
   "c:/texlive/2022/texmf.cnf" 1658305256 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1658311134 33337 9a83662dabb56364989955d1165a5b34 "pdflatex"
-  "main.out" 1658311134 42985 e3ba9381bcc7b717204a653c103c0999 "pdflatex"
+  "main.aux" 1658325864 33209 c00f9ab66efb2fa787a735c5a0d9999a "pdflatex"
+  "main.out" 1658325864 42845 ce10613950fbf113ae1649e98e4bfd58 "pdflatex"
   "main.tex" 1658296336 2325 f82db74cbab4be596845a5d178aba4e5 ""
-  "main.toc" 1658311134 22339 ff47a4030fc13f9c08b21154ce833d23 "pdflatex"
+  "main.toc" 1658325864 22252 4d0fb00818a9e4be5edbf720dde5ee9a "pdflatex"
   (generated)
   "main.aux"
   "main.log"
