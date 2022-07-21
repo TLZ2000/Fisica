@@ -123,21 +123,22 @@
 \contentsline {subsubsection}{\numberline {6.6.4}Contatto termico}{75}{subsubsection.6.6.4}%
 \contentsline {subsubsection}{\numberline {6.6.5}Principio zero della termodinamica}{76}{subsubsection.6.6.5}%
 \contentsline {subsection}{\numberline {6.7}Esperimento di Joule}{76}{subsection.6.7}%
+\contentsline {subsubsection}{\numberline {6.7.1}Thomas'notes}{77}{subsubsection.6.7.1}%
 \contentsline {subsection}{\numberline {6.8}Calore}{77}{subsection.6.8}%
-\contentsline {subsubsection}{\numberline {6.8.1}Esempio di calore}{77}{subsubsection.6.8.1}%
+\contentsline {subsubsection}{\numberline {6.8.1}Esempio di calore}{78}{subsubsection.6.8.1}%
 \contentsline {subsection}{\numberline {6.9}Principio di equivalenza calore-lavoro}{78}{subsection.6.9}%
 \contentsline {subsection}{\numberline {6.10}I principio della termodinamica}{78}{subsection.6.10}%
-\contentsline {subsection}{\numberline {6.11}Tipi di trasformazioni termodinamiche}{78}{subsection.6.11}%
-\contentsline {subsubsection}{\numberline {6.11.1}Trasformazione ciclica}{78}{subsubsection.6.11.1}%
+\contentsline {subsection}{\numberline {6.11}Tipi di trasformazioni termodinamiche}{79}{subsection.6.11}%
+\contentsline {subsubsection}{\numberline {6.11.1}Trasformazione ciclica}{79}{subsubsection.6.11.1}%
 \contentsline {subsubsection}{\numberline {6.11.2}Trasformazione quasi-statica}{79}{subsubsection.6.11.2}%
 \contentsline {subsubsection}{\numberline {6.11.3}Trasformazione reversibile}{79}{subsubsection.6.11.3}%
 \contentsline {paragraph}{\numberline {6.11.3.1}Esempio trasformazione reversibile}{79}{paragraph.6.11.3.1}%
-\contentsline {paragraph}{\numberline {6.11.3.2}Esempio trasformazione non reversibile}{79}{paragraph.6.11.3.2}%
+\contentsline {paragraph}{\numberline {6.11.3.2}Esempio trasformazione non reversibile}{80}{paragraph.6.11.3.2}%
 \contentsline {subsubsection}{\numberline {6.11.4}Lentezza}{80}{subsubsection.6.11.4}%
 \contentsline {subsection}{\numberline {6.12}Calorimetria}{80}{subsection.6.12}%
 \contentsline {subsubsection}{\numberline {6.12.1}Calore specifico}{81}{subsubsection.6.12.1}%
 \contentsline {subsubsection}{\numberline {6.12.2}Calorimetro}{81}{subsubsection.6.12.2}%
-\contentsline {subsubsection}{\numberline {6.12.3}Capacità termica}{81}{subsubsection.6.12.3}%
+\contentsline {subsubsection}{\numberline {6.12.3}Capacità termica}{82}{subsubsection.6.12.3}%
 \contentsline {subsection}{\numberline {6.13}Cambi di fase}{82}{subsection.6.13}%
 \contentsline {subsubsection}{\numberline {6.13.1}Calori latenti}{83}{subsubsection.6.13.1}%
 \contentsline {paragraph}{\numberline {6.13.1.1}Esempio}{83}{paragraph.6.13.1.1}%
@@ -149,81 +150,81 @@
 \contentsline {subsubsection}{\numberline {6.14.3}Irraggiamento}{86}{subsubsection.6.14.3}%
 \contentsline {paragraph}{\numberline {6.14.3.1}Esercizio con costante solare}{87}{paragraph.6.14.3.1}%
 \contentsline {subsubsection}{\numberline {6.14.4}Contenitore adiabatico}{87}{subsubsection.6.14.4}%
-\contentsline {subsection}{\numberline {6.15}Gas ideali}{87}{subsection.6.15}%
-\contentsline {subsubsection}{\numberline {6.15.1}Le variabili principali}{88}{subsubsection.6.15.1}%
-\contentsline {paragraph}{\numberline {6.15.1.1}Volume}{88}{paragraph.6.15.1.1}%
-\contentsline {paragraph}{\numberline {6.15.1.2}Pressione}{88}{paragraph.6.15.1.2}%
-\contentsline {paragraph}{\numberline {6.15.1.3}Temperatura}{90}{paragraph.6.15.1.3}%
+\contentsline {subsection}{\numberline {6.15}Gas ideali}{88}{subsection.6.15}%
+\contentsline {subsubsection}{\numberline {6.15.1}Le variabili principali}{89}{subsubsection.6.15.1}%
+\contentsline {paragraph}{\numberline {6.15.1.1}Volume}{89}{paragraph.6.15.1.1}%
+\contentsline {paragraph}{\numberline {6.15.1.2}Pressione}{89}{paragraph.6.15.1.2}%
+\contentsline {paragraph}{\numberline {6.15.1.3}Temperatura}{91}{paragraph.6.15.1.3}%
 \contentsline {subsubsection}{\numberline {6.15.2}Equazione di stato dei gas ideali (o perfetti)}{91}{subsubsection.6.15.2}%
-\contentsline {paragraph}{\numberline {6.15.2.1}Legge isocora di Gay-Lussac}{91}{paragraph.6.15.2.1}%
-\contentsline {paragraph}{\numberline {6.15.2.2}Legge isobara di Gay-Lussac}{91}{paragraph.6.15.2.2}%
-\contentsline {paragraph}{\numberline {6.15.2.3}Legge isoterma di Boyle}{92}{paragraph.6.15.2.3}%
-\contentsline {paragraph}{\numberline {6.15.2.4}Legge di Avogadro}{92}{paragraph.6.15.2.4}%
-\contentsline {paragraph}{\numberline {6.15.2.5}Mettiamo tutte le leggi insieme}{93}{paragraph.6.15.2.5}%
-\contentsline {paragraph}{\numberline {6.15.2.6}Esempio}{94}{paragraph.6.15.2.6}%
-\contentsline {subsubsection}{\numberline {6.15.3}Lavoro dei gas}{94}{subsubsection.6.15.3}%
+\contentsline {paragraph}{\numberline {6.15.2.1}Legge isocora di Gay-Lussac}{92}{paragraph.6.15.2.1}%
+\contentsline {paragraph}{\numberline {6.15.2.2}Legge isobara di Gay-Lussac}{92}{paragraph.6.15.2.2}%
+\contentsline {paragraph}{\numberline {6.15.2.3}Legge isoterma di Boyle}{93}{paragraph.6.15.2.3}%
+\contentsline {paragraph}{\numberline {6.15.2.4}Legge di Avogadro}{93}{paragraph.6.15.2.4}%
+\contentsline {paragraph}{\numberline {6.15.2.5}Mettiamo tutte le leggi insieme}{94}{paragraph.6.15.2.5}%
+\contentsline {paragraph}{\numberline {6.15.2.6}Esempio}{95}{paragraph.6.15.2.6}%
+\contentsline {subsubsection}{\numberline {6.15.3}Lavoro dei gas}{95}{subsubsection.6.15.3}%
 \contentsline {subsubsection}{\numberline {6.15.4}Energia interna dei gas}{95}{subsubsection.6.15.4}%
-\contentsline {paragraph}{\numberline {6.15.4.1}Esperimento dell'espasione libera del gas}{95}{paragraph.6.15.4.1}%
+\contentsline {paragraph}{\numberline {6.15.4.1}Esperimento dell'espasione libera del gas}{96}{paragraph.6.15.4.1}%
 \contentsline {paragraph}{\numberline {6.15.4.2}Teoria cinetica dei gas}{96}{paragraph.6.15.4.2}%
-\contentsline {subparagraph}{Gradi di libertà}{99}{section*.6}%
-\contentsline {subsection}{\numberline {6.16}Trasformazioni particolari dei gas ideali}{100}{subsection.6.16}%
-\contentsline {subsubsection}{\numberline {6.16.1}Trasformazione isocora}{101}{subsubsection.6.16.1}%
-\contentsline {subsubsection}{\numberline {6.16.2}Trasformazione isobara}{102}{subsubsection.6.16.2}%
-\contentsline {subsubsection}{\numberline {6.16.3}Relazione di Mayer}{102}{subsubsection.6.16.3}%
-\contentsline {subsubsection}{\numberline {6.16.4}Calore specifico a volume costante}{103}{subsubsection.6.16.4}%
-\contentsline {subsubsection}{\numberline {6.16.5}Calore specifico a pressione costante}{103}{subsubsection.6.16.5}%
-\contentsline {subsubsection}{\numberline {6.16.6}Trasformazione isoterma}{104}{subsubsection.6.16.6}%
-\contentsline {paragraph}{\numberline {6.16.6.1}Esempio espansione isoterma}{105}{paragraph.6.16.6.1}%
-\contentsline {subsubsection}{\numberline {6.16.7}Trasformazione adiabatica}{105}{subsubsection.6.16.7}%
-\contentsline {subsection}{\numberline {6.17}Trasformazioni cicliche}{107}{subsection.6.17}%
-\contentsline {subsubsection}{\numberline {6.17.1}Macchine termiche}{108}{subsubsection.6.17.1}%
-\contentsline {subsubsection}{\numberline {6.17.2}Macchine frigorifere}{108}{subsubsection.6.17.2}%
-\contentsline {subsection}{\numberline {6.18}Ciclo di Carnot}{108}{subsection.6.18}%
-\contentsline {subsection}{\numberline {6.19}Secondo principio della termodinamica}{109}{subsection.6.19}%
-\contentsline {subsubsection}{\numberline {6.19.1}Veloce recap sulle macchine}{109}{subsubsection.6.19.1}%
-\contentsline {paragraph}{\numberline {6.19.1.1}Macchine termiche}{110}{paragraph.6.19.1.1}%
-\contentsline {paragraph}{\numberline {6.19.1.2}Macchine frigorifere}{110}{paragraph.6.19.1.2}%
-\contentsline {subsubsection}{\numberline {6.19.2}Dimostrazione dell'uguaglianza delle 2 principi}{111}{subsubsection.6.19.2}%
-\contentsline {paragraph}{\numberline {6.19.2.1}Kelvin => Clausius}{111}{paragraph.6.19.2.1}%
-\contentsline {paragraph}{\numberline {6.19.2.2}Clausius => Kelvin}{112}{paragraph.6.19.2.2}%
-\contentsline {subsection}{\numberline {6.20}Teorema di Carnot}{114}{subsection.6.20}%
-\contentsline {subsubsection}{\numberline {6.20.1}Corollario e osservazioni}{117}{subsubsection.6.20.1}%
-\contentsline {subsection}{\numberline {6.21}Teorema di Clausius}{118}{subsection.6.21}%
-\contentsline {subsection}{\numberline {6.22}Entropia}{120}{subsection.6.22}%
-\contentsline {subsubsection}{\numberline {6.22.1}Variazione di entropia $\Delta S$}{121}{subsubsection.6.22.1}%
-\contentsline {subsubsection}{\numberline {6.22.2}Alcune osservazioni}{121}{subsubsection.6.22.2}%
-\contentsline {subsubsection}{\numberline {6.22.3}Variazione di entropia per le trasformazioni termodinamiche notevoli}{122}{subsubsection.6.22.3}%
-\contentsline {paragraph}{\numberline {6.22.3.1}Trasformazione isoterma}{122}{paragraph.6.22.3.1}%
-\contentsline {paragraph}{\numberline {6.22.3.2}Trasformazione isocora}{123}{paragraph.6.22.3.2}%
-\contentsline {paragraph}{\numberline {6.22.3.3}Trasformazione isobara}{123}{paragraph.6.22.3.3}%
-\contentsline {paragraph}{\numberline {6.22.3.4}Trasformazione adiabatica}{123}{paragraph.6.22.3.4}%
-\contentsline {paragraph}{\numberline {6.22.3.5}Cambi di fase (non necessariamente gas ideali)}{123}{paragraph.6.22.3.5}%
-\contentsline {subsubsection}{\numberline {6.22.4}Diagrammi T-S}{123}{subsubsection.6.22.4}%
-\contentsline {subsubsection}{\numberline {6.22.5}Teorema dell'entropia (formulazione matematica del secondo principio della termodinamica)}{123}{subsubsection.6.22.5}%
-\contentsline {subsection}{\numberline {6.23}Esercizi termodinamica}{125}{subsection.6.23}%
-\contentsline {subsubsection}{\numberline {6.23.1}Esercizio n.10, esame giugno2021b}{125}{subsubsection.6.23.1}%
-\contentsline {subsubsection}{\numberline {6.23.2}Entropia esercizio n.10, esame giugno2021b}{126}{subsubsection.6.23.2}%
-\contentsline {section}{\numberline {7}Elettromagnetismo}{126}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Introduzione all'elettromagnetismo}{126}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Forza di Culomb}{127}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Digressione sugli atomi}{128}{subsubsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.3}Principio di sovrapposizione}{128}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Campo elettrico}{129}{subsection.7.4}%
-\contentsline {subsubsection}{\numberline {7.4.1}Campo elettrico per campo puntiforme}{130}{subsubsection.7.4.1}%
-\contentsline {subsubsection}{\numberline {7.4.2}Campo di dipolo}{131}{subsubsection.7.4.2}%
-\contentsline {subsubsection}{\numberline {7.4.3}Esempio di esercizio con il campo elettrico}{131}{subsubsection.7.4.3}%
-\contentsline {subsection}{\numberline {7.5}Circuitazione e potenziale elettrico}{133}{subsection.7.5}%
-\contentsline {subsubsection}{\numberline {7.5.1}Energia potenziale elettrica e potenziale (sono 2 cose relativamente diverse :P) nel caso di cariche puntiformi singole}{134}{subsubsection.7.5.1}%
-\contentsline {subsubsection}{\numberline {7.5.2}Energia potenziale elettrica e potenziale nel caso di cariche puntiformi multiple}{136}{subsubsection.7.5.2}%
-\contentsline {subsection}{\numberline {7.6}Teorema di Gauss}{136}{subsection.7.6}%
-\contentsline {subsubsection}{\numberline {7.6.1}Concetto di "linee di forza"}{136}{subsubsection.7.6.1}%
-\contentsline {subsubsection}{\numberline {7.6.2}Concetto di "flusso di $\vec {v}$"}{137}{subsubsection.7.6.2}%
-\contentsline {subsubsection}{\numberline {7.6.3}Concetto di "angolo solido"}{138}{subsubsection.7.6.3}%
-\contentsline {subsubsection}{\numberline {7.6.4}Il teorema vero e proprio}{139}{subsubsection.7.6.4}%
-\contentsline {paragraph}{\numberline {7.6.4.1}Cariche puntiformi}{140}{paragraph.7.6.4.1}%
-\contentsline {subparagraph}{Cariche puntiformi singole interne a superfici chiuse}{140}{section*.7}%
-\contentsline {subparagraph}{Cariche puntiformi singole esterne a superfici chiuse}{141}{section*.8}%
-\contentsline {subparagraph}{Cariche puntiformi multiple}{142}{section*.9}%
-\contentsline {subsubsection}{\numberline {7.6.5}Applicazioni del teorema di Gauss}{142}{subsubsection.7.6.5}%
-\contentsline {paragraph}{\numberline {7.6.5.1}Cariche puntiformi}{142}{paragraph.7.6.5.1}%
-\contentsline {paragraph}{\numberline {7.6.5.2}Cariche lineari}{144}{paragraph.7.6.5.2}%
+\contentsline {subparagraph}{Gradi di libertà}{100}{section*.6}%
+\contentsline {subsection}{\numberline {6.16}Trasformazioni particolari dei gas ideali}{101}{subsection.6.16}%
+\contentsline {subsubsection}{\numberline {6.16.1}Trasformazione isocora}{102}{subsubsection.6.16.1}%
+\contentsline {subsubsection}{\numberline {6.16.2}Trasformazione isobara}{103}{subsubsection.6.16.2}%
+\contentsline {subsubsection}{\numberline {6.16.3}Relazione di Mayer}{103}{subsubsection.6.16.3}%
+\contentsline {subsubsection}{\numberline {6.16.4}Calore specifico a volume costante}{104}{subsubsection.6.16.4}%
+\contentsline {subsubsection}{\numberline {6.16.5}Calore specifico a pressione costante}{104}{subsubsection.6.16.5}%
+\contentsline {subsubsection}{\numberline {6.16.6}Trasformazione isoterma}{105}{subsubsection.6.16.6}%
+\contentsline {paragraph}{\numberline {6.16.6.1}Esempio espansione isoterma}{106}{paragraph.6.16.6.1}%
+\contentsline {subsubsection}{\numberline {6.16.7}Trasformazione adiabatica}{106}{subsubsection.6.16.7}%
+\contentsline {subsection}{\numberline {6.17}Trasformazioni cicliche}{108}{subsection.6.17}%
+\contentsline {subsubsection}{\numberline {6.17.1}Macchine termiche}{109}{subsubsection.6.17.1}%
+\contentsline {subsubsection}{\numberline {6.17.2}Macchine frigorifere}{109}{subsubsection.6.17.2}%
+\contentsline {subsection}{\numberline {6.18}Ciclo di Carnot}{109}{subsection.6.18}%
+\contentsline {subsection}{\numberline {6.19}Secondo principio della termodinamica}{110}{subsection.6.19}%
+\contentsline {subsubsection}{\numberline {6.19.1}Veloce recap sulle macchine}{110}{subsubsection.6.19.1}%
+\contentsline {paragraph}{\numberline {6.19.1.1}Macchine termiche}{111}{paragraph.6.19.1.1}%
+\contentsline {paragraph}{\numberline {6.19.1.2}Macchine frigorifere}{111}{paragraph.6.19.1.2}%
+\contentsline {subsubsection}{\numberline {6.19.2}Dimostrazione dell'uguaglianza delle 2 principi}{112}{subsubsection.6.19.2}%
+\contentsline {paragraph}{\numberline {6.19.2.1}Kelvin => Clausius}{112}{paragraph.6.19.2.1}%
+\contentsline {paragraph}{\numberline {6.19.2.2}Clausius => Kelvin}{113}{paragraph.6.19.2.2}%
+\contentsline {subsection}{\numberline {6.20}Teorema di Carnot}{115}{subsection.6.20}%
+\contentsline {subsubsection}{\numberline {6.20.1}Corollario e osservazioni}{118}{subsubsection.6.20.1}%
+\contentsline {subsection}{\numberline {6.21}Teorema di Clausius}{119}{subsection.6.21}%
+\contentsline {subsection}{\numberline {6.22}Entropia}{121}{subsection.6.22}%
+\contentsline {subsubsection}{\numberline {6.22.1}Variazione di entropia $\Delta S$}{122}{subsubsection.6.22.1}%
+\contentsline {subsubsection}{\numberline {6.22.2}Alcune osservazioni}{122}{subsubsection.6.22.2}%
+\contentsline {subsubsection}{\numberline {6.22.3}Variazione di entropia per le trasformazioni termodinamiche notevoli}{123}{subsubsection.6.22.3}%
+\contentsline {paragraph}{\numberline {6.22.3.1}Trasformazione isoterma}{123}{paragraph.6.22.3.1}%
+\contentsline {paragraph}{\numberline {6.22.3.2}Trasformazione isocora}{124}{paragraph.6.22.3.2}%
+\contentsline {paragraph}{\numberline {6.22.3.3}Trasformazione isobara}{124}{paragraph.6.22.3.3}%
+\contentsline {paragraph}{\numberline {6.22.3.4}Trasformazione adiabatica}{124}{paragraph.6.22.3.4}%
+\contentsline {paragraph}{\numberline {6.22.3.5}Cambi di fase (non necessariamente gas ideali)}{124}{paragraph.6.22.3.5}%
+\contentsline {subsubsection}{\numberline {6.22.4}Diagrammi T-S}{124}{subsubsection.6.22.4}%
+\contentsline {subsubsection}{\numberline {6.22.5}Teorema dell'entropia (formulazione matematica del secondo principio della termodinamica)}{124}{subsubsection.6.22.5}%
+\contentsline {subsection}{\numberline {6.23}Esercizi termodinamica}{126}{subsection.6.23}%
+\contentsline {subsubsection}{\numberline {6.23.1}Esercizio n.10, esame giugno2021b}{126}{subsubsection.6.23.1}%
+\contentsline {subsubsection}{\numberline {6.23.2}Entropia esercizio n.10, esame giugno2021b}{127}{subsubsection.6.23.2}%
+\contentsline {section}{\numberline {7}Elettromagnetismo}{127}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Introduzione all'elettromagnetismo}{127}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Forza di Culomb}{128}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Digressione sugli atomi}{129}{subsubsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.3}Principio di sovrapposizione}{129}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Campo elettrico}{130}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Campo elettrico per campo puntiforme}{131}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}Campo di dipolo}{132}{subsubsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.3}Esempio di esercizio con il campo elettrico}{132}{subsubsection.7.4.3}%
+\contentsline {subsection}{\numberline {7.5}Circuitazione e potenziale elettrico}{134}{subsection.7.5}%
+\contentsline {subsubsection}{\numberline {7.5.1}Energia potenziale elettrica e potenziale (sono 2 cose relativamente diverse :P) nel caso di cariche puntiformi singole}{135}{subsubsection.7.5.1}%
+\contentsline {subsubsection}{\numberline {7.5.2}Energia potenziale elettrica e potenziale nel caso di cariche puntiformi multiple}{137}{subsubsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.6}Teorema di Gauss}{137}{subsection.7.6}%
+\contentsline {subsubsection}{\numberline {7.6.1}Concetto di "linee di forza"}{137}{subsubsection.7.6.1}%
+\contentsline {subsubsection}{\numberline {7.6.2}Concetto di "flusso di $\vec {v}$"}{138}{subsubsection.7.6.2}%
+\contentsline {subsubsection}{\numberline {7.6.3}Concetto di "angolo solido"}{139}{subsubsection.7.6.3}%
+\contentsline {subsubsection}{\numberline {7.6.4}Il teorema vero e proprio}{140}{subsubsection.7.6.4}%
+\contentsline {paragraph}{\numberline {7.6.4.1}Cariche puntiformi}{141}{paragraph.7.6.4.1}%
+\contentsline {subparagraph}{Cariche puntiformi singole interne a superfici chiuse}{141}{section*.7}%
+\contentsline {subparagraph}{Cariche puntiformi singole esterne a superfici chiuse}{142}{section*.8}%
+\contentsline {subparagraph}{Cariche puntiformi multiple}{143}{section*.9}%
+\contentsline {subsubsection}{\numberline {7.6.5}Applicazioni del teorema di Gauss}{143}{subsubsection.7.6.5}%
+\contentsline {paragraph}{\numberline {7.6.5.1}Cariche puntiformi}{143}{paragraph.7.6.5.1}%
+\contentsline {paragraph}{\numberline {7.6.5.2}Cariche lineari}{145}{paragraph.7.6.5.2}%
