@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1658410151 "c:/Repo/Fisica/main.tex" "main.pdf" "main" 1658410159
+["pdflatex"] 1658490040 "c:/Repo/Fisica/main.tex" "main.pdf" "main" 1658490046
   "Img//L01-img001.jpg" 1658296335 331135 84c140d89c9f4d69567e764d4298fb81 ""
   "Img//L01-img002.jpg" 1658296335 76567 34123c7d6040c1041fee60474c6810d7 ""
   "Img//L01-img003.jpg" 1658296335 151297 fe6549c814ca40bf69ff314c67f79517 ""
@@ -140,7 +140,7 @@
   "Sezioni/Lezione01.tex" 1658296335 27708 3cef6a660140e335e721b2a1588d7046 ""
   "Sezioni/Meccanica.tex" 1658296335 71090 216d5fcf2a3bde264c537e67ecdcd9b2 ""
   "Sezioni/Roba.tex" 1658296335 301 e50c812a0d01c24c8b9bc338fd1c2198 ""
-  "Sezioni/Termodinamica.tex" 1658410147 123849 0e9d27e6fd0347724b786a8ce5159aca ""
+  "Sezioni/Termodinamica.tex" 1658490038 123990 a902b1f8e0976f0e49f54e89f4629c70 ""
   "c:/Repo/Fisica/main.tex" 1658296336 2325 f82db74cbab4be596845a5d178aba4e5 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1658296186 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1658296186 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -318,10 +318,10 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1658305305 4448422 53302d27d6d34c8e3e97ce3a8b4bdfa7 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1658305544 2826458 f13ef6a586212b6786e6446240a62b25 ""
   "c:/texlive/2022/texmf.cnf" 1658305256 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1658410159 33340 4a666d1030908c5039b7b3ea8c08bfd9 "pdflatex"
-  "main.out" 1658410159 42974 c7e339db6b5f147e3231ec09767369d3 "pdflatex"
+  "main.aux" 1658490046 33340 4a666d1030908c5039b7b3ea8c08bfd9 "pdflatex"
+  "main.out" 1658490046 42974 c7e339db6b5f147e3231ec09767369d3 "pdflatex"
   "main.tex" 1658296336 2325 f82db74cbab4be596845a5d178aba4e5 ""
-  "main.toc" 1658410159 22342 4cd669e848d79db356112c79bef962ef "pdflatex"
+  "main.toc" 1658490046 22342 4cd669e848d79db356112c79bef962ef "pdflatex"
   (generated)
   "main.aux"
   "main.log"

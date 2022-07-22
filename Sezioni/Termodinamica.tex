@@ -593,7 +593,7 @@
                 \begin{align*}
                     \int_i^f dW = \int_i^f p(v)*dV
                 \end{align*}
-                Nota come \textbf{la pressione dipende dal volume}: nell'esempio prima potevamo mettere che la pressione restasse costante dato che la variazione di volume è infinitesima, ma nel caso in cui abbiamo una variazione maggire dobbiamo tenerne conto! Il messaggio da portare a casa è che \textbf{il gas compie del lavoro quando cambia di volume}!
+                Nota come (a volte, non è detto che sia sempre così) \textbf{la pressione dipende dal volume} (quindi devi fare attenzione): nell'esempio prima potevamo mettere che la pressione restasse costante dato che la variazione di volume è infinitesima, ma nel caso in cui abbiamo una variazione maggire dobbiamo tenerne conto! Il messaggio da portare a casa è che \textbf{il gas compie del lavoro quando cambia di volume}!
 
             \subsubsection{Energia interna dei gas}
                 Diciamolo subito: \textbf{l'energia interna di un gas dipende SOLO dalla sua temperatura}. Possiamo arrivare a questa conclusione con diversi metodi, vediamoli.
@@ -602,15 +602,15 @@
                     \framedImg{5}{L16-img007}
                     In questo esperimento abbiamo un vaso Dewar che contiene un liquido, in questo liquido sono immerse 2 camere: una contiene del gas, l'altra il vuoto. Nota che il liquido è in equilibrio termico col gas. Queste camere sono collegate da un piccolo passaggio, inizialmente chiuso, e sono fatte di un materiale che \textbf{conduce calore}. Ad un certo punto \textbf{apriamo il passaggio tra le 2 camere}, permettendo al gas di passare nella camera vuota. Dopo questa \textbf{espansione libera del gas} "succedono delle cose", in particolare:
                     \begin{align*}
-                        & V_i < V_f && \textrm{Il volume occupata dal gas aumenta (occupa entrambe le camere)}\\
+                        & V_i < V_f && \textrm{Il volume occupato dal gas aumenta (occupa entrambe le camere)}\\
                         & p_i > p_f && \textrm{La pressione del gas diminuisce (stessa quantità in volume maggiore)}\\
-                        T_i \approx T_f
+                        & T_i \approx T_f && \textrm{la temperatura NON cambia}
                     \end{align*}
                     L'ultima riga è la più interessante: nonostante il volume e la pressione siano cambiati, la temperatura resta uguale (in realtà cambia, ma in modo quasi impercettibile). In generale, l'energia interna del sistema dipende da pressione, volume e temperatura ($U(p, V, T)$). Inoltre, per il primo principio della termodinamica, abbiamo che $\Delta U = Q - W$. Ora, il \textbf{contenitore è rigido}  quindi il \textbf{volume resta effettivamente costante}, di conseguenza \textbf{NON C'E' LAVORO} ($W=0$, è vero che il gas aumenta di volume però lo fa liberamente senza opporsi a nessuno [es. un pistone], quindi NON c'è lavoro). Per quanto riguarda il calore, tutto il nostro sistema si trova in un \textbf{contenitore adiabatico}, allora \textbf{non abbiamo scambio di calore con l'esterno} ($Q=0$, il calore del sistema è già all'interno del sistema, non si può prendere calore da nessuna parte). Dunque, per la prima legge della dinamica abbiamo che:
                     \begin{align*}
                         \Delta U = Q-W = 0-0 = 0 => \mathbf{\Delta U = 0}
                     \end{align*}
-                    Quindi, se $\Delta U == 0$, allora che $\Delta T == 0$!
+                    Quindi, se $\Delta U == 0$, allora anche $\Delta T == 0$!
                     Abbiamo detto prima che, \textbf{in genere}, l'energia interna di un sistema dipende da pressione, volume e temperatura, \textbf{PERO'} abbiamo visto sperimentalmente che, pur cambiando la pressione ed il volume, \textbf{l'energia interna del sistema resta ugugale}: possiamo quindi dire che \textbf{l'energia interna del gas dipende solo dalla Temperatura}!
 
 
@@ -623,7 +623,7 @@
                     \begin{align*}
                         \textcolor{Red}{\Delta p} = p_f-p_i = m*v_{x, f}-m*v_{x, i}=m*(v_{x, f}-v_{x, i}) =2m*v_{x, i}= \textcolor{Red}{2m*v_{x}}
                     \end{align*}
-                    Ora possiamo chiederci "\textit{ogni quanto, in termini di tempo, questa molecola urta QUESTA parete}"? Dato che in ogni urto l'angolo d'uscita è lo stesso di quello in entrata, possiamo immaginare che le molecole del gas si muovano in questo modo "speculare":
+                    Ora possiamo chiederci "\textit{ogni quanto, in termini di tempo, \underline{QUESTA} molecola urta \underline{QUESTA} parete}"? Dato che in ogni urto l'angolo d'uscita è lo stesso di quello in entrata, possiamo immaginare che le molecole del gas si muovano in questo modo "speculare":
                     \framedImg{5}{L16-img010}
                     Dunque, per percorrere nella sua interezza la lunghezza $L_x$ (che si trova sull'asse x) alla velocità $v_x$ impiegheremo esattamente $\frac{L_x}{v_x}$, poi moltiplichiamo il tutto per 2 dato che vogliamo gli urti sulla stessa parete (praticamente si deve percorrere $2L_x$). Otteniamo quindi:
                     \begin{align*}
@@ -651,7 +651,7 @@
                     \begin{align*}
                         P_x=P_y=P_z=P
                     \end{align*}
-                    Da questo punto, considerando la formula della $P-x$ che abbiamo trovato prima, possiamo dedurre che:
+                    Da questo punto, considerando la formula della $P_x$ che abbiamo trovato prima, possiamo dedurre che:
                     \begin{align*}
                         <v_x^2>=<v_y^2>=<v_z^2>
                     \end{align*}
