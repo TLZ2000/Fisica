@@ -318,12 +318,12 @@
                 \subparagraph{Cariche puntiformi singole esterne a superfici chiuse}
                     Risposta veloce: \textcolor{Red}{il flusso in questo caso vale 0}! Ma perché?
                     \framedImg{7}{L22-img008.jpg}
-                    Dall'immagine possiamo notare che il flusso attraversa la superficie \textbf{2 volte}: la prima \textbf{entra} (quindi il flusso sarà negativo) e la seconda volta \textbf{esce} (quindi il flusso sarà negativo). Facciamo un po' di passaggi:
+                    Dall'immagine possiamo notare che il flusso attraversa la superficie \textbf{2 volte}: la prima \textbf{entra} (quindi il flusso sarà negativo) e la seconda volta \textbf{esce} (quindi il flusso sarà positivo). Facciamo un po' di passaggi:
                     \begin{align*}
                         \textcolor{Red}{\vec{E}_1*\hat{n}_1*dS_1} = ... = \textcolor{Red}{-\frac{q}{4\pi \varepsilon_0}d\omega_1}\\
                         \textcolor{OliveGreen}{\vec{E}_2*\hat{n}_2*dS_2} = ... = \textcolor{OliveGreen}{\frac{q}{4\pi \varepsilon_0}d\omega_2}
                     \end{align*}
-                    Ora, la "fregatura" sta nel fatto che, in entrambe le equazioni, \textbf{l'angolo solido è lo stesso}! Nel caso di $dS_1$ la calotta sferica è più piccola, però è anche più vicina alla carica! Nel caso di $dS_2$ invece è puù grande, ma è anche più lontana dalla carica! Tutto si bilancia in modo che l'angolo solido è lo stesso! Per calcolare il flusso totale infinitesimo possiamo quindi sommare tutto, ottenendo:
+                    Ora, la "fregatura" sta nel fatto che, in entrambe le equazioni, \textbf{l'angolo solido è lo stesso}! Nel caso di $dS_1$ la calotta sferica è più piccola, però è anche più vicina alla carica! Nel caso di $dS_2$ invece è più grande, ma è anche più lontana dalla carica! Tutto si bilancia in modo che l'angolo solido è lo stesso! Per calcolare il flusso totale infinitesimo possiamo quindi sommare tutto, ottenendo:
                     \begin{align*}
                         \vec{E}_{TOT}=\textcolor{OliveGreen}{\frac{q}{4\pi \varepsilon_0}d\omega_2}\textcolor{Red}{-\frac{q}{4\pi \varepsilon_0}d\omega_1}=\textcolor{OliveGreen}{\frac{q}{4\pi \varepsilon_0}d\omega}\textcolor{Red}{-\frac{q}{4\pi \varepsilon_0}d\omega} = 0
                     \end{align*}
@@ -369,7 +369,7 @@
                     \end{align*}
                     Ora espandiamo la parte a sx dell'uguale:
                     \begin{align*}
-                        d\Phi=\vec{E}*\hat{n}*d\Sigma = E(r)*\textcolor{Red}{(\hat{r}**\hat{n})}*\textcolor{OliveGreen}{d\Sigma} = \underline{E(r)*\textcolor{Red}{(1)}*\textcolor{OliveGreen}{r^2*d\omega}}
+                        d\Phi=\vec{E}*\hat{n}*d\Sigma = E(r)*\textcolor{Red}{(\hat{r}*\hat{n})}*\textcolor{OliveGreen}{d\Sigma} = \underline{E(r)*\textcolor{Red}{(1)}*\textcolor{OliveGreen}{r^2*d\omega}}
                     \end{align*}
                     Ottimo, abbiamo questo risultato, ora per calcolare il flusso ci basta applicare un'integrale sulla superficie chiusa:
                     \begin{align*}
