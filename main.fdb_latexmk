@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1659082291 "t:/Uni/Semestre_6/Fisica/Fisica/main.tex" "main.pdf" "main" 1659082299
+["pdflatex"] 1659471591 "t:/Uni/Semestre_6/Fisica/Fisica/main.tex" "main.pdf" "main" 1659471600
   "C:/Users/Utente/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1652025097 82739 2291d6f3c571c8d9cdaecbe2fcc8640f ""
   "C:/Users/Utente/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbi1200.pk" 1622016439 42728 cf51b82da9b863ce8538f7317848ecba ""
   "C:/Users/Utente/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1621848253 31952 cc4f2380524d57d4d91ea34cfa024191 ""
@@ -310,15 +310,15 @@
   "Img//L22-img011.jpg" 1658569073 396611 1fadd9ab160cb5d54646ec8a8d076cbf ""
   "Img//LOGO1.png" 1651175532 395672 0e4d83e6f718dba5113f9d1aadec3146 ""
   "Sezioni/Dinamica.tex" 1654414368 53146 c406361250852a56a5c07e974747d6d7 ""
-  "Sezioni/Elettromagnetismo.tex" 1658662571 42006 f55c243229456e23af120f89754a4ab9 ""
+  "Sezioni/Elettromagnetismo.tex" 1659105361 42008 75885f1f6ed178fc9c27ae9484ac0f5c ""
   "Sezioni/Lezione01.tex" 1654414368 27708 3cef6a660140e335e721b2a1588d7046 ""
   "Sezioni/Meccanica.tex" 1658849781 71091 8845b02de1fe3d7af8b2b62a254ac961 ""
   "Sezioni/Roba.tex" 1647451675 301 e50c812a0d01c24c8b9bc338fd1c2198 ""
-  "Sezioni/Termodinamica.tex" 1658614239 124242 b799243e7476e2c569c8846227c31cc4 ""
-  "main.aux" 1659082298 33340 4a666d1030908c5039b7b3ea8c08bfd9 "pdflatex"
-  "main.out" 1659082298 42974 c7e339db6b5f147e3231ec09767369d3 "pdflatex"
+  "Sezioni/Termodinamica.tex" 1659471591 124413 b706ba735fae2bac131546ec71e523d4 ""
+  "main.aux" 1659471599 33340 4a666d1030908c5039b7b3ea8c08bfd9 "pdflatex"
+  "main.out" 1659471599 42974 c7e339db6b5f147e3231ec09767369d3 "pdflatex"
   "main.tex" 1654415828 2325 f82db74cbab4be596845a5d178aba4e5 ""
-  "main.toc" 1659082298 22342 4cd669e848d79db356112c79bef962ef "pdflatex"
+  "main.toc" 1659471599 22342 4cd669e848d79db356112c79bef962ef "pdflatex"
   "t:/Uni/Semestre_6/Fisica/Fisica/main.tex" 1654415828 2325 f82db74cbab4be596845a5d178aba4e5 ""
   (generated)
   "main.aux"

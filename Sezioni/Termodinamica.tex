@@ -948,13 +948,13 @@
                     \hline
                     & \quad & $\Delta U$ & $Q$ & $W$\tabularnewline
                     \hline
-                    & AB & $0$ & $-nRT_2ln\bigg(\frac{V_B}{V_A}\bigg)$ & $nRT_2ln\bigg(\frac{V_B}{V_A}\bigg)$\tabularnewline
+                    & AB & $0$ & $nRT_2ln\bigg(\frac{V_B}{V_A}\bigg)$ & $nRT_2ln\bigg(\frac{V_B}{V_A}\bigg)$\tabularnewline
                     \hline
-                    & BC & $mc_V(T_1 - T_2)$ & $0$ & $-mc_V(T_1 - T_2)$\tabularnewline
+                    & BC & $mc_V(T_1 - T_2)$ & $0$ & $mc_V(T_1 - T_2)$\tabularnewline
                     \hline
-                    & CD & $0$ & $-nRT_1ln\bigg(\frac{V_D}{V_C}\bigg)$ & $nRT_1ln\bigg(\frac{V_D}{V_C}\bigg)$\tabularnewline
+                    & CD & $0$ & $nRT_1ln\bigg(\frac{V_D}{V_C}\bigg)$ & $nRT_1ln\bigg(\frac{V_D}{V_C}\bigg)$\tabularnewline
                     \hline
-                    & DA & $mc_V(T_2 - T_1)$ & $0$ & $-mc_V(T_2 - T_1)$\tabularnewline
+                    & DA & $mc_V(T_2 - T_1)$ & $0$ & $mc_V(T_2 - T_1)$\tabularnewline
                     \hline
                 \end{tabular}
             \end{center}
@@ -962,9 +962,9 @@
             \begin{align*}
                 &W = nRT_2ln\bigg(\frac{V_B}{V_A}\bigg) + nRT_1ln\bigg(\frac{V_D}{V_C}\bigg) \bcancel{- mc_V(T_1 - T_2)} \bcancel{- mc_V(T_2 - T_1)}\\
                 &Q_A = nRT_2ln\bigg(\frac{V_B}{V_A}\bigg)\\
-                &\eta = \frac{nRT_2ln\bigg(\frac{V_B}{V_A}\bigg) + nRT_1ln\bigg(\frac{V_D}{V_C}\bigg)}{nRT_2ln\bigg(\frac{V_B}{V_A}\bigg)}=1 + \frac{ T_1ln\bigg(\frac{V_D}{V_C}\bigg)}{T_2ln\bigg(\frac{V_B}{V_A}\bigg)} = 1 + \frac{T_1}{T_2}\frac{ln\bigg(\frac{V_D}{V_C}\bigg)}{ln\bigg(\frac{V_B}{V_A}\bigg)} = 1 + \frac{T_1}{T_2}
+                &\eta = \frac{nRT_2ln\bigg(\frac{V_B}{V_A}\bigg) + nRT_1ln\bigg(\frac{V_D}{V_C}\bigg)}{nRT_2ln\bigg(\frac{V_B}{V_A}\bigg)}=1 + \frac{ T_1ln\bigg(\frac{V_D}{V_C}\bigg)}{T_2ln\bigg(\frac{V_B}{V_A}\bigg)} = 1 + \frac{T_1}{T_2}\textcolor{Red}{\frac{ln\bigg(\frac{V_D}{V_C}\bigg)}{ln\bigg(\frac{V_B}{V_A}\bigg)}} = 1 - \frac{T_1}{T_2}
             \end{align*}
-            Se ho quindi $T_1$ molto bassa e $T_2$ molto alta, il rendimento è $\eta\simeq 1$, quindi ho rendimento massimo.
+            Se ho quindi $T_1$ molto bassa e $T_2$ molto alta, il rendimento è $\eta\simeq 1$, quindi ho rendimento massimo. Si può dimostrare (usando il fatto che $pV=const$ per le isoterme e che $pV^\gamma = const$ per le adiabatiche) che \textcolor{Red}{questo pezzo} è $=-1$.
 
         \subsection{Secondo principio della termodinamica}
             Possiamo dividere il secondo principio della termodinamica in 2 parti (+ 1):
@@ -1200,7 +1200,7 @@
                     \end{align*}
                     A questo punto risolviamo semplicemente l'integrale, ed otteniamo:
                     \begin{align*}
-                        &\int_A^B(\frac{dQ}{T}) &&= \int_A^Bn*R*\frac{dV}{V}n*R*\int_A^B\frac{dV}{V}\\
+                        &\int_A^B(\frac{dQ}{T}) &&= \int_A^Bn*R*\frac{dV}{V}=n*R*\int_A^B\frac{dV}{V}\\
                          & && = n*R*(ln(V_f)-ln(V_i))\\
                          & && = \textcolor{Red}{n*R*(ln(\frac{V_f}{V_i}))}\\
                     \end{align*}
